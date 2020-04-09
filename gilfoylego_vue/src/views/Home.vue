@@ -25,10 +25,10 @@
           </div>
           <div class="row d-flex justify-content-center">
             <div class="column">
-              <input type="date" min="2020-07-01" max="2020-08-24" step="7">
+              <input type="date" min="2020-07-01" max="2020-08-24">
             </div>
             <div class="column">
-              <input type="date" min="2020-07-02" max="2020-08-31" step="7">
+              <input type="date" min="2020-07-02" max="2020-08-31">
             </div>
           </div>
           <div class="row d-flex justify-content-center">
