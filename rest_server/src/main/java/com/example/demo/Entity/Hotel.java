@@ -1,7 +1,6 @@
 package com.example.demo.Entity;
 
 public class Hotel {
-
     int id;
     String name;
     boolean hasRestaurant = false;
@@ -75,21 +74,5 @@ public class Hotel {
 
     public void setMToBeach(int mToBeach) {
         this.mToBeach = mToBeach;
-    }
-
-    public double getRating() {
-        return rating;
-    }
-
-    public void setRating(double rating) {
-        this.rating = rating;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
     }
 }
