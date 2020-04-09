@@ -25,10 +25,10 @@
           </div>
           <div class="row d-flex justify-content-center">
             <div class="column">
-              <input type="date">
+              <input type="date" min="2020-07-01" max="2020-08-24" step="7">
             </div>
             <div class="column">
-              <input type="date">
+              <input type="date" min="2020-07-02" max="2020-08-31" step="7">
             </div>
           </div>
           <div class="row d-flex justify-content-center">
@@ -51,8 +51,22 @@
               <input type="number">
             </div>
           </div>
+          <div class="row justify-content-center">
+            <div class="column">
+              Rumstyp:
+            </div>
+          </div>
           <div class="row d-flex justify-content-center">
-            <div class="column p-1">
+            <div class="column pt-1">
+              <select id="roomtype" name="roomtype">
+                <option value="Enkelrum">Enkelrum</option>
+                <option value="Dubbelrum">Dubbelrum</option>
+                <option value="Familjerum">Familjerum</option>
+              </select>
+            </div>
+          </div>
+          <div class="row d-flex justify-content-center">
+            <div class="column p-2">
               <button>Sök</button>
             </div>
           </div>
