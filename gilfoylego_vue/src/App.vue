@@ -4,7 +4,9 @@
       <span class="title p-2"><router-link to="/">Gilfoyle Go</router-link></span>
       <span class="user p-2"><router-link to="/about"><img src="./images/user.png"></router-link></span>
     </div>
+    <main class="container">
     <router-view/>
+    </main>
   </div>
 </template>
 
