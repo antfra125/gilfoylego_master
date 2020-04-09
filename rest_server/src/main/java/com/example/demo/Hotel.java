@@ -1,4 +1,4 @@
-package com.example.demo.entity;
+package com.example.demo;
 
 public class Hotel {
     int id;
@@ -9,7 +9,8 @@ public class Hotel {
     boolean hasNightEntertainment = false;
     int mToCity;
     int mToBeach;
-
+    double rating;
+    String description;
 
     public int getId() {
         return id;
