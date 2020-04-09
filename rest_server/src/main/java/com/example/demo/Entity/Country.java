@@ -1,6 +1,6 @@
-package com.example.demo.entity;
+package com.example.demo.Entity;
 
-public class City {
+public class Country {
     int id;
     String name;
 
