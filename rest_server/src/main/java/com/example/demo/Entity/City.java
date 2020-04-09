@@ -1,6 +1,11 @@
 package com.example.demo.Entity;
 
+import javax.persistence.*;
+
+@Entity
 public class City {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
     String name;
 
