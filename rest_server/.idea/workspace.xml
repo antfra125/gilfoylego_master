@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8df3095a-df5a-49c8-9742-c88b72ebd586" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Rest/CityController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Rest/CityController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Rest/CountryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Rest/CountryController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Rest/HotelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Rest/HotelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/demo/Rest/RoomBookingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/demo/Rest/RoomBookingController.java" afterDir="false" />
-    </list>
+    <list default="true" id="8df3095a-df5a-49c8-9742-c88b72ebd586" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,6 +68,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="299" y="7" key="#DemoApplication" timestamp="1586848413716">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="299" y="7" key="#DemoApplication/0.0.1280.680@0.0.1280.680" timestamp="1586848413716" />
     <state x="671" y="9" key="#com.intellij.ide.util.MemberChooser" timestamp="1586421005036">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -86,10 +84,26 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="96" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1586430422612" />
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1586425567922">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1586433617162">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586425567922" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1586433617162" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1586433617161">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1586433617161" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1586433617161">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1586433617161" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1586433617161">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1586433617161" />
+    <state x="337" y="165" key="com.intellij.ide.util.TipDialog" timestamp="1586848362065">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="337" y="165" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1586848362065" />
     <state x="91" y="43" key="new project wizard" timestamp="1586355066319">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
