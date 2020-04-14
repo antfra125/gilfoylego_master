@@ -2,7 +2,7 @@
   <div id="app">
     <div class="d-flex justify-content-between" id="nav">
       <span class="title p-2"><router-link to="/">Gilfoyle Go</router-link></span>
-      <span class="user p-2"><router-link to="/about"><img src="./images/user.png"></router-link></span>
+      <span class="user p-2"><router-link to="/search"><img src="./images/user.png"></router-link></span>
     </div>
     <main class="container">
     <router-view/>
