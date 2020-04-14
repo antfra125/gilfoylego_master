@@ -11,9 +11,8 @@
                 <button>Logga in</button>
             </div>
             <div>
-                Inget konto? Skapa ett här, utan kostnad!
+                Inget konto? Skapa ett <router-link to="/">här</router-link>, utan kostnad!
             </div>
         </form>
-        
     </div>
 </template>
