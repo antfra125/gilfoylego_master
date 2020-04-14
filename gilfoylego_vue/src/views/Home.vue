@@ -1,7 +1,7 @@
 <template>
   <div class="home text-center">
-    <div>
-      <p>Sök på din drömdestination:</p>
+    <div class="banner p-5">
+      <img src="../images/hawaii.jpg">
     </div>
     <div class="d-flex justify-content-center">
         <form>
