@@ -1,7 +1,7 @@
 <template>
     <section class="HotelDescription">
         <div class="d-flex">
-            <img src="('{id}')">
+            <img src="">
         </div>
         <div>
             <p id="thisIsTheDescription">
@@ -11,6 +11,6 @@
                 ante ac, viverra aliquet ligula. Praesent ac eros et mauris malesuada interdum. 
                 Praesent in nisl mauris. Phasellus malesuada ac dui in maximus.
             </p>
+        </div>
     </section>
 </template>
-
