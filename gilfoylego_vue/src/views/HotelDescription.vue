@@ -1,10 +1,8 @@
 <template>
     <section class="HotelDescription">
         <div class="d-flex">
-            <img src="">
-        </div>
-        <div>
-            <p id="thisIsTheDescription">
+            <img class="d-flex" src="('{id}')">
+            <p class="d-flex" id="thisIsTheDescription">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium hendrerit est, 
                 ac dignissim turpis. Vivamus non scelerisque metus. Aliquam erat volutpat. Aenean 
                 malesuada ex magna, sit amet porta nisl efficitur nec. In neque ligula, pulvinar a 
