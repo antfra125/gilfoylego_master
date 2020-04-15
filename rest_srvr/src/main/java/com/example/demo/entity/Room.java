@@ -2,8 +2,9 @@ package com.example.demo.entity;
 
 public class Room {
     int id;
-    String name;
-    int areaM2;
+    int hotelId;
+    int roomtypeId;
+    int m2;
     double price;
 
     public int getId() {
@@ -14,20 +15,28 @@ public class Room {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public int getHotelId() {
+        return hotelId;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setHotelId(int hotelId) {
+        this.hotelId = hotelId;
     }
 
-    public int getAreaM2() {
-        return areaM2;
+    public int getRoomtypeId() {
+        return roomtypeId;
     }
 
-    public void setAreaM2(int areaM2) {
-        this.areaM2 = areaM2;
+    public void setRoomtypeId(int roomtypeId) {
+        this.roomtypeId = roomtypeId;
+    }
+
+    public int getM2() {
+        return m2;
+    }
+
+    public void setM2(int m2) {
+        this.m2 = m2;
     }
 
     public double getPrice() {
