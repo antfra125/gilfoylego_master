@@ -2,6 +2,7 @@ package com.example.demo.entity;
 
 public class Hotel {
     int id;
+    int cityId;
     String name;
     boolean hasRestaurant = false;
     boolean hasPool = false;
@@ -11,6 +12,7 @@ public class Hotel {
     int mToBeach;
     double rating;
     String description;
+    //TODO String imgUrl;
 
     public int getId() {
         return id;

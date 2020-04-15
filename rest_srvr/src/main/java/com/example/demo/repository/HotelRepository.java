@@ -12,6 +12,7 @@ import java.util.List;
 @Repository
 public interface HotelRepository extends CrudRepository<Hotel, Long> {
     Hotel findById(int id);
+    Hotel findByCityId(int cityId);
     Hotel findByName(String name);
     Hotel findByHasRestaurant(Boolean hasRestaurant);
     Hotel findByHasPool(Boolean hasPool);
@@ -22,7 +23,9 @@ public interface HotelRepository extends CrudRepository<Hotel, Long> {
     Hotel findByRating(double rating);
     Hotel findByDescription(String description);
 
+
     List<Hotel> findAllByName(String name);
+    List<Hotel> findAllByCityId(int cityId);
     List<Hotel> findAllByHasRestaurant(Boolean hasRestaurant);
     List<Hotel> findAllByHasPool(Boolean hasPool);
     List<Hotel> findAllByHasKidsClub(Boolean hasKidsClub);

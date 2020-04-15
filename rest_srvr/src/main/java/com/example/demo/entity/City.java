@@ -7,6 +7,8 @@ public class City {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     int id;
+
+    int countryId;
     String name;
 
     public void setId(int id) {
