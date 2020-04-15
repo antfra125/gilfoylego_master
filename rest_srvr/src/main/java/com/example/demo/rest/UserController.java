@@ -4,6 +4,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("rest/RoomType")
-public class RoomTypeController {
+@RequestMapping("rest/UserController")
+public class UserController {
 }

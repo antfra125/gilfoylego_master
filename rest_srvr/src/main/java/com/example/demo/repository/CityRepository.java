@@ -12,8 +12,6 @@ import java.util.List;
 @Repository
 public interface CityRepository extends CrudRepository<City, Long> {
     City findById(int id);
-    City findByCountryId(int countryId);
-    City findByName(String name);
     List<City> findAllByName(String name);
     List<City> findAllByCountryId(int countryId);
 }
