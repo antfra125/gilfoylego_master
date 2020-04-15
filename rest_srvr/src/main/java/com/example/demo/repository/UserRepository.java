@@ -1,3 +1,6 @@
+/*
+
+
 package com.example.demo.repository;
 
 import com.example.demo.entity.User;
@@ -11,3 +14,4 @@ public interface UserRepository extends CrudRepository<User, Long> {
     User findByName(String name);
     List<User> findAllByName(String name);
 }
+*/

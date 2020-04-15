@@ -1,4 +1,4 @@
-package com.example.demo.Rest;
+package com.example.demo.rest;
 
 public class RoomController {
 }
