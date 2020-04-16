@@ -36,12 +36,26 @@
       </div>
     </section>
 
-    <section class="row ml-4">
+    <section class="row ml-4 mb-2">
       <div>
         <p>Distance to the beach: {distanceBeach}</p>
         <p>Distance to centrum: {distanceCentrum}</p>
       </div>
     </section>
 
+    <section class="mb-5">
+      <h4 class="mb-4">Rooms</h4>
+     
+     <div class="dropdown show">
+        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            1
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item">2</a>
+        </div>
+    </div>
+
+    </section>
   </section>
 </template>
