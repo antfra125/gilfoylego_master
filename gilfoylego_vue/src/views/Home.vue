@@ -1,3 +1,4 @@
+
 <template>
   <div class="home text-center">
     <div class="banner p-5">

@@ -6,6 +6,9 @@
     height: 3vh;
 }
 
+#addOn{
+    width: 35px;
+}
 .banner img {
     width: 100%;
 }

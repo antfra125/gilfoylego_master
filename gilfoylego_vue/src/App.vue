@@ -31,7 +31,7 @@
 export default{
 data(){
   return{
-    isLoggedIn: true
+    isLoggedIn: false
 }
 }
 }
