@@ -30,7 +30,7 @@
               <input type="number" class="form-control" min="1" placeholder="Antal rum">
           </div>
           <div class="row form-group d-flex justify-content-center">
-              <button>Sök</button>
+              <button><router-link to="/search">Sök</router-link></button>
           </div>
         </form>
     </div>
