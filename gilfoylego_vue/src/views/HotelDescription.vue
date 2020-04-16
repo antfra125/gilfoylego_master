@@ -42,20 +42,15 @@
         <p>Distance to centrum: {distanceCentrum}</p>
       </div>
     </section>
-
+    
     <section class="mb-5">
       <h4 class="mb-4">Rooms</h4>
-     
-     <div class="dropdown show">
-        <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            1
-        </a>
 
-        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item">2</a>
-        </div>
-    </div>
-
+      <div>
+        <b-dropdown id="dropdown-1" text="1" class="">
+          <b-dropdown-item>2</b-dropdown-item>
+        </b-dropdown>
+      </div>
     </section>
   </section>
 </template>
