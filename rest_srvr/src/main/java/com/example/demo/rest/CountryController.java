@@ -22,7 +22,7 @@ public class CountryController {
         }
     }
     @GetMapping
-    public Optional<Country> findById(@PathVariable int id){
-        return Optional.of(countryRepository.findById(id));
+    public Optional<Country> findById( int id){
+        return countryRepository.findById(id);
     }
 }

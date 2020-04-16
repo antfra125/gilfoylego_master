@@ -1,6 +1,11 @@
 package com.example.demo.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Country {
+    @Id
     int id;
     String name;
 
@@ -11,6 +16,7 @@ public class Country {
     public void setName(String name) {
         this.name = name;
     }
+
 
     public int getId() {
         return id;
