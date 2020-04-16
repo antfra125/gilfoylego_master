@@ -69,7 +69,7 @@
           <div class="col-4 pic-col">
             <img src="../images/ex.jpg">
           </div>
-          <div class="col-8 pl-2">
+          <div class="col-8 pl-4">
             <div class="row">
               <strong>Hotellets Namn</strong>
             </div>
