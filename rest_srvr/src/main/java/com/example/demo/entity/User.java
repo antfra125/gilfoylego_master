@@ -1,7 +1,9 @@
 package com.example.demo.entity;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity
 public class User {
@@ -11,8 +13,27 @@ public class User {
     String email;
     String password;
     String phoneNr;
-    String fName;
-    String LName;
+    @Column(name="f_name")
+    String firstName;
+    @Column(name="l_name")
+    String lastName;
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
     String address;
 
     public int getId() {
@@ -53,22 +74,6 @@ public class User {
 
     public void setPhoneNr(String phoneNr) {
         this.phoneNr = phoneNr;
-    }
-
-    public String getfName() {
-        return fName;
-    }
-
-    public void setfName(String fName) {
-        this.fName = fName;
-    }
-
-    public String getLName() {
-        return LName;
-    }
-
-    public void setLName(String LName) {
-        this.LName = LName;
     }
 
     public String getAddress() {

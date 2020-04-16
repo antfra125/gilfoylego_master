@@ -13,10 +13,8 @@ import java.util.List;
 public interface RoomRepository extends CrudRepository<Room, Long> {
     Room findById(int id);
     Room findByHotelId(int hotelId);
-    Room findByArea(int m2);
-    Room findByPrice(double price);
     
     List<Room> findAllById(int id);
-    List<Room> findAllByAreaM2(int m2);
+    List<Room> findAllByM2(int m2);
     List<Room> findAllByPrice(double price);
 }

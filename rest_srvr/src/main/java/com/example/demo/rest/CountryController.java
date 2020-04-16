@@ -13,6 +13,7 @@ public class CountryController {
     @Autowired
     private CountryRepository countryRepository;
 
+    //slå ihop till en GetMapping
     @GetMapping
     public Iterable<Country> findAllByName(@RequestParam(required = false) String name) {
         if (name == null) {
@@ -21,7 +22,7 @@ public class CountryController {
             return countryRepository.findAllByName(name);
         }
     }
-    @GetMapping
+    @GetMapping ("tabortmig")
     public Optional<Country> findById( int id){
         return countryRepository.findById(id);
     }

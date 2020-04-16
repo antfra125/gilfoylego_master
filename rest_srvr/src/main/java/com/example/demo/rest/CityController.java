@@ -16,12 +16,14 @@ public class CityController {
     @Autowired
     private CityRepository cityRepository;
 
-    @GetMapping
+
+    //slå ihop, ta emot 3 pathvariabler (optional)
+    @GetMapping("taaabort")
     public Optional<City> findById(@PathVariable int id) {
             return Optional.of(cityRepository.findById(id));
     }
 
-    @GetMapping
+    @GetMapping("taBort")
     public Iterable<City> findAllByName(@PathVariable String name) {
         if (name == null){
             return cityRepository.findAll();
