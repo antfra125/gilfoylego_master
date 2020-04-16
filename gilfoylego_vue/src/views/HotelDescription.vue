@@ -36,11 +36,12 @@
       </div>
     </section>
 
-    <section class="row">
+    <section class="row ml-4">
       <div>
         <p>Distance to the beach: {distanceBeach}</p>
         <p>Distance to centrum: {distanceCentrum}</p>
       </div>
     </section>
+
   </section>
 </template>
