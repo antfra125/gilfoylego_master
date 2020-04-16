@@ -11,7 +11,7 @@
       </p>
     </section>
     <section class="row ml-1 mb-3">
-      <p>2199/night</p>
+      <p>2199/natt</p>
     </section>
 
     <section class="row">
@@ -21,36 +21,46 @@
       </div>
       <div class="col">
         <input type="checkbox" id="addOn" name="KidsClub" value="KidsClub" />
-        <label for="KidsClubs">KidsClubs</label>
+        <label for="KidsClubs">Barnklubb</label>
       </div>
     </section>
 
     <section class="row mb-3">
       <div class="col">
         <input type="checkbox" id="addOn" name="Resturant" value="Resturant" />
-        <label for="Resturant">Resturant</label>
+        <label for="Resturant">Resturang</label>
       </div>
       <div class="col">
         <input type="checkbox" id="addOn" name="Entertaiment" value="Entertaiment" />
-        <label for="Entertaiment">Entertaiment</label>
+        <label for="Entertaiment">Underhållning</label>
       </div>
     </section>
 
     <section class="row ml-4 mb-2">
       <div>
-        <p>Distance to the beach: {distanceBeach}</p>
-        <p>Distance to centrum: {distanceCentrum}</p>
+        <p>Avstånd till stranden: {distanceBeach}</p>
+        <p>Avstånd till centrum: {distanceCentrum}</p>
       </div>
     </section>
-    
-    <section class="mb-5">
-      <h4 class="mb-4">Rooms</h4>
 
-      <div>
-        <b-dropdown id="dropdown-1" text="1" class="">
+    <section class="mb-5">
+      <h4 class="mb-4">Rum</h4>
+
+      <div class="row ml-1">
+        <h5 class="mr-3">Rumstyp</h5>
+        <b-dropdown id="dropdown-1" text="Enkel rum" class>
+          <b-dropdown-item>Dubbel rum</b-dropdown-item>
+          <b-dropdown-item>Flera rum</b-dropdown-item>
+        </b-dropdown>
+      </div>
+
+      <div class="row mt-3 ml-1">
+        <h5 class="mr-3">Antal personer</h5>
+        <b-dropdown id="dropdown-1" text="1" class>
           <b-dropdown-item>2</b-dropdown-item>
         </b-dropdown>
       </div>
+      
     </section>
   </section>
 </template>
