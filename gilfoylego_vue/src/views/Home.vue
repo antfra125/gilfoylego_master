@@ -1,7 +1,5 @@
+
 <template>
-  <div class="home">
-    <img alt="Gilfoyle Logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
   <div class="home text-center">
     <div class="banner p-5">
       <img src="../images/hawaii.jpg">
