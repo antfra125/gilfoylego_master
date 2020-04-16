@@ -2,6 +2,10 @@
     font-size: x-large;
 }
 
+.title img {
+    height: 5vh;
+}
+
 .user img {
     height: 3vh;
 }
@@ -34,6 +38,6 @@
     width: 11vw;
 }
 
-.test {
-    width: 350px;
+.extra img {
+    height:2vh;
 }

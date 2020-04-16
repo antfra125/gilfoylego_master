@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <div class="d-flex justify-content-between" id="nav">
-      <span class="title p-2"><router-link to="/">Gilfoyle Go</router-link></span>
+      <span class="title p-2"><router-link to="/"><img src="./images/title.png"></router-link></span>
         <span class="user p-2">
           <b-dropdown dropleft variant="link" toggle-class="text-decoration-none" no-caret>
             <template v-slot:button-content>

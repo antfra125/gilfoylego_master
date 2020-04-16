@@ -1,7 +1,7 @@
 <template>
   <section class="container HotelDescription">
     <section class="row d-flexmb-1 mt-4">
-      <img class="col-4 d-flex" src="../img/hotel1.jpg" />
+      <img class="col-4 d-flex" src="../images/hotel1.jpg" />
       <p class="col-6 d-flex ml-5" id="thisIsTheDescription">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium hendrerit est,
         ac dignissim turpis. Vivamus non scelerisque metus. Aliquam erat volutpat. Aenean
@@ -11,27 +11,27 @@
       </p>
     </section>
     <section class="row ml-1 mb-3">
-      <p>2199/natt</p>
+      <p>2199kr/natt</p>
     </section>
 
     <section class="row">
-      <div class="col">
-        <input type="checkbox" id="addOn" name="Pool" value="Pool" />
+      <div class="col extra">
+        <img class="pr-2" src="../images/v.png">
         <label for="Pool">Pool</label>
       </div>
-      <div class="col">
-        <input type="checkbox" id="addOn" name="KidsClub" value="KidsClub" />
+      <div class="col extra">
+        <img class="pr-2" src="../images/x.png">
         <label for="KidsClubs">Barnklubb</label>
       </div>
     </section>
 
     <section class="row mb-3">
-      <div class="col">
-        <input type="checkbox" id="addOn" name="Resturant" value="Resturant" />
+      <div class="col extra">
+        <img class="pr-2" src="../images/v.png">
         <label for="Resturant">Resturang</label>
       </div>
-      <div class="col">
-        <input type="checkbox" id="addOn" name="Entertaiment" value="Entertaiment" />
+      <div class="col extra">
+        <img class="pr-2" src="../images/v.png">
         <label for="Entertaiment">Underhållning</label>
       </div>
     </section>
