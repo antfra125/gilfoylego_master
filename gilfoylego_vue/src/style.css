@@ -8,4 +8,31 @@
 
 #addOn{
     width: 35px;
+.banner img {
+    width: 100%;
+}
+
+.custom-search-button img {
+    height: 2vh;
+}
+
+.sort img {
+    height: 2vh;
+}
+
+.result {
+    width: 36vw;
+}
+
+.border-check {
+    border: 1px dotted black;
+}
+
+.result img {
+    height: 25vh;
+    width: 11vw;
+}
+
+.test {
+    width: 350px;
 }
