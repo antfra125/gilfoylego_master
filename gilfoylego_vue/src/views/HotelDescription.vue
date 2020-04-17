@@ -1,8 +1,8 @@
 <template>
   <section class="container HotelDescription">
     <section class="row d-flexmb-1 mt-4">
-      <img class="col-4 d-flex" src="../images/hotel1.jpg" />
-      <span class="col-6 ml-5" id="thisIsTheDescription">
+      <img class="col-md-4 d-flex mb-sm-3" src="../images/hotel1.jpg" />
+      <span class="col-md-6 ml-5 ml-sm-3" id="thisIsTheDescription">
         <div class="row">
           <strong>Hotellets namn</strong>
         </div>
