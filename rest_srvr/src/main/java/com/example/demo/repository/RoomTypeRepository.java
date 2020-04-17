@@ -7,5 +7,5 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface RoomTypeRepository extends CrudRepository <RoomType, Long>{
     RoomType findByName(String name);
-    RoomType findById(int id);
+    RoomType findById(long id);
 }

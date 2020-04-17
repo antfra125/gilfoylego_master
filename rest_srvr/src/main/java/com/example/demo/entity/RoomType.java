@@ -1,15 +1,16 @@
 package com.example.demo.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class RoomType {
     @Id
-    int id;
-    String name;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    @Column
+    private String name;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
@@ -17,7 +18,7 @@ public class RoomType {
         return name;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 

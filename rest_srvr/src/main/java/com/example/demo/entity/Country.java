@@ -1,15 +1,17 @@
 package com.example.demo.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Country {
     @Id
-    int id;
-    String name;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(nullable = false)
+    private long id;
+    @Column
+    private String name;
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -18,7 +20,7 @@ public class Country {
     }
 
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
