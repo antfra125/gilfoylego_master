@@ -65,6 +65,7 @@
         </div>
       </div>
       <div class="container pt-5">
+      <router-link to="/hoteldescription">
         <div class="row result">
           <div class="col-4 pic-col">
             <img src="../images/ex.jpg">
@@ -87,6 +88,7 @@
             </div>
           </div>
         </div>
+      </router-link>
       </div>
     </div>
   </div>
