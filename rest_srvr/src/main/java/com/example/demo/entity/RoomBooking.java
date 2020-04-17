@@ -1,40 +1,61 @@
 package com.example.demo.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.time.LocalDate;
 
 @Entity
+@IdClass(RoomBookingId.class)
 public class RoomBooking {
     @Id
-    int id;
-    int dateIn;
-    int dateOut;
-    boolean allInclusive = false;
-    boolean fullPension = false;
-    boolean halfPension = false;
-    boolean extraBed = false;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    @Id
+    @Column(name="booking_id")
+    private long bookingId;
+    @Id
+    @Column(name="date_in")
+    private LocalDate dateIn;
+    @Id
+    @Column (name="date_out")
+    private LocalDate dateOut;
+    @Column(name="all_inclusive")
+    private boolean allInclusive = false;
+    @Column(name="full_pension")
+    private boolean fullPension = false;
+    @Column(name="half_pension")
+    private boolean halfPension = false;
+    @Column(name="extra_bed")
+   private  boolean extraBed = false;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public int getDateIn() {
+    public long getBookingId() {
+        return bookingId;
+    }
+
+    public void setBookingId(long bookingId) {
+        this.bookingId = bookingId;
+    }
+
+    public LocalDate getDateIn() {
         return dateIn;
     }
 
-    public void setDateIn(int dateIn) {
+    public void setDateIn(LocalDate dateIn) {
         this.dateIn = dateIn;
     }
 
-    public int getDateOut() {
+    public LocalDate getDateOut() {
         return dateOut;
     }
 
-    public void setDateOut(int dateOut) {
+    public void setDateOut(LocalDate dateOut) {
         this.dateOut = dateOut;
     }
 

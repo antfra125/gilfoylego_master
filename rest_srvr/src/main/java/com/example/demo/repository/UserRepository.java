@@ -11,8 +11,7 @@ import java.util.List;
 
 @Repository
 public interface UserRepository extends CrudRepository<User, Long> {
-    User findByFirstName(String name);
-    User findByUsername(String username);
-    User findByAddress(String address);
-    List<User> findAllByFirstName(String vadsom);
+    Iterable<User> findByUsername(String username);
+    Iterable<User> findByAddress(String address);
+    Iterable<User> findAllByFirstName(String vadsom);
 }
