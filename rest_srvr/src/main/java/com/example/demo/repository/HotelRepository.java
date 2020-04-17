@@ -11,27 +11,16 @@ import java.util.List;
 
 @Repository
 public interface HotelRepository extends CrudRepository<Hotel, Long> {
-    Hotel findById(int id);
-    Hotel findByCityId(int cityId);
-    Hotel findByName(String name);
-    Hotel findByHasRestaurant(Boolean hasRestaurant);
-    Hotel findByHasPool(Boolean hasPool);
-    Hotel findByHasKidsClub(Boolean hasKidsClub);
-    Hotel findByHasNightEntertainment(Boolean hasNightEntertainment);
- //   Hotel findByMToBeach(int mToBeach);
-   // Hotel findByMToCity(int mToCity);
-    Hotel findByRating(double rating);
-    Hotel findByDescription(String description);
+    Hotel findById(long id);
 
-
-    List<Hotel> findAllByName(String name);
-    List<Hotel> findAllByCityId(int cityId);
-    List<Hotel> findAllByHasRestaurant(Boolean hasRestaurant);
-    List<Hotel> findAllByHasPool(Boolean hasPool);
-    List<Hotel> findAllByHasKidsClub(Boolean hasKidsClub);
-    List<Hotel> findAllByHasNightEntertainment(Boolean hasNightEntertainment);
-    //List<Hotel> findAllByMToBeach(int mToBeach);
-    //List<Hotel> findAllByMToCity(int mToCity);
-    List<Hotel> findAllByRating(double rating);
-    List<Hotel> findAllByDescription(String description);
+    Iterable<Hotel> findAllByName(String name);
+    Iterable<Hotel> findAllByCityId(long cityId);
+    Iterable<Hotel> findAllByHasRestaurant(Boolean hasRestaurant);
+    Iterable<Hotel> findAllByHasPool(Boolean hasPool);
+    Iterable<Hotel> findAllByHasKidsClub(Boolean hasKidsClub);
+    Iterable<Hotel> findAllByHasEveningEntertainment(Boolean hasNightEntertainment);
+    Iterable<Hotel> findAllByMetersToBeach(int metersToBeach);
+    Iterable<Hotel> findAllByMetersToCityCenter(int metersToCityCenter);
+    Iterable<Hotel> findAllByRating(double rating);
+    Iterable<Hotel> findAllByDescription(String description);
 }

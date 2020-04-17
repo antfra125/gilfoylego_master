@@ -6,24 +6,34 @@ import javax.persistence.*;
 public class City {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
+    private long id;
 
-    int countryId;
-    String name;
+    @Column(name = "country_id")
+    private long countryId;
+    @Column
+    private String name;
 
-    public void setId(int id) {
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
         this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public long getCountryId() {
+        return countryId;
     }
 
-    public int getId() {
-        return id;
+    public void setCountryId(long countryId) {
+        this.countryId = countryId;
     }
 
     public String getName() {
         return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 }

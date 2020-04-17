@@ -1,40 +1,26 @@
 package com.example.demo.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 public class User {
     @Id
-    int id;
-    String username;
-    String email;
-    String password;
-    String phoneNr;
-    @Column(name="f_name")
-    String firstName;
-    @Column(name="l_name")
-    String lastName;
-
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
-
-    String address;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private int id;
+    @Column
+    private String username;
+    @Column
+    private String email;
+    @Column
+    private String password;
+    @Column
+    private String phone;
+    @Column(name="first_name")
+    private String firstName;
+    @Column(name="last_name")
+    private String lastName;
+    @Column
+    private String address;
 
     public int getId() {
         return id;
@@ -68,12 +54,28 @@ public class User {
         this.password = password;
     }
 
-    public String getPhoneNr() {
-        return phoneNr;
+    public String getPhone() {
+        return phone;
     }
 
-    public void setPhoneNr(String phoneNr) {
-        this.phoneNr = phoneNr;
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getAddress() {

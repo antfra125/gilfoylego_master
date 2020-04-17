@@ -20,8 +20,9 @@ public class CityController {
     //slå ihop, ta emot 3 pathvariabler (optional)
     @GetMapping("taaabort")
     public Optional<City> findById(@PathVariable int id) {
-            return Optional.of(cityRepository.findById(id));
+            return cityRepository.findById(id);
     }
+
 
     @GetMapping("taBort")
     public Iterable<City> findAllByName(@PathVariable String name) {
@@ -33,7 +34,7 @@ public class CityController {
         }
     }
     @GetMapping
-    public List<City> findAllByCountryId(@PathVariable int countryId) {
+    public Iterable<City> findAllByCountryId(@PathVariable long countryId) {
         return cityRepository.findAllByCountryId(countryId);
     }
 

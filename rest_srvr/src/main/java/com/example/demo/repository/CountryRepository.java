@@ -12,6 +12,6 @@ import java.util.Optional;
 
 @Repository
 public interface CountryRepository extends CrudRepository<Country, Long> {
-    Optional<Country> findById(int id);
+    Optional<Country> findById(long id);
     Iterable<Country> findAllByName(String name);
 }
