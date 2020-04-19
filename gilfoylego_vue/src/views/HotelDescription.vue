@@ -114,6 +114,23 @@ export default {
         roomtypes: ['Enkelrum', 'Dubbelrum', 'Familjerum'],
         show: true
       }
+    },
+    methods: {
+      onSubmit(evt) {
+        evt.preventDefault()
+        alert(JSON.stringify(this.form))
+      },
+      onReset(evt) {
+        evt.preventDefault()
+        this.form.amountOfGrownUps = ''
+        this.form.amountOfKids = ''
+        this.form.roomtype = 'Enkelrum'
+        this.form.extrabed = []
+        this.show = false
+        this.$nextTick(() => {
+          this.show = true
+        })
+      }
     }
-    }
+  }
 </script>
