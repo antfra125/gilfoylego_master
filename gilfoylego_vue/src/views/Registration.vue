@@ -1,44 +1,85 @@
 <template>
     <div class="d-flex justify-content-center pt-5">
-        <form class="text-center">
+        <b-form class="text-center" @submit="onSubmit" @reset="onReset" v-if="show">
             <div class="form-group">
                 <router-link to="/">Tillbaka till login</router-link>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Användarnamn">
+                <b-form-input
+                    type="text"
+                    v-model="form.username"
+                    required
+                    placeholder="Användarnamn"
+                ></b-form-input>
             </div>
             <div class="form-group">
                 <b-form-input
-          id="input-1"
-          v-model="form.email"
-          type="email"
-          required
-          placeholder="E-mail"
-        ></b-form-input>
+                    id="input-1"
+                    v-model="form.email"
+                    type="email"
+                    required
+                    placeholder="E-mail"
+                ></b-form-input>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" placeholder="Lösenord">
+                <b-form-input
+                    type="password"
+                    v-model="form.password"
+                    required
+                    placeholder="Lösenord"
+                ></b-form-input>
             </div>
             <div class="form-group">
-                <input type="password" class="form-control" placeholder="Upprepa lösenord">
+                <b-form-input
+                    type="password"
+                    v-model="form.passwordCheck"
+                    required
+                    placeholder="Upprepa lösenord"
+                ></b-form-input>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Förnamn">
+                <b-form-input
+                    type="text"
+                    v-model="form.firstName"
+                    required
+                    placeholder="Tilltalsnamn"
+                ></b-form-input>
             </div>
             <div class="form-group">
-                <input type="text" class="form-control" placeholder="Efternamn">
+                <b-form-input
+                    type="text"
+                    v-model="form.lastName"
+                    required
+                    placeholder="Efternamn"
+                ></b-form-input>
+            </div>
+            <div class="form-group d-flex">
+                <b-form-input
+                    type="text"
+                    v-model="form.street"
+                    required
+                    placeholder="Gata"
+                ></b-form-input>
+                <b-form-input
+                    type="text"
+                    v-model="form.zipCode"
+                    required
+                    placeholder="Postadress"
+                ></b-form-input>
+                <b-form-input
+                    type="text"
+                    v-model="form.city"
+                    required
+                    placeholder="Stad"
+                ></b-form-input>
             </div>
             <div class="form-group">
-                <input type="text" placeholder="Adress">
-                <input type="text" placeholder="Postadress">
-                <input type="text" placeholder="Stad">
+                <span><b-button type="submit">Registrera</b-button></span>
+                <span class="pl-2"><b-button type="reset">Töm</b-button></span>
             </div>
-            <div class="form-group">
-                <button>Registrera</button>
-            </div>
-            
-        </form>
+        </b-form>
     </div>
+    
 </template>
 
 <script>
@@ -46,12 +87,17 @@
     data() {
       return {
         form: {
-          email: '',
-          name: '',
-          food: null,
-          checked: []
+            username: '',
+            email: '',
+            password: '',
+            passwordCheck: '',
+            firstName: '',
+            lastName:'',
+            street: '',
+            zipCode: '',
+            city: '',
+
         },
-        foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
         show: true
       }
     },
@@ -63,11 +109,15 @@
       onReset(evt) {
         evt.preventDefault()
         // Reset our form values
+        this.form.username = ''
         this.form.email = ''
-        this.form.name = ''
-        this.form.food = null
-        this.form.checked = []
-        // Trick to reset/clear native browser form validation state
+        this.form.password = ''
+        this.form.passwordCheck = ''
+        this.form.firstName = ''
+        this.form.lastName = ''
+        this.form.street = ''
+        this.form.zipCode = ''
+        this.form.city = ''
         this.show = false
         this.$nextTick(() => {
           this.show = true

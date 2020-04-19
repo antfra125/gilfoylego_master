@@ -20,7 +20,7 @@
               Från
             </div>
             <div class="row">
-              <b-form-datepicker v-model="form.startDate" placeholder="Från"></b-form-datepicker>
+              <b-form-datepicker v-model="form.startDate" :min="sMin" :max="sMax" placeholder="Från"></b-form-datepicker>
             </div>
           </div>
           <div class="col-6">
@@ -42,10 +42,8 @@
             ></b-form-input>
           </div>
           <div class="row form-group d-flex justify-content-center">
-              <button><router-link to="/search">Sök</router-link></button>
-              <b-card class="mt-3" header="Form Data Result">
-      <pre class="m-0">{{ form }}</pre>
-    </b-card>
+            <span><b-button><router-link to="/search">Sök</router-link></b-button></span>
+            <span class="pl-2"><b-button type="reset">Töm</b-button></span>
           </div>
         </b-form>
     </div>
