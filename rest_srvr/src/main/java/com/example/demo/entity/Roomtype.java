@@ -3,7 +3,7 @@ package com.example.demo.entity;
 import javax.persistence.*;
 
 @Entity
-public class RoomType {
+public class Roomtype {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
