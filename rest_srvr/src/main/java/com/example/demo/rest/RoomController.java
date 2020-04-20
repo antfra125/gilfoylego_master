@@ -37,7 +37,7 @@ public class RoomController {
         return roomRepository.findAllBySizem2(sizem2);
     }
 
-    @GetMapping("size/{price}")
+    @GetMapping("price/{price}")
     public Iterable<Room> findAllRoomsByPrice(@PathVariable double price) {
         return roomRepository.findAllByPrice(price);
     }
