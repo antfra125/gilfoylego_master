@@ -12,7 +12,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/roomtype")
-public class RoomTypeController {
+public class RoomtypeController {
 
     @Autowired
     private RoomtypeRepository roomtypeRepository;
