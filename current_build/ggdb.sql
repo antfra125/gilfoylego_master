@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS `booking` (
   CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
--- Dumping data for table ggdb.booking: ~1 rows (approximately)
+-- Dumping data for table ggdb.booking: ~0 rows (approximately)
 /*!40000 ALTER TABLE `booking` DISABLE KEYS */;
 REPLACE INTO `booking` (`id`, `user_id`) VALUES
 	(1, 1);
@@ -54,7 +54,7 @@ CREATE TABLE IF NOT EXISTS `country` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
--- Dumping data for table ggdb.country: ~3 rows (approximately)
+-- Dumping data for table ggdb.country: ~2 rows (approximately)
 /*!40000 ALTER TABLE `country` DISABLE KEYS */;
 REPLACE INTO `country` (`id`, `name`) VALUES
 	(1, 'Sverige'),
@@ -154,7 +154,7 @@ CREATE TABLE IF NOT EXISTS `roombooking` (
   CONSTRAINT `roombooking_ibfk_2` FOREIGN KEY (`room_id`) REFERENCES `room` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Dumping data for table ggdb.roombooking: ~1 rows (approximately)
+-- Dumping data for table ggdb.roombooking: ~0 rows (approximately)
 /*!40000 ALTER TABLE `roombooking` DISABLE KEYS */;
 REPLACE INTO `roombooking` (`id`, `booking_id`, `room_id`, `date_in`, `date_out`, `all_inclusive`, `half_pension`, `full_pension`, `extra_bed`) VALUES
 	(1, 1, 1, '2020-06-10', '2020-06-10', b'1', b'1', b'1', b'1');
@@ -186,7 +186,7 @@ CREATE TABLE IF NOT EXISTS `user` (
   `last_name` varchar(30) DEFAULT NULL,
   `address` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
 
 -- Dumping data for table ggdb.user: ~2 rows (approximately)
 /*!40000 ALTER TABLE `user` DISABLE KEYS */;

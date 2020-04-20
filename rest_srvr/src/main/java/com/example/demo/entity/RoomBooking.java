@@ -13,11 +13,14 @@ public class RoomBooking {
     @Column(name="booking_id")
     private long bookingId;
     @Id
+    @Column(name="room_id")
+    private long roomId;
+    @Id
     @Column(name="date_in")
-    private LocalDate dateIn;
+    private LocalDate dateCheckin;
     @Id
     @Column (name="date_out")
-    private LocalDate dateOut;
+    private LocalDate dateCheckout;
     @Column(name="all_inclusive")
     private boolean allInclusive = false;
     @Column(name="full_pension")
@@ -26,6 +29,14 @@ public class RoomBooking {
     private boolean halfPension = false;
     @Column(name="extra_bed")
    private  boolean extraBed = false;
+
+    public long getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(long roomId) {
+        this.roomId = roomId;
+    }
 
     public long getId() {
         return id;
@@ -43,20 +54,20 @@ public class RoomBooking {
         this.bookingId = bookingId;
     }
 
-    public LocalDate getDateIn() {
-        return dateIn;
+    public LocalDate getDateCheckin() {
+        return dateCheckin;
     }
 
-    public void setDateIn(LocalDate dateIn) {
-        this.dateIn = dateIn;
+    public void setDateCheckin(LocalDate dateIn) {
+        this.dateCheckin = dateIn;
     }
 
-    public LocalDate getDateOut() {
-        return dateOut;
+    public LocalDate getDateCheckout() {
+        return dateCheckout;
     }
 
-    public void setDateOut(LocalDate dateOut) {
-        this.dateOut = dateOut;
+    public void setDateCheckout(LocalDate dateOut) {
+        this.dateCheckout = dateOut;
     }
 
     public boolean isAllInclusive() {

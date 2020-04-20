@@ -12,9 +12,10 @@ import java.util.Optional;
 
 @Repository
 public interface RoomRepository extends CrudRepository<Room, Long> {
+    Iterable<Room> findAll();
     Optional<Room> findById(long id);
     Iterable<Room> findAllByHotelId(long hotelId);
-    
+
     Iterable<Room> findAllById(long id);
     Iterable<Room> findAllBySizem2(int sizem2);
     Iterable<Room> findAllByPrice(double price);

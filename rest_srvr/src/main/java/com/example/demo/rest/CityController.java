@@ -9,7 +9,7 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("/rest/City") // Parent-URL:n för denna klass
+@RequestMapping("/city") // Parent-URL:n för denna klass
 public class CityController {
 
     //här vill jag ha Autowired, GetMapping, (och PostMapping?)
@@ -21,10 +21,12 @@ public class CityController {
 
     //slå ihop, ta emot 3 pathvariabler (optional)
     @GetMapping("/changeTHIS")
-    public Optional<City> findById(@PathVariable int id) {
+    public Optional<City> findById(@PathVariable long id) {
             return cityRepository.findById(id);
     }
 
+    @GetMapping("/alla")
+    public Iterable<City>findAll(){return cityRepository.findAll();}
 
     @GetMapping("/EDITHERE")
     public Iterable<City> findAllByName(@PathVariable String name) {

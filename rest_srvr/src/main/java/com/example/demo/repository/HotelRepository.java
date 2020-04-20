@@ -8,10 +8,11 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface HotelRepository extends CrudRepository<Hotel, Long> {
-    Hotel findById(long id);
+    Optional<Hotel> findById(long id);
 
     Iterable<Hotel> findAllByName(String name);
     Iterable<Hotel> findAllByCityId(long cityId);
