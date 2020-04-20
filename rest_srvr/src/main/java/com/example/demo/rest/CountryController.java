@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.Optional;
 
 @RestController
-@RequestMapping("rest/Country") // Parent-URL:n för denna klass
+@RequestMapping("/country") // Parent-URL:n för denna klass
 public class CountryController {
     @Autowired
     private CountryRepository countryRepository;
@@ -22,7 +22,7 @@ public class CountryController {
             return countryRepository.findAllByName(name);
         }
     }
-    @GetMapping ("tabortmig")
+    @GetMapping ("/tabortmig")
     public Optional<Country> findById( int id){
         return countryRepository.findById(id);
     }
