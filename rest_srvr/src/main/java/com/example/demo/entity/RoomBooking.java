@@ -12,6 +12,18 @@ public class RoomBooking {
     @Id
     @Column(name="booking_id")
     private long bookingId;
+
+    public long getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(long roomId) {
+        this.roomId = roomId;
+    }
+
+    @Id
+    @Column(name="room_id")
+    private long roomId;
     @Id
     @Column(name="date_in")
     private LocalDate dateIn;
