@@ -37,12 +37,12 @@ public class UserController {
 
 
     @PostMapping
-    public User createUser(@RequestBody User userToBeCreated) {
-        return userRepository.save(userToBeCreated);
+    void createUser(@RequestBody User userToBeCreated) {
+        userRepository.save(userToBeCreated);
     }
 
     @DeleteMapping("/{id}")
-    public void deleteUser(@PathVariable long id) {
+    public void deleteById(@PathVariable long id) {
         userRepository.deleteById(id);
     }
 

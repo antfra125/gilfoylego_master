@@ -1,6 +1,3 @@
-
-
-
 package com.example.demo.repository;
 
 import com.example.demo.entity.User;
@@ -15,6 +12,5 @@ public interface UserRepository extends CrudRepository<User, Long> {
     Iterable<User> findAllByUsername(String username);
     Optional<User> findById(Long id);
 
-    void createUser(User u);
     void deleteById(Long id);
 }

@@ -16,11 +16,9 @@ public interface RoomBookingRepository extends CrudRepository<RoomBooking, Long>
     Iterable<RoomBooking> findAll();
     Iterable<RoomBooking> findAllByBookingId(Long bookingId);
     Iterable<RoomBooking> findAllByRoomId(Long roomId);
-    Iterable<RoomBooking> findAllByDateIn(LocalDate dateIn);
-    Iterable<RoomBooking> findAllByDateOut(LocalDate dateOut);
+    Iterable<RoomBooking> findAllByDateCheckin(LocalDate dateCheckin);
+    Iterable<RoomBooking> findAllByDateCheckout(LocalDate dateCheckout);
 
-    void createRoomBooking(Room r, User u);
-    void deleteRoomBookingById(Long id);
 
 
 
