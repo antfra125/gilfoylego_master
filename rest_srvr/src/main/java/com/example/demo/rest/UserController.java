@@ -5,6 +5,7 @@ import com.example.demo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.Optional;
 
 
@@ -41,7 +42,18 @@ public class UserController {
         userRepository.save(userToBeCreated);
     }
 
-    @DeleteMapping("/{id}")
+
+    /**
+     * Skicka in en user,
+     * skriv över user i userRepository som har samma id
+     */
+
+    @PutMapping("/update")
+    public String updateUser(@RequestBody User user) {
+        userRepository.save(user);
+        return "Updated"; }
+
+    @DeleteMapping("/delete/{id}")
     public void deleteById(@PathVariable long id) {
         userRepository.deleteById(id);
     }

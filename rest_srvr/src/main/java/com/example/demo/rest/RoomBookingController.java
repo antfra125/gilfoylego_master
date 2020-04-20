@@ -15,4 +15,8 @@ public class RoomBookingController {
     void createRoomBooking(Room r, User u ){
 
     }
+    /*
+    void deleteRoomBookingById(Long id);
+
+    */
 }
