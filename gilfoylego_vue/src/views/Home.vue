@@ -20,7 +20,7 @@
               Från
             </div>
             <div class="row">
-              <b-form-datepicker v-model="startDate" :min="sMin" :max="sMax" placeholder="Från"></b-form-datepicker>
+              <b-form-datepicker v-model="form.startDate" :min="sMin" :max="sMax" placeholder="Från"></b-form-datepicker>
             </div>
           </div>
           <div class="col-6">
@@ -28,7 +28,7 @@
               Till
             </div>
             <div class="row">
-              <b-form-datepicker v-model="endDate" :min="eMin" :max="eMax" placeholder="Till"></b-form-datepicker>
+              <b-form-datepicker v-model="form.endDate" :min="eMin" :max="eMax" placeholder="Till"></b-form-datepicker>
             </div>
           </div>
         </div>
@@ -42,7 +42,8 @@
             ></b-form-input>
           </div>
           <div class="row form-group d-flex justify-content-center">
-              <button><router-link to="/search">Sök</router-link></button>
+            <span><b-button><router-link to="/search">Sök</router-link></b-button></span>
+            <span class="pl-2"><b-button type="reset">Töm</b-button></span>
           </div>
         </b-form>
     </div>
@@ -62,9 +63,25 @@ export default {
         endDate: '',
         amountOfRooms: ''
       },
-      foods: [{ text: 'Select One', value: null }, 'Carrots', 'Beans', 'Tomatoes', 'Corn'],
       show: true
       }
+    },
+    methods: {
+      onSubmit(evt) {
+        evt.preventDefault()
+        alert(JSON.stringify(this.form))
+      },
+      onReset(evt) {
+        evt.preventDefault()
+        this.form.search = ''
+        this.form.startDate = ''
+        this.form.endDate = ''
+        this.form.amountOfRooms = ''
+        this.show = false
+        this.$nextTick(() => {
+          this.show = true
+        })
+      }
     }
-}
+  }
 </script>
