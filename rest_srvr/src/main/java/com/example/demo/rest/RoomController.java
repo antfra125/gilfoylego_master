@@ -27,9 +27,9 @@ public class RoomController {
         return roomRepository.findById(id);
     }
 
-    @GetMapping("hotelrooms/{id}")
-    public Iterable<Room> findAllRoomsInHotel(@PathVariable long hotellId) {
-        return roomRepository.findAllByHotelId(hotellId);
+    @GetMapping("hotelrooms/{hotelId}")
+    public Iterable<Room> findAllRoomsInHotel(@PathVariable long hotelId) {
+        return roomRepository.findAllByHotelId(hotelId);
     }
 
     @GetMapping("size/{sizem2}")
