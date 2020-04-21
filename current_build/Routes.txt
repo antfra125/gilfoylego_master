@@ -58,6 +58,18 @@ localhost:8080/rest/country/{id}
 Country findAllByName:
 localhost:8080/rest/country/{name}
 -------------------------------------------------
+City findAll:
+localhost:8080/rest/city
+
+City findById:
+localhost:8080/rest/city/{id}
+
+City findAllByName:
+localhost:8080/rest/city/{name}
+
+City findAllByCountryId:
+localhost:8080/rest/city/{countryId}
+-------------------------------------------------
 
 
 
