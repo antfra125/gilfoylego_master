@@ -1,7 +1,7 @@
 <template>
   <section class="container HotelDescription">
-    <section class="row d-flexmb-1 mt-4">
-      <img class="col-4 d-flex" src="../images/hotel1.jpg" />
+    <section class="row d-flex mb-1 mt-4 top-section">
+      <img class="col-4 d-flex" :src="hotel.imgURL" />
       <span class="col-6 ml-5" id="thisIsTheDescription">
         <div class="row">
           <strong>{{hotel.name}}</strong>
@@ -140,6 +140,7 @@ export default {
       getHotel: async function() {
         let result = await fetch('http://localhost:8080/rest/hotel/1');
         this.hotel = await result.json();
+        console.log(this.hotel)
       }
     }
   }

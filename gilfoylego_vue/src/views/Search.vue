@@ -64,11 +64,11 @@
           <input type="number" class="form-control" min="0" placeholder="Maxavstånd till centrum">
         </div>
       </div>
-      <div class="container pt-5" v-for="hotel in hotels" :key="hotel.id">
+      <div class="container my-4 p-5 grey-border" v-for="hotel in hotels" :key="hotel.id">
       <router-link to="/hoteldescription">
         <div class="row result">
           <div class="col-4 pic-col">
-            <img src="../images/ex.jpg">
+            <img :src="hotel.imgURL">
           </div>
           <div class="col-8 pl-4">
             <div class="row">

@@ -34,10 +34,19 @@
 }
 
 .result img {
-    height: 25vh;
-    width: 11vw;
+    height: 205px;
+    width: 150px;
 }
 
 .extra img {
     height:2vh;
+}
+
+.top-section img {
+    height: 250px;
+    width: 340;
+}
+
+.grey-border {
+    border: 1px solid lightgrey;
 }
