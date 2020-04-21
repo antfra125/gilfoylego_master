@@ -13,6 +13,6 @@ import java.util.Optional;
 @Repository
 public interface CountryRepository extends CrudRepository<Country, Long> {
     Optional<Country> findById(long id);
-    Iterable<Country> findAllByName(String name);
+    //Iterable<Country> findAllByName(String name);
     Iterable<Country> findAll();
 }

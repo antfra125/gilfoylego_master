@@ -23,6 +23,7 @@ public class CountryController {
             return countryRepository.findById(id);
     }
 
+    /*
     @GetMapping ("/{name}")
     public Iterable<Country> findAllByName(@RequestParam(required = false) String name) {
         if (name == null) {
@@ -30,5 +31,5 @@ public class CountryController {
         } else {
             return countryRepository.findAllByName(name);
         }
-    }
+    }*/
 }
