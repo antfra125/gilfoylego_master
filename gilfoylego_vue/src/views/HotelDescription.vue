@@ -4,17 +4,13 @@
       <img class="col-4 d-flex" src="../images/hotel1.jpg" />
       <span class="col-6 ml-5" id="thisIsTheDescription">
         <div class="row">
-          <strong>Hotellets namn</strong>
+          <strong>{{hotel.name}}</strong>
         </div>
         <div class="row">
-          Omdöme: ?
+          Omdöme: {{hotel.rating}}
         </div>
         <div class="row">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pretium hendrerit est,
-        ac dignissim turpis. Vivamus non scelerisque metus. Aliquam erat volutpat. Aenean
-        malesuada ex magna, sit amet porta nisl efficitur nec. In neque ligula, pulvinar a
-        ante ac, viverra aliquet ligula. Praesent ac eros et mauris malesuada interdum.
-        Praesent in nisl mauris. Phasellus malesuada ac dui in maximus.
+          {{hotel.description}}
         </div>
       </span>
     </section>
@@ -26,30 +22,36 @@
 
     <section class="row">
       <div class="col extra">
-        <img class="pr-2" src="../images/v.png">
+        <img class="pr-2" src="../images/v.png" v-if="hotel.hasPool">
+        <img class="pr-2" src="../images/x.png" v-if="!hotel.hasPool">
         <label for="Pool">Pool</label>
       </div>
       <div class="col extra">
-        <img class="pr-2" src="../images/x.png">
+        <img class="pr-2" src="../images/v.png" v-if="hotel.hasKidsClub">
+        <img class="pr-2" src="../images/x.png" v-if="!hotel.hasKidsClub">
         <label for="KidsClubs">Barnklubb</label>
       </div>
     </section>
 
     <section class="row mb-3">
       <div class="col extra">
-        <img class="pr-2" src="../images/v.png">
+        <img class="pr-2" src="../images/v.png" v-if="hotel.hasRestaurant">
+        <img class="pr-2" src="../images/x.png" v-if="!hotel.hasRestaurant">
         <label for="Resturant">Resturang</label>
       </div>
       <div class="col extra">
-        <img class="pr-2" src="../images/v.png">
-        <label for="Entertaiment">Underhållning</label>
+        <img class="pr-2" src="../images/v.png" v-if="hotel.hasEveningEntertainment">
+        <img class="pr-2" src="../images/x.png" v-if="!hotel.hasEveningEntertainment">
+        <label for="Entertaiment">Kvällsunderhållning</label>
       </div>
     </section>
 
     <section class="row ml-4 mb-2">
       <div>
-        <p>Avstånd till stranden: {distanceBeach}</p>
-        <p>Avstånd till centrum: {distanceCentrum}</p>
+        <p v-if="hotel.metersToBeach < 1000">Avstånd till stranden: {{hotel.metersToBeach}} m</p>
+        <p v-if="hotel.metersToBeach > 1000">Avstånd till stranden: {{hotel.metersToBeach / 1000}} km</p>
+        <p v-if="hotel.metersToCityCenter < 1000">Avstånd till stranden: {{hotel.metersToCityCenter}} m</p>
+        <p v-if="hotel.metersToCityCenter > 1000">Avstånd till stranden: {{hotel.metersToCityCenter / 1000}} km</p>
       </div>
     </section>
 
@@ -113,6 +115,7 @@ export default {
         },
         roomtypes: ['Enkelrum', 'Dubbelrum', 'Familjerum'],
         show: true,
+        hotel: []
       }
     },
     mounted() {
@@ -135,9 +138,8 @@ export default {
         })
       },
       getHotel: async function() {
-        let result = await fetch('http://localhost:8080/rest/user/');
-        //result = await result.json();
-        console.log(await result.json());
+        let result = await fetch('http://localhost:8080/rest/hotel/1');
+        this.hotel = await result.json();
       }
     }
   }
