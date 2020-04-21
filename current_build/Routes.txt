@@ -28,3 +28,28 @@ localhost:8080/rest/user/{id}
 User findAllByUsername:
 localhost:8080/rest/user/{username}
 -------------------------------------------------
+*** ROUTES ***
+
+
+
+*HOTEL*
+/rest/hotel			<--- Hotel root
+
+/		 		<--- find all hotels
+/*      			<--- find one hotel with id equals *
+/name/{name} 			<--- find all with name containing * (ignoreCase)
+/cityId/{cityId}		<--- find all with cityId equals *
+/hasRestaurant			<--- find all with restaurant
+/hasPool			<--- find all with pool
+/hasEveningEntertainment	<--- find all with evening entertainment
+/beachCloserThan/{metersToBeach}<--- find all closer than (or equal to) * meters 
+/cityCenterCloserThan/{mToCity} <--- find all closer than (or equal to) * meters
+/rating/greaterEqual/{rating}	<--- find all with rating above (or equal to) *
+/rating/lessEqual/{rating}	<--- find all with rating below (or equal to) *
+/description/{description}	<--- find all with description containing * (ignoreCase)
+*
+
+
+
+
+
