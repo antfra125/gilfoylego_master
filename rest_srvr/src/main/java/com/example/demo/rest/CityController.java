@@ -18,24 +18,26 @@ public class CityController {
     private CityRepository cityRepository;
 
     @GetMapping
-    public Iterable<City> findAll(){
+    public Iterable<City> findAll() {
         return cityRepository.findAll();
     }
 
-    @GetMapping ("/{id}")
-    public Optional<City> findById(@RequestParam(required = false) long id) {
+    @GetMapping("/id/{id}")
+    public Optional<City> findById(@PathVariable(required = false) long id) {
         return cityRepository.findById(id);
     }
 
-    @GetMapping("/{name}")
-    public Iterable<City> findAllByName(@PathVariable String name) {
-        if (name == null){
+    @GetMapping("/name/{name}")
+    public Iterable<City> findAllByNameContains(@PathVariable(required = false) String name) {
+
+        if (name == null) {
+            //TODO lista ut varför vi aldrig hittar hit
             return cityRepository.findAll();
-        }
-        else {
-            return cityRepository.findAllByName(name);
+        } else {
+            return cityRepository.findAllByNameContains(name);
         }
     }
+
     @GetMapping("/country/{countryId}")
     public Iterable<City> findAllByCountryId(@PathVariable long countryId) {
         return cityRepository.findAllByCountryId(countryId);
