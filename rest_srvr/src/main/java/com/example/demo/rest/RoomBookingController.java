@@ -71,4 +71,4 @@ public class RoomBookingController {
     void deleteRoomBookingById(Long id);
 
     */
-}
+
