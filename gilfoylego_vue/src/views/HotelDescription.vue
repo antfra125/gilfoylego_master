@@ -112,8 +112,11 @@ export default {
           extrabed: []
         },
         roomtypes: ['Enkelrum', 'Dubbelrum', 'Familjerum'],
-        show: true
+        show: true,
       }
+    },
+    mounted() {
+      this.getHotel();
     },
     methods: {
       onSubmit(evt) {
@@ -130,6 +133,11 @@ export default {
         this.$nextTick(() => {
           this.show = true
         })
+      },
+      getHotel: async function() {
+        let result = await fetch('http://localhost:8080/rest/user/');
+        //result = await result.json();
+        console.log(await result.json());
       }
     }
   }
