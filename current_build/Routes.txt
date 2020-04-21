@@ -1,0 +1,30 @@
+Room findAll:
+localhost:8080/rest/room
+
+Room findById:
+localhost:8080/rest/room/{id}
+
+Room findAllInHotel:
+localhost:8080/rest/room/hotelrooms/{hotelId}
+
+Room findAllBySizeM2:
+localhost:8080/rest/room/size/{sizem2}
+
+Room findAllByPrice:
+localhost:8080/rest/room/price/{price}
+-------------------------------------------------
+Roomtype findAll:
+localhost:8080/rest/roomtype
+
+Roomtype findById:
+localhost:8080/rest/roomtype/{id}
+-------------------------------------------------
+User findAll:
+localhost:8080/rest/user
+
+User findById:
+localhost:8080/rest/user/{id}
+
+User findAllByUsername:
+localhost:8080/rest/user/{username}
+-------------------------------------------------
