@@ -32,13 +32,27 @@ public class RoomController {
         return roomRepository.findAllByHotelId(hotelId);
     }
 
-    @GetMapping("size/{sizem2}")
-    public Iterable<Room> findAllRoomsBySizeM2(@PathVariable int sizem2) {
-        return roomRepository.findAllBySizem2(sizem2);
+    @GetMapping("size/greaterEqual/{sizem2}")
+    public Iterable<Room> findAllRoomsBySizem2GreaterThanEqual(@PathVariable int sizem2) {
+        return roomRepository.findAllBySizem2GreaterThanEqual(sizem2);
+    }
+    @GetMapping("size/lessEqual/{sizem2}")
+    public Iterable<Room> findAllRoomsBySizem2LessThanEqual(@PathVariable int sizem2) {
+        return roomRepository.findAllBySizem2LessThanEqual(sizem2);
     }
 
-    @GetMapping("price/{price}")
-    public Iterable<Room> findAllRoomsByPrice(@PathVariable double price) {
-        return roomRepository.findAllByPrice(price);
+    @GetMapping("price/greaterEqual/{price}")
+    public Iterable<Room> findAllRoomsByPriceGreaterThanEqual(@PathVariable double price) {
+        return roomRepository.findAllByPriceGreaterThanEqual(price);
+    }
+
+    @GetMapping("price/lessEqual/{price}")
+    public Iterable<Room> findAllRoomsByPriceLessThanEqual(@PathVariable double price) {
+        return roomRepository.findAllByPriceLessThanEqual(price);
+    }
+
+    @GetMapping("price/equals/{price}")
+    public Iterable<Room> findAllRoomsByPriceEquals(@PathVariable double price) {
+        return roomRepository.findAllByPriceEquals(price);
     }
 }

@@ -1,75 +1,85 @@
-Room findAll:
-localhost:8080/rest/room
-
-Room findById:
-localhost:8080/rest/room/{id}
-
-Room findAllInHotel:
-localhost:8080/rest/room/hotelrooms/{hotelId}
-
-Room findAllBySizeM2:
-localhost:8080/rest/room/size/{sizem2}
-
-Room findAllByPrice:
-localhost:8080/rest/room/price/{price}
--------------------------------------------------
-Roomtype findAll:
-localhost:8080/rest/roomtype
-
-Roomtype findById:
-localhost:8080/rest/roomtype/{id}
--------------------------------------------------
-User findAll:
-localhost:8080/rest/user
-
-User findById:
-localhost:8080/rest/user/{id}
-
-INAKTIV JUST NU - User findAllByUsername:
-		  localhost:8080/rest/user/username/{username}
--------------------------------------------------
 *** ROUTES ***
 
+localhost:8080			<--- Root route
 
-
+-----------------------------------------------
 *HOTEL*
 /rest/hotel			<--- Hotel root
 
 /		 		<--- find all hotels
-/*      			<--- find one hotel with id equals *
-/name/{name} 			<--- find all with name containing * (ignoreCase)
-/cityId/{cityId}		<--- find all with cityId equals *
+/*      			<--- find one hotel with id equal to *
+/name/* 			<--- find all with name containing * (ignoreCase)
+/cityId/*			<--- find all with cityId equal to *
 /hasRestaurant			<--- find all with restaurant
 /hasPool			<--- find all with pool
 /hasEveningEntertainment	<--- find all with evening entertainment
-/beachCloserThan/{metersToBeach}<--- find all closer than (or equal to) * meters 
-/cityCenterCloserThan/{mToCity} <--- find all closer than (or equal to) * meters
-/rating/greaterEqual/{rating}	<--- find all with rating above (or equal to) *
-/rating/lessEqual/{rating}	<--- find all with rating below (or equal to) *
-/description/{description}	<--- find all with description containing * (ignoreCase)
-*
+/beachCloserThan/*		<--- find all closer than (or equal to) * meters 
+/cityCenterCloserThan/*		<--- find all closer than (or equal to) * meters
+/rating/greaterEqual/*		<--- find all with rating above (or equal to) *
+/rating/lessEqual/*		<--- find all with rating below (or equal to) *
+/description/*			<--- find all with description containing * (ignoreCase)
+
+
 -------------------------------------------------
-Country findAll:
-localhost:8080/rest/country
+*USER*
+/rest/user			<--- User root
 
-Country findById:
-localhost:8080/rest/country/{id}
+/				<--- find all users
+/*				<--- find one user with id equal to *
 
-INAKTIV JUST NU - Country findAllByName:
-		  localhost:8080/rest/country/{name}
 -------------------------------------------------
-City findAll:
-localhost:8080/rest/city
+*COUNTRY*
+/rest/country			<--- Country root
 
-City findById:
-localhost:8080/rest/city/{id}
+/				<--- find all countries
+/*				<--- find one country with id equals *
+/name/*				<--- find all countries containing * (ignoreCase)-------------------------------------------------
 
-INAKTIV JUST NU - City findAllByName:
-		  localhost:8080/rest/city/{name}
-
-City findAllByCountryId:
-localhost:8080/rest/city/{countryId}
 -------------------------------------------------
+*CITY*
+/rest/city			<--- City root
+
+/				<--- find all cities
+/*				<--- find one city with id equal to *
+/country/*			<--- find all cities with countryId equal to *
+
+-------------------------------------------------
+*ROOM*
+/rest/room			<--- Room root
+
+/				<--- find all rooms
+/*				<--- find one room with id equal to *
+/hotelrooms/*			<--- find all rooms with hotelId equal to *
+/size/greaterEqual/*		<--- find all with size above (or equal to) *
+/size/lessEqual/*		<--- find all with size below (or equal to) *
+/price/equals/*			<--- find all with price equals * 
+/price/greaterEqual/*		<--- find all with price above (or equal to) *
+/price/lessEqual/*		<--- find all with price below (or equal to) *
+
+-------------------------------------------------
+*ROOMTYPE*
+/rest/roomtype			<--- Roomtype root
+
+/				<--- find all roomtypes
+/*				<--- find one roomtype with id equal to *
+
+-------------------------------------------------
+*BOOKING*
+/rest/booking			<--- Booking root
+
+/				<--- find all bookings
+/*				<--- find one booking with id equal to *
+
+-------------------------------------------------
+*ROOMBOOKING*
+/rest/roombooking		<--- RoomBooking root
+
+/				<--- find all roombookings
+/*				<--- find one roombooking with id equal to *
+/room/*				<--- find all roombooking with roomId equal to *
+/booking/*			<--- find all with bookingId 
+/*
+
 
 
 

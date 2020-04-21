@@ -16,5 +16,9 @@ public interface RoomRepository extends CrudRepository<Room, Long> {
     Optional<Room> findById(long id);
     Iterable<Room> findAllByHotelId(long hotelId);
     Iterable<Room> findAllBySizem2(int sizem2);
-    Iterable<Room> findAllByPrice(double price);
+    Iterable<Room> findAllBySizem2GreaterThanEqual(int sizem2);
+    Iterable<Room> findAllBySizem2LessThanEqual(int sizem2);
+    Iterable<Room> findAllByPriceEquals(double price);
+    Iterable<Room> findAllByPriceGreaterThanEqual(double price);
+    Iterable<Room> findAllByPriceLessThanEqual(double price);
 }
