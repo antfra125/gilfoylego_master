@@ -4,6 +4,7 @@ import com.example.demo.entity.Hotel;
 import com.example.demo.repository.HotelRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -22,37 +23,55 @@ public class HotelController {
     }
 
     @GetMapping("/{id}")
-    public Optional<Hotel> findById(long id){
-        return hotelRepository.findById(id);
+    public Optional<Hotel> findByIdEquals(@PathVariable long id){
+        return hotelRepository.findByIdEquals(id);
     }
     @GetMapping("/name/{name}")
-    public Iterable<Hotel> findAllByName(String name){
-        return hotelRepository.findAllByName(name);
+    public Iterable<Hotel> findAllByNameContains(@PathVariable String name){
+        return hotelRepository.findAllByNameContains(name);
     }
     @GetMapping("/cityId/{cityId}")
-    public Iterable<Hotel> findAllByCityId(long cityId){
-        return hotelRepository.findAllByCityId(cityId);
+    public Iterable<Hotel> findAllByCityIdEquals(@PathVariable long cityId){
+        return hotelRepository.findAllByCityIdEquals(cityId);
     }
     @GetMapping("/hasRestaurant")
     public Iterable<Hotel> findAllByHasRestaurant(boolean hasRestaurant){
-        return hotelRepository.findAllByHasRestaurant(hasRestaurant);
+        return hotelRepository.findAllByHasRestaurant(!hasRestaurant);
     }
     @GetMapping("/hasPool")
     public Iterable<Hotel> findAllByHasPool(boolean hasPool){
-        return hotelRepository.findAllByHasPool(hasPool);
+        return hotelRepository.findAllByHasPool(!hasPool);
     }
     @GetMapping("/hasKidsClub")
     public Iterable<Hotel> findAllByHasKidsClub(boolean hasKidsClub){
-        return hotelRepository.findAllByHasKidsClub(hasKidsClub);
+        return hotelRepository.findAllByHasKidsClub(!hasKidsClub);
     }
     @GetMapping("/hasEveningEntertainment")
     public Iterable<Hotel> findAllByHasEveningEntertainment(boolean hasEveningEntertainment){
-        return hotelRepository.findAllByHasEveningEntertainment(hasEveningEntertainment);
+        return hotelRepository.findAllByHasEveningEntertainment(!hasEveningEntertainment);
     }
     @GetMapping("/beachCloserThan/{metersToBeach}")
-    public Iterable<Hotel> findAllByMetersToBeach(int metersToBeach){
-        var h = hotelRepository.findAllByMetersToBeach(metersToBeach);
-        return null;//TODO this
+    public Iterable<Hotel> findAllByMetersToBeachIsLessThanEqual(@PathVariable int metersToBeach){
+
+        return hotelRepository.findAllByMetersToBeachIsLessThanEqual(metersToBeach);
     }
+    @GetMapping("/cityCenterCloserThan/{metersToCityCenter}")
+    public Iterable<Hotel> findAllByMetersToCityCenterIsLessThanEqual(@PathVariable int metersToCityCenter){
+
+        return hotelRepository.findAllByMetersToCityCenterIsLessThanEqual(metersToCityCenter);
+    }
+    @GetMapping("/rating/greaterEqual/{rating}")
+    public Iterable<Hotel> findAllByRatingIsGreaterThanEqual(@PathVariable double rating){
+        return hotelRepository.findAllByRatingIsGreaterThanEqual(rating);
+    }
+    @GetMapping("/rating/lessEqual/{rating}")
+    public Iterable<Hotel> findAllByRatingIsLessThanEqual(@PathVariable double rating){
+        return hotelRepository.findAllByRatingIsLessThanEqual(rating);
+    }
+    @GetMapping("/description/{description}")
+    public Iterable<Hotel> findAllByDescriptionContains(@PathVariable String description){
+        return hotelRepository.findAllByDescriptionContains(description);
+    }
+
 
 }
