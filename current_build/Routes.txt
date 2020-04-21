@@ -25,8 +25,8 @@ localhost:8080/rest/user
 User findById:
 localhost:8080/rest/user/{id}
 
-User findAllByUsername:
-localhost:8080/rest/user/username/{username}
+INAKTIV JUST NU - User findAllByUsername:
+		  localhost:8080/rest/user/username/{username}
 -------------------------------------------------
 *** ROUTES ***
 
@@ -55,8 +55,8 @@ localhost:8080/rest/country
 Country findById:
 localhost:8080/rest/country/{id}
 
-Country findAllByName:
-localhost:8080/rest/country/{name}
+INAKTIV JUST NU - Country findAllByName:
+		  localhost:8080/rest/country/{name}
 -------------------------------------------------
 City findAll:
 localhost:8080/rest/city
@@ -64,8 +64,8 @@ localhost:8080/rest/city
 City findById:
 localhost:8080/rest/city/{id}
 
-City findAllByName:
-localhost:8080/rest/city/{name}
+INAKTIV JUST NU - City findAllByName:
+		  localhost:8080/rest/city/{name}
 
 City findAllByCountryId:
 localhost:8080/rest/city/{countryId}
