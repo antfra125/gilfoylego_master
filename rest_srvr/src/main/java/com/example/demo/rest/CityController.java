@@ -22,7 +22,7 @@ public class CityController {
         return cityRepository.findAll();
     }
 
-    @GetMapping("/id/{id}")
+    @GetMapping("/{id}")
     public Optional<City> findById(@PathVariable(required = false) long id) {
         return cityRepository.findById(id);
     }

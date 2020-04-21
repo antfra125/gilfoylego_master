@@ -19,7 +19,7 @@ public class CountryController {
     }
 
     @GetMapping ("/{id}")
-    public Optional<Country> findById(@RequestParam(required = false) long id) {
+    public Optional<Country> findById(@PathVariable(required = false) long id) {
             return countryRepository.findById(id);
     }
 
