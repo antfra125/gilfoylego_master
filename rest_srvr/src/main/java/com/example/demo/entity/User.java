@@ -2,7 +2,7 @@ package com.example.demo.entity;
 
 import javax.persistence.*;
 
-@Entity
+@Entity(name="users")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -11,7 +11,7 @@ public class User {
     private String username;
     @Column
     private String email;
-    @Column
+    @Column(name="pw")
     private String password;
     @Column
     private String phone;

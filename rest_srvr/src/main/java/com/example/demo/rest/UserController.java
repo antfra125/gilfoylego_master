@@ -5,7 +5,6 @@ import com.example.demo.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
 import java.util.Optional;
 
 
@@ -18,23 +17,34 @@ public class UserController {
     private UserRepository userRepository;
 
 
-  @GetMapping
-  public Iterable<User> findAll(){
-      return userRepository.findAll();
-  }
+    @GetMapping
+    public Iterable<User> findAll() {
+        return userRepository.findAll();
+    }
+
     @GetMapping("/{id}")
     public Optional<User> getSpecificUser(@PathVariable long id) {
         return userRepository.findById(id);
     }
 
-    public Iterable<User> findAllByUsername(@RequestParam(required = false) String username) {
-        if (username == null) {
-            return userRepository.findAll();
-        } else {
-            return userRepository.findAllByUsername(username);
-        }
-    }
+    //behövs ens denna? jag tror inte det   [MVH MAGNUS]
+    /*@GetMapping("/username/{username}")
+    public Iterable<User> findAllByUsername(@PathVariable(required = false) String username) {
+        System.out.println("username: "+username);
+      if(username == null){
+                System.out.println("");
+                return userRepository.findAll();
+            } else if (username.isBlank()) {
 
+                System.out.println("isBlank");
+                return userRepository.findAll();
+            }
+            else{
+                System.out.println("inte null, försöker ngt");
+                return userRepository.findAllByUsernameContains(username);
+            }
+    }
+     */
 
 
     @PostMapping
@@ -42,20 +52,17 @@ public class UserController {
         userRepository.save(userToBeCreated);
     }
 
-
-    /**
-     * Skicka in en user,
-     * skriv över user i userRepository som har samma id
-     */
-
     @PutMapping("/update")
     public String updateUser(@RequestBody User user) {
         userRepository.save(user);
-        return "Updated"; }
+        return "Updated";
+    }
 
     @DeleteMapping("/delete/{id}")
-    public void deleteById(@PathVariable long id) {
+    public String deleteById(@PathVariable long id) {
+        System.out.println("[DEBUG] Trying to delete.");
         userRepository.deleteById(id);
+        return "Deleted";
     }
 
 

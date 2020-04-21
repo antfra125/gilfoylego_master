@@ -13,17 +13,23 @@ public class CountryController {
     @Autowired
     private CountryRepository countryRepository;
 
-    //slå ihop till en GetMapping
     @GetMapping
+    public Iterable<Country> findAll(){
+        return countryRepository.findAll();
+    }
+
+    @GetMapping ("/{id}")
+    public Optional<Country> findById(@PathVariable(required = false) long id) {
+            return countryRepository.findById(id);
+    }
+
+    /*
+    @GetMapping ("/{name}")
     public Iterable<Country> findAllByName(@RequestParam(required = false) String name) {
         if (name == null) {
             return countryRepository.findAll();
         } else {
             return countryRepository.findAllByName(name);
         }
-    }
-    @GetMapping ("/tabortmig")
-    public Optional<Country> findById( int id){
-        return countryRepository.findById(id);
-    }
+    }*/
 }
