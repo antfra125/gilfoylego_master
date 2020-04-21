@@ -27,13 +27,24 @@ public class UserController {
         return userRepository.findById(id);
     }
 
-    public Iterable<User> findAllByUsername(@RequestParam(required = false) String username) {
-        if (username == null) {
-            return userRepository.findAll();
-        } else {
-            return userRepository.findAllByUsername(username);
-        }
+    //behövs ens denna? jag tror inte det   [MVH MAGNUS]
+    /*@GetMapping("/username/{username}")
+    public Iterable<User> findAllByUsername(@PathVariable(required = false) String username) {
+        System.out.println("username: "+username);
+      if(username == null){
+                System.out.println("");
+                return userRepository.findAll();
+            } else if (username.isBlank()) {
+
+                System.out.println("isBlank");
+                return userRepository.findAll();
+            }
+            else{
+                System.out.println("inte null, försöker ngt");
+                return userRepository.findAllByUsernameContains(username);
+            }
     }
+     */
 
 
 
