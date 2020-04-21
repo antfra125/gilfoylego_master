@@ -64,7 +64,7 @@
           <input type="number" class="form-control" min="0" placeholder="Maxavstånd till centrum">
         </div>
       </div>
-      <div class="container pt-5">
+      <div class="container pt-5" v-for="hotel in hotels" :key="hotel.id">
       <router-link to="/hoteldescription">
         <div class="row result">
           <div class="col-4 pic-col">
@@ -72,16 +72,18 @@
           </div>
           <div class="col-8 pl-4">
             <div class="row">
-              <strong>Hotellets Namn</strong>
+              <strong>{{hotel.name}}</strong>
             </div>
             <div class="row">
-              Omdöme
+              Omdöme: {{hotel.rating}}
             </div>
             <div class="row">
-              Avstånd till stand
+              <p v-if="hotel.metersToBeach < 1000">Avstånd till stranden: {{hotel.metersToBeach}} m</p>
+              <p v-if="hotel.metersToBeach > 1000">Avstånd till stranden: {{hotel.metersToBeach / 1000}} km</p>
             </div>
             <div class="row">
-              Avstånd till centrum
+              <p v-if="hotel.metersToCityCenter < 1000">Avstånd till stranden: {{hotel.metersToCityCenter}} m</p>
+              <p v-if="hotel.metersToCityCenter > 1000">Avstånd till stranden: {{hotel.metersToCityCenter / 1000}} km</p>
             </div>
             <div class="row d-flex justify-content-end">
               Från ?kr
@@ -94,3 +96,23 @@
   </div>
   
 </template>
+
+<script>
+export default {
+    data() {
+      return {
+        show: true,
+        hotels: []
+      }
+    },
+    mounted() {
+      this.getHotels();
+    },
+    methods: {
+      getHotels: async function() {
+        let result = await fetch('http://localhost:8080/rest/hotel');
+        this.hotels = await result.json();
+      }
+    }
+  }
+</script>
