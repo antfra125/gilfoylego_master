@@ -26,7 +26,7 @@ User findById:
 localhost:8080/rest/user/{id}
 
 User findAllByUsername:
-localhost:8080/rest/user/{username}
+localhost:8080/rest/user/username/{username}
 -------------------------------------------------
 *** ROUTES ***
 
@@ -48,7 +48,28 @@ localhost:8080/rest/user/{username}
 /rating/lessEqual/{rating}	<--- find all with rating below (or equal to) *
 /description/{description}	<--- find all with description containing * (ignoreCase)
 *
+-------------------------------------------------
+Country findAll:
+localhost:8080/rest/country
 
+Country findById:
+localhost:8080/rest/country/{id}
+
+Country findAllByName:
+localhost:8080/rest/country/{name}
+-------------------------------------------------
+City findAll:
+localhost:8080/rest/city
+
+City findById:
+localhost:8080/rest/city/{id}
+
+City findAllByName:
+localhost:8080/rest/city/{name}
+
+City findAllByCountryId:
+localhost:8080/rest/city/{countryId}
+-------------------------------------------------
 
 
 
