@@ -1,7 +1,7 @@
 <template>
   <section class="container HotelDescription">
     <section class="row d-flex mb-1 mt-4 top-section">
-      <img class="col-4 d-flex" :src="hotel.imgURL" />
+      <img class="col-4 d-flex" :src="hotel.imgUrl" />
       <span class="col-6 ml-5" id="thisIsTheDescription">
         <div class="row">
           <strong>{{hotel.name}}</strong>

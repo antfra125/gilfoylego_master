@@ -68,7 +68,7 @@
       <router-link to="/hoteldescription">
         <div class="row result">
           <div class="col-4 pic-col">
-            <img :src="hotel.imgURL">
+            <img :src="hotel.imgUrl">
           </div>
           <div class="col-8 pl-4">
             <div class="row">
