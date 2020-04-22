@@ -2,6 +2,51 @@
     font-size: x-large;
 }
 
+.title img {
+    height: 5vh;
+}
+
 .user img {
     height: 3vh;
+}
+
+#addOn{
+    width: 35px;
+}
+.banner img {
+    width: 100%;
+}
+
+.custom-search-button img {
+    height: 2vh;
+}
+
+.sort img {
+    height: 2vh;
+}
+
+.result {
+    width: 36vw;
+}
+
+.border-check {
+    border: 1px dotted black;
+}
+
+.result img {
+    height: 205px;
+    width: 150px;
+}
+
+.extra img {
+    height:2vh;
+}
+
+.top-section img {
+    height: 250px;
+    width: 340px;
+}
+
+.grey-border {
+    border: 1px solid lightgrey;
 }

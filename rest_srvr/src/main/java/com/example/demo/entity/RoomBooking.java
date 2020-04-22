@@ -4,8 +4,8 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "room_booking")
 @IdClass(RoomBookingId.class)
-@Table(name="room_booking")
 public class RoomBooking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
