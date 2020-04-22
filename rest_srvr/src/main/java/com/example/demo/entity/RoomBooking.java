@@ -5,7 +5,6 @@ import java.time.LocalDate;
 
 @Entity
 @IdClass(RoomBookingId.class)
-@Table(name="room_booking")
 public class RoomBooking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

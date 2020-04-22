@@ -1,0 +1,128 @@
+<template>
+    <div class="d-flex justify-content-center pt-5">
+        <b-form class="text-center" @submit="onSubmit" @reset="onReset" v-if="show">
+            <div class="form-group">
+                <router-link to="/">Tillbaka till login</router-link>
+            </div>
+            <div class="form-group">
+                <b-form-input
+                    type="text"
+                    v-model="form.username"
+                    required
+                    placeholder="Användarnamn"
+                ></b-form-input>
+            </div>
+            <div class="form-group">
+                <b-form-input
+                    id="input-1"
+                    v-model="form.email"
+                    type="email"
+                    required
+                    placeholder="E-mail"
+                ></b-form-input>
+            </div>
+            <div class="form-group">
+                <b-form-input
+                    type="password"
+                    v-model="form.password"
+                    required
+                    placeholder="Lösenord"
+                ></b-form-input>
+            </div>
+            <div class="form-group">
+                <b-form-input
+                    type="password"
+                    v-model="form.passwordCheck"
+                    required
+                    placeholder="Upprepa lösenord"
+                ></b-form-input>
+            </div>
+            <div class="form-group">
+                <b-form-input
+                    type="text"
+                    v-model="form.firstName"
+                    required
+                    placeholder="Tilltalsnamn"
+                ></b-form-input>
+            </div>
+            <div class="form-group">
+                <b-form-input
+                    type="text"
+                    v-model="form.lastName"
+                    required
+                    placeholder="Efternamn"
+                ></b-form-input>
+            </div>
+            <div class="form-group d-flex">
+                <b-form-input
+                    type="text"
+                    v-model="form.street"
+                    required
+                    placeholder="Gata"
+                ></b-form-input>
+                <b-form-input
+                    type="text"
+                    v-model="form.zipCode"
+                    required
+                    placeholder="Postadress"
+                ></b-form-input>
+                <b-form-input
+                    type="text"
+                    v-model="form.city"
+                    required
+                    placeholder="Stad"
+                ></b-form-input>
+            </div>
+            <div class="form-group">
+                <span><b-button type="submit">Registrera</b-button></span>
+                <span class="pl-2"><b-button type="reset">Töm</b-button></span>
+            </div>
+        </b-form>
+    </div>
+    
+</template>
+
+<script>
+  export default {
+    data() {
+      return {
+        form: {
+            username: '',
+            email: '',
+            password: '',
+            passwordCheck: '',
+            firstName: '',
+            lastName:'',
+            street: '',
+            zipCode: '',
+            city: '',
+
+        },
+        show: true
+      }
+    },
+    methods: {
+      onSubmit(evt) {
+        evt.preventDefault()
+        alert(JSON.stringify(this.form))
+      },
+      onReset(evt) {
+        evt.preventDefault()
+        // Reset our form values
+        this.form.username = ''
+        this.form.email = ''
+        this.form.password = ''
+        this.form.passwordCheck = ''
+        this.form.firstName = ''
+        this.form.lastName = ''
+        this.form.street = ''
+        this.form.zipCode = ''
+        this.form.city = ''
+        this.show = false
+        this.$nextTick(() => {
+          this.show = true
+        })
+      }
+    }
+  }
+</script>
