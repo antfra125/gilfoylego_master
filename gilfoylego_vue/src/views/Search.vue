@@ -3,7 +3,7 @@
     <div>
       <div class="container">
         <div class="row form-group d-flex justify-content-center input-group mt-auto">
-          <input type="text" class="form-control" placeholder="Hotell, stad eller land">
+          <input type="text" class="form-control" placeholder="Hotell, stad eller land" v-model="search">
           <div class="input-group-append">
             <button class="form-control custom-search-button"><img class="pb-1" src="../images/search.png"></button>
           </div>
@@ -64,7 +64,7 @@
           <input type="number" class="form-control" min="0" placeholder="Maxavstånd till centrum">
         </div>
       </div>
-      <div class="container my-4 p-5 grey-border" v-for="hotel in hotels" :key="hotel.id">
+      <div class="container my-4 p-5 grey-border" v-for="hotel in filteredHotels" :key="hotel.id">
       <router-link to="/hoteldescription">
         <div class="row result">
           <div class="col-4 pic-col">
@@ -101,6 +101,7 @@
 export default {
     data() {
       return {
+        search: '',
         show: true,
         hotels: []
       }
@@ -112,6 +113,13 @@ export default {
       getHotels: async function() {
         let result = await fetch('http://localhost:8090/rest/hotel');
         this.hotels = await result.json();
+      }
+    },
+  computed: {
+  filteredHotels (){
+    return this.hotels.filter(hotel => {
+    return hotel.name.toLowerCase().includes(this.search.toLowerCase())
+      })
       }
     }
   }
