@@ -8,13 +8,17 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface RoomRepository extends CrudRepository<Room, Long> {
-    Room findById(int id);
-    Room findByHotelId(int hotelId);
-    
-    List<Room> findAllById(int id);
-    List<Room> findAllByM2(int m2);
-    List<Room> findAllByPrice(double price);
+    Iterable<Room> findAll();
+    Optional<Room> findById(long id);
+    Iterable<Room> findAllByHotelId(long hotelId);
+    Iterable<Room> findAllBySizem2(int sizem2);
+    Iterable<Room> findAllBySizem2GreaterThanEqual(int sizem2);
+    Iterable<Room> findAllBySizem2LessThanEqual(int sizem2);
+    Iterable<Room> findAllByPriceEquals(double price);
+    Iterable<Room> findAllByPriceGreaterThanEqual(double price);
+    Iterable<Room> findAllByPriceLessThanEqual(double price);
 }

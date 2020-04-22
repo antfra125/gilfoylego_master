@@ -7,11 +7,15 @@ import com.example.demo.entity.City;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
-import java.util.List;
+import java.util.Optional;
 
 @Repository
 public interface CityRepository extends CrudRepository<City, Long> {
-    City findById(int id);
-    List<City> findAllByName(String name);
-    List<City> findAllByCountryId(int countryId);
+    Optional<City> findById(long id);
+
+    Iterable<City> findAll();
+
+    Iterable<City> findAllByNameContains(String name);
+
+    Iterable<City> findAllByCountryId(long countryId);
 }

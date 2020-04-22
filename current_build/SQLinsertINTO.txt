@@ -1,0 +1,40 @@
+INSERT INTO Country VALUES (1,'Sverige');
+INSERT INTO Country VALUES (2,'Danmark');
+INSERT INTO Country VALUES(3,'Norge');
+
+INSERT INTO City VALUES (1,1,'Sveg');
+INSERT INTO City VALUES (2,1,'Stockholm');
+INSERT INTO City VALUES (3,2,'Köpenhamn');
+INSERT INTO City VALUES (4,2,'Tuborg');
+INSERT INTO City VALUES (5,3,'Oslo');
+INSERT INTO City VALUES (6,3,'Bergen');
+
+INSERT INTO Hotel VALUES (1,1,'Svegs Stadshotell',1,0,0,1,20,4000,'https://www.safarihotelsnamibia.com/wp-content/uploads/2014/11/Safari-Court-Hotel-Pool.jpg','Ett helt ok hotell',1.8);
+INSERT INTO Hotel VALUES (2,2,'Grand Hôtel',1,1,0,0,50,2000,'https://www.ma.com/wp-content/uploads/2013/10/morris-adjmi-architects-wythe-hotel-3.jpg','Long haired freaky people need not apply',8.2);
+INSERT INTO Hotel VALUES (3,2,'Strandhotellet',1,1,1,1,10000,5,'https://www.excelsior.com.mt/wp-content/gallery/hotel-gallery/Outdoor-Pool-at-Night.jpg','Elegant hotell vid till badet.',5.0);
+INSERT INTO Hotel VALUES (4,3,'BnBodega',1,0,0,1,300,400,'http://www.idesignarch.com/wp-content/uploads/Oxford-Malmaison-Hotel_1.jpg','Pittoreskt hotell vid kajen', 7.3);
+INSERT INTO Hotel VALUES (5,6,'Den norske hotel',0,0,1,0,7000,5000,'http://ww1.prweb.com/prfiles/2011/11/03/8934854/Moevenpick-Hotel-Accra-exterior.jpg','Bergshotell intill fjorden',6.9);
+
+INSERT INTO Roomtype Values (1,'Enkelrum');
+INSERT INTO Roomtype Values (2,'Dubbelrum');
+INSERT INTO Roomtype Values (3,'Familjerum');
+
+INSERT INTO Room VALUES (1,1,1,10,1000);
+INSERT INTO Room VALUES (2,2,2,62,4999);
+INSERT INTO Room VALUES (3,3,1,60,599);
+INSERT INTO Room VALUES (4,2,3,50,5000);
+INSERT INTO Room VALUES (5,2,2,50,3209);
+INSERT INTO Room VALUES (6,4,1,20,400);
+
+INSERT INTO Users VALUES (1,'Bo78','bo@email.mail','bossesPassword','0202020202', 'Bosse', 'Boson', 'Vägvägen 7');
+INSERT INTO Users VALUES (2,'siv324','mail@email.mail','sassword','0202020202', 'Siv', 'Sieve', 'Gatgatan 12');
+
+INSERT INTO Booking VALUES (1,1);
+
+INSERT INTO Room_booking VALUES (1,1,1,'2020-06-10','2020-06-10',1,1,1,1);
+
+CREATE VIEW Hotelview
+    AS
+        SELECT h.id , h.name, s.id AS cityID, s.Name AS City, l.id AS countryID, l.Name AS country, restaurant, pool, kidsclub, evening_entertainment, meters_to_city_center, meters_to_beach, img_url, description, rating FROM Hotel h
+        INNER JOIN City s ON h.city_id = s.id
+        INNER JOIN Country l ON s.country_id = l.id; 

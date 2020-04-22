@@ -1,30 +1,49 @@
 package com.example.demo.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Hotel {
     @Id
-    int id;
-    int cityId;
-    String name;
-    boolean hasRestaurant = false;
-    boolean hasPool = false;
-    boolean hasKidsClub = false;
-    boolean hasNightEntertainment = false;
-    int mToCity;
-    int mToBeach;
-    double rating;
-    String description;
-    //TODO String imgUrl;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    @Column(name = "city_id")
+    private long cityId;
+    @Column
+    private String name;
+    @Column(name = "restaurant")
+    private boolean hasRestaurant = false;
+    @Column(name = "pool")
+    private boolean hasPool = false;
+    @Column(name = "kidsclub")
+    private boolean hasKidsClub = false;
+    @Column(name = "evening_entertainment")
+    private boolean hasEveningEntertainment = false;
+    @Column(name="meters_to_city_center")
+    private int metersToCityCenter;
+    @Column(name="meters_to_beach")
+    private int metersToBeach;
+    @Column(name="img_url")
+    private String imgUrl;
+    @Column
+    private String description;
+    @Column
+    private double rating;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
+    }
+
+    public long getCityId() {
+        return cityId;
+    }
+
+    public void setCityId(long cityId) {
+        this.cityId = cityId;
     }
 
     public String getName() {
@@ -59,27 +78,51 @@ public class Hotel {
         this.hasKidsClub = hasKidsClub;
     }
 
-    public boolean isHasNightEntertainment() {
-        return hasNightEntertainment;
+    public boolean isHasEveningEntertainment() {
+        return hasEveningEntertainment;
     }
 
-    public void setHasNightEntertainment(boolean hasNightEntertainment) {
-        this.hasNightEntertainment = hasNightEntertainment;
+    public void setHasEveningEntertainment(boolean hasEveningEntertainment) {
+        this.hasEveningEntertainment = hasEveningEntertainment;
     }
 
-    public int getMToCity() {
-        return mToCity;
+    public int getMetersToCityCenter() {
+        return metersToCityCenter;
     }
 
-    public void setMToCity(int mToCity) {
-        this.mToCity = mToCity;
+    public void setMetersToCityCenter(int metersToCityCenter) {
+        this.metersToCityCenter = metersToCityCenter;
     }
 
-    public int getMToBeach() {
-        return mToBeach;
+    public int getMetersToBeach() {
+        return metersToBeach;
     }
 
-    public void setMToBeach(int mToBeach) {
-        this.mToBeach = mToBeach;
+    public void setMetersToBeach(int metersToBeach) {
+        this.metersToBeach = metersToBeach;
+    }
+
+    public String getImgUrl() {
+        return imgUrl;
+    }
+
+    public void setImgUrl(String imgUrl) {
+        this.imgUrl = imgUrl;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public double getRating() {
+        return rating;
+    }
+
+    public void setRating(double rating) {
+        this.rating = rating;
     }
 }

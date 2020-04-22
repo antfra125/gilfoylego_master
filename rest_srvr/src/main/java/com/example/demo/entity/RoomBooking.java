@@ -1,41 +1,74 @@
 package com.example.demo.entity;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
+import java.time.LocalDate;
 
 @Entity
+@Table(name = "room_booking")
+@IdClass(RoomBookingId.class)
 public class RoomBooking {
     @Id
-    int id;
-    int dateIn;
-    int dateOut;
-    boolean allInclusive = false;
-    boolean fullPension = false;
-    boolean halfPension = false;
-    boolean extraBed = false;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    @Id
+    @Column(name="booking_id")
+    private long bookingId;
+    @Id
+    @Column(name="room_id")
+    private long roomId;
+    @Id
+    @Column(name="date_in")
+    private LocalDate dateCheckin;
+    @Id
+    @Column (name="date_out")
+    private LocalDate dateCheckout;
+    @Column(name="all_inclusive")
+    private boolean allInclusive = false;
+    @Column(name="full_pension")
+    private boolean fullPension = false;
+    @Column(name="half_pension")
+    private boolean halfPension = false;
+    @Column(name="extra_bed")
+   private  boolean extraBed = false;
 
-    public int getId() {
+    public long getRoomId() {
+        return roomId;
+    }
+
+    public void setRoomId(long roomId) {
+        this.roomId = roomId;
+    }
+
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
-    public int getDateIn() {
-        return dateIn;
+    public long getBookingId() {
+        return bookingId;
     }
 
-    public void setDateIn(int dateIn) {
-        this.dateIn = dateIn;
+    public void setBookingId(long bookingId) {
+        this.bookingId = bookingId;
     }
 
-    public int getDateOut() {
-        return dateOut;
+    public LocalDate getDateCheckin() {
+        return dateCheckin;
     }
 
-    public void setDateOut(int dateOut) {
-        this.dateOut = dateOut;
+    public void setDateCheckin(LocalDate dateIn) {
+        this.dateCheckin = dateIn;
+    }
+
+    public LocalDate getDateCheckout() {
+        return dateCheckout;
+    }
+
+    public void setDateCheckout(LocalDate dateOut) {
+        this.dateCheckout = dateOut;
     }
 
     public boolean isAllInclusive() {
