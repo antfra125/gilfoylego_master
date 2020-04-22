@@ -11,18 +11,23 @@
 /*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
+
+-- Dumping database structure for ggdb
+CREATE DATABASE IF NOT EXISTS `ggdb` /*!40100 DEFAULT CHARACTER SET utf8mb4 */;
+USE `ggdb`;
+
 -- Dumping structure for table ggdb.booking
 CREATE TABLE IF NOT EXISTS `booking` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `user_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `user_id` (`user_id`),
-  CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`)
+  CONSTRAINT `booking_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
--- Dumping data for table ggdb.booking: ~0 rows (approximately)
+-- Dumping data for table ggdb.booking: ~1 rows (approximately)
 /*!40000 ALTER TABLE `booking` DISABLE KEYS */;
-REPLACE INTO `booking` (`id`, `user_id`) VALUES
+INSERT INTO `booking` (`id`, `user_id`) VALUES
 	(1, 1);
 /*!40000 ALTER TABLE `booking` ENABLE KEYS */;
 
@@ -38,7 +43,7 @@ CREATE TABLE IF NOT EXISTS `city` (
 
 -- Dumping data for table ggdb.city: ~6 rows (approximately)
 /*!40000 ALTER TABLE `city` DISABLE KEYS */;
-REPLACE INTO `city` (`id`, `country_id`, `name`) VALUES
+INSERT INTO `city` (`id`, `country_id`, `name`) VALUES
 	(1, 1, 'Sveg'),
 	(2, 1, 'Stockholm'),
 	(3, 2, 'Köpenhamn'),
@@ -54,9 +59,9 @@ CREATE TABLE IF NOT EXISTS `country` (
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
 
--- Dumping data for table ggdb.country: ~2 rows (approximately)
+-- Dumping data for table ggdb.country: ~3 rows (approximately)
 /*!40000 ALTER TABLE `country` DISABLE KEYS */;
-REPLACE INTO `country` (`id`, `name`) VALUES
+INSERT INTO `country` (`id`, `name`) VALUES
 	(1, 'Sverige'),
 	(2, 'Danmark'),
 	(3, 'Norge');
@@ -83,7 +88,7 @@ CREATE TABLE IF NOT EXISTS `hotel` (
 
 -- Dumping data for table ggdb.hotel: ~5 rows (approximately)
 /*!40000 ALTER TABLE `hotel` DISABLE KEYS */;
-REPLACE INTO `hotel` (`id`, `city_id`, `name`, `restaurant`, `pool`, `kidsclub`, `evening_entertainment`, `meters_to_city_center`, `meters_to_beach`, `img_url`, `description`, `rating`) VALUES
+INSERT INTO `hotel` (`id`, `city_id`, `name`, `restaurant`, `pool`, `kidsclub`, `evening_entertainment`, `meters_to_city_center`, `meters_to_beach`, `img_url`, `description`, `rating`) VALUES
 	(1, 1, 'Svegs Stadshotell', b'1', b'0', b'0', b'1', 20, 4000, 'https://www.safarihotelsnamibia.com/wp-content/uploads/2014/11/Safari-Court-Hotel-Pool.jpg', 'Ett helt ok hotell', 1.8),
 	(2, 2, 'Grand Hôtel', b'1', b'1', b'0', b'0', 50, 2000, 'https://www.ma.com/wp-content/uploads/2013/10/morris-adjmi-architects-wythe-hotel-3.jpg', 'Long haired freaky people need not apply', 8.2),
 	(3, 2, 'Strandhotellet', b'1', b'1', b'1', b'1', 10000, 5, 'https://www.excelsior.com.mt/wp-content/gallery/hotel-gallery/Outdoor-Pool-at-Night.jpg', 'Elegant hotell vid till badet.', 5),
@@ -127,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `room` (
 
 -- Dumping data for table ggdb.room: ~6 rows (approximately)
 /*!40000 ALTER TABLE `room` DISABLE KEYS */;
-REPLACE INTO `room` (`id`, `hotel_id`, `roomtype_id`, `sizem2`, `price`) VALUES
+INSERT INTO `room` (`id`, `hotel_id`, `roomtype_id`, `sizem2`, `price`) VALUES
 	(1, 1, 1, 10, 1000),
 	(2, 2, 2, 62, 4999),
 	(3, 3, 1, 60, 599),
@@ -136,8 +141,23 @@ REPLACE INTO `room` (`id`, `hotel_id`, `roomtype_id`, `sizem2`, `price`) VALUES
 	(6, 4, 1, 20, 400);
 /*!40000 ALTER TABLE `room` ENABLE KEYS */;
 
--- Dumping structure for table ggdb.roombooking
-CREATE TABLE IF NOT EXISTS `roombooking` (
+-- Dumping structure for table ggdb.roomtype
+CREATE TABLE IF NOT EXISTS `roomtype` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(20) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
+
+-- Dumping data for table ggdb.roomtype: ~3 rows (approximately)
+/*!40000 ALTER TABLE `roomtype` DISABLE KEYS */;
+INSERT INTO `roomtype` (`id`, `name`) VALUES
+	(1, 'Enkelrum'),
+	(2, 'Dubbelrum'),
+	(3, 'Familjerum');
+/*!40000 ALTER TABLE `roomtype` ENABLE KEYS */;
+
+-- Dumping structure for table ggdb.room_booking
+CREATE TABLE IF NOT EXISTS `room_booking` (
   `id` int(11) NOT NULL,
   `booking_id` int(11) NOT NULL,
   `room_id` int(11) NOT NULL,
@@ -150,50 +170,35 @@ CREATE TABLE IF NOT EXISTS `roombooking` (
   PRIMARY KEY (`id`),
   KEY `booking_id` (`booking_id`),
   KEY `room_id` (`room_id`),
-  CONSTRAINT `roombooking_ibfk_1` FOREIGN KEY (`booking_id`) REFERENCES `booking` (`id`),
-  CONSTRAINT `roombooking_ibfk_2` FOREIGN KEY (`room_id`) REFERENCES `room` (`id`)
+  CONSTRAINT `room_booking_ibfk_1` FOREIGN KEY (`booking_id`) REFERENCES `booking` (`id`),
+  CONSTRAINT `room_booking_ibfk_2` FOREIGN KEY (`room_id`) REFERENCES `room` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
--- Dumping data for table ggdb.roombooking: ~0 rows (approximately)
-/*!40000 ALTER TABLE `roombooking` DISABLE KEYS */;
-REPLACE INTO `roombooking` (`id`, `booking_id`, `room_id`, `date_in`, `date_out`, `all_inclusive`, `half_pension`, `full_pension`, `extra_bed`) VALUES
+-- Dumping data for table ggdb.room_booking: ~1 rows (approximately)
+/*!40000 ALTER TABLE `room_booking` DISABLE KEYS */;
+INSERT INTO `room_booking` (`id`, `booking_id`, `room_id`, `date_in`, `date_out`, `all_inclusive`, `half_pension`, `full_pension`, `extra_bed`) VALUES
 	(1, 1, 1, '2020-06-10', '2020-06-10', b'1', b'1', b'1', b'1');
-/*!40000 ALTER TABLE `roombooking` ENABLE KEYS */;
+/*!40000 ALTER TABLE `room_booking` ENABLE KEYS */;
 
--- Dumping structure for table ggdb.roomtype
-CREATE TABLE IF NOT EXISTS `roomtype` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `name` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4;
-
--- Dumping data for table ggdb.roomtype: ~3 rows (approximately)
-/*!40000 ALTER TABLE `roomtype` DISABLE KEYS */;
-REPLACE INTO `roomtype` (`id`, `name`) VALUES
-	(1, 'Enkelrum'),
-	(2, 'Dubbelrum'),
-	(3, 'Familjerum');
-/*!40000 ALTER TABLE `roomtype` ENABLE KEYS */;
-
--- Dumping structure for table ggdb.user
-CREATE TABLE IF NOT EXISTS `user` (
+-- Dumping structure for table ggdb.users
+CREATE TABLE IF NOT EXISTS `users` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `username` varchar(30) DEFAULT NULL,
   `email` varchar(50) DEFAULT NULL,
-  `password` varchar(100) DEFAULT NULL,
+  `pw` varchar(100) DEFAULT NULL,
   `phone` varchar(20) DEFAULT NULL,
   `first_name` varchar(30) DEFAULT NULL,
   `last_name` varchar(30) DEFAULT NULL,
   `address` varchar(40) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 
--- Dumping data for table ggdb.user: ~2 rows (approximately)
-/*!40000 ALTER TABLE `user` DISABLE KEYS */;
-REPLACE INTO `user` (`id`, `username`, `email`, `password`, `phone`, `first_name`, `last_name`, `address`) VALUES
+-- Dumping data for table ggdb.users: ~2 rows (approximately)
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` (`id`, `username`, `email`, `pw`, `phone`, `first_name`, `last_name`, `address`) VALUES
 	(1, 'Bo78', 'bo@email.mail', 'bossesPassword', '0202020202', 'Bosse', 'Boson', 'Vägvägen 7'),
 	(2, 'siv324', 'mail@email.mail', 'sassword', '0202020202', 'Siv', 'Sieve', 'Gatgatan 12');
-/*!40000 ALTER TABLE `user` ENABLE KEYS */;
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
 
 -- Dumping structure for view ggdb.hotelview
 -- Removing temporary table and create final VIEW structure
