@@ -8,9 +8,6 @@ import java.time.LocalDate;
 @IdClass(RoomBookingId.class)
 public class RoomBooking {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
-    @Id
     @Column(name="booking_id")
     private long bookingId;
     @Id
@@ -37,14 +34,6 @@ public class RoomBooking {
 
     public void setRoomId(long roomId) {
         this.roomId = roomId;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public long getBookingId() {
