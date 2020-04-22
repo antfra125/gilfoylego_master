@@ -21,8 +21,11 @@
       <!--Insert/fetch right choosen bedtype-->
       <label class="col-4 choice-bedtype">Rumstyp:</label>
       <!--Insert/fetch right amount of money for the choosen hotel, room, do the math (person + kids + roomtype) -->
-      <label class="col-8 choice-bedtype">kr för hela sällskapet under <!--{fetch and insert choosen nights here}--></label>
-
+      <label class="col-8 choice-bedtype">
+        <!--Fetch and insert the -->
+        kr för hela sällskapet under
+        <!--{fetch and insert choosen nights here}-->
+      </label>
     </section>
 
     <section class="row mt-3">
@@ -30,6 +33,18 @@
       <label class="col-4 choice-amount-persons">Antal personer:</label>
       <!--Insert/fetch right amount of kids, if it's choosen to start with-->
       <label class="col-4 choice-amount-kids">Antal barn:</label>
+    </section>
+    <section class="row mt-5 mb-5">
+      <div class="col-6">
+        <router-link to="/hoteldescription">
+          <button type="button" class="btn btn-secondary">Avbryt bokning</button>
+        </router-link>
+      </div>
+      <div class="col-6">
+        <router-link to="/home">
+          <button type="button" class="btn btn-success">Bekräfta bokning</button>
+        </router-link>
+      </div>
     </section>
   </section>
 </template>
