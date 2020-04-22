@@ -8,13 +8,8 @@ import java.time.LocalDate;
 public class RoomBookingId implements Serializable {
     private long id;
     private long bookingId;
+    private long roomId;
     private LocalDate dateCheckin;
     private LocalDate dateCheckout;
 
-    public RoomBookingId(long id, long bookingId, LocalDate dateCheckin, LocalDate dateCheckout) {
-        this.id = id;
-        this.bookingId = bookingId;
-        this.dateCheckin = dateCheckin;
-        this.dateCheckout = dateCheckout;
-    }
 }
