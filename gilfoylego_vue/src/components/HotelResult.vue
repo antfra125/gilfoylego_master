@@ -30,3 +30,31 @@
       </div>
     </div>
 </template>
+
+<script>
+
+export default {
+    data() {
+      return {
+        hotels: []
+      }
+    },
+    mounted() {
+      this.getHotels();
+    },
+    methods: {
+      getHotels: async function() {
+        let result = await fetch('http://localhost:8090/rest/hotel');
+        this.hotels = await result.json();
+      }
+    },
+    props: ['search'],
+  computed: {
+  filteredHotels (){
+    return this.hotels.filter(hotel => {
+    return hotel.name.toLowerCase().includes(this.search.toLowerCase())
+      })
+      }
+    }
+  }
+</script>
