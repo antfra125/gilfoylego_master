@@ -50,8 +50,8 @@
       <div>
         <p v-if="hotel.metersToBeach < 1000">Avstånd till stranden: {{hotel.metersToBeach}} m</p>
         <p v-if="hotel.metersToBeach > 1000">Avstånd till stranden: {{hotel.metersToBeach / 1000}} km</p>
-        <p v-if="hotel.metersToCityCenter < 1000">Avstånd till stranden: {{hotel.metersToCityCenter}} m</p>
-        <p v-if="hotel.metersToCityCenter > 1000">Avstånd till stranden: {{hotel.metersToCityCenter / 1000}} km</p>
+        <p v-if="hotel.metersToCityCenter < 1000">Avstånd till centrum: {{hotel.metersToCityCenter}} m</p>
+        <p v-if="hotel.metersToCityCenter > 1000">Avstånd till centrum: {{hotel.metersToCityCenter / 1000}} km</p>
       </div>
     </section>
 
@@ -138,7 +138,7 @@ export default {
         })
       },
       getHotel: async function() {
-        let result = await fetch('http://localhost:8080/rest/hotel/1');
+        let result = await fetch('http://localhost:8090/rest/hotel/1');
         this.hotel = await result.json();
         console.log(this.hotel)
       }

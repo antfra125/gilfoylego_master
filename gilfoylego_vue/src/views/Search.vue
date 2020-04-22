@@ -82,8 +82,8 @@
               <p v-if="hotel.metersToBeach > 1000">Avstånd till stranden: {{hotel.metersToBeach / 1000}} km</p>
             </div>
             <div class="row">
-              <p v-if="hotel.metersToCityCenter < 1000">Avstånd till stranden: {{hotel.metersToCityCenter}} m</p>
-              <p v-if="hotel.metersToCityCenter > 1000">Avstånd till stranden: {{hotel.metersToCityCenter / 1000}} km</p>
+              <p v-if="hotel.metersToCityCenter < 1000">Avstånd till centrum: {{hotel.metersToCityCenter}} m</p>
+              <p v-if="hotel.metersToCityCenter > 1000">Avstånd till centrum: {{hotel.metersToCityCenter / 1000}} km</p>
             </div>
             <div class="row d-flex justify-content-end">
               Från ?kr
@@ -110,7 +110,7 @@ export default {
     },
     methods: {
       getHotels: async function() {
-        let result = await fetch('http://localhost:8080/rest/hotel');
+        let result = await fetch('http://localhost:8090/rest/hotel');
         this.hotels = await result.json();
       }
     }
