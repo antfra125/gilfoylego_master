@@ -41,3 +41,6 @@
 .extra img {
     height:2vh;
 }
+b-form-datepicker{
+    max-height: 240%;
+}

@@ -52,31 +52,34 @@
       </section>
     </section>
 
-    <section v-if="!isConfirmationHidden">
-      <h3>Tack för din bokning hos oss. Ha en trevlig resa!</h3>
+    <section class="mt-5" v-if="!isConfirmationHidden">
+      <div class="row">
+        <h3>Tack för din bokning hos oss, vi hoppas på att du har en trevlig resa!</h3>
+      </div>
+      <div class="row mt-3">
+        <router-link to="/"><button class="btn btn-success">Startsida</button></router-link>
+      </div>
+
     </section>
   </section>
 </template>
 
 
 <script>
-    export default{
-    data(){
-        return{
-            isConfirmationHidden : true
-        }
-    },
-        methods: {
-            showConfirmation(){
-                    this.isConfirmationHidden = false;
-            }
-        }
+export default {
+  data() {
+    return {
+      isConfirmationHidden: true
     };
-    
+  },
+  methods: {
+    showConfirmation() {
+      this.isConfirmationHidden = false;
+    }
+  }
+};
 
-
-
-    /*$(document).ready(function() {
+/*$(document).ready(function() {
         $('#confirmed').on('click', function() {
             $('#thankYouConfirmation').show();
             $('#confirmMe').hide();
