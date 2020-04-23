@@ -23,9 +23,11 @@ public class RoomBookingController {
         return roomBookingRepository.findAll();
     }
 
-    @GetMapping("/{id}")
-    public Optional<RoomBooking> findById(@PathVariable long id) {
-        return roomBookingRepository.findById(id);
+    @GetMapping("/{bookingId}_{roomId}_{dateCheckin}_{dateCheckout}")
+    public Optional<RoomBooking> findByBookingIdAndRoomIdAndDateCheckinAndDateCheckout(@PathVariable long bookingId, @PathVariable long roomId, @PathVariable String dateCheckin, @PathVariable String dateCheckout) {
+        LocalDate checkin = LocalDate.parse(dateCheckin);
+        LocalDate checkout = LocalDate.parse(dateCheckout);
+        return roomBookingRepository.findByBookingIdAndRoomIdAndDateCheckinAndDateCheckout(bookingId, roomId, checkin, checkout);
     }
 
     @GetMapping("booking/{bookingId}")
@@ -61,14 +63,11 @@ public class RoomBookingController {
         return "Updated"; }
 
         
-    @DeleteMapping("/delete/{id}")
-    public void deleteById(@PathVariable long id) {
-        roomBookingRepository.deleteById(id);
+    @DeleteMapping("/{bookingId}_{roomId}_{dateCheckin}_{dateCheckout}")
+    public void deleteByBookingIdAndRoomIdAndDateCheckinAndDateCheckout(@PathVariable long bookingId, @PathVariable long roomId, @PathVariable String dateCheckin, @PathVariable String dateCheckout) {
+        LocalDate checkin = LocalDate.parse(dateCheckin);
+        LocalDate checkout = LocalDate.parse(dateCheckout);
+        roomBookingRepository.deleteByBookingIdAndRoomIdAndDateCheckinAndDateCheckout(bookingId, roomId, checkin, checkout);
     }
-
     }
-    /*
-    void deleteRoomBookingById(Long id);
-
-    */
 
