@@ -51,27 +51,39 @@
           <div class="row">
             Filter:
           </div>
-          <div class="row d-flex justify-content-between">
-            <div class="column">
-              <input type="checkbox"> Pool
+          <b-form-checkbox-group v-model="form.amenities">
+            <div class="row d-flex justify-content-between">
+              <div class="column">
+                <b-form-checkbox value="pool">Pool</b-form-checkbox>
+              </div>
+              <div class="column">
+                <b-form-checkbox value="eveningentertainment">Kvällsunderhållning</b-form-checkbox>
+              </div>
             </div>
-            <div class="column">
-              <input type="checkbox"> Barnklubb
+            <div class="row form-group d-flex justify-content-between">
+              <div class="column">
+                <b-form-checkbox value="kidsclub">Barnklubb</b-form-checkbox>
+              </div>
+              <div class="column">
+                <b-form-checkbox value="restaurant">Restaurang</b-form-checkbox>
+              </div>
             </div>
-          </div>
-          <div class="row form-group d-flex justify-content-between">
-            <div class="column">
-              <input type="checkbox"> Kvällsunderhållning
-            </div>
-            <div class="column">
-              <input type="checkbox"> Restaurang
-            </div>
-          </div>
+          </b-form-checkbox-group>
           <div class="row form-group">
-            <input type="number" class="form-control" min="0" placeholder="Maxavstånd till strand">
+            <b-form-input
+                type="number"
+                min="0"
+                v-model="form.m2Beach"
+                placeholder="Maxavstånd till strand i meter"
+            ></b-form-input>
           </div>
           <div class="row">
-            <input type="number" class="form-control" min="0" placeholder="Maxavstånd till centrum"  v-model="form.m2Center">
+            <b-form-input
+                type="number"
+                min="0"
+                v-model="form.m2Center"
+                placeholder="Maxavstånd till centrum i meter"
+            ></b-form-input>
           </div>
           <div>
             <HotelResult :search="form.search" :m2Center="form.m2Center"/>
@@ -101,6 +113,7 @@ export default {
         startDate: '',
         endDate: '',
         amountOfRooms: '',
+        amenities: [],
         m2Center: ''
       },
       show: true,
