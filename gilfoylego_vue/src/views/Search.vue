@@ -129,7 +129,7 @@ export default {
         alert(JSON.stringify(this.form))
       },
       getHotels: async function() {
-        let result = await fetch('http://localhost:8090/rest/hotel');
+        let result = await fetch('http://localhost:8090/rest/hotelview');
         this.hotels = await result.json();
         console.log(this.hotels)
       }
