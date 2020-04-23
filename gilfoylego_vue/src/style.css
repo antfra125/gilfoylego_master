@@ -36,6 +36,8 @@
 .result img {
     height: 205px;
     width: 150px;
+    object-fit: cover;
+    border: 1px solid lightgrey;
 }
 
 .extra img {
