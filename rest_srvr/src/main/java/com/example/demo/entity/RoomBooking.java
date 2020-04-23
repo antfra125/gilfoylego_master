@@ -4,12 +4,9 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
+@Table(name = "room_booking")
 @IdClass(RoomBookingId.class)
-@Table(name="room_booking")
 public class RoomBooking {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
     @Id
     @Column(name="booking_id")
     private long bookingId;
@@ -37,14 +34,6 @@ public class RoomBooking {
 
     public void setRoomId(long roomId) {
         this.roomId = roomId;
-    }
-
-    public long getId() {
-        return id;
-    }
-
-    public void setId(long id) {
-        this.id = id;
     }
 
     public long getBookingId() {
