@@ -48,12 +48,20 @@ export default {
         this.hotels = await result.json();
       }
     },
-    props: ['search'],
+    props: ['search', 'm2Center'],
   computed: {
   filteredHotels (){
-    return this.hotels.filter(hotel => {
-    return hotel.name.toLowerCase().includes(this.search.toLowerCase())
-      })
+      console.log(this.m2Center)
+        if(this.m2Center != '') {
+            return this.hotels.filter(hotel => {
+            return hotel.name.toLowerCase().includes(this.search.toLowerCase()) && hotel.metersToCityCenter < this.m2Center  
+        })
+      }
+      else {
+        return this.hotels.filter(hotel => {
+        return hotel.name.toLowerCase().includes(this.search.toLowerCase())
+        })
+      }
       }
     }
   }
