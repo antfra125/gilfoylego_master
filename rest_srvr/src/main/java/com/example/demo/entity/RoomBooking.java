@@ -1,5 +1,7 @@
 package com.example.demo.entity;
 
+import com.example.demo.entity.keys.RoomBookingId;
+
 import javax.persistence.*;
 import java.time.LocalDate;
 
