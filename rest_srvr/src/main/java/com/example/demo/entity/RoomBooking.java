@@ -10,8 +10,9 @@ import java.time.LocalDate;
 @IdClass(RoomBookingId.class)
 public class RoomBooking {
     @Id
-    @Column(name="booking_id")
-    private long bookingId;
+    @ManyToOne
+    @JoinColumn(name = "booking_id")
+    Booking booking;
     @Id
     @Column(name="room_id")
     private long roomId;
@@ -38,12 +39,8 @@ public class RoomBooking {
         this.roomId = roomId;
     }
 
-    public long getBookingId() {
-        return bookingId;
-    }
-
-    public void setBookingId(long bookingId) {
-        this.bookingId = bookingId;
+    public String getBooking() {
+        return booking.getUser();
     }
 
     public LocalDate getDateCheckin() {

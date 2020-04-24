@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Booking {
@@ -10,6 +11,8 @@ public class Booking {
     @ManyToOne
     @JoinColumn(name = "user_id")
     private User user;
+    @OneToMany(mappedBy = "booking")
+    private Set<RoomBooking> roomBookings;
 
     public long getId() {
         return id;
@@ -21,5 +24,9 @@ public class Booking {
 
     public String getUser() {
         return user.getEmail();
+    }
+
+    public Set<RoomBooking> getRoomBookings() {
+        return roomBookings;
     }
 }
