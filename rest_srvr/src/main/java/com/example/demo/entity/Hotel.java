@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Hotel {
@@ -30,6 +31,8 @@ public class Hotel {
     private String description;
     @Column
     private double rating;
+    @OneToMany(mappedBy = "hotel")
+    private Set<Room> rooms;
 
     public long getId() {
         return id;
@@ -37,6 +40,10 @@ public class Hotel {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public Set<Room> getRooms() {
+        return rooms;
     }
 
     public String getCity() {
