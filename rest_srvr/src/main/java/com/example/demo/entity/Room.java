@@ -38,6 +38,10 @@ public class Room {
         return roomtype.getName();
     }
 
+    public Set<RoomBooking> getRoomBookings() {
+        return roomBookings;
+    }
+
     public int getSizem2() {
         return sizem2;
     }
