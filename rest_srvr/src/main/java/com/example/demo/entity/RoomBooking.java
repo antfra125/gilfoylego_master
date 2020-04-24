@@ -14,8 +14,9 @@ public class RoomBooking {
     @JoinColumn(name = "booking_id")
     Booking booking;
     @Id
-    @Column(name="room_id")
-    private long roomId;
+    @ManyToOne
+    @JoinColumn(name = "room_id")
+    Room room;
     @Id
     @Column(name="date_in")
     private LocalDate dateCheckin;
@@ -31,12 +32,8 @@ public class RoomBooking {
     @Column(name="extra_bed")
    private  boolean extraBed = false;
 
-    public long getRoomId() {
-        return roomId;
-    }
-
-    public void setRoomId(long roomId) {
-        this.roomId = roomId;
+    public String getRoom() {
+        return room.getRoomtype();
     }
 
     public String getBooking() {
