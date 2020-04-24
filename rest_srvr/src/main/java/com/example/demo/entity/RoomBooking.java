@@ -14,10 +14,14 @@ public class RoomBooking {
     private long id;
     @ManyToOne
     @JoinColumn(name = "booking_id")
-    Booking booking;
+    private Booking booking;
     @ManyToOne
     @JoinColumn(name = "room_id")
-    Room room;
+    private Room room;
+    @Transient
+    private String hotel;
+    @Transient
+    private String roomtype;
     @Column(name="date_in")
     private LocalDate dateCheckin;
     @Column (name="date_out")
@@ -70,8 +74,16 @@ public class RoomBooking {
         this.price = price;
     }
 
-    public String getRoom() {
-        return room.getHotel() + ", " + room.getRoomtype();
+    public long getRoom() {
+        return room.getId();
+    }
+
+    public String getHotel() {
+        return this.room.getHotel();
+    }
+
+    public String getRoomtype() {
+        return this.room.getRoomtype();
     }
 
     public String getBooking() {
