@@ -102,7 +102,7 @@ localhost:8080			<--- Root route
 
 #GET#
 /				<--- find all roombookings
-/*_*_*_*			<--- find one by {bookingId}_{roomId}_{dateCheckin}_{dateCheckout}
+/*				<--- find one booking with id equal to *
 /room/*				<--- find all roombooking with roomId equal to *
 /booking/*			<--- find all with bookingId equal to *
 
@@ -113,6 +113,6 @@ localhost:8080			<--- Root route
 /update				<--- update one roombooking
 
 #DELETE#
-/delete/*_*_*_*			<--- delete one by {bookingId}_{roomId}_{dateCheckin}_{dateCheckout}
+/delete/*			<--- delete one by {id}
 
 

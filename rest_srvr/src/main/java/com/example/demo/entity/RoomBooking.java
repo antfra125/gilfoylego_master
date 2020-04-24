@@ -7,20 +7,19 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "room_booking")
-@IdClass(RoomBookingId.class)
+//@IdClass(RoomBookingId.class)
 public class RoomBooking {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
     @ManyToOne
     @JoinColumn(name = "booking_id")
     Booking booking;
-    @Id
     @ManyToOne
     @JoinColumn(name = "room_id")
     Room room;
-    @Id
     @Column(name="date_in")
     private LocalDate dateCheckin;
-    @Id
     @Column (name="date_out")
     private LocalDate dateCheckout;
     @Column(name="all_inclusive")
@@ -30,10 +29,49 @@ public class RoomBooking {
     @Column(name="half_pension")
     private boolean halfPension = false;
     @Column(name="extra_bed")
-   private  boolean extraBed = false;
+    private  boolean extraBed = false;
+    @Column
+    private int adults;
+    @Column
+    private int children;
+    @Column
+    private int price;
+
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
+
+    public int getAdults() {
+        return adults;
+    }
+
+    public void setAdults(int adults) {
+        this.adults = adults;
+    }
+
+    public int getChildren() {
+        return children;
+    }
+
+    public void setChildren(int children) {
+        this.children = children;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public void setPrice(int price) {
+        this.price = price;
+    }
 
     public String getRoom() {
-        return room.getRoomtype();
+        return room.getHotel() + ", " + room.getRoomtype();
     }
 
     public String getBooking() {
