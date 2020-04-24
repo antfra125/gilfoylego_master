@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Country {
@@ -10,6 +11,16 @@ public class Country {
     private long id;
     @Column
     private String name;
+    @OneToMany(mappedBy = "country")
+    private Set<City> cities;
+
+    public Set<City> getCities() {
+        return cities;
+    }
+
+    public void setCities(Set<City> cities) {
+        this.cities = cities;
+    }
 
     public void setId(long id) {
         this.id = id;

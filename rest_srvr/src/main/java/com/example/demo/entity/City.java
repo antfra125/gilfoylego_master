@@ -8,8 +8,9 @@ public class City {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @Column(name = "country_id")
-    private long countryId;
+    @ManyToOne
+    @JoinColumn(name = "country_id")
+    private Country country;
     @Column
     private String name;
 
@@ -21,12 +22,8 @@ public class City {
         this.id = id;
     }
 
-    public long getCountryId() {
-        return countryId;
-    }
-
-    public void setCountryId(long countryId) {
-        this.countryId = countryId;
+    public String getCountry() {
+        return country.getName();
     }
 
     public String getName() {
