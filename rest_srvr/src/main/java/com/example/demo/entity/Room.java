@@ -10,8 +10,9 @@ public class Room {
     @ManyToOne
     @JoinColumn(name = "hotel_id")
     private Hotel hotel;
-    @Column(name = "roomtype_id")
-    private long roomtypeId;
+    @ManyToOne
+    @JoinColumn(name = "roomtype_id")
+    private Roomtype roomtype;
     @Column
     private int sizem2;
     @Column
@@ -30,12 +31,8 @@ public class Room {
         return hotel.getName();
     }
 
-    public long getRoomtypeId() {
-        return roomtypeId;
-    }
-
-    public void setRoomtypeId(long roomtypeId) {
-        this.roomtypeId = roomtypeId;
+    public String getRoomtype() {
+        return roomtype.getName();
     }
 
     public int getSizem2() {
