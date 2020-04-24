@@ -1,7 +1,7 @@
 
 <template>
-  <div class="home text-center">
-    <div class="banner p-5">
+  <div class="home text-center pb-5">
+    <div class="banner pb-5 pt-2">
       <img src="../images/hawaii.jpg" />
     </div>
     <div class="d-flex justify-content-center">
@@ -15,7 +15,7 @@
           ></b-form-input>
         </div>
         <div class="row form-group d-flex justify-content-between">
-          <div class="col-6">
+          <div class="col-md-5 col-sm-12">
             <div class="row">Från</div>
             <div class="row">
               <b-form-datepicker
@@ -26,8 +26,8 @@
               ></b-form-datepicker>
             </div>
           </div>
-          <div class="col-6">
-            <div class="row d-flex justify-content-end">Till</div>
+          <div class="col-md-5 col-sm-12">
+            <div class="row d-flex">Till</div>
             <div class="row">
               <b-form-datepicker v-model="form.endDate" :min="eMin" :max="eMax" placeholder="Till"></b-form-datepicker>
             </div>
@@ -75,7 +75,7 @@ export default {
   },
   methods: {
     onSubmit(evt) {
-      evt.preventDefault();
+      evt.preventDefault()
       alert(JSON.stringify(this.form));
     },
     onReset(evt) {
