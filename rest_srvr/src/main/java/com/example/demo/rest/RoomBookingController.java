@@ -62,7 +62,7 @@ public class RoomBookingController {
 
         
     @DeleteMapping("delete/{id}")
-    public void deleteByBookingIdAndRoomIdAndDateCheckinAndDateCheckout(@PathVariable long id) {
+    public void deleteById(@PathVariable long id) {
         roomBookingRepository.deleteById(id);
     }
     }
