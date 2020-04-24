@@ -1,14 +1,18 @@
 package com.example.demo.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Booking {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "user_id")
-    private long userId;
+    @ManyToOne
+    @JoinColumn(name = "user_id")
+    private User user;
+    @OneToMany(mappedBy = "booking")
+    private Set<RoomBooking> roomBookings;
 
     public long getId() {
         return id;
@@ -18,11 +22,11 @@ public class Booking {
         this.id = id;
     }
 
-    public long getUserId() {
-        return userId;
+    public String getUser() {
+        return user.getEmail();
     }
 
-    public void setUserId(long userId) {
-        this.userId = userId;
+    public Set<RoomBooking> getRoomBookings() {
+        return roomBookings;
     }
 }

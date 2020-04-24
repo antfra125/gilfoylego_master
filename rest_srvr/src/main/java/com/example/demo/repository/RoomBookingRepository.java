@@ -12,13 +12,13 @@ import java.util.Optional;
 
 @Repository
 public interface RoomBookingRepository extends CrudRepository<RoomBooking, Long> {
-    Optional<RoomBooking> findByBookingIdAndRoomIdAndDateCheckinAndDateCheckout(long bookingId, long roomId, LocalDate dateCheckin, LocalDate dateCheckout);
+    Optional<RoomBooking> findById (long id);
     Iterable<RoomBooking> findAll();
     Iterable<RoomBooking> findAllByBookingId(Long bookingId);
     Iterable<RoomBooking> findAllByRoomId(Long roomId);
     Iterable<RoomBooking> findAllByDateCheckin(LocalDate dateCheckin);
     Iterable<RoomBooking> findAllByDateCheckout(LocalDate dateCheckout);
-    void deleteByBookingIdAndRoomIdAndDateCheckinAndDateCheckout(long bookingId, long roomId, LocalDate dateCheckin, LocalDate dateCheckout);
+    void deleteById(long id);
 
 
 

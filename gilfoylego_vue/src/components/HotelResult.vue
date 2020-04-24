@@ -3,10 +3,10 @@
     <div class="container my-4 p-5 grey-border" v-for="hotel in filteredHotels" :key="hotel.id">
       <router-link to="/hoteldescription">
         <div class="row result">
-          <div class="col-4 pic-col">
+          <div class="sm-col-12 md-col-12 lg-col-4 pic-col">
             <img :src="hotel.imgUrl">
           </div>
-          <div class="col-8 pl-4">
+          <div class="sm-col-12 md-col-12 lg-col-8 pl-4">
             <div class="row smallhotelframe">
               <span><strong>{{hotel.name}}</strong></span>
             </div>

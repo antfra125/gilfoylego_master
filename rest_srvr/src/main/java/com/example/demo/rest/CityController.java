@@ -38,10 +38,10 @@ public class CityController {
         }
     }
 
-    @GetMapping("/country/{countryId}")
+    /*@GetMapping("/country/{countryId}")
     public Iterable<City> findAllByCountryId(@PathVariable long countryId) {
         return cityRepository.findAllByCountryId(countryId);
-    }
+    }*/
 
 
 }
