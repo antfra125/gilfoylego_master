@@ -23,7 +23,7 @@ public class RoomBookingController {
         return roomBookingRepository.findAll();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("{id}")
     public Optional<RoomBooking> findById(@PathVariable long id) {
         return roomBookingRepository.findById(id);
     }
@@ -61,14 +61,9 @@ public class RoomBookingController {
         return "Updated"; }
 
         
-    @DeleteMapping("/delete/{id}")
+    @DeleteMapping("delete/{id}")
     public void deleteById(@PathVariable long id) {
         roomBookingRepository.deleteById(id);
     }
-
     }
-    /*
-    void deleteRoomBookingById(Long id);
-
-    */
 

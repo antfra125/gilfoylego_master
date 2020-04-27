@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Roomtype {
@@ -9,6 +10,8 @@ public class Roomtype {
     private long id;
     @Column
     private String name;
+    @OneToMany(mappedBy = "roomtype")
+    private Set<Room> rooms;
 
     public long getId() {
         return id;
@@ -24,5 +27,9 @@ public class Roomtype {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public Set<Room> getRooms() {
+        return rooms;
     }
 }

@@ -1,14 +1,16 @@
 package com.example.demo.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Hotel {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "city_id")
-    private long cityId;
+    @ManyToOne
+    @JoinColumn(name = "city_id")
+    private City city;
     @Column
     private String name;
     @Column(name = "restaurant")
@@ -29,6 +31,8 @@ public class Hotel {
     private String description;
     @Column
     private double rating;
+    @OneToMany(mappedBy = "hotel")
+    private Set<Room> rooms;
 
     public long getId() {
         return id;
@@ -38,12 +42,12 @@ public class Hotel {
         this.id = id;
     }
 
-    public long getCityId() {
-        return cityId;
+    public Set<Room> getRooms() {
+        return rooms;
     }
 
-    public void setCityId(long cityId) {
-        this.cityId = cityId;
+    public String getCity() {
+        return city.getName();
     }
 
     public String getName() {

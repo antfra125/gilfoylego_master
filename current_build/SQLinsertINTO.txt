@@ -1,6 +1,8 @@
 INSERT INTO Country VALUES (1,'Sverige');
 INSERT INTO Country VALUES (2,'Danmark');
-INSERT INTO Country VALUES(3,'Norge');
+INSERT INTO Country VALUES (3,'Norge');
+INSERT INTO Country VALUES (4,'USA');
+INSERT INTO Country VALUES (5,'Spanien');
 
 INSERT INTO City VALUES (1,1,'Sveg');
 INSERT INTO City VALUES (2,1,'Stockholm');
@@ -8,12 +10,19 @@ INSERT INTO City VALUES (3,2,'Köpenhamn');
 INSERT INTO City VALUES (4,2,'Tuborg');
 INSERT INTO City VALUES (5,3,'Oslo');
 INSERT INTO City VALUES (6,3,'Bergen');
+INSERT INTO City VALUES (7,4,'New York');
+INSERT INTO City VALUES (8,1,'Malmö');
+INSERT INTO City VALUES (9,5,'Playa del Inglés');
 
 INSERT INTO Hotel VALUES (1,1,'Svegs Stadshotell',1,0,0,1,20,4000,'https://www.safarihotelsnamibia.com/wp-content/uploads/2014/11/Safari-Court-Hotel-Pool.jpg','Ett helt ok hotell',1.8);
 INSERT INTO Hotel VALUES (2,2,'Grand Hôtel',1,1,0,0,50,2000,'https://www.ma.com/wp-content/uploads/2013/10/morris-adjmi-architects-wythe-hotel-3.jpg','Long haired freaky people need not apply',8.2);
 INSERT INTO Hotel VALUES (3,2,'Strandhotellet',1,1,1,1,10000,5,'https://www.excelsior.com.mt/wp-content/gallery/hotel-gallery/Outdoor-Pool-at-Night.jpg','Elegant hotell vid till badet.',5.0);
 INSERT INTO Hotel VALUES (4,3,'BnBodega',1,0,0,1,300,400,'http://www.idesignarch.com/wp-content/uploads/Oxford-Malmaison-Hotel_1.jpg','Pittoreskt hotell vid kajen', 7.3);
 INSERT INTO Hotel VALUES (5,6,'Den norske hotel',0,0,1,0,7000,5000,'http://ww1.prweb.com/prfiles/2011/11/03/8934854/Moevenpick-Hotel-Accra-exterior.jpg','Bergshotell intill fjorden',6.9);
+INSERT INTO Hotel VALUES (6,7,'Edison Hotel',1,0,1,1,10,10000,'https://imgcy.trivago.com/c_limit,d_dummy.jpeg,f_auto,h_1300,q_auto,w_2000/itemimages/87/20/8720_v12.jpeg','Anrikt hotell precis vid Times Square. Uppkallat efter den legendariske uppfinnaren.',8.9);
+INSERT INTO Hotel VALUES (7,7,'Hotel Pennsylvania',1,0,1,1,800,9500,'https://thenypost.files.wordpress.com/2019/11/hotel-pennsylvania.jpg','Mitt emot hotellet hittar ni världens mest berömda arena, Madison Square Garden, som står där den vackra tågstationen en gång stod som hotellet är uppkallat efter.',6.5);
+INSERT INTO Hotel VALUES (8,8,'Malmö Arena Hotel',1,0,0,1,2000,2000,'https://www.malmoarena.com/fileadmin/_processed_/3/6/csm_0I0D8756_DxO-mindre_886a984f10.jpg','Percy Nilssons mästerverk i den växande stadsdelen Hyllie. Precis bredvid Malmö Arena och centrum är drygt sex minuter bort med tåg',5.8);
+INSERT INTO Hotel VALUES (9,9,'Playa del Sol',1,1,1,0,50,1200,'https://a.loveholidays.com/images/holidays/0d2e207e813bb72e575c5d6773c8826271e05b05/holidays/gran-canaria/playa-del-ingles/aparthotel-playa-del-sol-adults-only-0.jpg','Playa del Sol är ett populärt lägenhetshotell för en vuxen publik. Här bor du centralt i Playa del Inglés och har Yumbo köpcentrum med shopping, restauranger och nöjen runt hörnet. I hotellets härliga trädgård finns en solterrass med pool.',5.3);
 
 INSERT INTO Roomtype Values (1,'Enkelrum');
 INSERT INTO Roomtype Values (2,'Dubbelrum');
@@ -31,10 +40,4 @@ INSERT INTO Users VALUES (2,'siv324','mail@email.mail','sassword','0202020202', 
 
 INSERT INTO Booking VALUES (1,1);
 
-INSERT INTO Room_booking VALUES (1,1,1,'2020-06-10','2020-06-10',1,1,1,1);
-
-CREATE VIEW Hotelview
-    AS
-        SELECT h.id , h.name, s.id AS cityID, s.Name AS City, l.id AS countryID, l.Name AS country, restaurant, pool, kidsclub, evening_entertainment, meters_to_city_center, meters_to_beach, img_url, description, rating FROM Hotel h
-        INNER JOIN City s ON h.city_id = s.id
-        INNER JOIN Country l ON s.country_id = l.id; 
+INSERT INTO Room_booking VALUES (1,1,1,'2020-06-10','2020-06-11',1,1,1,1,1,0,599);
