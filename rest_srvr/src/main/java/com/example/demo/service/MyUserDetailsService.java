@@ -24,7 +24,7 @@ public class MyUserDetailsService implements UserDetailsService {
 
     @PostConstruct
     private void createDefaultUsers(){
-        if (userRepository.findByUsername("user") == null) {
+        if (userRepository.findByUsername("admin") == null) {
             addUser("admin", "admin", "admin@admin.se", "0707000000", "Admin", "Admin", "Admingatan 99 23333 Helvetet");
         }
     }

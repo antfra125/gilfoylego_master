@@ -43,8 +43,8 @@ export default {
     },
     methods: {
         async springLogin() {
-            let username = this.form.username;
-            let password = this.form.password;
+            let username = 'admin';
+            let password = 'admin';
 
             const credentials =
             "username=" +
