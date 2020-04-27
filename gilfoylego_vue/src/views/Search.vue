@@ -30,14 +30,6 @@
                   placeholder="Från"
                 ></b-form-datepicker>
               </div>
-              <div class="row">
-                <b-form-datepicker
-                  v-model="form.startDate"
-                  :min="sMin"
-                  :max="sMax"
-                  placeholder="Från"
-                ></b-form-datepicker>
-              </div>
             </div>
             <div class="col-6">
               <div class="row d-flex justify-content-end">Till</div>
