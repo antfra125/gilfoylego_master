@@ -7,12 +7,12 @@
             <template v-slot:button-content>
               <span><img src="./images/user.png"></span>
             </template>
-              <div v-if="!isLoggedIn">
+              <div v-if="!this.$store.state.isLoggedIn">
                 <b-dropdown-item href="/login">Logga in</b-dropdown-item>
               </div>
-              <div v-if="isLoggedIn">
+              <div v-if="this.$store.state.isLoggedIn">
                 <b-dropdown-item href="#">Beställningar</b-dropdown-item>
-                <b-dropdown-item href="/login">Logga Ut</b-dropdown-item>
+                <b-dropdown-item v-on:click="this.$store.state.isLoggedIn=false">Logga Ut</b-dropdown-item>
               </div>
           </b-dropdown>
         </span>
@@ -27,12 +27,12 @@
 <style src="./style.css"></style>
 <style src="./bootstrap.min.css"></style>
 
-<script>
+<script>/*
 export default{
 data(){
   return{
-    isLoggedIn: false
+    isLoggedIn: this.$store.state.isLoggedIn
 }
 }
-}
+}*/
 </script>

@@ -38,14 +38,14 @@ export default {
       }
     }
   },
-    mounted() {
+    /*mounted() {
       this.springLogin();
-    },
+    },*/
     methods: {
         async springLogin() {
-            let username = 'admin';
-            let password = 'admin';
-
+            let username = this.form.username;
+            let password = this.form.password;
+            console.log(username + ' ' + password)
             const credentials =
             "username=" +
             encodeURIComponent(username) +
@@ -58,15 +58,25 @@ export default {
                 body: credentials
             });
             
+                /*response = await fetch("http://localhost:8090/rest/activeuser");
+                response = await response.json();
+                console.log(response);*/
+
+
             if(response.url.includes('error')){
                 console.log('Fel!')
             } else {
                 console.log("Success")
+                this.$store.state.isLoggedIn = true
+                /*let response = await fetch("http://localhost:8090/rest/activeuser");
+                response = await response.json();*/
+                console.log(response);
             }
         },
         onSubmit(evt) {
             evt.preventDefault()
-            alert(JSON.stringify(this.form))
+            //alert(JSON.stringify(this.form))
+            this.springLogin()
         }
     }
 }
