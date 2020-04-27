@@ -2,6 +2,10 @@
 
 localhost:8080			<--- Root route
 
+*VIEWS*
+/rest/
+
+
 -----------------------------------------------
 *HOTEL* 			<--- SQL-tabellnamn
 /rest/hotel			<--- Hotel root

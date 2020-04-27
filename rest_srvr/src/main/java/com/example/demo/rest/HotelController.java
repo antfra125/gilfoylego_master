@@ -24,7 +24,7 @@ public class HotelController {
 
     @GetMapping("/{id}")
     public Optional<Hotel> findByIdEquals(@PathVariable long id){
-        return hotelRepository.findByIdEquals(id);
+        System.out.println("printing LALALALALAALALLALALALA\n\nLALALALALALLAALAL\n\nHOHOHOHOHOHOHOL"); return hotelRepository.findByIdEquals(id);
     }
     @GetMapping("/name/{name}")
     public Iterable<Hotel> findAllByNameContains(@PathVariable String name){
