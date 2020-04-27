@@ -120,6 +120,10 @@ export default {
         hotel: []
       }
     },
+    created() {
+        console.log("laddar in från this.$store.state.form: ", this.$store.state.form)
+        console.log("sparar till form")
+    },
     mounted() {
       this.getHotel();
     },
@@ -140,8 +144,8 @@ export default {
         })
       },
       getHotel: async function() {
-        let result = await fetch('http://localhost:8090/rest/hotel/1');
-        this.hotel = await result.json();
+        let result = await fetch('http://localhost:8090/rest/hotel/'+this.$route.params.id)
+        this.hotel = await result.json()
         console.log(this.hotel)
       }
     }
