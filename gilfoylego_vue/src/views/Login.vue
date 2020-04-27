@@ -51,14 +51,17 @@ export default {
             encodeURIComponent(username) +
             "&password=" +
             encodeURIComponent(password);
-            let response = await fetch("/login", {
+            let response = await fetch("http://localhost:8090/login", {
                 method: "POST",
+                redirect: "manual",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
                 body: credentials
             });
             
             if(response.url.includes('error')){
                 console.log('Fel!')
+            } else {
+                console.log("Success")
             }
         },
         onSubmit(evt) {

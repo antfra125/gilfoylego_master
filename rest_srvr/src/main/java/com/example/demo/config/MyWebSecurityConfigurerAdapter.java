@@ -19,11 +19,12 @@ public class MyWebSecurityConfigurerAdapter extends WebSecurityConfigurerAdapter
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .cors().and()
                 .csrf().disable()
                 .httpBasic()
                 .and()
                 .authorizeRequests()
-                .antMatchers("/rest/**").authenticated()
+                .antMatchers("/rest/**").permitAll()
                 //.antMatchers(HttpMethod.DELETE, "rest/user/*").hasRole("ADMIN")
                 .antMatchers("/").permitAll()
                 .and()
