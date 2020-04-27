@@ -27,6 +27,11 @@ public class UserController {
         return userRepository.findById(id);
     }
 
+    @GetMapping("/{username}")
+    public User findByUserName(@PathVariable String username) {
+        return userRepository.findByUsername(username);
+    }
+
     //behövs ens denna? jag tror inte det   [MVH MAGNUS]
     /*@GetMapping("/username/{username}")
     public Iterable<User> findAllByUsername(@PathVariable(required = false) String username) {
