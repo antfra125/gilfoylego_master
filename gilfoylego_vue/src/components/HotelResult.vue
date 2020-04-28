@@ -1,7 +1,7 @@
 <template>
 <div>
     <div class="container my-4 p-5 grey-border" v-for="hotel in filteredHotels" :key="hotel.id">
-      <router-link to="/hoteldescription">
+      
         <div class="row result">
           <div class="sm-col-12 md-col-12 lg-col-4 pic-col">
             <img :src="hotel.imgUrl">
@@ -24,12 +24,14 @@
               <span v-if="hotel.mToCity < 1000">Avstånd till centrum: {{hotel.mToCity}} m</span>
               <span v-if="hotel.mToCity >= 1000">Avstånd till centrum: {{hotel.mToCity / 1000}} km</span>
             </div>
+            <router-link v-on:click="saveToStore()" :to="'/hoteldescription/'+hotel.id" > <button default=none class="btn-lg btn-warning" >Boka</button>
+      </router-link>
+
             <div class="row d-flex justify-content-end pt-5">
               Från ?kr
             </div>
           </div>
         </div>
-      </router-link>
       </div>
     </div>
 </template>
@@ -42,6 +44,7 @@ export default {
         hotels: []
       }
     },
+    
     mounted() {
       this.getHotels();
     },
@@ -49,10 +52,26 @@ export default {
       getHotels: async function() {
         let result = await fetch('http://localhost:8090/rest/hotelview');
         this.hotels = await result.json();
+      },
+        //localStorage.setItem('formen', JSON.stringify(this.form));
+        saveToStore(){
+        console.log("saveToStore kördes!")
+        this.$store.state.form = this.form ;
+        alert("WOW! /HotelResult sparade till $store.state på ditt klick!")
       }
     },
-    props: ['search', 'm2Center'],
+    props: {
+      form: {},
+      hotelId: String,
+      search: String, 
+      m2Center: String
+      }
+    ,
   computed: {
+    // form(){
+    //   return this.$store.state.form
+    // },
+
   filteredHotels (){
       console.log(this.m2Center)
         if(this.m2Center != '') {

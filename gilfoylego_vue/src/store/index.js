@@ -5,9 +5,21 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    isLoggedIn: false
+    form: {
+    search: '',
+    startDate: '',
+    endDate: '',
+    amountOfRooms: '',
+    amenities: [],
+    m2Center: '',
+    m2Beach: ''
+
+  }
   },
-  mutations: {
+  mutations: { 
+    changeForm(state, value){
+    state.form = value;
+  }
   },
   actions: {
   },
