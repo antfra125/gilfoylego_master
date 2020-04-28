@@ -13,24 +13,33 @@
               ></b-form-input>
             </div>
             <div class="col-auto p-0">
-              <button class="form-control custom-search-button"><img class="pb-1" src="../images/search.png"></button>
+              <button class="form-control custom-search-button">
+                <img class="pb-1" src="../images/search.png" />
+              </button>
             </div>
           </div>
           <div class="row form-group d-flex justify-content-between">
             <div class="col-6">
+              <div class="row">Från</div>
               <div class="row">
-                Från
-              </div>
-              <div class="row">
-                <b-form-datepicker v-model="form.startDate" :min="sMin" :max="sMax" placeholder="Från"></b-form-datepicker>
+                <b-form-datepicker
+                  v-model="form.startDate"
+                  :default="sMin"
+                  :min="sMin"
+                  :max="sMax"
+                  placeholder="Från"
+                ></b-form-datepicker>
               </div>
             </div>
             <div class="col-6">
-              <div class="row d-flex justify-content-end">
-                Till
-              </div>
+              <div class="row d-flex justify-content-end">Till</div>
               <div class="row">
-                <b-form-datepicker v-model="form.endDate" :min="eMin" :max="eMax" placeholder="Till"></b-form-datepicker>
+                <b-form-datepicker
+                  v-model="form.endDate"
+                  :min="eMin"
+                  :max="eMax"
+                  placeholder="Till"
+                ></b-form-datepicker>
               </div>
             </div>
           </div>
@@ -42,15 +51,17 @@
               required
               placeholder="Antal rum"
             ></b-form-input>
-          </div>        
+          </div>
           <div class="row form-group sort d-flex justify-content-between">
             <span class="column">Sortera efter:</span>
-            <span class="column"><img src="../images/sort.png"> Pris</span>
-            <span class="column"><img src="../images/sort.png"> Omdömde</span>
+            <span class="column">
+              <img src="../images/sort.png" /> Pris
+            </span>
+            <span class="column">
+              <img src="../images/sort.png" /> Omdömde
+            </span>
           </div>
-          <div class="row">
-            Filter:
-          </div>
+          <div class="row">Filter:</div>
           <b-form-checkbox-group v-model="form.amenities">
             <div class="row d-flex justify-content-between">
               <div class="column">
@@ -71,22 +82,22 @@
           </b-form-checkbox-group>
           <div class="row form-group">
             <b-form-input
-                type="number"
-                min="0"
-                v-model="form.m2Beach"
-                placeholder="Maxavstånd till strand i meter"
+              type="number"
+              min="0"
+              v-model="form.m2Beach"
+              placeholder="Maxavstånd till strand i meter"
             ></b-form-input>
           </div>
           <div class="row">
             <b-form-input
-                type="number"
-                min="0"
-                v-model="form.m2Center"
-                placeholder="Maxavstånd till centrum i meter"
+              type="number"
+              min="0"
+              v-model="form.m2Center"
+              placeholder="Maxavstånd till centrum i meter"
             ></b-form-input>
           </div>
           <div>
-            <HotelResult :search="form.search" :m2Center="form.m2Center"/>
+            <HotelResult :search="form.search" :m2Center="form.m2Center" />
           </div>
         </b-form>
       </div>
@@ -95,51 +106,57 @@
 </template>
 
 <script>
-import HotelResult from '@/components/HotelResult.vue'
+import HotelResult from "@/components/HotelResult.vue";
 
 export default {
-  name: 'Search',
+  name: "Search",
   components: {
     HotelResult
   },
   data() {
     return {
-      sMin: '2020-07-01',
-      sMax: '2020-08-30',
-      eMin: '2020-07-02',
-      eMax: '2020-08-31',
+      sMin: "2020-07-01",
+      sMax: "2020-08-30",
+      eMin: "2020-07-02",
+      eMax: "2020-08-31",
       form: {
-        search: '',
-        startDate: '',
-        endDate: '',
-        amountOfRooms: '',
+        search: "",
+        startDate: "",
+        endDate: "",
+        amountOfRooms: "",
         amenities: [],
-        m2Center: ''
+        m2Center: ""
       },
       show: true,
       hotels: []
-    }
+    };
   },
-    mounted() {
-      this.getHotels();
+  mounted() {
+    this.getHotels();
+  },
+    
+    methods: {storeSearch: function() {
+      localStorage.setItem("formen", JSON.stringify(this.form));
+      console.log("sparar till localStorage: ", this.form);
+      alert("hey! /Search/ sparade till localstorage på ditt klick!");
     },
-    methods: {
       onSubmit(evt) {
-        evt.preventDefault()
-        alert(JSON.stringify(this.form))
+        evt.preventDefault();
+        alert(JSON.stringify(this.form));
       },
       getHotels: async function() {
-        let result = await fetch('http://localhost:8090/rest/hotelview');
+        let result = await fetch("http://localhost:8090/rest/hotelview");
         this.hotels = await result.json();
-        console.log(this.hotels)
+        console.log(this.hotels);
       }
     },
-  computed: {
-    filteredHotels (){
-      return this.hotels.filter(hotel => {
-        return hotel.name.toLowerCase().includes(this.search.toLowerCase())
-      })
+    computed: {
+      filteredHotels() {
+        return this.hotels.filter(hotel => {
+          return hotel.name.toLowerCase().includes(this.search.toLowerCase());
+        });
+      }
     }
   }
-}
+
 </script>
