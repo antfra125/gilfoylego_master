@@ -1,9 +1,13 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity(name="users")
+@Table(uniqueConstraints={@UniqueConstraint(columnNames={"username"})})
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -24,6 +28,19 @@ public class User {
     private String address;
     @OneToMany(mappedBy = "user")
     private Set<Booking> bookings;
+
+    public User() {
+    }
+
+    public User(String username, String password, String email, String phone, String firstName, String lastName, String address) {
+        this.username = username;
+        this.password = password;
+        this.email = email;
+        this.phone = phone;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.address = address;
+    }
 
     public Long getId() {
         return id;
@@ -53,10 +70,12 @@ public class User {
         this.email = email;
     }
 
+    @JsonIgnore
     public String getPassword() {
         return password;
     }
 
+    @JsonProperty
     public void setPassword(String password) {
         this.password = password;
     }

@@ -8,6 +8,8 @@ package com.example.demo.config;
 public class MyWebMvcConfigurer implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
-        registry.addMapping("/**").allowedMethods("GET", "POST", "PUT", "DELETE");
+        registry
+                .addMapping("/**").allowedMethods("GET", "POST", "PUT", "DELETE")
+                .allowedOrigins("*");
     }
 }
