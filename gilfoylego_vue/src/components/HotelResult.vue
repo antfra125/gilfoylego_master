@@ -24,7 +24,7 @@
               <span v-if="hotel.mToCity < 1000">Avstånd till centrum: {{hotel.mToCity}} m</span>
               <span v-if="hotel.mToCity >= 1000">Avstånd till centrum: {{hotel.mToCity / 1000}} km</span>
             </div>
-            <router-link v-on:click="saveToStore()" :to="'/hoteldescription/'+hotel.id" > <button default=none class="btn-lg btn-warning" >Boka</button>
+            <router-link :to="'/hoteldescription/'+hotel.id" > <button default=none class="btn-lg btn-warning" >Boka</button>
       </router-link>
 
             <div class="row d-flex justify-content-end pt-5">
@@ -65,7 +65,9 @@ export default {
       form: {},
       hotelId: String,
       search: String, 
-      m2Center: String
+      m2Center: String,
+      dateStart: String,
+      dateEnd: String
       }
     ,
   computed: {

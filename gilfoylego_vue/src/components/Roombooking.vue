@@ -1,7 +1,7 @@
 <template>
   <main>
     <section class="mb-5">
-      <span>{{formdata.endDate}}aaaaaaaaaaaaaaaaaaaaa</span>
+      <!-- TODO HÄR VILL JAG ATT DET SKA SKRIVAS UT DATUMstart OCH DATUMend SOM FINNS SPARAT I STORE.STATE.FORM-->
     </section>
     <section class="mb-5">
       <h4 class="mb-4">Rum</h4>
@@ -70,7 +70,7 @@ export default {
 
   data(){
     return {
-      form: {},
+      formu: {},
       roomspecs: {
           amountOfGrownUps: '',
           amountOfKids: '',
@@ -87,6 +87,7 @@ export default {
   methods:{
     add_roombooking(){
 
+      //TODO
       let formdata = this.$store.state.form
       console.log("taget från state.form: ",formdata)
       let roombookingObj = formdata.startDate + formdata.endDate + formdata.amountOfRooms;
@@ -94,15 +95,18 @@ export default {
         console.log(roombookingObj)
       console.log("ok")
       if(formdata.startDate == "" || formdata.endDate == ""){
-        console.log("neeee, du måste välja datum ju")
-        // TODO skriv ut nått om att inget datum valts. (eller kanske att knappen inte ska visas...hmmm)
+        console.log("neeee, error!! du måste välja datum ju")
+       
       }
       else{
-        //spara bokningen till 
+        // ta startdatum och slutdatum från store.state.form och släng ihop dom med roomspecs
+        // 
+        
         let roombookingObj = formdata.startDate + formdata.endDate;
         
         console.log(roombookingObj)
-        
+
+        //TODO spara bokningen till store när den är klar
       //this.$store.commit('ADD_ROOMBOOKING', currentRoombooking)
       }
       //TODO
@@ -113,7 +117,7 @@ export default {
     console.log(fulhemtadForm)
   },
   mounted(){
-    
+        
         console.log("laddar in från this.$store.state.form: ", this.$store.state.form)
         console.log("sparar till form")
   }

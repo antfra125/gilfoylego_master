@@ -14,7 +14,6 @@
         </div>
       </span>
     </section>
-
   <Roombooking/>
 
   </section>
