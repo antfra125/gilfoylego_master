@@ -39,6 +39,10 @@ export default {
     return {
       isLoggedIn: false
     };
+  },
+  created() {
+    console.log("created() kördes");
+    this.$store.dispatch("getFormdata");
   }
 };
 </script>
