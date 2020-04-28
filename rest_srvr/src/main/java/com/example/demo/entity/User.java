@@ -1,6 +1,7 @@
 package com.example.demo.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity(name="users")
 public class User {
@@ -21,6 +22,8 @@ public class User {
     private String lastName;
     @Column
     private String address;
+    @OneToMany(mappedBy = "user")
+    private Set<Booking> bookings;
 
     public Long getId() {
         return id;
@@ -28,6 +31,10 @@ public class User {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public Set<Booking> getBookings() {
+        return bookings;
     }
 
     public String getUsername() {

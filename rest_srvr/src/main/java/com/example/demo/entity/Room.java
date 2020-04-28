@@ -1,20 +1,26 @@
 package com.example.demo.entity;
 
 import javax.persistence.*;
+import java.util.Set;
 
 @Entity
 public class Room {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-    @Column(name = "hotel_id")
-    private long hotelId;
-    @Column(name = "roomtype_id")
-    private long roomtypeId;
+    @ManyToOne
+    @JoinColumn(name = "hotel_id")
+    private Hotel hotel;
+    @ManyToOne
+    @JoinColumn(name = "roomtype_id")
+    private Roomtype roomtype;
     @Column
     private int sizem2;
     @Column
     private double price;
+    @OneToMany(mappedBy = "room")
+    private Set<RoomBooking> roomBookings;
+
 
     public long getId() {
         return id;
@@ -24,20 +30,16 @@ public class Room {
         this.id = id;
     }
 
-    public long getHotelId() {
-        return hotelId;
+    public String getHotel() {
+        return hotel.getName();
     }
 
-    public void setHotelId(long hotelId) {
-        this.hotelId = hotelId;
+    public String getRoomtype() {
+        return roomtype.getName();
     }
 
-    public long getRoomtypeId() {
-        return roomtypeId;
-    }
-
-    public void setRoomtypeId(long roomtypeId) {
-        this.roomtypeId = roomtypeId;
+    public Set<RoomBooking> getRoomBookings() {
+        return roomBookings;
     }
 
     public int getSizem2() {
