@@ -52,13 +52,14 @@ export default {
       getHotels: async function() {
         let result = await fetch('http://localhost:8090/rest/hotelview');
         this.hotels = await result.json();
-      },
-        //localStorage.setItem('formen', JSON.stringify(this.form));
-        saveToStore(){
-        console.log("saveToStore kördes!")
-        this.$store.state.form = this.form ;
-        alert("WOW! /HotelResult sparade till $store.state på ditt klick!")
-      }
+      // },
+      //   //localStorage.setItem('formen', JSON.stringify(this.form));
+      //   saveToStore(){
+      //   console.log("saveToStore kördes!")
+      //   this.$store.state.form = this.form ;
+      //   alert("WOW! /HotelResult sparade till $store.state på ditt klick!")
+      // }
+    }
     },
     props: {
       form: {},
@@ -73,7 +74,7 @@ export default {
     // },
 
   filteredHotels (){
-      console.log(this.m2Center)
+     
         if(this.m2Center != '') {
             return this.hotels.filter(hotel => {
             return hotel.name.toLowerCase().includes(this.search.toLowerCase()) && hotel.metersToCityCenter < this.m2Center  
