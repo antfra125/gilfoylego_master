@@ -95,7 +95,11 @@
               v-model="form.m2Center"
               placeholder="Maxavstånd till centrum i meter"
             ></b-form-input>
+            <div>
+              <button class="btn-lg btn-primary">SÖK</button>
+            </div>
           </div>
+
           <div>
             <HotelResult :search="form.search" :m2Center="form.m2Center" />
           </div>
@@ -119,14 +123,6 @@ export default {
       sMax: "2020-08-30",
       eMin: "2020-07-02",
       eMax: "2020-08-31",
-      form: {
-        search: "",
-        startDate: "",
-        endDate: "",
-        amountOfRooms: "",
-        amenities: [],
-        m2Center: ""
-      },
       show: true,
       hotels: []
     };
@@ -134,29 +130,29 @@ export default {
   mounted() {
     this.getHotels();
   },
-    
-    methods: {storeSearch: function() {
-      localStorage.setItem("formen", JSON.stringify(this.form));
-      console.log("sparar till localStorage: ", this.form);
-      alert("hey! /Search/ sparade till localstorage på ditt klick!");
+
+  methods: {
+    onSubmit(evt) {
+      evt.preventDefault();
+      alert(JSON.stringify(this.form));
     },
-      onSubmit(evt) {
-        evt.preventDefault();
-        alert(JSON.stringify(this.form));
+    getHotels: async function() {
+      let result = await fetch("http://localhost:8090/rest/hotelview");
+      this.hotels = await result.json();
+      console.log(this.hotels);
+    }
+  },
+  computed: {
+    form: {
+      get() {
+        console.log("computed: forms: get() WOW!");
+        return this.$store.state.form;
       },
-      getHotels: async function() {
-        let result = await fetch("http://localhost:8090/rest/hotelview");
-        this.hotels = await result.json();
-        console.log(this.hotels);
-      }
-    },
-    computed: {
-      filteredHotels() {
-        return this.hotels.filter(hotel => {
-          return hotel.name.toLowerCase().includes(this.search.toLowerCase());
-        });
+      set(value) {
+        console.log("computed: forms: set(value) KOLLA!!");
+        this.$store.commit("SET_FORM", value);
       }
     }
   }
-
+};
 </script>

@@ -68,14 +68,17 @@ export default {
         search: "",
         startDate: "",
         endDate: "",
-        amountOfRooms: ""
+        amountOfRooms: "",
+        amenities: [],
+        m2Center: "",
+        m2Beach: ""
       },
       show: true
     };
   },
   methods: {
     onSubmit(evt) {
-      evt.preventDefault()
+      evt.preventDefault();
       alert(JSON.stringify(this.form));
     },
     onReset(evt) {

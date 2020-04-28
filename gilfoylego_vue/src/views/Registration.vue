@@ -1,8 +1,8 @@
 <template>
     <div class="d-flex justify-content-center pt-5">
-        <b-form class="text-center" @submit="onSubmit" @reset="onReset" v-if="show">
+        <b-form class="text-center" @submit="onSubmit" @reset="onReset">
             <div class="form-group">
-                <router-link to="/">Tillbaka till login</router-link>
+                <router-link to="/login">Tillbaka till login</router-link>
             </div>
             <div class="form-group">
                 <b-form-input
@@ -96,14 +96,15 @@
             street: '',
             zipCode: '',
             city: '',
-
+            address: ''
         },
-        show: true
+        
       }
     },
     methods: {
       onSubmit(evt) {
         evt.preventDefault()
+        this.form.address = this.form.street + ' ' + this.form.zipCode + ' ' + this.form.city
         alert(JSON.stringify(this.form))
       },
       onReset(evt) {
@@ -118,10 +119,7 @@
         this.form.street = ''
         this.form.zipCode = ''
         this.form.city = ''
-        this.show = false
-        this.$nextTick(() => {
-          this.show = true
-        })
+        this.form.address = ''
       }
     }
   }
