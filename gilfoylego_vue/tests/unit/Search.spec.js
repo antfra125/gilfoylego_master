@@ -1,7 +1,7 @@
 import { shallowMount } from '@vue/test-utils'
 import Search from '@/views/Search.vue'
 
-describe('Home.vue', () => {
+describe('Search.vue', () => {
 
   const component = shallowMount(Search)
 
@@ -21,14 +21,38 @@ describe('Home.vue', () => {
     expect(component.vm.eMax).toEqual('2020-08-31')
   })
   test('the form has the required components', () => {
-    expect(component.vm.form).toEqual({"amenities": [], "amountOfRooms": "", "endDate": "",
-     "m2Center": "", "search": "", "startDate": ""})
+    expect(component.vm.form).toEqual({
+      "amenities": [], "amountOfRooms": "", "endDate": "",
+      "m2Center": "", "search": "", "startDate": ""
+    })
   })
-  test('page is showing', () =>{
+  test('page is showing', () => {
     expect(component.vm.show).toEqual(true)
-  })  
+  })
   test('hotels is an array', () => {
     expect(component.vm.hotels).toEqual([])
   })
+  test('the list of hotels is retrieved', () => {
+    let results = component.vm.getHotels()
+
+    expect(objectToArray(results)).toEqual(component.vm.hotels)
+  })
+  test('the search function is working', () => {
+    let results = component.vm.filteredHotels()
+    for (hotel of results) {
+      result = hotel.name.toLowerCase()
+      expect(hotel.name.toLowerCase()).toEqual(result)
+    }
+
+  })
 }
 )
+function objectToArray(results) {
+  var result = [];
+  for (var key in results) {
+    if (results.hasOwnProperty(key)) {
+      result.push(results[key]);
+    }
+  }
+  return result;
+}
