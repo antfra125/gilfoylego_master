@@ -51,7 +51,7 @@ export default {
             encodeURIComponent(username) +
             "&password=" +
             encodeURIComponent(password);
-            let response = await fetch("http://localhost:8090/login", {
+            let response = await fetch("/rest/login", {
                 method: "POST",
                 redirect: "manual",
                 headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -68,8 +68,8 @@ export default {
             } else {
                 console.log("Success")
                 this.$store.state.isLoggedIn = true
-                /*let response = await fetch("http://localhost:8090/rest/activeuser");
-                response = await response.json();*/
+                let response = await fetch("/rest/activeuser");
+                response = await response.json();
                 console.log(response);
             }
         },

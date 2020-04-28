@@ -18,9 +18,10 @@ public class ActiveUserController {
     private UserRepository userRepository;
 
     @RequestMapping(value = "/activeuser", method = RequestMethod.GET)
-    @ResponseBody
-    public String currentUserName(Principal principal) {
-        System.out.println(principal);
-        return principal.getName();
+    public User currentUserName(Principal principal) {
+        if(principal != null){
+            return userRepository.findByUsername(principal.getName());
+        }
+        return null;
     }
 }
