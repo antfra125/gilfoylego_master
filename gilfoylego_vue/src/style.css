@@ -34,8 +34,10 @@
 }
 
 .result img {
-    height: 25vh;
-    width: 11vw;
+    height: 205px;
+    width: 150px;
+    object-fit: cover;
+    border: 1px solid lightgrey;
 }
 
 .extra img {
@@ -55,3 +57,29 @@ button a:hover{
 .extra{
     margin-left: 3vw;
 }
+
+.top-section img {
+    height: 250px;
+    width: 340px;
+}
+
+.grey-border {
+    border: 1px solid lightgrey;
+}
+b-form-datepicker{
+    max-height: 240%;
+}
+form{
+    width: 600px;
+}
+
+@media only screen and (max-width: 765px) {
+    form{
+        width: 400px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    form{
+        width: 250px;
+    }
+  }

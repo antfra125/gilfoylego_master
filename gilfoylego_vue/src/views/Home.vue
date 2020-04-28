@@ -1,11 +1,11 @@
 
 <template>
-  <div class="home text-center">
-    <div class="banner p-5">
+  <div class="home text-center pb-5">
+    <div class="banner pb-5 pt-2">
       <img src="../images/hawaii.jpg" />
     </div>
     <div class="d-flex justify-content-center">
-      <b-form class="container b-form" @submit="onSubmit" @reset="onReset" v-if="show">
+      <b-form @submit="onSubmit" @reset="onReset" v-if="show">
         <div class="row d-flex justify-content-center form-group">
           <b-form-input
             type="text"
@@ -15,16 +15,21 @@
           ></b-form-input>
         </div>
         <div class="row form-group d-flex justify-content-between">
-          <div class="col-6">
+          <div class="col-md-5 col-sm-12">
             <div class="row">Från</div>
             <div class="row">
-              <b-form-datepicker v-model="startDate" :min="sMin" :max="sMax" placeholder="Från"></b-form-datepicker>
+              <b-form-datepicker
+                v-model="form.startDate"
+                :min="sMin"
+                :max="sMax"
+                placeholder="Från"
+              ></b-form-datepicker>
             </div>
           </div>
-          <div class="col-6">
+          <div class="col-md-5 col-sm-12">
             <div class="row d-flex">Till</div>
             <div class="row">
-              <b-form-datepicker v-model="endDate" :min="eMin" :max="eMax" placeholder="Till"></b-form-datepicker>
+              <b-form-datepicker v-model="form.endDate" :min="eMin" :max="eMax" placeholder="Till"></b-form-datepicker>
             </div>
           </div>
         </div>
@@ -38,7 +43,14 @@
           ></b-form-input>
         </div>
         <div class="row form-group d-flex justify-content-center">
-          <button type="button" class="btn btn-info"><router-link to="/search">Sök</router-link></button>
+          <span>
+            <router-link to="/search">
+              <b-button>Sök</b-button>
+            </router-link>
+          </span>
+          <span class="pl-2">
+            <b-button type="reset">Töm</b-button>
+          </span>
         </div>
       </b-form>
     </div>
@@ -67,6 +79,23 @@ export default {
       ],
       show: true
     };
+  },
+  methods: {
+    onSubmit(evt) {
+      evt.preventDefault();
+      alert(JSON.stringify(this.form));
+    },
+    onReset(evt) {
+      evt.preventDefault();
+      this.form.search = "";
+      this.form.startDate = "";
+      this.form.endDate = "";
+      this.form.amountOfRooms = "";
+      this.show = false;
+      this.$nextTick(() => {
+        this.show = true;
+      });
+    }
   }
 };
 </script>
