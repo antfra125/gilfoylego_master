@@ -12,9 +12,27 @@ export default new Vuex.Store({
   state: {  
     user: {},
     isLoggedIn: false,    
-    form: {}
+    form: {},
+    roombookings: []
   },
   mutations: {
+    ADD_ROOMBOOKING(state, payload){
+        state.roombookings.push(payload)
+      console.log("adding a roombooking")
+    },
+    REMOVE_ONE_ROOMBOOKING(state, payload){
+      // TODO    är detta verkligen rimligt?
+      try{
+        state.roombookings = state.roombookings.splice(state.roombookings.indexOf(payload))     
+      }catch (e){ console.log("ERROR, did not find the searched element in the array.")
+    }
+  },
+    CLEAR_ROOMBOOKINGS(state){
+      state.roombookings = []
+      console.log("deleted all active roombookings. i hope you intended to do this.")
+
+    }
+    ,
     SET_FORM(state, payload) {
       
       console.log("state.form innan:",state.form)
@@ -24,12 +42,14 @@ export default new Vuex.Store({
 
       console.log("You set state.form to the value of the payload!")
     },
-    setUser(state, value){
+
+    SET_USER(state, value){
       state.user = value;
       console.log('Inloggad: ' + this.state.user)
     }
   },
   actions: {
+
     async getFormdata({ commit } ) {
       console.log("You made a dispatch through getFormdata!")
       let form =  {
@@ -47,13 +67,13 @@ export default new Vuex.Store({
       let response = await fetch('rest/activeuser')
       let response2 = await response.json()
 
-      if(response2 == null){
+      if(response == null){
         this.state.isLoggedIn = false;
       }
       else{
         this.state.isLoggedIn = true;
       }
-     commit('setUser', response2)
+     commit('SET_USER', response2)
     }
   },
   modules: {

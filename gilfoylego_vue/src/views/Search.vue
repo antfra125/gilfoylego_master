@@ -43,7 +43,7 @@
               </div>
             </div>
           </div>
-          <div class="row form-group d-flex justify-content-center">
+          <!-- <div class="row form-group d-flex justify-content-center">
             <b-form-input
               type="number"
               min="1"
@@ -51,7 +51,7 @@
               required
               placeholder="Antal rum"
             ></b-form-input>
-          </div>
+          </div> -->
           <div class="row form-group sort d-flex justify-content-between">
             <span class="column">Sortera efter:</span>
             <span class="column">
