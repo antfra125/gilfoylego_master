@@ -68,8 +68,6 @@ export default {
             } else {
                 console.log("Success")
                 this.$store.state.isLoggedIn = true
-                let response = await fetch("/rest/activeuser");
-                response = await response.json();
                 console.log(response);
             }
         },

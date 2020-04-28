@@ -8,15 +8,14 @@ export default new Vuex.Store({
     user: {},
     isLoggedIn: false,
     form: {
-    search: '',
-    startDate: '',
-    endDate: '',
-    amountOfRooms: '',
-    amenities: [],
-    m2Center: '',
-    m2Beach: ''
-
-  }
+      search: '',
+      startDate: '',
+      endDate: '',
+      amountOfRooms: '',
+      amenities: [],
+      m2Center: '',
+      m2Beach: ''
+    }
   },
   mutations: { 
     changeForm(state, value){
@@ -24,7 +23,7 @@ export default new Vuex.Store({
     },
     setUser(state, value){
       state.user = value;
-      console.log(this.state.user)
+      console.log('Inloggad: ' + this.state.user)
     }
   },
   actions: {
@@ -34,8 +33,8 @@ export default new Vuex.Store({
 
       if(response2 == null){
         this.state.isLoggedIn = false;
-        
-      }else{
+      }
+      else{
         this.state.isLoggedIn = true;
       }
      commit('setUser', response2)
