@@ -1,13 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="search-function;search-1,-searching-for-hotels-by-hotels-namns" tests="6" failures="0" skipped="3">
+    <testsuite name="search-function;search-1,-searching-for-hotels-by-hotels-namns" tests="6" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the home page" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that im on the home page" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns" time="4.330219">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
         </testcase>
         <testcase name="When and click on the serch bar and type in Value 1" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
             <skipped message="">
@@ -24,14 +36,26 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="search-function;search-1,-searching-for-hotels-by-hotels-namns" tests="6" failures="0" skipped="3">
+    <testsuite name="search-function;search-1,-searching-for-hotels-by-hotels-namns" tests="6" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the home page" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that im on the home page" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns" time="2.367317199">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
         </testcase>
         <testcase name="When and click on the serch bar and type in Value 1" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
             <skipped message="">
@@ -48,14 +72,26 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="search-function;search-1,-searching-for-hotels-by-hotels-namns" tests="6" failures="0" skipped="3">
+    <testsuite name="search-function;search-1,-searching-for-hotels-by-hotels-namns" tests="6" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the home page" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that im on the home page" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns" time="2.3073972">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
         </testcase>
         <testcase name="When and click on the serch bar and type in Value 1" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
             <skipped message="">
@@ -72,14 +108,26 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="search-function;search-2,-searching-for-hotels-location-with-citys" tests="6" failures="0" skipped="3">
+    <testsuite name="search-function;search-2,-searching-for-hotels-location-with-citys" tests="6" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the home page" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that im on the home page" classname="search-function;search-2,-searching-for-hotels-location-with-citys" time="1.7843173">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
         </testcase>
         <testcase name="When and clcik on the search bar and type in Malmö" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
             <skipped message="">
@@ -96,14 +144,26 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="search-function;search-2,-searching-for-hotels-location-with-citys" tests="6" failures="0" skipped="3">
+    <testsuite name="search-function;search-2,-searching-for-hotels-location-with-citys" tests="6" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the home page" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that im on the home page" classname="search-function;search-2,-searching-for-hotels-location-with-citys" time="1.9311553">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
         </testcase>
         <testcase name="When and clcik on the search bar and type in Value 1" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
             <skipped message="">
@@ -120,14 +180,26 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="search-function;search-2,-searching-for-hotels-location-with-citys" tests="6" failures="0" skipped="3">
+    <testsuite name="search-function;search-2,-searching-for-hotels-location-with-citys" tests="6" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the home page" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that im on the home page" classname="search-function;search-2,-searching-for-hotels-location-with-citys" time="1.752607899">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
         </testcase>
         <testcase name="When and clcik on the search bar and type in Value 1" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
             <skipped message="">
@@ -144,14 +216,26 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="search-function;search-3,-searching-for-hotels-location-with-countries" tests="6" failures="0" skipped="3">
+    <testsuite name="search-function;search-3,-searching-for-hotels-location-with-countries" tests="6" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the home page" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that im on the home page" classname="search-function;search-3,-searching-for-hotels-location-with-countries" time="1.9369717">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
         </testcase>
         <testcase name="When and clcik on the search bar and type in москва" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
             <skipped message="">
@@ -168,14 +252,26 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="search-function;search-3,-searching-for-hotels-location-with-countries" tests="6" failures="0" skipped="3">
+    <testsuite name="search-function;search-3,-searching-for-hotels-location-with-countries" tests="6" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the home page" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that im on the home page" classname="search-function;search-3,-searching-for-hotels-location-with-countries" time="1.7619659">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
         </testcase>
         <testcase name="When and clcik on the search bar and type in Value 1" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
             <skipped message="">
@@ -192,14 +288,26 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="search-function;search-3,-searching-for-hotels-location-with-countries" tests="6" failures="0" skipped="3">
+    <testsuite name="search-function;search-3,-searching-for-hotels-location-with-countries" tests="6" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the home page" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that im on the home page" classname="search-function;search-3,-searching-for-hotels-location-with-countries" time="1.4614514">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
         </testcase>
         <testcase name="When and clcik on the search bar and type in Value 1" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
             <skipped message="">
@@ -216,14 +324,26 @@
             </skipped>
         </testcase>
     </testsuite>
-    <testsuite name="search-function;search-4,-searching-for-hotels-between-to-dates" tests="6" failures="0" skipped="3">
+    <testsuite name="search-function;search-4,-searching-for-hotels-between-to-dates" tests="6" failures="1" skipped="2">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the home page" classname="search-function;search-4,-searching-for-hotels-between-to-dates">
-            <skipped message="">
-            </skipped>
+        <testcase name="Given that im on the home page" classname="search-function;search-4,-searching-for-hotels-between-to-dates" time="1.9984747">
+            <failure message="SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76">SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</failure>
         </testcase>
         <testcase name="When and click on the search bar and type in &quot;Spain&quot;" classname="search-function;search-4,-searching-for-hotels-between-to-dates">
             <skipped message="">

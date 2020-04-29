@@ -1,9 +1,11 @@
+let {sleep} = require('./funcs');
 module.exports = function () {
 
-
+    let sleepTime = 7000;
     this.Given(/^that im on the home page$/, async function () {
-        await helpers.loadPage('https://google.com');
-        await(6000);
+        await helpers.loadPage('http://localhost:8080/search');
+        await sleep(sleepTime);
+        assert.instanceOf(searchField, searchField.constructor, "Expected a web element")
     });
 
 
@@ -11,7 +13,7 @@ module.exports = function () {
 
 
     this.When(/^and click on the serch bar and type in <hotelname>$/, async function (hotelname) {
-        
+
         let serchField = await this.findElement('#__BVID__66__dialog_')
         this.click(serchField);
         serchField.sendKeys(hotelname);
@@ -41,7 +43,7 @@ module.exports = function () {
 
     this.Then(/^my frist search result should be <hotelname>$/, async function () {
 
-        
+
     });
 
 
@@ -154,7 +156,7 @@ module.exports = function () {
     });
 
     this.Then(/^my hotels results should be between start date and end date$/, async function () {
-        
+
         let startDate = await this.findElement('#__BVID__68__cell - 2020 - 07 -19_ > span');
         let endDate = await this.findElement('#__BVID__68__cell - 2020 - 07 -22_ > span');
     });

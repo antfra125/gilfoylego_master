@@ -271,7 +271,7 @@ pre {
           <div class="project-name visible-md visible-lg">gilfoylego_master_test</div>
           <div class="label-container">
             <span class="label label-success" title=scenarios>Passed: 0</span>
-            <span class="label label-danger" title=scenarios>Failed: 0</span>
+            <span class="label label-danger" title=scenarios>Failed: 10</span>
           </div>
         </div>
       </div>
@@ -279,7 +279,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Wed Apr 29 2020 11:03:35 GMT+0200 (GMT+02:00)</div>
+      <div class="generated-on">Wed Apr 29 2020 13:57:55 GMT+0200 (centraleuropeisk sommartid)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -306,12 +306,12 @@ pre {
                         <b>Feature:</b>Search function
                         <span class="label-container">
               
+              <span class="label label-danger"
+                                                         title="10 Scenarios Failed">10</span>
               
               
               
               
-              <span class="label label-primary"
-                                                            title="10 Ambiguous Scenarios">10</span>
                         </span>
                     </a>
                 </h4>
@@ -332,7 +332,7 @@ pre {
                                    href="#collapseScenariogilfoylego_master_test0_0">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Search 1, Searching for hotels by hotels namns
@@ -343,7 +343,8 @@ pre {
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               <span class="label label-primary"
                                                                   title="3 Ambiguous Steps">3</span>
                             </span>
@@ -362,8 +363,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -372,7 +373,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               0s
+                               4s 330ms
                               </span>
                             
                          
@@ -381,13 +382,72 @@ pre {
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that im on the home page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
+
                                     
+                                    <a href="#error0_00"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_00"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_00">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_00" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -609,7 +669,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               2s 818ms
+                               6ms
                               </span>
                             
                          
@@ -630,18 +690,23 @@ pre {
                                              data-target="#error-modal-0_06">
                                             <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                     </div>
 
                                 <div class="modal fade" id="error-modal-0_06" tabindex="-1" role="dialog"
@@ -660,18 +725,23 @@ From: Task: WebDriver.createSession()
                                                 <h5>
                                                     <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                                 </h5>
                                             </div>
 
@@ -712,7 +782,7 @@ From: Task: WebDriver.createSession()
                                    href="#collapseScenariogilfoylego_master_test0_1">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Search 1, Searching for hotels by hotels namns
@@ -723,7 +793,8 @@ From: Task: WebDriver.createSession()
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               <span class="label label-primary"
                                                                   title="3 Ambiguous Steps">3</span>
                             </span>
@@ -742,8 +813,8 @@ From: Task: WebDriver.createSession()
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -752,7 +823,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               0s
+                               2s 367ms
                               </span>
                             
                          
@@ -761,13 +832,72 @@ From: Task: WebDriver.createSession()
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that im on the home page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
+
                                     
+                                    <a href="#error0_10"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_10"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_10">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_10" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -989,7 +1119,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               1s 533ms
+                               1ms
                               </span>
                             
                          
@@ -1010,18 +1140,23 @@ From: Task: WebDriver.createSession()
                                              data-target="#error-modal-0_16">
                                             <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                     </div>
 
                                 <div class="modal fade" id="error-modal-0_16" tabindex="-1" role="dialog"
@@ -1040,18 +1175,23 @@ From: Task: WebDriver.createSession()
                                                 <h5>
                                                     <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                                 </h5>
                                             </div>
 
@@ -1092,7 +1232,7 @@ From: Task: WebDriver.createSession()
                                    href="#collapseScenariogilfoylego_master_test0_2">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Search 1, Searching for hotels by hotels namns
@@ -1103,7 +1243,8 @@ From: Task: WebDriver.createSession()
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               <span class="label label-primary"
                                                                   title="3 Ambiguous Steps">3</span>
                             </span>
@@ -1122,8 +1263,8 @@ From: Task: WebDriver.createSession()
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -1132,7 +1273,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               0s
+                               2s 307ms
                               </span>
                             
                          
@@ -1141,13 +1282,72 @@ From: Task: WebDriver.createSession()
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that im on the home page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
+
                                     
+                                    <a href="#error0_20"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_20"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_20">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_20" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -1369,7 +1569,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               1s 847ms
+                               2ms
                               </span>
                             
                          
@@ -1390,18 +1590,23 @@ From: Task: WebDriver.createSession()
                                              data-target="#error-modal-0_26">
                                             <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                     </div>
 
                                 <div class="modal fade" id="error-modal-0_26" tabindex="-1" role="dialog"
@@ -1420,18 +1625,23 @@ From: Task: WebDriver.createSession()
                                                 <h5>
                                                     <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                                 </h5>
                                             </div>
 
@@ -1472,7 +1682,7 @@ From: Task: WebDriver.createSession()
                                    href="#collapseScenariogilfoylego_master_test0_3">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Search 2, Searching for hotels location with citys
@@ -1483,7 +1693,8 @@ From: Task: WebDriver.createSession()
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               <span class="label label-primary"
                                                                   title="3 Ambiguous Steps">3</span>
                             </span>
@@ -1502,8 +1713,8 @@ From: Task: WebDriver.createSession()
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -1512,7 +1723,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               0s
+                               1s 784ms
                               </span>
                             
                          
@@ -1521,13 +1732,72 @@ From: Task: WebDriver.createSession()
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that im on the home page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
+
                                     
+                                    <a href="#error0_30"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_30"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_30">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_30" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -1749,7 +2019,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               1s 571ms
+                               < 1ms
                               </span>
                             
                          
@@ -1770,18 +2040,23 @@ From: Task: WebDriver.createSession()
                                              data-target="#error-modal-0_36">
                                             <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                     </div>
 
                                 <div class="modal fade" id="error-modal-0_36" tabindex="-1" role="dialog"
@@ -1800,18 +2075,23 @@ From: Task: WebDriver.createSession()
                                                 <h5>
                                                     <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                                 </h5>
                                             </div>
 
@@ -1852,7 +2132,7 @@ From: Task: WebDriver.createSession()
                                    href="#collapseScenariogilfoylego_master_test0_4">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Search 2, Searching for hotels location with citys
@@ -1863,7 +2143,8 @@ From: Task: WebDriver.createSession()
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               <span class="label label-primary"
                                                                   title="3 Ambiguous Steps">3</span>
                             </span>
@@ -1882,8 +2163,8 @@ From: Task: WebDriver.createSession()
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -1892,7 +2173,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               0s
+                               1s 931ms
                               </span>
                             
                          
@@ -1901,13 +2182,72 @@ From: Task: WebDriver.createSession()
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that im on the home page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
+
                                     
+                                    <a href="#error0_40"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_40"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_40">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_40" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -2129,7 +2469,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               1s 776ms
+                               1ms
                               </span>
                             
                          
@@ -2150,18 +2490,23 @@ From: Task: WebDriver.createSession()
                                              data-target="#error-modal-0_46">
                                             <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                     </div>
 
                                 <div class="modal fade" id="error-modal-0_46" tabindex="-1" role="dialog"
@@ -2180,18 +2525,23 @@ From: Task: WebDriver.createSession()
                                                 <h5>
                                                     <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                                 </h5>
                                             </div>
 
@@ -2232,7 +2582,7 @@ From: Task: WebDriver.createSession()
                                    href="#collapseScenariogilfoylego_master_test0_5">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Search 2, Searching for hotels location with citys
@@ -2243,7 +2593,8 @@ From: Task: WebDriver.createSession()
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               <span class="label label-primary"
                                                                   title="3 Ambiguous Steps">3</span>
                             </span>
@@ -2262,8 +2613,8 @@ From: Task: WebDriver.createSession()
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -2272,7 +2623,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               0s
+                               1s 752ms
                               </span>
                             
                          
@@ -2281,13 +2632,72 @@ From: Task: WebDriver.createSession()
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that im on the home page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
+
                                     
+                                    <a href="#error0_50"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_50"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_50">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_50" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -2509,7 +2919,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               1s 876ms
+                               2ms
                               </span>
                             
                          
@@ -2530,18 +2940,23 @@ From: Task: WebDriver.createSession()
                                              data-target="#error-modal-0_56">
                                             <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                     </div>
 
                                 <div class="modal fade" id="error-modal-0_56" tabindex="-1" role="dialog"
@@ -2560,18 +2975,23 @@ From: Task: WebDriver.createSession()
                                                 <h5>
                                                     <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                                 </h5>
                                             </div>
 
@@ -2612,7 +3032,7 @@ From: Task: WebDriver.createSession()
                                    href="#collapseScenariogilfoylego_master_test0_6">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Search 3, Searching for hotels location with countries
@@ -2623,7 +3043,8 @@ From: Task: WebDriver.createSession()
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               <span class="label label-primary"
                                                                   title="3 Ambiguous Steps">3</span>
                             </span>
@@ -2642,8 +3063,8 @@ From: Task: WebDriver.createSession()
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -2652,7 +3073,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               0s
+                               1s 936ms
                               </span>
                             
                          
@@ -2661,13 +3082,72 @@ From: Task: WebDriver.createSession()
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that im on the home page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
+
                                     
+                                    <a href="#error0_60"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_60"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_60">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_60" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -2889,7 +3369,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               1s 228ms
+                               1ms
                               </span>
                             
                          
@@ -2910,18 +3390,23 @@ From: Task: WebDriver.createSession()
                                              data-target="#error-modal-0_66">
                                             <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                     </div>
 
                                 <div class="modal fade" id="error-modal-0_66" tabindex="-1" role="dialog"
@@ -2940,18 +3425,23 @@ From: Task: WebDriver.createSession()
                                                 <h5>
                                                     <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                                 </h5>
                                             </div>
 
@@ -2992,7 +3482,7 @@ From: Task: WebDriver.createSession()
                                    href="#collapseScenariogilfoylego_master_test0_7">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Search 3, Searching for hotels location with countries
@@ -3003,7 +3493,8 @@ From: Task: WebDriver.createSession()
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               <span class="label label-primary"
                                                                   title="3 Ambiguous Steps">3</span>
                             </span>
@@ -3022,8 +3513,8 @@ From: Task: WebDriver.createSession()
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -3032,7 +3523,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               0s
+                               1s 761ms
                               </span>
                             
                          
@@ -3041,13 +3532,72 @@ From: Task: WebDriver.createSession()
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that im on the home page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
+
                                     
+                                    <a href="#error0_70"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_70"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_70">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_70" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -3269,7 +3819,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               1s 134ms
+                               3ms
                               </span>
                             
                          
@@ -3290,18 +3840,23 @@ From: Task: WebDriver.createSession()
                                              data-target="#error-modal-0_76">
                                             <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                     </div>
 
                                 <div class="modal fade" id="error-modal-0_76" tabindex="-1" role="dialog"
@@ -3320,18 +3875,23 @@ From: Task: WebDriver.createSession()
                                                 <h5>
                                                     <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                                 </h5>
                                             </div>
 
@@ -3372,7 +3932,7 @@ From: Task: WebDriver.createSession()
                                    href="#collapseScenariogilfoylego_master_test0_8">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Search 3, Searching for hotels location with countries
@@ -3383,7 +3943,8 @@ From: Task: WebDriver.createSession()
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               <span class="label label-primary"
                                                                   title="3 Ambiguous Steps">3</span>
                             </span>
@@ -3402,8 +3963,8 @@ From: Task: WebDriver.createSession()
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -3412,7 +3973,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               0s
+                               1s 461ms
                               </span>
                             
                          
@@ -3421,13 +3982,72 @@ From: Task: WebDriver.createSession()
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that im on the home page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
+
                                     
+                                    <a href="#error0_80"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_80"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_80">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_80" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -3649,7 +4269,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               1s 144ms
+                               1ms
                               </span>
                             
                          
@@ -3670,18 +4290,23 @@ From: Task: WebDriver.createSession()
                                              data-target="#error-modal-0_86">
                                             <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                     </div>
 
                                 <div class="modal fade" id="error-modal-0_86" tabindex="-1" role="dialog"
@@ -3700,18 +4325,23 @@ From: Task: WebDriver.createSession()
                                                 <h5>
                                                     <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                                 </h5>
                                             </div>
 
@@ -3752,7 +4382,7 @@ From: Task: WebDriver.createSession()
                                    href="#collapseScenariogilfoylego_master_test0_9">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Search 4, Searching for hotels between to dates
@@ -3763,7 +4393,8 @@ From: Task: WebDriver.createSession()
                               
                               
                               
-                              
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               <span class="label label-primary"
                                                                   title="3 Ambiguous Steps">3</span>
                             </span>
@@ -3782,8 +4413,8 @@ From: Task: WebDriver.createSession()
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-info" title="Undefined"><i
-                                            class="glyphicon glyphicon-flash"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -3792,7 +4423,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               0s
+                               1s 998ms
                               </span>
                             
                          
@@ -3801,13 +4432,72 @@ From: Task: WebDriver.createSession()
                       </span>
                                 
                                 
-                                <pre class=info>
-<br>Then(/^that im on the home page$/, function(callback) {
-  // Write code here that turns the phrase above into concrete actions
-  callback(null, 'pending');
-});
-                        </pre>
+
                                     
+                                    <a href="#error0_90"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_90"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_90">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_90" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
+  (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -4029,7 +4719,7 @@ From: Task: WebDriver.createSession()
                             
                           
                               <span class="step-duration">
-                               1s 191ms
+                               1ms
                               </span>
                             
                          
@@ -4050,18 +4740,23 @@ From: Task: WebDriver.createSession()
                                              data-target="#error-modal-0_96">
                                             <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                     </div>
 
                                 <div class="modal fade" id="error-modal-0_96" tabindex="-1" role="dialog"
@@ -4080,18 +4775,23 @@ From: Task: WebDriver.createSession()
                                                 <h5>
                                                     <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 76
   (Driver info: chromedriver=76.0.3809.126 (d80a294506b4c9d18015e755cee48f953ddc3f2f-refs/branch-heads/3809@{#1024}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+    at Object.checkLegacyResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
 From: Task: WebDriver.createSession()
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
-    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
-    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
-    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
-    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
-    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\toby_\OneDrive\Dokument\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:79:11)</pre>
                                                 </h5>
                                             </div>
 
@@ -4152,22 +4852,22 @@ From: Task: WebDriver.createSession()
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 0,
+                                                            "failed" : 1,
                                                             "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
-                                                            "ambiguous" : 1
+                                                            "ambiguous" : 0
                                                         })
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 0,
+                                                            "failed" : 10,
                                                             "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
-                                                            "ambiguous" : 10
+                                                            "ambiguous" : 0
                                                         })
                                             });
     </script>
