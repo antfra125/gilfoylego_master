@@ -1,12 +1,15 @@
 <template>
   <main>
     <section class="mb-5">
+      
+
       <!-- TODO HÄR VILL JAG ATT DET SKA SKRIVAS UT DATUMstart OCH DATUMend SOM FINNS SPARAT I STORE.STATE.FORM-->
     </section>
     <section class="mb-5">
+      <p>Bokning mellan <strong>{{form.startDate}}</strong> och <strong>{{form.endDate}}</strong></p>
       <h4 class="mb-4">Rum</h4>
-       <section class="row ml-1 mb-3">
-     <!--  TODO 
+      <section class="row ml-1 mb-3">
+        <!--  TODO
 
         <span v-if="form.roomtype == 'Enkelrum'">
         <p>799kr/natt</p>
@@ -17,19 +20,21 @@
       <span v-if="form.roomtype == 'Familjerum'">
         <p>1699kr/natt</p>
       </span>
-      -->
-    </section>
-      <b-form >
+        -->
+      </section>
+      <b-form>
         <div class="row ml-1">
           <h5 class="mr-3">Rumstyp</h5>
-          <b-form-select id="input-3" v-model="roomspecs.roomtype" :options="roomtypes" required></b-form-select>
+          <b-form-select id="input-3" v-model="currentRoombooking.roomtype" :options="roomtypes" required></b-form-select>
+        </div>
+          <div class="row ml-1">
+          <h5 class="mr-3">Bekvämlighetsnivå</h5>
+          <b-form-select id="input-3" v-model="currentRoombooking.comfortLvl" :options="comfortLvl" required></b-form-select>
         </div>
 
         <div class="row mt-3 ml-1">
           <h5 class="mr-3">Extrasäng</h5>
-          <b-form-checkbox-group v-model="roomspecs.extrabed" id="checkboxes-4">
-            <b-form-checkbox value="true"></b-form-checkbox>
-          </b-form-checkbox-group>
+            <b-form-checkbox v-model="currentRoombooking.extrabed" id="checkboxes-4"></b-form-checkbox>
         </div>
 
         <div class="row mt-3 ml-1">
@@ -37,7 +42,8 @@
           <b-form-input
             type="number"
             min="1"
-            v-model="roomspecs.amountOfGrownUps"
+            max="4"
+            v-model="currentRoombooking.adults"
             required
             placeholder="Antal vuxna"
           ></b-form-input>
@@ -47,8 +53,9 @@
           <h5 class="mr-3">Antal barn</h5>
           <b-form-input
             type="number"
-            min="1"
-            v-model="roomspecs.amountOfKids"
+            min="0"
+            max="4"
+            v-model="currentRoombooking.kids"
             required
             placeholder="Antal barn"
           ></b-form-input>
@@ -59,80 +66,110 @@
         </router-link>
       </b-form>
     </section>
-    </main>
+  </main>
 </template>
 
 <script>
 //let currentRoombooking = {}
 
-
 export default {
-
-  data(){
+  data() {
     return {
-      formu: {},
-      roomspecs: {
-          amountOfGrownUps: '',
-          amountOfKids: '',
-          roomtype: 'Enkelrum',
-          extrabed: []
-        },
-        roomtypes: ['Enkelrum', 'Dubbelrum', 'Familjerum'],
-        formdata: this.$store.state.form,
-      show: true
-    }
-    
-  
-  },
-  methods:{
-    add_roombooking(){
+      //formu: {},
+      blabla: {
+        amountOfGrownUps: "",
+        amountOfKids: "",
+        roomtype: "Enkelrum",
+        extrabed: []
+      },
+      comfortLvl: ["All Inclusive","Helpension", "Halvpension"],
+      roomtypes: ["Enkelrum", "Dubbelrum", "Familjerum"],
 
-      //TODO
-      let formdata = this.$store.state.form
-      console.log("taget från state.form: ",formdata)
-      let roombookingObj = formdata.startDate + formdata.endDate + formdata.amountOfRooms;
-        
-        console.log(roombookingObj)
-      console.log("ok")
-      if(formdata.startDate == "" || formdata.endDate == ""){
-        console.log("neeee, error!! du måste välja datum ju")
-       
+      show: true
+    };
+  },
+  methods: {
+    add_roombooking() {
+      let formdata = this.$store.state.form;
+      console.log("formdata.search = ",formdata.search)
+      let current = this.$store.state.currentRoombooking;
+      console.log("currentRoombooking från store: ", current)
+
+      //JAG BYGGER ETT OBJEKT som ser ut som en room_booking
+
+      
+      let roombookingObj = {
+        room: 200,
+        hotel: "ETT HOTELNAMN",
+        roomtype: "EN RUMSTYP",
+        price: 10000,
+        dateCheckin: formdata.startDate,
+        dateCheckout: formdata.endDate,
+        extrabed: current.extrabed ? true : false,
+        allInclusive: current.comfortLvl == "All Inclusive" ? true : false,
+        fullPension: current.comfortLvl == "Helpension" ? true : false,
+        halfPension: current.comfortLvl == "Halvpension" ? true : false,
+        adults: current.adults,
+        children: current.kids
       }
-      else{
-        // ta startdatum och slutdatum från store.state.form och släng ihop dom med roomspecs
-        // 
-        
-        let roombookingObj = formdata.startDate + formdata.endDate;
-        
-        console.log(roombookingObj)
+      console.log("RBOOOO", roombookingObj)
+
+
+      console.log("ok");
+      if (formdata.startDate == "" || formdata.endDate == "") {
+        console.log("neeee, error!! du måste välja datum ju");
+      } else {
+        // ta startdatum och slutdatum från store.state.form och släng ihop dom med currentRoombooking
+        //
+
 
         //TODO spara bokningen till store när den är klar
-      //this.$store.commit('ADD_ROOMBOOKING', currentRoombooking)
+        //this.$store.commit('ADD_ROOMBOOKING', currentRoombooking)
+
+        //rensa currentRoombooking
       }
       //TODO
     }
   },
-  created(){
-    let fulhemtadForm = "HOHOHO LOL"
-    console.log(fulhemtadForm)
+  created() {
+
   },
-  mounted(){
-        
-        console.log("laddar in från this.$store.state.form: ", this.$store.state.form)
-        console.log("sparar till form")
+  mounted() {
+    console.log(
+      "laddar in från this.$store.state.form: ",
+      this.$store.state.form
+    );
+  },
+    computed: {
+      form:{
+        get() {
+          return this.$store.state.form
+        }
+      },
+
+      currentRoombooking: {
+      get() {
+        console.log("computed: roombooking: get() WOW!");
+        return this.$store.state.currentRoombooking;
+      },
+      set(value) {
+        console.log("computed: roombooking: set(value) KOLLA!!");
+        this.$store.commit("SET_ROOMBOOKING", value);
+      }
+    }
   }
 
-//   data() {
-//         roombooking: {
-//           adults = '',
-//           amountOfKids: '',
-//           roomtype: 'Enkelrum',
-//           extrabed: []
-//         },
-//         roomtypes: ['Enkelrum', 'Dubbelrum', 'Familjerum'],
-//         show: true,
-// },
-// props:
-//
-}
+  //   data() {
+  //         roombooking: {
+  //           adults = '',
+  //           amountOfKids: '',
+  //           roomtype: 'Enkelrum',
+  //           extrabed: []
+  //         },
+  //         roomtypes: ['Enkelrum', 'Dubbelrum', 'Familjerum'],
+  //         show: true,
+  // },
+  // props:
+  //
+};
 </script>

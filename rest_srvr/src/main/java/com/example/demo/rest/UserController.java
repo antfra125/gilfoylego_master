@@ -22,7 +22,7 @@ public class UserController {
         return userRepository.findAll();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/userid/{id}")
     public Optional<User> getSpecificUser(@PathVariable long id) {
         return userRepository.findById(id);
     }

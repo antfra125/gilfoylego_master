@@ -13,9 +13,13 @@ export default new Vuex.Store({
     user: {},
     isLoggedIn: false,    
     form: {},
-    roombookings: []
+    roombookings: [],
+    currentRoombooking: {}
   },
   mutations: {
+    SET_CURRENTROOMBOOKNG(state, payload){
+      state.currentRoombooking = payload
+    },
     ADD_ROOMBOOKING(state, payload){
         state.roombookings.push(payload)
       console.log("adding a roombooking")
