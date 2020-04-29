@@ -88,6 +88,7 @@
 export default {
   data() {
     return {
+      index: 0,
       comfortLvl: ["All Inclusive", "Helpension", "Halvpension"],
       roomtypes: ["Enkelrum", "Dubbelrum", "Familjerum"],
       show: true,
@@ -141,8 +142,8 @@ export default {
         
 
         console.log("datediff: ", datediff);
-
         let roombookingObj = {
+          index: this.index,
           room: cheapestRoom.id,
           hotel: "ONE HOTEL",
           roomtype: current.roomtype,
@@ -156,10 +157,9 @@ export default {
           adults: current.adults == null ? 1 : Number(current.adults),
           children: current.kids == null ? 0 : Number(current.kids)
         };
+        this.index++
         console.log(
-          "färdigt rumsbokningsobjekt, redo att sparas: ",
-          roombookingObj
-        );
+          "färdigt rumsbokningsobjekt, redo att sparas.");
         this.$store.dispatch('addRoombooking',roombookingObj)
         //TODO spara bokningen till store när den är klar
         //this.$store.commit('ADD_ROOMBOOKING', currentRoombooking)
