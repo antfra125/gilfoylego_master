@@ -13,6 +13,17 @@ public class BookingController {
     @Autowired
     private BookingRepository bookingRepository;
 
+    @GetMapping("/last")
+    public Long findLastId(){
+        var alla = bookingRepository.findAll();
+        var lastId = 0L;
+        for (var a : alla){
+            if (a.getId()>lastId){
+                lastId = a.getId();
+            }
+        }
+        return lastId;
+    }
     @GetMapping
     public Iterable<Booking> findAll() {
         return bookingRepository.findAll();

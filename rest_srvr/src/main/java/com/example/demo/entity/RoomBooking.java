@@ -78,6 +78,10 @@ public class RoomBooking {
         return room.getId();
     }
 
+    public void setRoom(Room room) {
+        this.room = room;
+    }
+
     public String getHotel() {
         return this.room.getHotel();
     }

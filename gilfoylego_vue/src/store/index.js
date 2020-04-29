@@ -103,7 +103,17 @@ export default new Vuex.Store({
       window.localStorage.removeItem('user')
       this.state.isLoggedIn = false;
       commit('SET_USER', null)
-    }
+    },
+
+
+
+    
+    
+    /**this.$store.dispatch('postBooking')
+        this.$store.dispatch('postRoombookings')
+        this.$store.dispatch('clearRoombookings')
+        this.$store.dispatch('clearCurrentRoombooking')
+        this.$store.dispatch('clearForm') */
   },
   modules: {
   }

@@ -1,6 +1,6 @@
 <template>
   <section class="container">
-    <section v-show="isConfirmationHidden">
+    <section v-show="!showConfirmation">
       <h3 class="row ml-1 mb-4">Bekräfta bokning</h3>
       <div v-if="roombookings.length>0">
         <section class="row">
@@ -55,7 +55,7 @@
           </div>
           <div class="col-6">
             <button
-              v-on:click="showConfirmation()"
+              v-on:click="purchaseConfirmed()"
               id="confirmed"
               type="button"
               class="btn btn-success">
@@ -72,7 +72,7 @@
         </div>
       </div>
 
-      <section class="mt-5" v-if="!isConfirmationHidden">
+      <section class="mt-5" v-if="showConfirmation">
         <div class="row">
           <h3>Tack för din bokning hos oss, vi hoppas på att du har en trevlig resa!</h3>
         </div>
@@ -90,12 +90,53 @@ export default {
   data() {
     return {
       roombookings: [],
-      isConfirmationHidden: true
+      showConfirmation: false
     };
   },
   methods: {
-    showConfirmation() {
-      this.isConfirmationHidden = false;
+    purchaseConfirmed(){
+      
+
+        this.postBookingAndRoombookings();
+        // this.$store.dispatch('clearRoombookings')
+        // this.$store.dispatch('clearCurrentRoombooking')
+        // this.$store.dispatch('clearForm')
+        // this.changeToConfirmation()
+    },
+    async postBookingAndRoombookings(){
+      //hämta active user
+      let booking = {
+        user: this.$store.state.user
+      }
+      await fetch('rest/booking',{
+        method: "POST",
+        headers: { 'Content-Type': 'application/json' },
+        // TODO var hittar jag aktiv user - id
+        body: JSON.stringify(booking)
+      })
+      //autogenereras
+      let response = await fetch('rest/booking/last')
+     
+      let bookingId = await response.json()
+       console.log("bookingId: ",bookingId)//hämta bookingid
+      //let bookingId = response
+
+      this.$store.state.roombookings.forEach(rb => {
+        rb.bookingId = bookingId
+         this.postRoombooking(rb)
+      });
+    },
+    
+    async postRoombooking(roombooking){
+      await fetch('rest/roombooking',{
+        method: "POST",
+        headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify(roombooking)}
+      )
+      console.log("POSTAT I ROOMBOOKING!")
+    },
+    changeToConfirmation() {
+      this.showconfirmation = true;
     },
       getRoombookings: function(){
         this.roombookings = this.$store.state.roombookings

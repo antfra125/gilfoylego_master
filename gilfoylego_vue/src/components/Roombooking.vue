@@ -129,7 +129,7 @@ export default {
         for (let r of this.rooms) {
           console.log("roomtype: " + r.roomtype + " price: " + r.price);
           if (r.price < cheapestRoom.price && r.roomtype == current.roomtype) {
-            cheapestRoom.id = r.id;
+            cheapestRoom = r;
             cheapestRoom.price = r.price;
           }
         }
@@ -142,11 +142,16 @@ export default {
         
 
         console.log("datediff: ", datediff);
-        let roombookingObj = {
+
+        /**borttagna element som kan vara bra att ha till v-for loopen sen
           index: this.index,
-          room: cheapestRoom.id,
           hotel: "ONE HOTEL",
           roomtype: current.roomtype,
+         * 
+         * 
+         */
+        let roombookingObj = {
+          room: cheapestRoom,
           price: cheapestRoom.price * datediff,
           dateCheckin: formdata.startDate,
           dateCheckout: formdata.endDate,
