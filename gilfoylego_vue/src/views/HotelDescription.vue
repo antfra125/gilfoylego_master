@@ -14,7 +14,7 @@
         </div>
       </span>
     </section>
-  <Roombooking/>
+  <Roombooking :hotelId="hotel.id"/>
 
   </section>
 </template>

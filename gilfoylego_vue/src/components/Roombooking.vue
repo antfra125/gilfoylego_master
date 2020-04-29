@@ -75,17 +75,10 @@
 export default {
   data() {
     return {
-      //formu: {},
-      blabla: {
-        amountOfGrownUps: "",
-        amountOfKids: "",
-        roomtype: "Enkelrum",
-        extrabed: []
-      },
       comfortLvl: ["All Inclusive","Helpension", "Halvpension"],
       roomtypes: ["Enkelrum", "Dubbelrum", "Familjerum"],
-
-      show: true
+      show: true,
+      rooms: []
     };
   },
   methods: {
@@ -93,16 +86,31 @@ export default {
       let formdata = this.$store.state.form;
       console.log("formdata.search = ",formdata.search)
       let current = this.$store.state.currentRoombooking;
+      
       console.log("currentRoombooking från store: ", current)
 
       //JAG BYGGER ETT OBJEKT som ser ut som en room_booking
 
+      //hitta det billigaste hotellet i this.rooms med rätt typ
+     
+
+      let cheapestRoom = {id:0,price:99999999}
+      console.log("current selected roomtype: " +current.roomtype +  " price: "+current.price)
+      for(let r of this.rooms){
+        console.log("roomtype: "+r.roomtype +" price: "+r.price)
+        if(r.price<cheapestRoom.price && r.roomtype == current.roomtype)
+        {
+          cheapestRoom.id= r.id
+          cheapestRoom.price= r.price
+        }
+      }
+      console.log("cheapest after: ",cheapestRoom.price)
       
       let roombookingObj = {
-        room: 200,
-        hotel: "ETT HOTELNAMN",
-        roomtype: "EN RUMSTYP",
-        price: 10000,
+        room: cheapestRoom.id,
+        hotel: "ONE HOTEL",
+        roomtype: current.roomtype,
+        price: cheapestRoom.price,
         dateCheckin: formdata.startDate,
         dateCheckout: formdata.endDate,
         extrabed: current.extrabed ? true : false,
@@ -119,8 +127,6 @@ export default {
       if (formdata.startDate == "" || formdata.endDate == "") {
         console.log("neeee, error!! du måste välja datum ju");
       } else {
-        // ta startdatum och slutdatum från store.state.form och släng ihop dom med currentRoombooking
-        //
 
 
         //TODO spara bokningen till store när den är klar
@@ -129,17 +135,23 @@ export default {
         //rensa currentRoombooking
       }
       //TODO
+    },
+    getRooms: async function() {
+      let path = Number(this.hotelId)
+      let result = await fetch("http://localhost:8090/rest/room/hotelrooms/"+path);
+      this.rooms = await result.json();
+      console.log("laddat in alla rum som det aktiva hotellet har",this.rooms);
+      
+
     }
   },
   created() {
 
   },
   mounted() {
-    console.log(
-      "laddar in från this.$store.state.form: ",
-      this.$store.state.form
-    );
+    this.getRooms()
   },
+  
     computed: {
       form:{
         get() {
@@ -149,7 +161,6 @@ export default {
 
       currentRoombooking: {
       get() {
-        console.log("computed: roombooking: get() WOW!");
         return this.$store.state.currentRoombooking;
       },
       set(value) {
@@ -157,8 +168,10 @@ export default {
         this.$store.commit("SET_ROOMBOOKING", value);
       }
     }
+  },
+  props: {
+    hotelId: Number
   }
-
   //   data() {
   //         roombooking: {
   //           adults = '',
