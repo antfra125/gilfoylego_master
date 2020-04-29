@@ -43,6 +43,20 @@
 .extra img {
     height:2vh;
 }
+.container .b-form{
+    width: 60%;
+}
+button a {
+    color: black;
+    font-weight: 600;
+}
+button a:hover{
+    text-decoration: none;
+    color: black;
+}
+.extra{
+    margin-left: 3vw;
+}
 
 .top-section img {
     height: 250px;
