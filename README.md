@@ -27,7 +27,7 @@ localhost:8080			<--- Root route
 
 #GET#
 /				<--- find all users
-/*				<--- find one user with id equal to *
+/id/*				<--- find one user with id equal to *
 
 #POST#
 /				<--- create one user
