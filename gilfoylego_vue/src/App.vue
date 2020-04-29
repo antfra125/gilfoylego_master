@@ -13,10 +13,10 @@
               <img src="./images/user.png" />
             </span>
           </template>
-          <div v-if="!isLoggedIn">
+          <div v-if="!$store.state.isLoggedIn">
             <b-dropdown-item href="/login">Logga in</b-dropdown-item>
           </div>
-          <div v-if="isLoggedIn">
+          <div v-if="$store.state.isLoggedIn">
             <b-dropdown-item href="#">Beställningar</b-dropdown-item>
             <b-dropdown-item href="/login">Logga Ut</b-dropdown-item>
           </div>
@@ -39,6 +39,11 @@ export default {
     return {
       isLoggedIn: false
     };
+  },
+  created() {
+    this.$store.dispatch("isUserLoggedIn")
+    console.log("created() kördes");
+    this.$store.dispatch("getFormdata");
   }
 };
 </script>

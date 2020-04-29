@@ -68,7 +68,10 @@ export default {
         search: "",
         startDate: "",
         endDate: "",
-        amountOfRooms: ""
+        amountOfRooms: "",
+        amenities: [],
+        m2Center: "",
+        m2Beach: ""
       },
       foods: [
         { text: "Select One", value: null },
