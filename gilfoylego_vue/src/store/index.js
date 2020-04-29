@@ -17,13 +17,19 @@ export default new Vuex.Store({
     currentRoombooking: {}
   },
   mutations: {
+    SET_ROOMBOOKINGS(state, payload){
+      state.roombookings = payload
+    },
+    ADD_ROOMBOOKING(state, payload){
+      state.roombookings.push(payload)
+      console.log("rumsbokningarna i store: ",state.roombookings)
+
+
+    },
     SET_CURRENTROOMBOOKNG(state, payload){
       state.currentRoombooking = payload
     },
-    ADD_ROOMBOOKING(state, payload){
-        state.roombookings.push(payload)
-      console.log("adding a roombooking")
-    },
+    
     REMOVE_ONE_ROOMBOOKING(state, payload){
       // TODO    är detta verkligen rimligt?
       try{
@@ -53,6 +59,11 @@ export default new Vuex.Store({
     }
   },
   actions: {
+    async addRoombooking({commit}, payload){
+    console.log("adding a roombooking")
+
+      commit('ADD_ROOMBOOKING',payload)
+  },
 
     async getFormdata({ commit } ) {
       console.log("You made a dispatch through getFormdata!")

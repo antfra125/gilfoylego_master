@@ -74,7 +74,7 @@
           ></b-form-input>
         </div>
         <b-button id="saveRoom" class="btn-lg btn-success" v-on:click="add_roombooking">SPARA RUMMET</b-button>
-        <router-link to="/bookingconfirmation">
+        <router-link v-on:click="add_roombooking" to="/bookingconfirmation">
           <b-button class="mt-3">Boka</b-button>
         </router-link>
       </b-form>
@@ -160,12 +160,13 @@ export default {
           "färdigt rumsbokningsobjekt, redo att sparas: ",
           roombookingObj
         );
-
+        this.$store.dispatch('addRoombooking',roombookingObj)
         //TODO spara bokningen till store när den är klar
         //this.$store.commit('ADD_ROOMBOOKING', currentRoombooking)
 
         //rensa currentRoombooking
       }
+    
     },
     postBooking: async function() {
 
@@ -195,6 +196,11 @@ export default {
     form: {
       get() {
         return this.$store.state.form;
+      }
+    },
+    roombookings: {
+      get () {
+        return this.$store.state.roombookings
       }
     },
 
