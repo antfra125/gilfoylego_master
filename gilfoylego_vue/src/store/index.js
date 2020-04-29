@@ -91,10 +91,10 @@ export default new Vuex.Store({
       else{
         this.state.isLoggedIn = true;
       }
-     commit('setUser', response2)
+     commit('SET_USER', response2)
      
     },
-    async LoggingOut({ commit }){
+    async LoggingOut({ commit }){ 
       await fetch('rest/logout', {
         method: "POST",
         headers: { "Content-Type": "application/json" }
@@ -102,7 +102,7 @@ export default new Vuex.Store({
       document.cookie = "JSESSIONID=; expires=Thu, 01-Jan-1970 00:00:10 GMT; path=/;";      
       window.localStorage.removeItem('user')
       this.state.isLoggedIn = false;
-      commit('setUser', null)
+      commit('SET_USER', null)
     }
   },
   modules: {
