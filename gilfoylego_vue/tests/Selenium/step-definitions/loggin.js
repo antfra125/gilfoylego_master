@@ -1,4 +1,4 @@
-module.exports = function () {
+/* module.exports = function () {
 
     this.Given(/^that I am on the "homepage"$/, async function () {
         await helpers.loadPage('http://localhost:8081');
@@ -7,7 +7,7 @@ module.exports = function () {
 
 
 
-    /*-Background-----------------------------------------------------------------*/
+    -Background-----------------------------------------------------------------
 
     this.When(/^I click the "login" button$/, async function () {
 
@@ -35,4 +35,4 @@ module.exports = function () {
         this.click(loginButton);
     });
 
-}
+} */

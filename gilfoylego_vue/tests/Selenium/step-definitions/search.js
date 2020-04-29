@@ -1,8 +1,9 @@
 module.exports = function () {
 
-    this.Given(/^that I´m at the search page$/, async function () {
-        await helpers.loadPage('http://localhost:8081');
-        
+
+    this.Given(/^that im on the home page$/, async function () {
+        await helpers.loadPage('https://google.com');
+        await(6000);
     });
 
 

@@ -1,6 +1,6 @@
 
 
-module.exports = function () {
+/* module.exports = function () {
 
     this.Given(/^that I´m at the search page$/, async function () {
         await helpers.loadPage('http://localhost:8081');
@@ -49,7 +49,7 @@ module.exports = function () {
     });
 
 
-    /*-Background-----------------------------------------------------------------*/
+    -Background-----------------------------------------------------------------
 
 
     this.When(/^i click the check box for childenterainment$/, async function () {
@@ -65,7 +65,7 @@ module.exports = function () {
     });
 
 
-    /*---------------------------------------------------------------------------*/
+    ---------------------------------------------------------------------------
 
 
     this.When(/^i click the check box for "pool"$/, async function () {
@@ -81,7 +81,7 @@ module.exports = function () {
     });
 
 
-    /*---------------------------------------------------------------------------*/
+    ---------------------------------------------------------------------------
 
 
     this.When(/^i click the check box for "nightenterainment"$/, async function () {
@@ -97,7 +97,7 @@ module.exports = function () {
     });
 
 
-    /*---------------------------------------------------------------------------*/
+    ---------------------------------------------------------------------------
 
 
     this.When(/^i click the check box for "resturang"$/, async function () {
@@ -113,6 +113,7 @@ module.exports = function () {
     });
 
 
-    /*---------------------------------------------------------------------------*/
+    ---------------------------------------------------------------------------
 }
 
+ */

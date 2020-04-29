@@ -1,4 +1,4 @@
-Feature: Booking
+Feature:Book
 
    As a user
    i want to be able to

@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+    <testsuite name="search-function;search-1,-searching-for-hotels-by-hotels-namns" tests="6" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            </property>
+        </properties>
+        <testcase name="Given that im on the home page" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When and click on the serch bar and type in Value 1" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And enter a start date" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+        </testcase>
+        <testcase name="And enter a end date" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+        </testcase>
+        <testcase name="And hit search" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+        </testcase>
+        <testcase name="Then my frist search result should be Value 1" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="search-function;search-1,-searching-for-hotels-by-hotels-namns" tests="6" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            </property>
+        </properties>
+        <testcase name="Given that im on the home page" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When and click on the serch bar and type in Value 1" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And enter a start date" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+        </testcase>
+        <testcase name="And enter a end date" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+        </testcase>
+        <testcase name="And hit search" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+        </testcase>
+        <testcase name="Then my frist search result should be Value 1" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="search-function;search-1,-searching-for-hotels-by-hotels-namns" tests="6" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            </property>
+        </properties>
+        <testcase name="Given that im on the home page" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When and click on the serch bar and type in Value 1" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And enter a start date" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+        </testcase>
+        <testcase name="And enter a end date" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+        </testcase>
+        <testcase name="And hit search" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+        </testcase>
+        <testcase name="Then my frist search result should be Value 1" classname="search-function;search-1,-searching-for-hotels-by-hotels-namns">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="search-function;search-2,-searching-for-hotels-location-with-citys" tests="6" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            </property>
+        </properties>
+        <testcase name="Given that im on the home page" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When and clcik on the search bar and type in Malmö" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And enter a start date" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+        </testcase>
+        <testcase name="And enter a end date" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+        </testcase>
+        <testcase name="And hit search" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+        </testcase>
+        <testcase name="Then my hotels should be located in that Malmö" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="search-function;search-2,-searching-for-hotels-location-with-citys" tests="6" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            </property>
+        </properties>
+        <testcase name="Given that im on the home page" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When and clcik on the search bar and type in Value 1" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And enter a start date" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+        </testcase>
+        <testcase name="And enter a end date" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+        </testcase>
+        <testcase name="And hit search" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+        </testcase>
+        <testcase name="Then my hotels should be located in that Value 1" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="search-function;search-2,-searching-for-hotels-location-with-citys" tests="6" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            </property>
+        </properties>
+        <testcase name="Given that im on the home page" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When and clcik on the search bar and type in Value 1" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And enter a start date" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+        </testcase>
+        <testcase name="And enter a end date" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+        </testcase>
+        <testcase name="And hit search" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+        </testcase>
+        <testcase name="Then my hotels should be located in that Value 1" classname="search-function;search-2,-searching-for-hotels-location-with-citys">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="search-function;search-3,-searching-for-hotels-location-with-countries" tests="6" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            </property>
+        </properties>
+        <testcase name="Given that im on the home page" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When and clcik on the search bar and type in москва" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And enter a start date" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+        </testcase>
+        <testcase name="And enter a end date" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+        </testcase>
+        <testcase name="And hit search" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+        </testcase>
+        <testcase name="Then my hotels should be located in that москва" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="search-function;search-3,-searching-for-hotels-location-with-countries" tests="6" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            </property>
+        </properties>
+        <testcase name="Given that im on the home page" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When and clcik on the search bar and type in Value 1" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And enter a start date" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+        </testcase>
+        <testcase name="And enter a end date" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+        </testcase>
+        <testcase name="And hit search" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+        </testcase>
+        <testcase name="Then my hotels should be located in that Value 1" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="search-function;search-3,-searching-for-hotels-location-with-countries" tests="6" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            </property>
+        </properties>
+        <testcase name="Given that im on the home page" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When and clcik on the search bar and type in Value 1" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And enter a start date" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+        </testcase>
+        <testcase name="And enter a end date" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+        </testcase>
+        <testcase name="And hit search" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+        </testcase>
+        <testcase name="Then my hotels should be located in that Value 1" classname="search-function;search-3,-searching-for-hotels-location-with-countries">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+    <testsuite name="search-function;search-4,-searching-for-hotels-between-to-dates" tests="6" failures="0" skipped="3">
+        <properties>
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            </property>
+        </properties>
+        <testcase name="Given that im on the home page" classname="search-function;search-4,-searching-for-hotels-between-to-dates">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="When and click on the search bar and type in &quot;Spain&quot;" classname="search-function;search-4,-searching-for-hotels-between-to-dates">
+            <skipped message="">
+            </skipped>
+        </testcase>
+        <testcase name="And enter a start date" classname="search-function;search-4,-searching-for-hotels-between-to-dates">
+        </testcase>
+        <testcase name="And enter a end date" classname="search-function;search-4,-searching-for-hotels-between-to-dates">
+        </testcase>
+        <testcase name="And hit search" classname="search-function;search-4,-searching-for-hotels-between-to-dates">
+        </testcase>
+        <testcase name="Then my hotels results should be between start-date and end-date" classname="search-function;search-4,-searching-for-hotels-between-to-dates">
+            <skipped message="">
+            </skipped>
+        </testcase>
+    </testsuite>
+</testsuites>
