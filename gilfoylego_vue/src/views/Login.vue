@@ -72,7 +72,7 @@ export default {
                 response = await fetch("/rest/activeuser");
                 response = await response.json();*/
                 console.log(response);
-                this.$router.push('/');
+                this.$router.push('/profile');
             }
         },
         onSubmit(evt) {

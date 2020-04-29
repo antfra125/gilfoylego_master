@@ -53,6 +53,14 @@
                     placeholder="Efternamn"
                 ></b-form-input>
             </div>
+            <div class="form-group">
+                <b-form-input
+                    type="text"
+                    v-model="form.phone"
+                    required
+                    placeholder="Telefonnummer"
+                ></b-form-input>
+            </div>
             <div class="form-group d-flex">
                 <b-form-input
                     type="text"
@@ -93,10 +101,10 @@
             passwordCheck: '',
             firstName: '',
             lastName:'',
+            phone:'',
             street: '',
             zipCode: '',
             city: '',
-            address: ''
         },
         
       }
@@ -104,8 +112,8 @@
     methods: {
       onSubmit(evt) {
         evt.preventDefault()
-        this.form.address = this.form.street + ' ' + this.form.zipCode + ' ' + this.form.city
-        alert(JSON.stringify(this.form))
+        this.addUser()
+        this.$router.push('/login');
       },
       onReset(evt) {
         evt.preventDefault()
@@ -116,11 +124,30 @@
         this.form.passwordCheck = ''
         this.form.firstName = ''
         this.form.lastName = ''
+        this.form.phone = ''
         this.form.street = ''
         this.form.zipCode = ''
         this.form.city = ''
-        this.form.address = ''
-      }
+      },
+      async addUser(){
+            let newUser = {
+                username: this.form.username,
+                email: this.form.email,
+                password: this.form.password,
+                firstName: this.form.firstName,
+                lastName: this.form.lastName,
+                phone: this.form.phone,
+                address: this.form.street + ' ' + this.form.zipCode + ' ' + this.form.city
+            }
+                let response = await fetch('/rest/user',{
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(newUser)
+                
+            });
+            let response2 = await response.json();
+            console.log(response2)
+        }
     }
   }
 </script>
