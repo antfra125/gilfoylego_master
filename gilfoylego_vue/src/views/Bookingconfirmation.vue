@@ -37,7 +37,7 @@
       </section>
       <section class="row mt-5 mb-5">
         <div class="col-6">
-          <router-link to="/hoteldescription">
+          <router-link to="/search">
             <button type="button" class="btn btn-secondary">Avbryt bokning</button>
           </router-link>
         </div>
