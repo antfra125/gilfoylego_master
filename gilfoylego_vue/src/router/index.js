@@ -36,6 +36,11 @@ const routes = [
     path: '/bookingconfirmation',
     name: 'BookingConfirmation',
     component: () => import(/* webpackChunkName: "about" */ '../views/Bookingconfirmation.vue')
+  },
+  {
+    path: '/profile',
+    name: 'Profile',
+    component: () => import(/* webpackChunkName: "about" */ '../views/Profile.vue')
   }
 
 ]

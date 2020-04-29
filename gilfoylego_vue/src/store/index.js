@@ -55,7 +55,10 @@ export default new Vuex.Store({
 
     SET_USER(state, value){
       state.user = value;
-      console.log('Inloggad: ' + this.state.user)
+      if(state.user != null) {
+        localStorage.setItem('user', JSON.stringify(state.user))
+        console.log('Inloggad: ' + state.user.username)
+      }
     }
   },
   actions: {
@@ -88,7 +91,18 @@ export default new Vuex.Store({
       else{
         this.state.isLoggedIn = true;
       }
-     commit('SET_USER', response2)
+     commit('setUser', response2)
+     
+    },
+    async LoggingOut({ commit }){
+      await fetch('rest/logout', {
+        method: "POST",
+        headers: { "Content-Type": "application/json" }
+      });
+      document.cookie = "JSESSIONID=; expires=Thu, 01-Jan-1970 00:00:10 GMT; path=/;";      
+      window.localStorage.removeItem('user')
+      this.state.isLoggedIn = false;
+      commit('setUser', null)
     }
   },
   modules: {

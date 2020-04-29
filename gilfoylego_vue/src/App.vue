@@ -17,8 +17,8 @@
             <b-dropdown-item href="/login">Logga in</b-dropdown-item>
           </div>
           <div v-if="$store.state.isLoggedIn">
-            <b-dropdown-item href="#">Beställningar</b-dropdown-item>
-            <b-dropdown-item href="/login">Logga Ut</b-dropdown-item>
+            <b-dropdown-item href="/profile">Beställningar</b-dropdown-item>
+            <b-dropdown-item v-on:click="logOut()">Logga Ut</b-dropdown-item>
           </div>
         </b-dropdown>
       </span>
@@ -44,6 +44,12 @@ export default {
     this.$store.dispatch("isUserLoggedIn")
     console.log("created() kördes");
     this.$store.dispatch("getFormdata");
+  },
+  methods: {
+    logOut() {
+      this.$store.dispatch("LoggingOut")
+      this.$router.push('/');
+    }
   }
 };
 </script>

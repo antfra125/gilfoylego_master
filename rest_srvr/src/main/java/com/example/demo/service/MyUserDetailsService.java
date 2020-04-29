@@ -27,6 +27,14 @@ public class MyUserDetailsService implements UserDetailsService {
         if (userRepository.findByUsername("admin") == null) {
             addUser("admin", "admin", "admin@admin.se", "0707000000", "Admin", "Admin", "Admingatan 99 23333 Helvetet");
         }
+        if (userRepository.findByUsername("MiniHarald") == null) {
+            addUser("MiniHarald", "test", "miniharald@gmail.com", "0734323237", "Alexander", "Persson", "Tågmästaregatan 8 23343 Svedala");
+        }
+        /*for(long i=0; i < 1000; i++) {
+            String notEncodedPw = userRepository.findById(i).get().getPassword();
+            String encodedPw = encoder.encode(notEncodedPw);
+            userRepository.findById(i).get().setPassword(encodedPw);
+        }*/
     }
 
     public User addUser(String username, String password, String email, String phone, String firstName, String lastName, String address){

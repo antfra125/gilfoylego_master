@@ -67,8 +67,12 @@ export default {
                 console.log('Fel!')
             } else {
                 console.log("Success")
-                this.$store.state.isLoggedIn = true
+                this.$store.dispatch("isUserLoggedIn")
+                /*this.$store.state.isLoggedIn = true
+                response = await fetch("/rest/activeuser");
+                response = await response.json();*/
                 console.log(response);
+                this.$router.push('/profile');
             }
         },
         onSubmit(evt) {
