@@ -29,7 +29,9 @@ public class MyWebSecurityConfigurerAdapter extends WebSecurityConfigurerAdapter
                 .antMatchers("/**").permitAll()
                 .and()
                 .formLogin()
-        .loginPage("/rest/login");
+                    .loginPage("/rest/login")
+                .and()
+                .logout().logoutUrl("/rest/logout");
     }
 
     @Override
