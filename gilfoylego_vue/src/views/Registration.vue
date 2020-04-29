@@ -113,7 +113,6 @@
       onSubmit(evt) {
         evt.preventDefault()
         this.addUser()
-        this.$router.push('/login');
       },
       onReset(evt) {
         evt.preventDefault()
@@ -145,6 +144,24 @@
                 body: JSON.stringify(newUser)
                 
             });
+            
+            if(response.url.includes('error')){
+                console.log('Fel!')
+                this.form.username = ''
+                this.form.email = ''
+                this.form.password = ''
+                this.form.passwordCheck = ''
+                this.form.firstName = ''
+                this.form.lastName = ''
+                this.form.phone = ''
+                this.form.street = ''
+                this.form.zipCode = ''
+                this.form.city = ''
+            } else {
+                console.log("Success")
+                console.log(response);
+                this.$router.push('/login');
+            }
             let response2 = await response.json();
             console.log(response2)
         }
