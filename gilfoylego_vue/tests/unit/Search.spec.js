@@ -1,5 +1,7 @@
+
 import { shallowMount } from '@vue/test-utils'
 import Search from '@/views/Search.vue'
+import store from '@/store/index.js'
 
 describe('Search.vue', () => {
 

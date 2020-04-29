@@ -1,6 +1,5 @@
 import { shallowMount } from '@vue/test-utils'
 import Home from '@/views/Home.vue'
-import evt from '@/views/Home.vue'
 
 describe('Home.vue', () => {
     const component = shallowMount(Home)
@@ -22,6 +21,9 @@ describe('Home.vue', () => {
     })
     test('the form has the required components', () => {
         expect(component.vm.form).toEqual({
+            amenities: [],
+            m2Beach: "",
+            m2Center: "",
             search: "",
             startDate: "",
             endDate: "",
