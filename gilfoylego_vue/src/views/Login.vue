@@ -70,8 +70,8 @@ export default {
                 this.$store.dispatch("isUserLoggedIn")
                 /*this.$store.state.isLoggedIn = true
                 response = await fetch("/rest/activeuser");
-                response = await response.json();
-                console.log(response);*/
+                response = await response.json();*/
+                console.log(response);
                 this.$router.push('/');
             }
         },

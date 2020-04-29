@@ -64,7 +64,7 @@ export default new Vuex.Store({
         method: "POST",
         headers: { "Content-Type": "application/json" }
       });
-      document.cookie = "JSESSIONID=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";      
+      document.cookie = "JSESSIONID=; expires=Thu, 01-Jan-1970 00:00:10 GMT; path=/;";      
       window.localStorage.removeItem('user')
       this.state.isLoggedIn = false;
       commit('setUser', null)
