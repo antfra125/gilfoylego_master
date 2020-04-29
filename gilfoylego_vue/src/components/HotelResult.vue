@@ -28,7 +28,7 @@
       </router-link>
 
             <div class="row d-flex justify-content-end pt-5">
-              Från ?kr
+              Från 499 kr
             </div>
           </div>
         </div>

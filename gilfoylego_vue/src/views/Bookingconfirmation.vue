@@ -117,12 +117,13 @@ export default {
       //autogenereras
       let response = await fetch('rest/booking/last')
      
-      let bookingId = await response.json()
-       console.log("bookingId: ",bookingId)//hämta bookingid
-      //let bookingId = response
+      let bookingobject = await response.json()
+       console.log("bookingobject: ",bookingobject)//hämta bookingobject
+      //let bookingobject = response
 
       this.$store.state.roombookings.forEach(rb => {
-        rb.bookingId = bookingId
+        rb.booking = bookingobject
+        console.log("HAR DEN ETT bookingobject?: ",rb)
          this.postRoombooking(rb)
       });
     },
@@ -133,11 +134,11 @@ export default {
         headers: {'Content-Type': 'application/json'},
       body: JSON.stringify(roombooking)}
       )
-      console.log("POSTAT I ROOMBOOKING!")
+      console.log("POSTAT I ROOMBOOKING!??")
     },
     changeToConfirmation() {
       this.showconfirmation = true;
-    },
+     },
       getRoombookings: function(){
         this.roombookings = this.$store.state.roombookings
       }

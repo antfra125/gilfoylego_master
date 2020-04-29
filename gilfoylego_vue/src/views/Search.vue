@@ -95,9 +95,7 @@
               v-model="form.m2Center"
               placeholder="Maxavstånd till centrum i meter"
             ></b-form-input>
-            <div>
-              <button class="btn-lg btn-primary">SÖK</button>
-            </div>
+           
           </div>
 
           <div>

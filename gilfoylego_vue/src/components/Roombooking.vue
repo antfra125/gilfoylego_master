@@ -117,7 +117,7 @@ export default {
 
         //JAG BYGGER ETT OBJEKT som ser ut som en room_booking
 
-        let cheapestRoom = { id: 0, price: 99999999 };
+        let cheapestRoom = {id: 0}
         console.log(
           "current selected roomtype: " +
             current.roomtype +
@@ -126,15 +126,27 @@ export default {
         );
         console.log(this.rooms.length);
         //for(let i = 0, i< this.rooms.length())
+
+        let x = 999999;
         for (let r of this.rooms) {
-          console.log("roomtype: " + r.roomtype + " price: " + r.price);
-          if (r.price < cheapestRoom.price && r.roomtype == current.roomtype) {
-            cheapestRoom = r;
-            cheapestRoom.price = r.price;
+          //console.log("roomtype: " + r.roomtype.name + " price: " + r.price);
+
+          if (r.price < x /*&& r.roomtype.name == current.roomtype*/) {
+             console.log("PRINTAR r FRÅN LOOPEN: ",r)
+             x = r.price
+             cheapestRoom.id = r.id;
+           
           }
         }
-        console.log("cheapest after: ", cheapestRoom.price);
-
+        //let i = cheapestRoom.id;
+        // console.log("141. this.rooms[0]: ",this.rooms[0])
+        // console.log("142. this.rooms[cheapestRoom.id]: ", this.rooms[cheapestRoom.id])
+        // console.log("142. this.rooms[i]: ")
+        // let a = this.rooms[cheapestRoom.id];
+        // console.log("A BORDE VARA ETT RUM, ÄR DET DET? :",a)
+        
+        //console.log("cheapest after: ", cheapestRoom.price);
+        //console.log("ÄR DETTA ETT RUMSOBJEKT MED ID? ",cheapestRoom)
 
 
       let datediff = this.calculate_days_staying(formdata.startDate, formdata.endDate)
@@ -147,12 +159,13 @@ export default {
           index: this.index,
           hotel: "ONE HOTEL",
           roomtype: current.roomtype,
-         * 
+         * cheapestRoom.price * datediff
          * 
          */
+          // TODO kanske att en kan välja rum 
         let roombookingObj = {
-          room: cheapestRoom,
-          price: cheapestRoom.price * datediff,
+          room: this.rooms[0],
+          price: 666,
           dateCheckin: formdata.startDate,
           dateCheckout: formdata.endDate,
           extrabed: current.extrabed ? true : false,
