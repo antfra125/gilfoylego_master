@@ -61,3 +61,14 @@ export default {
     }
   };
 </script>
+<style scoped>
+.HotelDescription{
+  display:grid;
+  justify-content: center;
+}
+
+img{
+  position:static;
+  
+}
+</style>

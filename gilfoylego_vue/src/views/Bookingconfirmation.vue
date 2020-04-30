@@ -1,55 +1,31 @@
+<style scoped>
+.roomloop{
+  display:table;
+  align-content: center;
+  align-items:center;
+}
+</style>
+
 <template>
   <section class="container">
     <section v-show="!showConfirmation">
       <h3 class="row ml-1 mb-4">Bekräfta bokning</h3>
+      
       <div v-if="roombookings.length>0">
         <section class="row">
-          <div v-for="room in roombookings" :key="room.id">
-            <div>Rumsnummer: {{room.room}}</div>
-     
-     
-            <h4>Grande Hotel</h4>
-            <ul>
-              <li class="mb-3">Avstånd till stranden:</li>
-              <li class="mb-4">Avstånd till centrum:</li>
-            </ul>
-            <!-- Iterera över alla checkade boxar för hotelet(pool, underhållning osv) -->
-            <div class="col extra ml-3 mb-2">
-              <img class="pr-2" src="../images/v.png" />
-              <label for="Pool">Pool (Insert/fetch data depending on hotel choice)</label>
-            </div>  
-          
-            <section class="row mt-4">
-              <!--Insert/fetch right choosen bedtype-->
-              <label class="col-4 choice-bedtype">Rumstyp:</label>
-              <!--Insert/fetch right amount of money for the choosen hotel, room, do the math (person + kids + roomtype) -->
-              <label class="col-8 choice-bedtype">
-              <!--Fetch and insert the -->
-              kr för hela sällskapet under
-              <!--{fetch and insert choosen nights here}-->
-              </label>
-            </section>
-
-
-
-            <section class="row mt-3">
-              <!--Insert/fetch right amount of individual('s)-->
-              <label class="col-4 choice-amount-persons">Antal personer:</label>
-              <!--Insert/fetch right amount of kids, if it's choosen to start with-->
-              <label class="col-4 choice-amount-kids">Antal barn:</label>
-            </section>
-
-
-
-          </div>
-      
+          <ul class="roomloop" v-for="room in roombookings" :key="room.id">
+            <li>
+              <div>Rumsnummer: {{room.room.id}} </div>
+              <div>Pris/natt: {{room.room.price}} kr</div>
+            </li>
+          </ul>
         </section>
-
+        <section><h3>Totalsumma: {{this.sum}}</h3></section>
     
 
         <section class="row mt-5 mb-5">
           <div class="col-6">
-            <router-link to="/hoteldescription">
+            <router-link to="/">
               <button type="button" class="btn btn-secondary">Avbryt bokning</button>
             </router-link>
           </div>
@@ -71,7 +47,7 @@
           </router-link>
         </div>
       </div>
-
+      </section>
       <section class="mt-5" v-if="showConfirmation">
         <div class="row">
           <h3>Tack för din bokning hos oss, vi hoppas på att du har en trevlig resa!</h3>
@@ -80,7 +56,7 @@
           <router-link to="/"><button class="btn btn-success">Startsida</button></router-link>
         </div>
       </section>
-    </section>
+    
   </section>
 </template>
 
@@ -89,6 +65,7 @@
 export default {
   data() {
     return {
+      sum: 0,
       roombookings: [],
       showConfirmation: false
     };
@@ -102,6 +79,7 @@ export default {
         // this.$store.dispatch('clearCurrentRoombooking')
         // this.$store.dispatch('clearForm')
         // this.changeToConfirmation()
+        this.showConfirmation = true;
     },
     async postBookingAndRoombookings(){
       //hämta active user
@@ -141,11 +119,18 @@ export default {
      },
       getRoombookings: function(){
         this.roombookings = this.$store.state.roombookings
+      },
+      calculateSum: function(){
+        
+        for(let r of this.roombookings){
+          this.sum+=r.room.price
+        }
       }
 
   },
   mounted() {
     this.getRoombookings()
+    this.calculateSum()
       }
     
   

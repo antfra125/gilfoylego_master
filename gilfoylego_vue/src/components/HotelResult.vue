@@ -2,7 +2,7 @@
 <div>
     <div class="container my-4 p-5 grey-border" v-for="hotel in filteredHotels" :key="hotel.id">
       
-        <div class="row result">
+        <div class="row  result">
           <div class="sm-col-12 md-col-12 lg-col-4 pic-col">
             <img :src="hotel.imgUrl">
           </div>
@@ -24,7 +24,7 @@
               <span v-if="hotel.mToCity < 1000">Avstånd till centrum: {{hotel.mToCity}} m</span>
               <span v-if="hotel.mToCity >= 1000">Avstånd till centrum: {{hotel.mToCity / 1000}} km</span>
             </div>
-            <router-link :to="'/hoteldescription/'+hotel.id" > <button default=none class="btn-lg btn-warning" >Boka</button>
+            <router-link :to="'/hoteldescription/'+hotel.id" > <button default=none class="btn-lg" >Boka</button>
       </router-link>
 
             <div class="row d-flex justify-content-end pt-5">

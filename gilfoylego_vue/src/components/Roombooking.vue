@@ -73,9 +73,11 @@
             placeholder="Antal barn"
           ></b-form-input>
         </div>
-        <b-button id="saveRoom" class="btn-lg btn-success" v-on:click="add_roombooking">SPARA RUMMET</b-button>
+        <b-button id="saveRoom" class="btn mt-5" v-on:click="add_roombooking">Lägg till rum </b-button>
         <router-link v-on:click="add_roombooking" to="/bookingconfirmation">
-          <b-button class="mt-3">Boka</b-button>
+          <template v-if="bookedRooms>0">
+            <b-button  class="mt-5 ml-5 btn-success">Boka di<span v-if="bookedRooms===1">tt </span><span v-else>na {{this.bookedRooms}}</span> rum</b-button>
+          </template>
         </router-link>
       </b-form>
     </section>
@@ -87,7 +89,9 @@
 
 export default {
   data() {
+   
     return {
+      bookedRooms: 0,
       index: 0,
       comfortLvl: ["All Inclusive", "Helpension", "Halvpension"],
       roomtypes: ["Enkelrum", "Dubbelrum", "Familjerum"],
@@ -110,28 +114,22 @@ export default {
     },
     add_roombooking() {
       let formdata = this.$store.state.form;
-      if (formdata.startDate == "" || formdata.endDate == "") {
+      if (formdata===null){//formdata.startDate == "" || formdata.endDate == "") {
         console.log("neeee, error!! du måste välja datum ju");
       } else {
         let current = this.$store.state.currentRoombooking;
 
-        //JAG BYGGER ETT OBJEKT som ser ut som en room_booking
 
         let cheapestRoom = {id: 0}
-        console.log(
-          "current selected roomtype: " +
-            current.roomtype +
-            " price: " +
-            current.price
-        );
-        console.log(this.rooms.length);
+        
+        
         //for(let i = 0, i< this.rooms.length())
 
         let x = 999999;
         for (let r of this.rooms) {
-          //console.log("roomtype: " + r.roomtype.name + " price: " + r.price);
+          console.log("r: ", r);
 
-          if (r.price < x /*&& r.roomtype.name == current.roomtype*/) {
+          if (r.price < x /*&& r.roomtype == current.roomtype*/) {
              console.log("PRINTAR r FRÅN LOOPEN: ",r)
              x = r.price
              cheapestRoom.id = r.id;
@@ -165,7 +163,7 @@ export default {
           // TODO kanske att en kan välja rum 
         let roombookingObj = {
           room: this.rooms[0],
-          price: 666,
+          price: x === 999999 ? 666 : x,
           dateCheckin: formdata.startDate,
           dateCheckout: formdata.endDate,
           extrabed: current.extrabed ? true : false,
@@ -176,6 +174,7 @@ export default {
           children: current.kids == null ? 0 : Number(current.kids)
         };
         this.index++
+        this.bookedRooms++
         console.log(
           "färdigt rumsbokningsobjekt, redo att sparas.");
         this.$store.dispatch('addRoombooking',roombookingObj)
@@ -211,6 +210,8 @@ export default {
   },
 
   computed: {
+    
+    
     form: {
       get() {
         return this.$store.state.form;
