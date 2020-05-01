@@ -29,6 +29,10 @@ export default new Vuex.Store({
     SET_CURRENTROOMBOOKNG(state, payload){
       state.currentRoombooking = payload
     },
+    CLEAR_CURRENTROOMBOOKING(state){
+      state.currentRoombooking = {}
+    },
+
     
     REMOVE_ONE_ROOMBOOKING(state, payload){
       // TODO    är detta verkligen rimligt?
@@ -40,7 +44,6 @@ export default new Vuex.Store({
     CLEAR_ROOMBOOKINGS(state){
       state.roombookings = []
       console.log("deleted all active roombookings. i hope you intended to do this.")
-
     }
     ,
     SET_FORM(state, payload) {
@@ -51,6 +54,9 @@ export default new Vuex.Store({
       console.log("state.form efter:",state.form)
 
       console.log("You set state.form to the value of the payload!")
+    },
+    CLEAR_FORM(state){
+      state.form = {}
     },
 
     SET_USER(state, value){
@@ -67,6 +73,12 @@ export default new Vuex.Store({
 
       commit('ADD_ROOMBOOKING',payload)
   },
+    async clearRoombookings({commit}){
+      commit('CLEAR_ROOMBOOKINGS')
+    },
+    async clearCurrentRoombooking({commit}){
+      commit('CLEAR_CURRENTROOMBOOKING')
+    },
 
     async getFormdata({ commit } ) {
       console.log("You made a dispatch through getFormdata!")

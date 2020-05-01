@@ -75,10 +75,9 @@ export default {
       
 
         this.postBookingAndRoombookings();
-        // this.$store.dispatch('clearRoombookings')
-        // this.$store.dispatch('clearCurrentRoombooking')
-        // this.$store.dispatch('clearForm')
-        // this.changeToConfirmation()
+        this.$store.dispatch('clearRoombookings')
+        this.$store.dispatch('clearCurrentRoombooking')
+        this.$store.dispatch('getFormdata')
         this.showConfirmation = true;
     },
     async postBookingAndRoombookings(){
@@ -104,6 +103,7 @@ export default {
         console.log("HAR DEN ETT bookingobject?: ",rb)
          this.postRoombooking(rb)
       });
+
     },
     
     async postRoombooking(roombooking){

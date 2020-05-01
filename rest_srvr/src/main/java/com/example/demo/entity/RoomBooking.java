@@ -1,8 +1,6 @@
 package com.example.demo.entity;
 
-import com.example.demo.entity.keys.RoomBookingId;
 import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 
 import javax.persistence.*;
 import java.time.LocalDate;

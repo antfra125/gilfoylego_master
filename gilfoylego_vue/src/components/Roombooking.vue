@@ -73,10 +73,12 @@
             placeholder="Antal barn"
           ></b-form-input>
         </div>
-        <b-button id="saveRoom" class="btn mt-5" v-on:click="add_roombooking">Lägg till rum </b-button>
+        <b-button id="saveRoom" class="btn mt-5" v-on:click="add_roombooking">Lägg till rum</b-button>
         <router-link v-on:click="add_roombooking" to="/bookingconfirmation">
           <template v-if="bookedRooms>0">
-            <b-button  class="mt-5 ml-5 btn-success">Boka di<span v-if="bookedRooms===1">tt </span><span v-else>na {{this.bookedRooms}}</span> rum</b-button>
+            <b-button class="mt-5 ml-5 btn-success">
+              Boka di<span v-if="bookedRooms===1">tt</span><span v-else>na {{this.bookedRooms}}</span> rum
+            </b-button>
           </template>
         </router-link>
       </b-form>
@@ -89,7 +91,6 @@
 
 export default {
   data() {
-   
     return {
       bookedRooms: 0,
       index: 0,
@@ -100,40 +101,38 @@ export default {
     };
   },
   methods: {
-    find_cheapest_room(){
-        
-    },
-    calculate_days_staying(dIn, dOut){
+    find_cheapest_room() {},
+    calculate_days_staying(dIn, dOut) {
       let datein = new Date(dIn);
       let dateout = new Date(dOut);
       return Math.floor(
-          (Date.UTC(dateout.getFullYear(), dateout.getMonth(), dateout.getDate()) -
-            Date.UTC(datein.getFullYear(), datein.getMonth(), datein.getDate())) /
-            (1000 * 60 * 60 * 24)
-        );
+        (Date.UTC(
+          dateout.getFullYear(),
+          dateout.getMonth(),
+          dateout.getDate()
+        ) -
+          Date.UTC(datein.getFullYear(), datein.getMonth(), datein.getDate())) /
+          (1000 * 60 * 60 * 24)
+      );
     },
     add_roombooking() {
       let formdata = this.$store.state.form;
-      if (formdata===null){//formdata.startDate == "" || formdata.endDate == "") {
+      if (formdata === null) {
+        //formdata.startDate == "" || formdata.endDate == "") {
         console.log("neeee, error!! du måste välja datum ju");
       } else {
         let current = this.$store.state.currentRoombooking;
 
+        let cheapestRoom = { id: 0 };
 
-        let cheapestRoom = {id: 0}
-        
-        
         //for(let i = 0, i< this.rooms.length())
 
         let x = 999999;
         for (let r of this.rooms) {
-          console.log("r: ", r);
-
+          
           if (r.price < x /*&& r.roomtype == current.roomtype*/) {
-             console.log("PRINTAR r FRÅN LOOPEN: ",r)
-             x = r.price
-             cheapestRoom.id = r.id;
-           
+            x = r.price;
+            cheapestRoom.id = r.id;
           }
         }
         //let i = cheapestRoom.id;
@@ -142,28 +141,40 @@ export default {
         // console.log("142. this.rooms[i]: ")
         // let a = this.rooms[cheapestRoom.id];
         // console.log("A BORDE VARA ETT RUM, ÄR DET DET? :",a)
-        
+
         //console.log("cheapest after: ", cheapestRoom.price);
         //console.log("ÄR DETTA ETT RUMSOBJEKT MED ID? ",cheapestRoom)
 
-
-      let datediff = this.calculate_days_staying(formdata.startDate, formdata.endDate)
-        
-        
+        let datediff = this.calculate_days_staying(
+          formdata.startDate,
+          formdata.endDate
+        );
 
         console.log("datediff: ", datediff);
 
-        /**borttagna element som kan vara bra att ha till v-for loopen sen
+        /*borttagna element som kan vara bra att ha till v-for loopen sen
           index: this.index,
           hotel: "ONE HOTEL",
           roomtype: current.roomtype,
          * cheapestRoom.price * datediff
          * 
          */
-          // TODO kanske att en kan välja rum 
+        console.log("priset innan(per natt): ",x)
+        let price =
+          x === 999999
+            ? 666
+            : (x +
+              ((current.extrabed ? 200 : 0) +
+                (current.comfortLvl == "All Inclusive" ? 500 : 0) +
+                (current.comfortLvl == "Helpension" ? 300 : 0) +
+                (current.comfortLvl == "Halvpension" ? 150 : 0))) *
+                datediff;
+
+        console.log("priset att spara(totalen med tilllägg): ",price)
         let roombookingObj = {
+          // TODO kanske att en kan välja rum
           room: this.rooms[0],
-          price: x === 999999 ? 666 : x,
+          price: price,
           dateCheckin: formdata.startDate,
           dateCheckout: formdata.endDate,
           extrabed: current.extrabed ? true : false,
@@ -173,21 +184,19 @@ export default {
           adults: current.adults == null ? 1 : Number(current.adults),
           children: current.kids == null ? 0 : Number(current.kids)
         };
-        this.index++
-        this.bookedRooms++
-        console.log(
-          "färdigt rumsbokningsobjekt, redo att sparas.");
-        this.$store.dispatch('addRoombooking',roombookingObj)
+        
+        this.index++;
+        this.bookedRooms++;
+        console.log("färdigt rumsbokningsobjekt, redo att sparas: ",roombookingObj);
+        this.$store.commit("ADD_ROOMBOOKING", roombookingObj)
+       //  this.$store.dispatch("addRoombooking", roombookingObj);
         //TODO spara bokningen till store när den är klar
         //this.$store.commit('ADD_ROOMBOOKING', currentRoombooking)
 
         //rensa currentRoombooking
       }
-    
     },
-    postBooking: async function() {
-
-    },
+    postBooking: async function() {},
     getRooms: async function() {
       //försökt skicka in hotelId så jävla länge nu. fuckit. det här funkar.
       let pathUrl = "";
@@ -210,16 +219,14 @@ export default {
   },
 
   computed: {
-    
-    
     form: {
       get() {
         return this.$store.state.form;
       }
     },
     roombookings: {
-      get () {
-        return this.$store.state.roombookings
+      get() {
+        return this.$store.state.roombookings;
       }
     },
 
