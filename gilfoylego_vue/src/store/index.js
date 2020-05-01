@@ -14,7 +14,10 @@ export default new Vuex.Store({
     isLoggedIn: false,    
     form: {},
     roombookings: [],
-    currentRoombooking: {}
+    currentRoombooking: {},
+    hotels: [],
+    sortByRatings: false,
+    sortASC: true
   },
   mutations: {
     SET_ROOMBOOKINGS(state, payload){

@@ -69,3 +69,6 @@ form{
         width: 250px;
     }
   }
+.custom-link :hover {
+    cursor: pointer;
+}

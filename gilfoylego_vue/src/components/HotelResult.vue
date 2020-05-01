@@ -51,7 +51,7 @@ export default {
     methods: {
       getHotels: async function() {
         let result = await fetch('http://localhost:8090/rest/hotelview');
-        this.hotels = await result.json();
+        this.$store.state.hotels = await result.json();
       // },
       //   //localStorage.setItem('formen', JSON.stringify(this.form));
       //   saveToStore(){
@@ -75,19 +75,40 @@ export default {
     //   return this.$store.state.form
     // },
 
-  filteredHotels (){
+filteredHotels: function() {
+      /*function compare(a, b) {
+          if (a.rating < b.rating)
+            return -1;
+          if (a.rating > b.rating)
+            return 1;
+          return 0;
+        }*/
      
         if(this.m2Center != '') {
-            return this.hotels.filter(hotel => {
+            return this.$store.state.hotels.filter(hotel => {
             return hotel.name.toLowerCase().includes(this.search.toLowerCase()) && hotel.metersToCityCenter < this.m2Center  
         })
       }
       else {
-        return this.hotels.filter(hotel => {
+        let searchResult = this.$store.state.hotels.filter(hotel => {
         return hotel.name.toLowerCase().includes(this.search.toLowerCase()) 
           || hotel.city.toLowerCase().includes(this.search.toLowerCase()) 
           || hotel.country.toLowerCase().includes(this.search.toLowerCase())
         })
+        
+        if (this.$store.state.sortByRatings) {
+          //return searchResult.sort(compare);
+          let ascDesc = this.$store.state.sortASC ? 1 : -1;
+            return searchResult.sort((a, b) => ascDesc * a.rating.toString().localeCompare(b.rating));
+        }
+        else {
+          return this.$store.state.hotels.filter(hotel => {
+        return hotel.name.toLowerCase().includes(this.search.toLowerCase()) 
+          || hotel.city.toLowerCase().includes(this.search.toLowerCase()) 
+          || hotel.country.toLowerCase().includes(this.search.toLowerCase())
+        })
+        }
+        
       }
       }
     }

@@ -57,8 +57,10 @@
             <span class="column">
               <img src="../images/sort.png" /> Pris
             </span>
-            <span class="column">
-              <img src="../images/sort.png" /> Omdömde
+            <span class="column custom-link" v-on:click="sortByRating()">
+              <span>
+                <img v-show="this.$store.state.sortASC" src="../images/sortasc.png" />
+                <img v-show="!this.$store.state.sortASC" src="../images/sortdesc.png" /> Omdömde</span>
             </span>
           </div>
           <div class="row">Filter:</div>
@@ -130,6 +132,10 @@ export default {
   },
 
   methods: {
+    sortByRating() {
+      this.$store.state.sortByRatings = true
+      this.invertSort()
+    },
     onSubmit(evt) {
       evt.preventDefault();
       alert(JSON.stringify(this.form));
@@ -138,7 +144,10 @@ export default {
       let result = await fetch("http://localhost:8090/rest/hotelview");
       this.hotels = await result.json();
       console.log(this.hotels);
-    }
+    },
+    invertSort() {
+            this.$store.state.sortASC = !this.$store.state.sortASC
+        }
   },
   computed: {
     form: {
