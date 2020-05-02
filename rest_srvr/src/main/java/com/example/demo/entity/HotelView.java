@@ -1,10 +1,12 @@
 package com.example.demo.entity;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
+import javax.persistence.*;
 import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "hotelview")
@@ -39,11 +41,35 @@ public class HotelView {
     String description;
     @Column
     Double rating;
+    @Transient
+    private List<String> amenities = new ArrayList<>();
+    @OneToMany(mappedBy = "hotel")
+    @JsonManagedReference(value="room_hotel")
+    private Set<Room> rooms;
 
     public long getId() {
         return id;
     }
 
+    public Set<Room> getRooms() {
+        return rooms;
+    }
+
+    public List<String> getAmenities() {
+        if(restaurant) {
+            this.amenities.add("restaurant");
+        }
+        if(kidsclub) {
+            this.amenities.add("kidsclub");
+        }
+        if(pool) {
+            this.amenities.add("pool");
+        }
+        if(eveningEntertainment) {
+            this.amenities.add("eveningentertainment");
+        }
+        return amenities;
+    }
 
     public String getName() {
         return name;

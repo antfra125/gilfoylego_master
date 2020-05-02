@@ -17,6 +17,7 @@ export default new Vuex.Store({
     currentRoombooking: {},
     hotels: [],
     sortByRatings: false,
+    sortByPrice: false,
     sortASC: true
   },
   mutations: {

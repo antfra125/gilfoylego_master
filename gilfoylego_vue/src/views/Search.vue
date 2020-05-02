@@ -54,13 +54,23 @@
           </div> -->
           <div class="row form-group sort d-flex justify-content-between">
             <span class="column">Sortera efter:</span>
-            <span class="column">
-              <img src="../images/sort.png" /> Pris
+            <span class="column" v-on:click="sortByPrice()">
+              <span>
+                <img v-show="!this.$store.state.sortByPrice" src="../images/sortasc.png" />
+                <img v-show="this.$store.state.sortASC && this.$store.state.sortByPrice" src="../images/sortasc.png" />
+                <img v-show="!this.$store.state.sortASC && this.$store.state.sortByPrice" src="../images/sortdesc.png" />
+                <span v-show="this.$store.state.sortByPrice"><strong> Pris</strong></span>
+                <span v-show="!this.$store.state.sortByPrice"> Pris</span>
+              </span>
             </span>
             <span class="column custom-link" v-on:click="sortByRating()">
               <span>
-                <img v-show="this.$store.state.sortASC" src="../images/sortasc.png" />
-                <img v-show="!this.$store.state.sortASC" src="../images/sortdesc.png" /> Omdömde</span>
+                <img v-show="!this.$store.state.sortByRatings" src="../images/sortasc.png" />
+                <img v-show="this.$store.state.sortASC && this.$store.state.sortByRatings" src="../images/sortasc.png" />
+                <img v-show="!this.$store.state.sortASC && this.$store.state.sortByRatings" src="../images/sortdesc.png" />
+                <span v-show="this.$store.state.sortByRatings"><strong> Omdömde</strong></span>
+                <span v-show="!this.$store.state.sortByRatings"> Omdömde</span>
+              </span>
             </span>
           </div>
           <div class="row">Filter:</div>
@@ -132,8 +142,14 @@ export default {
   },
 
   methods: {
+    sortByPrice() {
+      this.$store.state.sortByRatings = false
+      this.$store.state.sortByPrice = true
+      this.invertSort()
+    },
     sortByRating() {
       this.$store.state.sortByRatings = true
+      this.$store.state.sortByPrice = false
       this.invertSort()
     },
     onSubmit(evt) {
