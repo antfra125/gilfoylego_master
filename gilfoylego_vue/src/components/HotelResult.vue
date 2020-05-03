@@ -1,11 +1,11 @@
 <template>
 <div>
-    <div class="container my-4 p-5 grey-border" v-for="hotel in filteredHotels" :key="hotel.id" v-on:click="'/hoteldescription/' + hotel.id">
-        <div class="row result">
-          <div class="sm-col-12 md-col-12 lg-col-4 pic-col">
+    <div class="container my-4 p-5 grey-border custom-link" v-for="hotel in filteredHotels" :key="hotel.id" v-on:click="resultLink(hotel)">
+        <div class="row result w-100">
+          <div class="col-sm-12 col-md-12 col-lg-4 pic-col">
             <img :src="hotel.imgUrl">
           </div>
-          <div class="sm-col-12 md-col-12 lg-col-8 px-4">
+          <div class="col-sm-12 col-md-12 col-lg-8 px-4">
             <div class="row smallhotelframe">
               <span><strong>{{hotel.name}}</strong></span>
             </div>
@@ -28,9 +28,6 @@
             </div>
           </div>
         </div>
-        <div class="row pt-2 d-block">
-            <router-link :to="'/hoteldescription/' + hotel.id" ><b-button default=none class="btn-sm" >Mer information</b-button></router-link>
-          </div>
     </div>
   </div>
 </template>
@@ -48,6 +45,9 @@ export default {
       this.getHotels();
     },
     methods: {
+      resultLink(hotel) {
+        this.$router.push('hoteldescription/' + hotel.id);
+      },
       getHotelAmenities (hotel) {
         return [hotel.eveningEntertainment, hotel.pool, hotel.kidsclub, hotel.restaurant]
       },
