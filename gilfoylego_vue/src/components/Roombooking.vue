@@ -63,9 +63,9 @@
           <router-link v-on:click="add_roombooking" to="/bookingconfirmation">
             <span v-if="bookedRooms>0">
               <b-button class="mt-5 ml-5 btn-success">
-                Boka di
-                <span v-if="bookedRooms===1">tt</span>
-                <span v-else>na {{this.bookedRooms}}</span> rum
+                Boka 
+                <span v-if="bookedRooms===1">ditt</span>
+                <span v-else>dina {{this.bookedRooms}}</span> rum
               </b-button>
             </span>
           </router-link>
@@ -120,23 +120,25 @@ export default {
       } else {
         let current = this.$store.state.currentRoombooking;
 
-        let cheapestRoom = { id: 0 };
         if (current.roomtype === undefined) {
           current.roomtype = "Enkelrum";
         }
-        //for(let i = 0, i< this.rooms.length())
-
         let x = 999999;
-        for (let r of this.rooms) {
-          console.log("Inne i loopen");
-          console.log("r ser ut såhär: ", r);
 
-          if (r.price < x && r.roomtypeName == current.roomtype) {
-            console.log("inne i rumstypscheckern");
-            x = r.price;
-            cheapestRoom.id = r.id;
-          }
-        }
+        //filtrera
+        let filteredRooms = this.rooms.filter(r => {
+          return r.roomtypeName.includes(current.roomtype)
+        })
+        console.log("FILTRERADE RUM: ", filteredRooms)
+
+        //sortera 
+        let ascDesc = filteredRooms.sort((a, b) => {
+          return (a.price - b.price)
+        })
+
+        x=ascDesc[0].price;
+      console.log("billigaste hotellet: ",x)
+        console.log("sorterade rum: ", ascDesc)
 
         let datediff = this.calculate_days_staying(
           formdata.startDate,
@@ -144,17 +146,10 @@ export default {
         );
 
         console.log("datediff: ", datediff);
-
-        /*borttagna element som kan vara bra att ha till v-for loopen sen
-          index: this.index,
-          hotel: "ONE HOTEL",
-          roomtype: current.roomtype,
-         * cheapestRoom.price * datediff
-         * 
-         */
         if (current.comfortLvl == undefined) {
           current.comfortLvl = "All Inclusive";
         }
+
         console.log("priset innan(per natt): ", x);
         let price =
           x === 999999
@@ -169,7 +164,7 @@ export default {
         console.log("priset att spara(totalen med tilllägg): ", price);
         let roombookingObj = {
           // TODO kanske att en kan välja rum
-          room: this.rooms[0],
+          room: ascDesc[0],
           price: price,
           dateCheckin: formdata.startDate,
           dateCheckout: formdata.endDate,
