@@ -1,88 +1,85 @@
 <template>
   <main>
-    <section class="mb-5">
-      <!-- TODO HÄR VILL JAG ATT DET SKA SKRIVAS UT DATUMstart OCH DATUMend SOM FINNS SPARAT I STORE.STATE.FORM-->
-    </section>
-    <section class="mb-5">
-      <p>
-        Bokning mellan
-        <strong>{{form.startDate}}</strong> och
-        <strong>{{form.endDate}}</strong>
-      </p>
-      <h4 class="mb-4">Rum</h4>
-      <section class="row ml-1 mb-3">
-        <!--  TODO
+    <div v-if="this.$store.state.isLoggedIn">
+      <section class="mb-5"></section>
+      <section class="mb-5">
+        <p>
+          Bokning mellan
+          <strong>{{form.startDate}}</strong> och
+          <strong>{{form.endDate}}</strong>
+        </p>
+        <h4 class="mb-4">Rum</h4>
+        <section class="row ml-1 mb-3"></section>
+        <b-form>
+          <div class="row ml-1">
+            <h5 class="mr-3">Rumstyp</h5>
+            <b-form-select
+              id="input-3"
+              v-model="currentRoombooking.roomtype"
+              :options="roomtypes"
+              required
+            ></b-form-select>
+          </div>
+          <div class="row ml-1">
+            <h5 class="mr-3">Bekvämlighetsnivå</h5>
+            <b-form-select
+              id="input-4"
+              v-model="currentRoombooking.comfortLvl"
+              :options="comfortLvl"
+              value="All Inclusive"
+              required
+            ></b-form-select>
+          </div>
 
-        <span v-if="form.roomtype == 'Enkelrum'">
-        <p>799kr/natt</p>
-      </span>
-      <span v-if="form.roomtype == 'Dubbelrum'">
-        <p>1299kr/natt</p>
-      </span>
-      <span v-if="form.roomtype == 'Familjerum'">
-        <p>1699kr/natt</p>
-      </span>
-        -->
+          <div class="row mt-3 ml-1">
+            <h5 class="mr-3">Extrasäng</h5>
+            <b-form-checkbox v-model="currentRoombooking.extrabed" id="checkboxes-4"></b-form-checkbox>
+          </div>
+
+          <div class="row mt-3 ml-1">
+            <h5 class="mr-3">Antal vuxna</h5>
+            <b-form-input
+              type="number"
+              min="1"
+              max="4"
+              v-model="currentRoombooking.adults"
+              required
+              placeholder="Antal vuxna"
+            ></b-form-input>
+          </div>
+
+          <div class="row mt-3 ml-1">
+            <h5 class="mr-3">Antal barn</h5>
+            <b-form-input
+              type="number"
+              min="0"
+              max="4"
+              v-model="currentRoombooking.kids"
+              required
+              placeholder="Antal barn"
+            ></b-form-input>
+          </div>
+          <b-button id="saveRoom" class="btn mt-5" v-on:click="add_roombooking">Lägg till rum</b-button>
+          <router-link v-on:click="add_roombooking" to="/bookingconfirmation">
+            <span v-if="bookedRooms>0">
+              <b-button class="mt-5 ml-5 btn-success">
+                Boka di
+                <span v-if="bookedRooms===1">tt</span>
+                <span v-else>na {{this.bookedRooms}}</span> rum
+              </b-button>
+            </span>
+          </router-link>
+          <router-link to="/search">
+            <b-button class="btn ml-5 mt-5">Gå tillbaka</b-button>
+          </router-link>
+        </b-form>
       </section>
-      <b-form>
-        <div class="row ml-1">
-          <h5 class="mr-3">Rumstyp</h5>
-          <b-form-select
-            id="input-3"
-            v-model="currentRoombooking.roomtype"
-            :options="roomtypes"
-            required
-          ></b-form-select>
-        </div>
-        <div class="row ml-1">
-          <h5 class="mr-3">Bekvämlighetsnivå</h5>
-          <b-form-select
-            id="input-4"
-            v-model="currentRoombooking.comfortLvl"
-            :options="comfortLvl"
-            value="All Inclusive"
-            required
-          ></b-form-select>
-        </div>
-
-        <div class="row mt-3 ml-1">
-          <h5 class="mr-3">Extrasäng</h5>
-          <b-form-checkbox v-model="currentRoombooking.extrabed" id="checkboxes-4"></b-form-checkbox>
-        </div>
-
-        <div class="row mt-3 ml-1">
-          <h5 class="mr-3">Antal vuxna</h5>
-          <b-form-input
-            type="number"
-            min="1"
-            max="4"
-            v-model="currentRoombooking.adults"
-            required
-            placeholder="Antal vuxna"
-          ></b-form-input>
-        </div>
-
-        <div class="row mt-3 ml-1">
-          <h5 class="mr-3">Antal barn</h5>
-          <b-form-input
-            type="number"
-            min="0"
-            max="4"
-            v-model="currentRoombooking.kids"
-            required
-            placeholder="Antal barn"
-          ></b-form-input>
-        </div>
-        <b-button id="saveRoom" class="btn mt-5" v-on:click="add_roombooking">Lägg till rum</b-button>
-        <router-link v-on:click="add_roombooking" to="/bookingconfirmation">
-          <template v-if="bookedRooms>0">
-            <b-button class="mt-5 ml-5 btn-success">
-              Boka di<span v-if="bookedRooms===1">tt</span><span v-else>na {{this.bookedRooms}}</span> rum
-            </b-button>
-          </template>
-        </router-link>
-      </b-form>
-    </section>
+    </div>
+    <div v-else>
+      <p>
+        <router-link to="/login">Logga in</router-link>för att boka
+      </p>
+    </div>
   </main>
 </template>
 
@@ -124,26 +121,23 @@ export default {
         let current = this.$store.state.currentRoombooking;
 
         let cheapestRoom = { id: 0 };
-
+        if (current.roomtype === undefined) {
+          current.roomtype = "Enkelrum";
+        }
         //for(let i = 0, i< this.rooms.length())
 
         let x = 999999;
         for (let r of this.rooms) {
-          
+          console.log("Inne i loopen");
+          console.log("r ser ut såhär: ", r);
+          //r har inte rumstyp i sig. detta är problematiskt
+
           if (r.price < x /*&& r.roomtype == current.roomtype*/) {
+            console.log("inne i rumstypscheckern");
             x = r.price;
             cheapestRoom.id = r.id;
           }
         }
-        //let i = cheapestRoom.id;
-        // console.log("141. this.rooms[0]: ",this.rooms[0])
-        // console.log("142. this.rooms[cheapestRoom.id]: ", this.rooms[cheapestRoom.id])
-        // console.log("142. this.rooms[i]: ")
-        // let a = this.rooms[cheapestRoom.id];
-        // console.log("A BORDE VARA ETT RUM, ÄR DET DET? :",a)
-
-        //console.log("cheapest after: ", cheapestRoom.price);
-        //console.log("ÄR DETTA ETT RUMSOBJEKT MED ID? ",cheapestRoom)
 
         let datediff = this.calculate_days_staying(
           formdata.startDate,
@@ -159,18 +153,21 @@ export default {
          * cheapestRoom.price * datediff
          * 
          */
-        console.log("priset innan(per natt): ",x)
+        if (current.comfortLvl == undefined) {
+          current.comfortLvl = "All Inclusive";
+        }
+        console.log("priset innan(per natt): ", x);
         let price =
           x === 999999
             ? 666
             : (x +
-              ((current.extrabed ? 200 : 0) +
-                (current.comfortLvl == "All Inclusive" ? 500 : 0) +
-                (current.comfortLvl == "Helpension" ? 300 : 0) +
-                (current.comfortLvl == "Halvpension" ? 150 : 0))) *
-                datediff;
+                ((current.extrabed ? 200 : 0) +
+                  (current.comfortLvl == "All Inclusive" ? 500 : 0) +
+                  (current.comfortLvl == "Helpension" ? 300 : 0) +
+                  (current.comfortLvl == "Halvpension" ? 150 : 0))) *
+              datediff;
 
-        console.log("priset att spara(totalen med tilllägg): ",price)
+        console.log("priset att spara(totalen med tilllägg): ", price);
         let roombookingObj = {
           // TODO kanske att en kan välja rum
           room: this.rooms[0],
@@ -184,12 +181,15 @@ export default {
           adults: current.adults == null ? 1 : Number(current.adults),
           children: current.kids == null ? 0 : Number(current.kids)
         };
-        
+
         this.index++;
         this.bookedRooms++;
-        console.log("färdigt rumsbokningsobjekt, redo att sparas: ",roombookingObj);
-        this.$store.commit("ADD_ROOMBOOKING", roombookingObj)
-       //  this.$store.dispatch("addRoombooking", roombookingObj);
+        console.log(
+          "färdigt rumsbokningsobjekt, redo att sparas: ",
+          roombookingObj
+        );
+        this.$store.commit("ADD_ROOMBOOKING", roombookingObj);
+        //  this.$store.dispatch("addRoombooking", roombookingObj);
         //TODO spara bokningen till store när den är klar
         //this.$store.commit('ADD_ROOMBOOKING', currentRoombooking)
 
