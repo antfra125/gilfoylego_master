@@ -1,38 +1,38 @@
 <template>
-<div>
+  <div>
     <div class="container my-4 p-5 grey-border custom-link" v-for="hotel in filteredHotels" :key="hotel.id" v-on:click="resultLink(hotel)">
-        <div class="row result w-100">
-          <div class="col-sm-12 col-md-12 col-lg-4 pic-col">
-            <img :src="hotel.imgUrl">
+      <div class="row result w-100">
+        <div class="col-sm-12 col-md-12 col-lg-4 pic-col">
+          <img :src="hotel.imgUrl">
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-8 px-4">
+          <div class="row smallhotelframe">
+            <span><strong>{{hotel.name}}</strong></span>
           </div>
-          <div class="col-sm-12 col-md-12 col-lg-8 px-4">
-            <div class="row smallhotelframe">
-              <span><strong>{{hotel.name}}</strong></span>
-            </div>
-            <div class="row">
-              <span><em>{{hotel.city}}, {{hotel.country}}</em></span>
-            </div>
-            <div class="row">
-              <span>Omdöme: {{hotel.rating}}</span>
-            </div>
-            <div class="row">
-              <span v-if="hotel.mToBeach < 1000">Avstånd till stranden: {{hotel.mToBeach}} m</span>
-              <span v-if="hotel.mToBeach >= 1000">Avstånd till stranden: {{hotel.mToBeach / 1000}} km</span>
-            </div>
-            <div class="row">
-              <span v-if="hotel.mToCity < 1000">Avstånd till centrum: {{hotel.mToCity}} m</span>
-              <span v-if="hotel.mToCity >= 1000">Avstånd till centrum: {{hotel.mToCity / 1000}} km</span>
-            </div>
+          <div class="row">
+            <span><em>{{hotel.city}}, {{hotel.country}}</em></span>
+          </div>
+          <div class="row">
+            <span>Omdöme: {{hotel.rating}}</span>
+          </div>
+          <div class="row">
+            <span v-if="hotel.mToBeach < 1000">Avstånd till stranden: {{hotel.mToBeach}} m</span>
+            <span v-if="hotel.mToBeach >= 1000">Avstånd till stranden: {{hotel.mToBeach / 1000}} km</span>
+          </div>
+          <div class="row">
+            <span v-if="hotel.mToCity < 1000">Avstånd till centrum: {{hotel.mToCity}} m</span>
+            <span v-if="hotel.mToCity >= 1000">Avstånd till centrum: {{hotel.mToCity / 1000}} km</span>
+          </div>
             <div class="row d-flex justify-content-end pt-5">
               Från {{hotel.rooms[0].price}} kr
             </div>
-          </div>
         </div>
+      </div>
     </div>
     <div class="container my-4 p-5 grey-border" v-show="filteredHotels.length == 0">
-        <div class="row result w-100 d-flex justify-content-center">
-          <h3>Inget hotell passade tyvärr dina krav!</h3>
-        </div>
+      <div class="row result w-100 d-flex justify-content-center">
+        <h3>Inget hotell passade tyvärr dina krav!</h3>
+      </div>
     </div>
   </div>
 </template>
@@ -40,43 +40,34 @@
 <script>
 
 export default {
-    data() {
-      return {
-        hotels: []
-      }
-    },
-    
-    mounted() {
-      this.getHotels();
-    },
-    methods: {
-      resultLink(hotel) {
-        this.$router.push('hoteldescription/' + hotel.id);
-      },
-      getHotelAmenities (hotel) {
-        return [hotel.eveningEntertainment, hotel.pool, hotel.kidsclub, hotel.restaurant]
-      },
-      getHotels: async function() {
-        let result = await fetch('http://localhost:8090/rest/hotelview');
-        this.$store.state.hotels = await result.json();
-      // },
-      //   //localStorage.setItem('formen', JSON.stringify(this.form));
-      //   saveToStore(){
-      //   console.log("saveToStore kördes!")
-      //   this.$store.state.form = this.form ;
-      //   alert("WOW! /HotelResult sparade till $store.state på ditt klick!")
-      // }
+  data() {
+    return {
+      hotels: []
     }
+  },
+  mounted() {
+    this.getHotels();
+  },
+  methods: {
+    resultLink(hotel) {
+      this.$router.push('hoteldescription/' + hotel.id);
     },
-    props: {
-      form: {},
-      hotelId: String,
-      search: String, 
-      m2Center: String,
-      dateStart: String,
-      dateEnd: String
-      }
-    ,
+    getHotelAmenities (hotel) {
+      return [hotel.eveningEntertainment, hotel.pool, hotel.kidsclub, hotel.restaurant]
+    },
+    getHotels: async function() {
+      let result = await fetch('http://localhost:8090/rest/hotelview');
+      this.$store.state.hotels = await result.json();
+    }
+  },
+  props: {
+    form: {},
+    hotelId: String,
+    search: String, 
+    m2Center: String,
+    dateStart: String,
+    dateEnd: String
+  },
   computed: {
     formAmenities () {
       return [this.$store.state.form.amenities.includes("eveningentertainment"), 
