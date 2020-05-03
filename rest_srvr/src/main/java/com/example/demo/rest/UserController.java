@@ -2,6 +2,7 @@ package com.example.demo.rest;
 
 import com.example.demo.entity.User;
 import com.example.demo.repository.UserRepository;
+import com.example.demo.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,6 +16,8 @@ import java.util.Optional;
 public class UserController {
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private UserService userService;
 
 
     @GetMapping
@@ -22,7 +25,7 @@ public class UserController {
         return userRepository.findAll();
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public Optional<User> getSpecificUser(@PathVariable long id) {
         return userRepository.findById(id);
     }
@@ -54,7 +57,7 @@ public class UserController {
 
     @PostMapping
     void createUser(@RequestBody User userToBeCreated) {
-        userRepository.save(userToBeCreated);
+        userService.registerUser(userToBeCreated);
     }
 
     @PutMapping("/update")
