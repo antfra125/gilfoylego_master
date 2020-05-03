@@ -4,11 +4,10 @@
       <div class="row form-group d-flex justify-content-center mt-auto">
         <b-form>
           <div class="row d-flex justify-content-center form-group">
-              <b-form-input
-                type="text"
-                v-model="form.search"
-                required
-                placeholder="Hotell, stad eller land"
+            <b-form-input
+              type="text"
+              v-model="form.search"
+              placeholder="Hotell, stad eller land"
               ></b-form-input>
           </div>
           <div class="row form-group d-flex justify-content-between">
@@ -36,18 +35,9 @@
               </div>
             </div>
           </div>
-          <!-- <div class="row form-group d-flex justify-content-center">
-            <b-form-input
-              type="number"
-              min="1"
-              v-model="form.amountOfRooms"
-              required
-              placeholder="Antal rum"
-            ></b-form-input>
-          </div> -->
           <div class="row form-group sort d-flex justify-content-between">
             <span class="column">Sortera efter:</span>
-            <span class="column" v-on:click="sortByPrice()">
+            <span class="column custom-link" v-on:click="sortByPrice()">
               <span>
                 <img v-show="!this.$store.state.sortByPrice" src="../images/sortasc.png" />
                 <img v-show="this.$store.state.sortASC && this.$store.state.sortByPrice" src="../images/sortasc.png" />
@@ -130,7 +120,6 @@ export default {
   mounted() {
     this.getHotels();
   },
-
   methods: {
     sortByPrice() {
       this.$store.state.sortByRatings = false
@@ -149,20 +138,17 @@ export default {
     getHotels: async function() {
       let result = await fetch("http://localhost:8090/rest/hotelview");
       this.hotels = await result.json();
-      console.log(this.hotels);
     },
     invertSort() {
-            this.$store.state.sortASC = !this.$store.state.sortASC
-        }
+      this.$store.state.sortASC = !this.$store.state.sortASC
+    }
   },
   computed: {
     form: {
       get() {
-        console.log("computed: forms: get() WOW!");
         return this.$store.state.form;
       },
       set(value) {
-        console.log("computed: forms: set(value) KOLLA!!");
         this.$store.commit("SET_FORM", value);
       }
     }
