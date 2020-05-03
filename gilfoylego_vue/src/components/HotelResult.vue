@@ -29,6 +29,11 @@
           </div>
         </div>
     </div>
+    <div class="container my-4 p-5 grey-border" v-show="filteredHotels.length == 0">
+        <div class="row result w-100 d-flex justify-content-center">
+          <h3>Inget hotell passade tyvärr dina krav!</h3>
+        </div>
+    </div>
   </div>
 </template>
 
