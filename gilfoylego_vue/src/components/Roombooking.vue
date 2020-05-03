@@ -114,9 +114,8 @@ export default {
     },
     add_roombooking() {
       let formdata = this.$store.state.form;
-      if (formdata === null) {
-        //formdata.startDate == "" || formdata.endDate == "") {
-        console.log("neeee, error!! du måste välja datum ju");
+      if (formdata.startDate == "" || formdata.endDate == "") {
+        alert("neeee, error!! du måste välja datum ju");
       } else {
         let current = this.$store.state.currentRoombooking;
 
@@ -144,6 +143,10 @@ export default {
           formdata.startDate,
           formdata.endDate
         );
+
+        if(datediff < 1) {
+          alert("Du kan ju inte checka ut innan du checkat in heller!")
+        } else {
 
         console.log("datediff: ", datediff);
         if (current.comfortLvl == undefined) {
@@ -189,6 +192,7 @@ export default {
         //this.$store.commit('ADD_ROOMBOOKING', currentRoombooking)
 
         //rensa currentRoombooking
+        }
       }
     },
     postBooking: async function() {},
