@@ -2,21 +2,14 @@
   <div class="d-flex justify-content-center">
     <div class="container">
       <div class="row form-group d-flex justify-content-center mt-auto">
-        <b-form @submit="onSubmit">
+        <b-form>
           <div class="row d-flex justify-content-center form-group">
-            <div class="col p-0">
               <b-form-input
                 type="text"
                 v-model="form.search"
                 required
                 placeholder="Hotell, stad eller land"
               ></b-form-input>
-            </div>
-            <div class="col-auto p-0">
-              <button class="form-control custom-search-button">
-                <img class="pb-1" src="../images/search.png" />
-              </button>
-            </div>
           </div>
           <div class="row form-group d-flex justify-content-between">
             <div class="col-6">
