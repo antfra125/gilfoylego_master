@@ -14,6 +14,43 @@
         </div>
       </span>
     </section>
+    
+    <section class="row">
+      <div class="col extra">
+        <img class="pr-2" src="../images/v.png" v-if="hotel.hasPool">
+        <img class="pr-2" src="../images/x.png" v-if="!hotel.hasPool">
+        <label for="Pool">Pool</label>
+      </div>
+      <div class="col extra">
+        <img class="pr-2" src="../images/v.png" v-if="hotel.hasKidsClub">
+        <img class="pr-2" src="../images/x.png" v-if="!hotel.hasKidsClub">
+        <label for="KidsClubs">Barnklubb</label>
+      </div>
+    </section>
+
+    <section class="row mb-3">
+      <div class="col extra">
+        <img class="pr-2" src="../images/v.png" v-if="hotel.hasRestaurant">
+        <img class="pr-2" src="../images/x.png" v-if="!hotel.hasRestaurant">
+        <label for="Resturant">Resturang</label>
+      </div>
+      <div class="col extra">
+        <img class="pr-2" src="../images/v.png" v-if="hotel.hasEveningEntertainment">
+        <img class="pr-2" src="../images/x.png" v-if="!hotel.hasEveningEntertainment">
+        <label for="Entertaiment">Kvällsunderhållning</label>
+      </div>
+    </section>
+
+    <section class="row ml-4 mb-2">
+      <div>
+        <p v-if="hotel.metersToBeach < 1000">Avstånd till stranden: {{hotel.metersToBeach}} m</p>
+        <p v-if="hotel.metersToBeach > 1000">Avstånd till stranden: {{hotel.metersToBeach / 1000}} km</p>
+        <p v-if="hotel.metersToCityCenter < 1000">Avstånd till centrum: {{hotel.metersToCityCenter}} m</p>
+        <p v-if="hotel.metersToCityCenter > 1000">Avstånd till centrum: {{hotel.metersToCityCenter / 1000}} km</p>
+      </div>
+    </section>
+
+
   <Roombooking :hotelId="hotel.id"/>
 
   </section>
