@@ -189,6 +189,7 @@ export default {
           roombookingObj
         );
         this.$store.commit("ADD_ROOMBOOKING", roombookingObj);
+        console.log("roombooking (Roombooking.vue): ", this.$store.state.roombookings)
         //  this.$store.dispatch("addRoombooking", roombookingObj);
         //TODO spara bokningen till store när den är klar
         //this.$store.commit('ADD_ROOMBOOKING', currentRoombooking)

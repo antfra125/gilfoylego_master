@@ -25,9 +25,12 @@
 
         <section class="row mt-5 mb-5">
           <div class="col-6">
-            <router-link to="/">
-              <button type="button" class="btn btn-secondary">Avbryt bokning</button>
-            </router-link>
+            <b-button
+              v-on:click="purchaseAbort()"
+              type="button"
+              class="btn btn-secondary">
+              Avbryt bokning
+            </b-button>
           </div>
           <div class="col-6">
             <button
@@ -71,9 +74,11 @@ export default {
     };
   },
   methods: {
+    purchaseAbort() {
+      this.$store.dispatch('clearRoombookings')
+      this.$router.push('/')
+    },
     purchaseConfirmed(){
-      
-
         this.postBookingAndRoombookings();
         this.$store.dispatch('clearRoombookings')
         this.$store.dispatch('clearCurrentRoombooking')
@@ -96,9 +101,11 @@ export default {
      
       let bookingobject = await response.json()
        console.log("bookingobject: ",bookingobject)//hämta bookingobject
+       console.log("roombookings: ", this.$store.state.roombookings)
       //let bookingobject = response
 
-      this.$store.state.roombookings.forEach(rb => {
+      this. roombookings.forEach(rb => {
+        console.log("e jag inne?")
         rb.booking = bookingobject
         console.log("HAR DEN ETT bookingobject?: ",rb)
          this.postRoombooking(rb)
@@ -119,6 +126,7 @@ export default {
      },
       getRoombookings: function(){
         this.roombookings = this.$store.state.roombookings
+        console.log("i getRoombookings: ", this.roombookings)
       },
       calculateSum: function(){
         

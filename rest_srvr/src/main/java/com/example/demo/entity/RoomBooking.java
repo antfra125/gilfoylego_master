@@ -23,6 +23,8 @@ public class RoomBooking {
     @Transient
     private String hotel;
     @Transient
+    private String hotelName;
+    @Transient
     private String roomtype;
     @Column(name="date_in")
     private LocalDate dateCheckin;
@@ -50,6 +52,11 @@ public class RoomBooking {
         this.room = r;
         this.booking = b;
     }
+
+    public String getHotelName() {
+        return this.room.getHotel().getName();
+    }
+
 
     public long getId() {
         return id;
