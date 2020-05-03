@@ -27,6 +27,13 @@ public class Room {
     @OneToMany(mappedBy = "room")
     @JsonManagedReference(value="room_roombooking")
     private Set<RoomBooking> roomBookings;
+    @Transient
+    private String roomtypeName;
+
+
+    public String getRoomtypeName() {
+        return this.roomtype.getName();
+    }
 
 
     public long getId() {

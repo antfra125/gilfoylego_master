@@ -130,9 +130,8 @@ export default {
         for (let r of this.rooms) {
           console.log("Inne i loopen");
           console.log("r ser ut såhär: ", r);
-          //r har inte rumstyp i sig. detta är problematiskt
 
-          if (r.price < x /*&& r.roomtype == current.roomtype*/) {
+          if (r.price < x && r.roomtypeName == current.roomtype) {
             console.log("inne i rumstypscheckern");
             x = r.price;
             cheapestRoom.id = r.id;
