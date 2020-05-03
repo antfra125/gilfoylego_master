@@ -52,7 +52,6 @@
 
 
   <Roombooking :hotelId="hotel.id"/>
-
   </section>
 </template>
 
