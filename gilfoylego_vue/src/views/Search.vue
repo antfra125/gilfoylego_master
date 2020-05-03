@@ -2,7 +2,7 @@
   <div class="d-flex justify-content-center">
     <div class="container">
       <div class="row form-group d-flex justify-content-center mt-auto">
-        <b-form @submit="onSubmit" v-if="show">
+        <b-form @submit="onSubmit">
           <div class="row d-flex justify-content-center form-group">
             <div class="col p-0">
               <b-form-input
@@ -80,7 +80,7 @@
                 <b-form-checkbox value="pool">Pool</b-form-checkbox>
               </div>
               <div class="column">
-                <b-form-checkbox value="eveningentertainment">Kvällsunderhållning</b-form-checkbox>
+                <b-form-checkbox class="mr-0" value="eveningentertainment">Kvällsunderhållning</b-form-checkbox>
               </div>
             </div>
             <div class="row form-group d-flex justify-content-between">
@@ -88,7 +88,7 @@
                 <b-form-checkbox value="kidsclub">Barnklubb</b-form-checkbox>
               </div>
               <div class="column">
-                <b-form-checkbox value="restaurant">Restaurang</b-form-checkbox>
+                <b-form-checkbox class="mr-0" value="restaurant">Restaurang</b-form-checkbox>
               </div>
             </div>
           </b-form-checkbox-group>
@@ -107,9 +107,7 @@
               v-model="form.m2Center"
               placeholder="Maxavstånd till centrum i meter"
             ></b-form-input>
-           
           </div>
-
           <div>
             <HotelResult :search="form.search" :m2Center="form.m2Center" />
           </div>
@@ -133,7 +131,6 @@ export default {
       sMax: "2020-08-30",
       eMin: "2020-07-02",
       eMax: "2020-08-31",
-      show: true,
       hotels: []
     };
   },
