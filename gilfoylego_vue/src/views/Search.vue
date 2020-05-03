@@ -92,7 +92,7 @@
             ></b-form-input>
           </div>
           <div>
-            <HotelResult :search="form.search" :m2Center="form.m2Center" />
+            <HotelResult :search="form.search" :m2Center="form.m2Center"/>
           </div>
         </b-form>
       </div>
