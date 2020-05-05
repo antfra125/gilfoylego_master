@@ -2,8 +2,9 @@ module.exports = function () {
 
 
     this.Given(/^that im on the home page$/, async function () {
-        await helpers.loadPage('https://google.com');
-        await(6000);
+        await helpers.loadPage('http://localhost:8080/');
+        await(2000);
+        await this.findElement('#__BVID__66__dialog_');
     });
 
 
@@ -12,7 +13,7 @@ module.exports = function () {
 
     this.When(/^and click on the serch bar and type in <hotelname>$/, async function (hotelname) {
         
-        let serchField = await this.findElement('#__BVID__66__dialog_')
+        let serchField = await this.findElement('#__BVID__66__dialog_');
         this.click(serchField);
         serchField.sendKeys(hotelname);
     });
