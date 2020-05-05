@@ -1,5 +1,9 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -9,17 +13,27 @@ public class Room {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
     @ManyToOne
+    @JsonBackReference(value="room_hotel")
     @JoinColumn(name = "hotel_id")
     private Hotel hotel;
     @ManyToOne
     @JoinColumn(name = "roomtype_id")
+    @JsonBackReference(value="room_roomtype")
     private Roomtype roomtype;
     @Column
     private int sizem2;
     @Column
     private double price;
     @OneToMany(mappedBy = "room")
+    @JsonManagedReference(value="room_roombooking")
     private Set<RoomBooking> roomBookings;
+    @Transient
+    private String roomtypeName;
+
+
+    public String getRoomtypeName() {
+        return this.roomtype.getName();
+    }
 
 
     public long getId() {
@@ -30,8 +44,8 @@ public class Room {
         this.id = id;
     }
 
-    public String getHotel() {
-        return hotel.getName();
+    public Hotel getHotel() {
+        return this.hotel;
     }
 
     public String getRoomtype() {

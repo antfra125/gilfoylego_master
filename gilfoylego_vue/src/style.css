@@ -1,3 +1,5 @@
+html {overflow-y: scroll;}
+
 .title {
     font-size: x-large;
 }
@@ -26,7 +28,7 @@
 }
 
 .result {
-    width: 36vw;
+    width: 27vw;
 }
 
 .border-check {
@@ -43,6 +45,20 @@
 .extra img {
     height:2vh;
 }
+.container .b-form{
+    width: 60%;
+}
+button a {
+    color: black;
+    font-weight: 600;
+}
+button a:hover{
+    text-decoration: none;
+    color: black;
+}
+.extra{
+    margin-left: 3vw;
+}
 
 .top-section img {
     height: 250px;
@@ -51,4 +67,24 @@
 
 .grey-border {
     border: 1px solid lightgrey;
+}
+b-form-datepicker{
+    max-height: 240%;
+}
+form{
+    width: 600px;
+}
+
+@media only screen and (max-width: 765px) {
+    form{
+        width: 400px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    form{
+        width: 250px;
+    }
+  }
+.custom-link :hover {
+    cursor: pointer;
 }
