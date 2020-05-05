@@ -15,6 +15,14 @@ public class RoomBookingView {
 
     @Column(name ="room_id")
     long roomId;
+    @Column(name = "roomtype_name")
+    String roomtypeName;
+    @Column(name = "hotel_name")
+    String hotelName;
+    @Column(name = "date_checkin")
+    LocalDate dateCheckin;
+    @Column(name = "date_checkout")
+    LocalDate dateCheckout;
 
     public long getRoomId() {
         return roomId;
@@ -40,12 +48,4 @@ public class RoomBookingView {
         return dateCheckout;
     }
 
-    @Column(name = "roomtype_name")
-    String roomtypeName;
-    @Column(name = "hotel_name")
-    String hotelName;
-    @Column(name = "date_checkin")
-    LocalDate dateCheckin;
-    @Column(name = "date_checkout")
-    LocalDate dateCheckout;
 }

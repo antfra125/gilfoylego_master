@@ -1,6 +1,8 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import javax.persistence.*;
@@ -27,6 +29,7 @@ public class User {
     @Column
     private String address;
     @OneToMany(mappedBy = "user")
+    @JsonManagedReference(value="booking_user")
     private Set<Booking> bookings;
 
     public User() {
