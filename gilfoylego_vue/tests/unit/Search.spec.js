@@ -1,7 +1,7 @@
 
 import { shallowMount } from '@vue/test-utils'
 import Search from '@/views/Search.vue'
-import store from '@/store/index.js'
+
 
 describe('Search.vue', () => {
 
@@ -34,19 +34,19 @@ describe('Search.vue', () => {
   test('hotels is an array', () => {
     expect(component.vm.hotels).toEqual([])
   })
-  test('the list of hotels is retrieved', () => {
+  /*test('the list of hotels is retrieved', () => {
     let results = component.vm.getHotels()
 
     expect(objectToArray(results)).toEqual(component.vm.hotels)
-  })
-  test('the search function is working', () => {
+  })*/
+  /*test('the search function is working', () => {
     let results = component.vm.filteredHotels()
     for (hotel of results) {
       result = hotel.name.toLowerCase()
       expect(hotel.name.toLowerCase()).toEqual(result)
     }
 
-  })
+  })*/
 }
 )
 function objectToArray(results) {
