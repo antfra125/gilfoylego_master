@@ -43,9 +43,9 @@ Feature: Search function
             | Value 1  |
 
 Scenario: Search 4, Searching for hotels between to dates
-        When and clcik on the search bar and type in "Spain"
-        And enter a start-date
-        And enter a end-date
+        When and click on the search bar and type in "Spain"
+        And enter a start date
+        And enter a end date
         And hit search
         Then my hotels results should be between start-date and end-date
         
