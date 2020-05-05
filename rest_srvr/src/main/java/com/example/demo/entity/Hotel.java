@@ -1,6 +1,11 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -10,6 +15,7 @@ public class Hotel {
     private long id;
     @ManyToOne
     @JoinColumn(name = "city_id")
+    @JsonBackReference(value="hotel_city")
     private City city;
     @Column
     private String name;
@@ -32,7 +38,11 @@ public class Hotel {
     @Column
     private double rating;
     @OneToMany(mappedBy = "hotel")
+    @JsonManagedReference(value="room_hotel")
     private Set<Room> rooms;
+    @Transient
+    private List<String> amenities = new ArrayList<>();
+
 
     public long getId() {
         return id;
@@ -40,6 +50,22 @@ public class Hotel {
 
     public void setId(long id) {
         this.id = id;
+    }
+
+    public List<String> getAmenities() {
+        if(hasRestaurant) {
+            this.amenities.add("restaurant");
+        }
+        if(hasKidsClub) {
+            this.amenities.add("kidsclub");
+        }
+        if(hasPool) {
+            this.amenities.add("pool");
+        }
+        if(hasEveningEntertainment) {
+            this.amenities.add("eveningentertainment");
+        }
+        return amenities;
     }
 
     public Set<Room> getRooms() {

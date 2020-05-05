@@ -1,3 +1,5 @@
+html {overflow-y: scroll;}
+
 .title {
     font-size: x-large;
 }
@@ -26,7 +28,7 @@
 }
 
 .result {
-    width: 36vw;
+    width: 27vw;
 }
 
 .border-check {
@@ -83,3 +85,6 @@ form{
         width: 250px;
     }
   }
+.custom-link :hover {
+    cursor: pointer;
+}

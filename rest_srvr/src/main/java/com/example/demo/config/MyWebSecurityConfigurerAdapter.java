@@ -27,9 +27,12 @@ public class MyWebSecurityConfigurerAdapter extends WebSecurityConfigurerAdapter
                 .antMatchers("/rest/**").permitAll()
                 //.antMatchers(HttpMethod.DELETE, "rest/user/*").hasRole("ADMIN")
                 .antMatchers("/**").permitAll()
+                .antMatchers("/rest/activeuser").authenticated()
                 .and()
                 .formLogin()
-        .loginPage("/rest/login");
+                    .loginPage("/rest/login")
+                .and()
+                .logout().logoutUrl("/rest/logout");
     }
 
     @Override
