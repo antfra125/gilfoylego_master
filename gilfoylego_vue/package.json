@@ -4,7 +4,7 @@
     "setupFiles": [
       "./tests/unit/setupJest.js"
     ]
-   },
+  },
   "name": "gilfoylego_master_test",
   "version": "0.1.0",
   "private": true,
@@ -21,6 +21,7 @@
     "@popperjs/core": "^2.3.3",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.11.0",
+    "chromedriver": "^81.0.0",
     "core-js": "^3.6.4",
     "jquery": "^3.5.0",
     "selenium-cucumber-js": "^1.7.0",
