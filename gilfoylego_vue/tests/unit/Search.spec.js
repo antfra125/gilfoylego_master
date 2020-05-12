@@ -6,7 +6,7 @@ import { shallowMount } from '@vue/test-utils'
 import Search from '@/views/Search.vue'
 
 describe('Search-function', () => {
-
+  
   let mockForm = { 
     amenities: [],
     amountOfRooms: "",
@@ -17,12 +17,14 @@ describe('Search-function', () => {
     startDate: ""
     }
   test('fetching the form', async () => {
-  
-    fetch.mockResponseOnce(mockForm)
+    
+    fetch.mockResponseOnce(JSON.stringify(mockForm))
     await store.dispatch('getFormdata')
     expect(store.state.form).toEqual(mockForm)
   })
   test('entering search data', async () => {
+    let form = mockForm
+    const component = shallowMount(Search)
     let expectedResult = {
       amenities: [],
       amountOfRooms: "",
@@ -32,10 +34,13 @@ describe('Search-function', () => {
       search: "Sverige",
       startDate: ""
     }
+    component.vm.$store = store
+    fetch.mockResponseOnce(JSON.stringify(expectedResult))
     
-    fetch.mockResponseOnce(mockForm)
-    await store.dispatch('getFormdata')
-    store.dispatch('SET_FORM', expectedResult)
-    expect(store.state.form).toEqual(expectedResult)
+    await store.dispatch('getFormdata', expectedResult)
+    
+    await store.dispatch('SET_FORM')
+    
+    expect(component.vm.form).toEqual(expectedResult)
   })
 })
