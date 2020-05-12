@@ -4,7 +4,7 @@
     "setupFiles": [
       "./tests/unit/setupJest.js"
     ]
-   },
+  },
   "name": "gilfoylego_master_test",
   "version": "0.1.0",
   "private": true,
