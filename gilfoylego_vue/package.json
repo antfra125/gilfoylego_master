@@ -14,6 +14,7 @@
     "test:unit": "vue-cli-service test:unit",
     "test:selenium": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/ & exit 0",
     "test:search": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/search.feature",
+    "test:loggin": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/loggin.feature",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

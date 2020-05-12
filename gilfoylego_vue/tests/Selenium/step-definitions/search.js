@@ -2,7 +2,7 @@ module.exports = function () {
 
 
     this.Given(/^that im on the home page$/, async function () {
-        await helpers.loadPage('http://localhost:8080/');
+        await helpers.loadPage('    ');
         await(2000);
         await this.findElement('#__BVID__66__dialog_');
     });
