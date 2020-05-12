@@ -1,40 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="loggin-feature;login-1,-login-3,-login-5-och-login-6" tests="9" failures="1" skipped="5">
-        <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\loggin.feature">
-            </property>
-        </properties>
-        <testcase name="Given that I am on the homepage" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="13.1345264">
-        </testcase>
-        <testcase name="When I click the account button" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.126671199">
-        </testcase>
-        <testcase name="And I click on loggin in the dropdown menu" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.889504401">
-        </testcase>
-        <testcase name="And I click on the username field" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.000843">
-            <failure message="ReferenceError: sendKeys is not defined">ReferenceError: sendKeys is not defined
-    at createWorld.&lt;anonymous&gt; (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\selenium\step-definitions\loggin.js:33:10)
-    at processTicksAndRejections (internal/process/task_queues.js:75:11)</failure>
-        </testcase>
-        <testcase name="And I enter the username &quot;admin&quot;" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And I click on the password field" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And I enter the password &quot;admin&quot;" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="And I click the &quot;login&quot; button" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6">
-            <skipped message="">
-            </skipped>
-        </testcase>
-        <testcase name="Then I should be &quot;logged in&quot;" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6">
-            <skipped message="">
-            </skipped>
-        </testcase>
+    <testsuite>
     </testsuite>
 </testsuites>
