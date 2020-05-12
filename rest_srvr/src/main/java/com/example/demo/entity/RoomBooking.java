@@ -1,6 +1,6 @@
 package com.example.demo.entity;
 
-import com.example.demo.entity.keys.RoomBookingId;
+import com.fasterxml.jackson.annotation.JsonBackReference;
 
 import javax.persistence.*;
 import java.time.LocalDate;
@@ -14,12 +14,16 @@ public class RoomBooking {
     private long id;
     @ManyToOne
     @JoinColumn(name = "booking_id")
+    @JsonBackReference(value="roombooking_booking")
     private Booking booking;
     @ManyToOne
+    @JsonBackReference(value="room_roombooking")
     @JoinColumn(name = "room_id")
     private Room room;
     @Transient
     private String hotel;
+    @Transient
+    private String hotelName;
     @Transient
     private String roomtype;
     @Column(name="date_in")
@@ -40,6 +44,18 @@ public class RoomBooking {
     private int children;
     @Column
     private int price;
+
+    public RoomBooking(){
+
+    }
+    public RoomBooking(Room r, Booking b){
+        this.room = r;
+        this.booking = b;
+    }
+
+    public String getHotelName() {
+        return this.room.getHotel().getName();
+    }
 
 
     public long getId() {
@@ -78,8 +94,12 @@ public class RoomBooking {
         return room.getId();
     }
 
-    public String getHotel() {
-        return this.room.getHotel();
+    public void setRoom(Room room) {
+        this.room = room;
+    }
+
+    public Long getHotel() {
+        return this.room.getHotel().getId();
     }
 
     public String getRoomtype() {

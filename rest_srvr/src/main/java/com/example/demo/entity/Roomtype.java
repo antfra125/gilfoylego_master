@@ -1,5 +1,8 @@
 package com.example.demo.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -11,6 +14,7 @@ public class Roomtype {
     @Column
     private String name;
     @OneToMany(mappedBy = "roomtype")
+    @JsonManagedReference(value="room_roomtype")
     private Set<Room> rooms;
 
     public long getId() {
