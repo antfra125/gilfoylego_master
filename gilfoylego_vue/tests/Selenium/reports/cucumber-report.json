@@ -1,1 +1,196 @@
-[]
+[
+  {
+    "description": "    As i user\n    I want to be able to sort\n    hotels after \n    countrys, hotelnames and citys",
+    "elements": [
+      {
+        "id": "search-function;search-norge",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Search Norge",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that im on the search page",
+            "result": {
+              "status": "passed",
+              "duration": 11664117300
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search for hotels in \"Norge\"",
+            "result": {
+              "status": "passed",
+              "duration": 581573500
+            },
+            "line": 13,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "my frist search result should be a hotel in Norge",
+            "result": {
+              "status": "passed",
+              "duration": 191021899
+            },
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:18"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 1678153499
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "search-function;search-sverige",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Search Sverige",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that im on the search page",
+            "result": {
+              "status": "passed",
+              "duration": 10798867900
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search for hotels in \"Sverige\"",
+            "result": {
+              "status": "passed",
+              "duration": 634589701
+            },
+            "line": 17,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "my frist search result should be a hotel in Sverige",
+            "result": {
+              "status": "passed",
+              "duration": 25627900
+            },
+            "line": 18,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:23"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 446783700
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "search-function;search-danmark",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Search Danmark",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that im on the search page",
+            "result": {
+              "status": "passed",
+              "duration": 10988820201
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search for hotels in \"Danmark\"",
+            "result": {
+              "status": "passed",
+              "duration": 521286100
+            },
+            "line": 21,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:11"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "my frist search result should be a hotel in Danmark",
+            "result": {
+              "status": "passed",
+              "duration": 24681400
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:29"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 483727199
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "search-function",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Search function",
+    "tags": [],
+    "uri": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\Selenium\\features\\search.feature"
+  }
+]

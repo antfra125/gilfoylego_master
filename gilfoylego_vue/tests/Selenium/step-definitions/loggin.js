@@ -27,7 +27,7 @@ let { $, sleep } = require('./funcs');
 
      this.When(/^I enter the username "([^"]*)"$/, async function (username) {
          let usernameFiled = await driver.findElement(by.css('#__BVID__11'));
-        usernameFiled.sendKeys(username);
+         usernameFiled.sendKeys(username);
          await driver.findElement(by.css('#__BVID__12')); 
 
      });
