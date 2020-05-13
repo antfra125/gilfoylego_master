@@ -14,7 +14,7 @@ describe ('Login.vue', () => {
         expect(component.isVueInstance()).toBeTruthy()
     })
 
-    test('the form contains fields forpassword and username', () => {
+    test('the form contains fields for password and username', () => {
         expect(component.vm.form).toEqual({
             username: "",
             password: ""
