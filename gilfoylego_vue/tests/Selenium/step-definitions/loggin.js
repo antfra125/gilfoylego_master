@@ -1,38 +1,67 @@
-/* module.exports = function () {
+let { $, sleep } = require('./funcs');
+ module.exports = function () {
 
-    this.Given(/^that I am on the "homepage"$/, async function () {
-        await helpers.loadPage('http://localhost:8081');
+   
+     this.Given(/^that I am on the homepage$/, async function () {
+         await helpers.loadPage('http://localhost:8080/');
+         await driver.findElement(by.css('#__BVID__7'));   
 
-    });
+     });
+     
+
+     this.When(/^I click the account button$/, async function () {
+         let profilbutton = await driver.findElement(by.css('#__BVID__7'));
+         profilbutton.click();
+         await driver.findElement(by.css('#__BVID__7 > ul > div > li > a'));
+         
+     });
+
+
+     this.When(/^I click on loggin in the dropdown menu$/, async function () {
+         let logginButton = await driver.findElement(by.css('#__BVID__7 > ul > div > li > a'));
+         logginButton.click();
+         await driver.findElement(by.css('#__BVID__11'));
+         
+     });
+
+
+     this.When(/^I enter the username "([^"]*)"$/, async function (username) {
+         let usernameFiled = await driver.findElement(by.css('#__BVID__11'));
+         usernameFiled.sendKeys(username);
+         await driver.findElement(by.css('#__BVID__12')); 
+
+     });
+    
+    
+     this.When(/^I enter the password "([^"]*)"$/, async function (password) {
+         let passwordFiled = await driver.findElement(by.css('#__BVID__12'));
+         passwordFiled.sendKeys(password);
+         await driver.findElement(by.css('#app > main > div > form > div.form-group.text-center'));
+
+     });
 
 
 
-    -Background-----------------------------------------------------------------
+     this.When(/^I click the login button$/, async function () {
+         let logginButton = await driver.findElement(by.css('#app > main > div > form > div.form-group.text-center'));
+        logginButton.click();  
+        
+     });
 
-    this.When(/^I click the "login" button$/, async function () {
 
-        let loginButton = await this.findElement('#__BVID__65')
-        this.click(loginButton);
-    });
+     this.Then(/^I should be logged in$/, async function () {
+         let profilbutton = await driver.findElement(by.css('#__BVID__7'));
+         profilbutton.click();
+         await sleep(1000);
+         await driver.findElement(by.css('#__BVID__7 > ul > div > li:nth-child(2)'));      
 
-    this.When(/^I enter a <username> in the "username" field$/, async function (username) {
+     });
 
-        let usernameField = await this.findElement('#__BVID__65')
-        this.click(usernameField);
-        usernameField.sendKeys(username);
-    });
 
-    this.When(/^I enter a <password> in the "password" field$/, async function (password) {
-
-        let passwordField = await this.findElement('#__BVID__65')
-        this.click(passwordField);
-        passwordField.sendKeys(password);
-    });
-
-    this.When(/^I click the "login" button$/, async function () {
-
-        let loginButton = await this.findElement('#app > main > div > div.d - flex.justify - content - center > form > div: nth - child(4) > span: nth - child(1) > button');
-        this.click(loginButton);
-    });
-
-} */
+     this.Then(/^I should still be logged out$/, async function () {
+         let profilbutton = await driver.findElement(by.css('#__BVID__7'));
+         profilbutton.click();
+         await sleep(1000);
+         await driver.findElement(by.css('#__BVID__7 > ul > div > li > a'));
+     });
+} 

@@ -1,89 +1,62 @@
 [
   {
+    "description": "    As i user\n    I want to be able to sort\n    hotels after \n    countrys, hotelnames and citys",
     "elements": [
       {
-        "id": "search-function;search-1,-searching-for-hotels-by-hotels-namns",
+        "id": "search-function;search-norge",
         "keyword": "Scenario",
-        "line": 15,
-        "name": "Search 1, Searching for hotels by hotels namns",
+        "line": 12,
+        "name": "Search Norge",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that im on the home page",
+            "name": "that im on the search page",
             "result": {
               "status": "passed",
-              "duration": 19616442300
+              "duration": 11664117300
             },
-            "line": 4,
+            "line": 9,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "and click on the serch bar and type in Value 1",
+            "name": "I search for hotels in \"Norge\"",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 581573500
             },
-            "line": 7
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a start date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
+            "line": 13,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:17"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a end date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 9,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "hit search",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:33"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:11"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "my frist search result should be Value 1",
+            "name": "my frist search result should be a hotel in Norge",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 191021899
             },
-            "line": 11
+            "line": 14,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:18"
+            }
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 497462701
+              "duration": 1678153499
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -91,88 +64,60 @@
         "type": "scenario"
       },
       {
-        "id": "search-function;search-1,-searching-for-hotels-by-hotels-namns",
+        "id": "search-function;search-sverige",
         "keyword": "Scenario",
         "line": 16,
-        "name": "Search 1, Searching for hotels by hotels namns",
+        "name": "Search Sverige",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that im on the home page",
+            "name": "that im on the search page",
             "result": {
               "status": "passed",
-              "duration": 18010614101
-            },
-            "line": 4,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "and click on the serch bar and type in Value 1",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a start date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:17"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a end date",
-            "result": {
-              "status": "skipped"
+              "duration": 10798867900
             },
             "line": 9,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:25"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "name": "hit search",
+            "keyword": "When ",
+            "name": "I search for hotels in \"Sverige\"",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 634589701
             },
-            "line": 10,
+            "line": 17,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:33"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:11"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "my frist search result should be Value 1",
+            "name": "my frist search result should be a hotel in Sverige",
             "result": {
-              "status": "undefined"
+              "status": "passed",
+              "duration": 25627900
             },
-            "line": 11
+            "line": 18,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:23"
+            }
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 529679001
+              "duration": 446783700
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -180,711 +125,60 @@
         "type": "scenario"
       },
       {
-        "id": "search-function;search-1,-searching-for-hotels-by-hotels-namns",
+        "id": "search-function;search-danmark",
         "keyword": "Scenario",
-        "line": 17,
-        "name": "Search 1, Searching for hotels by hotels namns",
+        "line": 20,
+        "name": "Search Danmark",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that im on the home page",
+            "name": "that im on the search page",
             "result": {
               "status": "passed",
-              "duration": 18240968600
-            },
-            "line": 4,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "and click on the serch bar and type in Value 1",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 7
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a start date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 8,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:17"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a end date",
-            "result": {
-              "status": "skipped"
+              "duration": 10988820201
             },
             "line": 9,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "hit search",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 10,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:33"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "my frist search result should be Value 1",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 11
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 465017700
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "search-function;search-2,-searching-for-hotels-location-with-citys",
-        "keyword": "Scenario",
-        "line": 28,
-        "name": "Search 2, Searching for hotels location with citys",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that im on the home page",
-            "result": {
-              "status": "passed",
-              "duration": 18233623100
-            },
-            "line": 4,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "and clcik on the search bar and type in Malmö",
+            "name": "I search for hotels in \"Danmark\"",
             "result": {
-              "status": "undefined"
-            },
-            "line": 20
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a start date",
-            "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 521286100
             },
             "line": 21,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:17"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:11"
             }
           },
           {
             "arguments": [],
-            "keyword": "And ",
-            "name": "enter a end date",
+            "keyword": "Then ",
+            "name": "my frist search result should be a hotel in Danmark",
             "result": {
-              "status": "skipped"
+              "status": "passed",
+              "duration": 24681400
             },
             "line": 22,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:25"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:29"
             }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "hit search",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:33"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "my hotels should be located in that Malmö",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 24
           },
           {
             "arguments": [],
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 4321486000
+              "duration": 483727199
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "search-function;search-2,-searching-for-hotels-location-with-citys",
-        "keyword": "Scenario",
-        "line": 29,
-        "name": "Search 2, Searching for hotels location with citys",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that im on the home page",
-            "result": {
-              "status": "passed",
-              "duration": 18580969701
-            },
-            "line": 4,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "and clcik on the search bar and type in Value 1",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 20
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a start date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 21,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:17"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a end date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 22,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "hit search",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:33"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "my hotels should be located in that Value 1",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 24
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 396444199
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "search-function;search-2,-searching-for-hotels-location-with-citys",
-        "keyword": "Scenario",
-        "line": 30,
-        "name": "Search 2, Searching for hotels location with citys",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that im on the home page",
-            "result": {
-              "status": "passed",
-              "duration": 18270460900
-            },
-            "line": 4,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "and clcik on the search bar and type in Value 1",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 20
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a start date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 21,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:17"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a end date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 22,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "hit search",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 23,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:33"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "my hotels should be located in that Value 1",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 24
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 481768801
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "search-function;search-3,-searching-for-hotels-location-with-countries",
-        "keyword": "Scenario",
-        "line": 41,
-        "name": "Search 3, Searching for hotels location with countries",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that im on the home page",
-            "result": {
-              "status": "passed",
-              "duration": 18201406100
-            },
-            "line": 4,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "and clcik on the search bar and type in москва",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 33
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a start date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 34,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:17"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a end date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 35,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "hit search",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 36,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:33"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "my hotels should be located in that москва",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 37
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 408347900
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "search-function;search-3,-searching-for-hotels-location-with-countries",
-        "keyword": "Scenario",
-        "line": 42,
-        "name": "Search 3, Searching for hotels location with countries",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that im on the home page",
-            "result": {
-              "status": "passed",
-              "duration": 18657753099
-            },
-            "line": 4,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "and clcik on the search bar and type in Value 1",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 33
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a start date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 34,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:17"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a end date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 35,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "hit search",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 36,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:33"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "my hotels should be located in that Value 1",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 37
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 4274155899
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "search-function;search-3,-searching-for-hotels-location-with-countries",
-        "keyword": "Scenario",
-        "line": 43,
-        "name": "Search 3, Searching for hotels location with countries",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that im on the home page",
-            "result": {
-              "status": "passed",
-              "duration": 18031024400
-            },
-            "line": 4,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "and clcik on the search bar and type in Value 1",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 33
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a start date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 34,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:17"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a end date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 35,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "hit search",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 36,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:33"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "my hotels should be located in that Value 1",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 37
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 4298812801
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "id": "search-function;search-4,-searching-for-hotels-between-to-dates",
-        "keyword": "Scenario",
-        "line": 45,
-        "name": "Search 4, Searching for hotels between to dates",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "name": "that im on the home page",
-            "result": {
-              "status": "passed",
-              "duration": 18810832401
-            },
-            "line": 4,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "name": "and click on the search bar and type in \"Spain\"",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 46
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a start date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 47,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:17"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "enter a end date",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 48,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:25"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "hit search",
-            "result": {
-              "status": "skipped"
-            },
-            "line": 49,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:33"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "name": "my hotels results should be between start-date and end-date",
-            "result": {
-              "status": "undefined"
-            },
-            "line": 50
-          },
-          {
-            "arguments": [],
-            "keyword": "After ",
-            "result": {
-              "status": "passed",
-              "duration": 498497799
-            },
-            "hidden": true,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -897,6 +191,6 @@
     "line": 1,
     "name": "Search function",
     "tags": [],
-    "uri": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\Selenium\\features\\search.feature"
+    "uri": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\Selenium\\features\\search.feature"
   }
 ]
