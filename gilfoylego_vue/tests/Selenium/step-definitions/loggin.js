@@ -52,7 +52,7 @@ let { $, sleep } = require('./funcs');
      this.Then(/^I should be logged in$/, async function () {
          let profilbutton = await driver.findElement(by.css('#__BVID__7'));
          profilbutton.click();
-         await sleep(1000);
+         await sleep(3000);
          await driver.findElement(by.css('#__BVID__7 > ul > div > li:nth-child(2)'));      
 
      });
