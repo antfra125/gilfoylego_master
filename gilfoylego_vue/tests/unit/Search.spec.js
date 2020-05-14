@@ -1,4 +1,4 @@
-/*import { enableFetchMocks } from 'jest-fetch-mock'
+import { enableFetchMocks } from 'jest-fetch-mock'
 enableFetchMocks()
 
 import store from '@/store/index.js'
@@ -22,6 +22,7 @@ describe('Search-function', () => {
     await store.dispatch('getFormdata')
     expect(store.state.form).toEqual(mockForm)
   })
+  /*
   test('entering search data', async () => {
     
     let expectedResult = {
@@ -42,3 +43,4 @@ describe('Search-function', () => {
     expect(store.state.form).toEqual(expectedResult)
   })
 })*/
+})
