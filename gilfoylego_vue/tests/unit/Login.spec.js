@@ -20,14 +20,14 @@ describe ('Login.vue', () => {
             password: ""
         })
     })
-    test('the login is succesful', () => {
+    test('the login is succesful', async () => {
         component.vm.$store = store
         component.vm.form.username = 'admin'
         component.vm.form.password = 'admin'
         let expectedResult = {url:"/"}
         let expectedResult2 = {}
         fetch.mockResponseOnce(JSON.stringify(expectedResult)).mockResponseOnce(JSON.stringify(expectedResult2))
-        component.vm.springLogin()
+        await component.vm.springLogin()
         expect(store.state.user).toEqual(expectedResult2)
     })
 })

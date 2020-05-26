@@ -1,102 +1,50 @@
 [
   {
-    "description": "   As a user\n   I want to be able to\n   log in to my account\n   on the website",
+    "description": "    As i user\n    I want to be able to sort\n    hotels after \n    countrys, hotelnames and citys",
     "elements": [
       {
-        "id": "loggin-feature;login-1,-login-3,-login-5-och-login-6",
+        "id": "search-function;search-norge",
         "keyword": "Scenario",
-        "line": 23,
-        "name": "login-1, login-3, login-5 och login-6",
+        "line": 12,
+        "name": "Search Norge",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I am on the homepage",
+            "name": "that im on the search page",
             "result": {
               "status": "passed",
-              "duration": 12262849101
+              "duration": 12698123500
             },
             "line": 9,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:5"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click the account button",
+            "name": "I search for hotels in \"Norge\"",
             "result": {
               "status": "passed",
-              "duration": 423638399
+              "duration": 736251299
             },
-            "line": 14,
+            "line": 13,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:12"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on loggin in the dropdown menu",
-            "result": {
-              "status": "passed",
-              "duration": 1820321201
-            },
-            "line": 15,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:20"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I enter the username \"admin\"",
-            "result": {
-              "status": "passed",
-              "duration": 305256500
-            },
-            "line": 16,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:28"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I enter the password \"admin\"",
-            "result": {
-              "status": "passed",
-              "duration": 240545600
-            },
-            "line": 17,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:36"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click the login button",
-            "result": {
-              "status": "passed",
-              "duration": 27991599
-            },
-            "line": 18,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:45"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:12"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I should be logged in",
+            "name": "my frist search result should be a hotel in Norge",
             "result": {
               "status": "passed",
-              "duration": 3053645301
+              "duration": 29083201
             },
-            "line": 19,
+            "line": 14,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:52"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:19"
             }
           },
           {
@@ -104,11 +52,11 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 2147824900
+              "duration": 951165399
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -116,100 +64,48 @@
         "type": "scenario"
       },
       {
-        "id": "loggin-feature;fail-to-log-in",
+        "id": "search-function;search-sverige",
         "keyword": "Scenario",
-        "line": 37,
-        "name": "fail to log in",
+        "line": 16,
+        "name": "Search Sverige",
         "steps": [
           {
             "arguments": [],
             "keyword": "Given ",
-            "name": "that I am on the homepage",
+            "name": "that im on the search page",
             "result": {
               "status": "passed",
-              "duration": 10939353300
+              "duration": 11705157100
             },
             "line": 9,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:5"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "name": "I click the account button",
+            "name": "I search for hotels in \"Sverige\"",
             "result": {
               "status": "passed",
-              "duration": 344134600
+              "duration": 538129700
             },
-            "line": 28,
+            "line": 17,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:12"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click on loggin in the dropdown menu",
-            "result": {
-              "status": "passed",
-              "duration": 1247963099
-            },
-            "line": 29,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:20"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I enter the username \"fel\"",
-            "result": {
-              "status": "passed",
-              "duration": 182645500
-            },
-            "line": 30,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:28"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I enter the password \"fel\"",
-            "result": {
-              "status": "passed",
-              "duration": 121364800
-            },
-            "line": 31,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:36"
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "name": "I click the login button",
-            "result": {
-              "status": "passed",
-              "duration": 18063400
-            },
-            "line": 32,
-            "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:45"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:12"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "name": "I should still be logged out",
+            "name": "my frist search result should be a hotel in Sverige",
             "result": {
               "status": "passed",
-              "duration": 1029463000
+              "duration": 50297101
             },
-            "line": 33,
+            "line": 18,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\loggin.js:61"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:24"
             }
           },
           {
@@ -217,11 +113,72 @@
             "keyword": "After ",
             "result": {
               "status": "passed",
-              "duration": 734593401
+              "duration": 1811850901
             },
             "hidden": true,
             "match": {
-              "location": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "id": "search-function;search-danmark",
+        "keyword": "Scenario",
+        "line": 20,
+        "name": "Search Danmark",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "that im on the search page",
+            "result": {
+              "status": "passed",
+              "duration": 11619800899
+            },
+            "line": 9,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:5"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "I search for hotels in \"Danmark\"",
+            "result": {
+              "status": "passed",
+              "duration": 528156699
+            },
+            "line": 21,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:12"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "my frist search result should be a hotel in Danmark",
+            "result": {
+              "status": "passed",
+              "duration": 19187900
+            },
+            "line": 22,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\selenium\\step-definitions\\search.js:30"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "After ",
+            "result": {
+              "status": "passed",
+              "duration": 660777200
+            },
+            "hidden": true,
+            "match": {
+              "location": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:250"
             }
           }
         ],
@@ -229,11 +186,11 @@
         "type": "scenario"
       }
     ],
-    "id": "loggin-feature",
+    "id": "search-function",
     "keyword": "Feature",
     "line": 1,
-    "name": "Loggin-feature",
+    "name": "Search function",
     "tags": [],
-    "uri": "C:\\Users\\toby_\\OneDrive\\Dokument\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\Selenium\\features\\loggin.feature"
+    "uri": "C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\tests\\Selenium\\features\\search.feature"
   }
 ]
