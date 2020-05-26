@@ -15,10 +15,14 @@
     "test:selenium": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/ & exit 0",
     "test:search": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/search.feature",
     "test:loggin": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/loggin.feature",
+    "report:selenium": "node ./ares/ares-selenium-reports.js",
+    "report:unit": "node ./ares/ares-unit-reports.js",
+    "report:postman": "node ./ares/ares-postman-reports.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "@popperjs/core": "^2.3.3",
+    "ares-helper": "^1.0.3",
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.11.0",
     "chromedriver": "^81.0.0",
