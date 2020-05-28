@@ -1,0 +1,620 @@
+{
+	"info": {
+		"_postman_id": "9904ca7d-fa39-4bf6-934d-eb0e519e6d69",
+		"name": "Gilfoyle Go Search-Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "Search-1",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "fc23c8df-3520-43b7-bc52-a6dbdb05ce5b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 1001ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1001);",
+									"});",
+									"",
+									"pm.test(\"Response data is an array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.be.an('array');",
+									"});",
+									"",
+									"pm.test(\"Every response item has the required properties\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'imgUrl', 'description', 'rating');",
+									"    }",
+									"});",
+									"",
+									"pm.test(\"The name of the hotel matches the search\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"Svegs stadshotell\");",
+									"});",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://a45db120-079f-467e-b119-8194ff7bcb94.mock.pstmn.io/search-1",
+							"protocol": "https",
+							"host": [
+								"a45db120-079f-467e-b119-8194ff7bcb94",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"search-1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search-2",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "2053eeb0-d2f1-492a-925c-06d867f7b9c5",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 1001ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1001);",
+									"});",
+									"",
+									"pm.test(\"Response data is an array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.be.an('array');",
+									"});",
+									"",
+									"pm.test(\"Every response item has the properties id, country and name\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for(let item of jsonData){",
+									"        pm.expect(item).to.have.any.keys('id', 'country', 'name');",
+									"    }",
+									"});",
+									"",
+									"pm.test(\"The name of the city matches the search\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"Oslo\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/rest/city/name/Oslo",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"rest",
+								"city",
+								"name",
+								"Oslo"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search-2",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "https://8208c097-dadc-4ae4-87bd-603366186c93.mock.pstmn.io",
+									"protocol": "https",
+									"host": [
+										"8208c097-dadc-4ae4-87bd-603366186c93",
+										"mock",
+										"pstmn",
+										"io"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "Content-Type",
+									"value": "text/html; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Tue, 21 Apr 2020 12:14:22 GMT"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"103-4goqZDuGu6ADOzvFWMQblEPO3QM\""
+								},
+								{
+									"key": "Server",
+									"value": "nginx"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept-Encoding"
+								},
+								{
+									"key": "X-RateLimit-Limit",
+									"value": "120"
+								},
+								{
+									"key": "X-RateLimit-Remaining",
+									"value": "119"
+								},
+								{
+									"key": "X-RateLimit-Reset",
+									"value": "1587471322"
+								},
+								{
+									"key": "x-srv-span",
+									"value": "v=1;s=a2aa55de96909f39"
+								},
+								{
+									"key": "x-srv-trace",
+									"value": "v=1;t=c131c4672c98b617"
+								},
+								{
+									"key": "Content-Length",
+									"value": "197"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"cityId\": 1,\n        \"name\": \"Svegs stadshotell\",\n        \"city\": \"Sveg\",\n        \"country\": \"Sverige\",\n        \"rating\": 2,\n        \"restaurant\": 1,\n        \"pool\": 0,\n        \"kidsclub\": 0,\n        \"EveningEntertainment\": 1,\n        \"mToCityCentre\": 1,\n        \"mToBeach\": 40,\n        \"description\": \"Ett helt okej hotell\",\n        \"ledigt från\": \"2020-06-10\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "Search-4",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "dccab562-f4a2-4bf7-9acc-75d0128aa066",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 1001ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1001);",
+									"});",
+									"",
+									"pm.test(\"Response data is an array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.be.an('array');",
+									"});",
+									"",
+									"pm.test(\"Every response item has the required properties\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'hasRestaurant', 'hasPool', 'hasKidsClub', 'hasEveningEntertainment', 'metersToCityCenter', 'metersToBeach', 'imgUrl', 'description', 'rating');",
+									"    }",
+									"});",
+									"pm.test(\"The search matches the description of the hotel\", function () {",
+									"    pm.expect(pm.response.text()).to.include(\"Elegant hotell vid till badet\");",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://a45db120-079f-467e-b119-8194ff7bcb94.mock.pstmn.io/search-4",
+							"protocol": "https",
+							"host": [
+								"a45db120-079f-467e-b119-8194ff7bcb94",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"search-4"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Search",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": ""
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": null,
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 1,\n        \"cityId\": 1,\n        \"name\": \"Svegs stadshotell\",\n        \"city\": \"Sveg\",\n        \"country\": \"Sverige\",\n        \"rating\": 2,\n        \"restaurant\": 1,\n        \"pool\": 0,\n        \"kidsclub\": 0,\n        \"EveningEntertainment\": 1,\n        \"mToCityCentre\": 1,\n        \"mToBeach\": 40,\n        \"description\": \"Ett helt okej hotell\",\n        \"ledigt från\": \"2020-06-10\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "search-8",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "059ff24e-6fad-4791-a8cf-d3e74e52897f",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 1001ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1001);",
+									"});",
+									"",
+									"pm.test(\"Response data is an array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.be.an('array');",
+									"});",
+									"",
+									"pm.test(\"Every response item has the required properties\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'hasPool' );",
+									"    }",
+									"});",
+									"",
+									"pm.test(\"All results should have a pool\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item.hasPool).to.eql(1);",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://a45db120-079f-467e-b119-8194ff7bcb94.mock.pstmn.io/search-8",
+							"protocol": "https",
+							"host": [
+								"a45db120-079f-467e-b119-8194ff7bcb94",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"search-8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search-9",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "332369e2-85bb-47e8-b60e-164a59038f8d",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 1001ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1001);",
+									"});",
+									"",
+									"pm.test(\"Response data is an array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.be.an('array');",
+									"});",
+									"",
+									"pm.test(\"Every response item has the required properties\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'metersToBeach');",
+									"    }",
+									"});",
+									"",
+									"pm.test(\"All results should be closer than 1000 metres to the beach\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item.metersToBeach).to.be.below(1000);",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://a45db120-079f-467e-b119-8194ff7bcb94.mock.pstmn.io/search-9",
+							"protocol": "https",
+							"host": [
+								"a45db120-079f-467e-b119-8194ff7bcb94",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"search-9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search-10",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "466e6824-b6c5-43b4-93d6-688192f5fe4b",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 1001ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1001);",
+									"});",
+									"",
+									"pm.test(\"Response data is an array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.be.an('array');",
+									"});",
+									"",
+									"pm.test(\"Every response item has the required properties\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'metersToCityCenter');",
+									"    }",
+									"});",
+									"",
+									"pm.test(\"All results should be closer than 1000 metres to the beach\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item.metersToCityCenter).to.be.below(500);",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://a45db120-079f-467e-b119-8194ff7bcb94.mock.pstmn.io/search-10",
+							"protocol": "https",
+							"host": [
+								"a45db120-079f-467e-b119-8194ff7bcb94",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"search-10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search-11",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "b1312352-06b0-442e-8dd9-0fa899998712",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 1001ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1001);",
+									"});",
+									"",
+									"pm.test(\"Response data is an array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.be.an('array');",
+									"});",
+									"",
+									"pm.test(\"Every response item has the required properties\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'rating');",
+									"    }",
+									"});",
+									"",
+									"pm.test(\"All results should have a rating higher than or equal to 6\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item.rating).to.be.at.least(6.9);",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://a45db120-079f-467e-b119-8194ff7bcb94.mock.pstmn.io/search-11",
+							"protocol": "https",
+							"host": [
+								"a45db120-079f-467e-b119-8194ff7bcb94",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"search-11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "search-12",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ace4f6f0-f6ef-419a-be90-865c109fd9c2",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {",
+									"    pm.response.to.have.status(200);",
+									"});",
+									"",
+									"pm.test(\"Response time is less than 1001ms\", function () {",
+									"    pm.expect(pm.response.responseTime).to.be.below(1001);",
+									"});",
+									"",
+									"pm.test(\"Response data is an array\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.expect(jsonData).to.be.an('array');",
+									"});",
+									"",
+									"pm.test(\"Every response item has the required properties\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'hasEveningEntertainment');",
+									"    }",
+									"});",
+									"",
+									"pm.test(\"All results should have access to evening entertainment\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    for (let item of jsonData) {",
+									"        pm.expect(item.hasEveningEntertainment).to.eql(1);",
+									"    }",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://a45db120-079f-467e-b119-8194ff7bcb94.mock.pstmn.io/search-12",
+							"protocol": "https",
+							"host": [
+								"a45db120-079f-467e-b119-8194ff7bcb94",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"search-12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Search-hotelview",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "beef292b-c0a6-41e0-a441-792660255973",
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response time is less than 1001ms\", function () {\r",
+									"    pm.expect(pm.response.responseTime).to.be.below(1001);\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Response data is an array\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    pm.expect(jsonData).to.be.an('array');\r",
+									"});\r",
+									"\r",
+									"pm.test(\"Every response item has the required properties\", function () {\r",
+									"    var jsonData = pm.response.json();\r",
+									"    for (let item of jsonData) {\r",
+									"        pm.expect(item).to.have.all.keys('id', 'name', 'cityId', 'countryId', 'country', 'restaurant', 'pool', 'kidsclub', 'eveningEntertainment', 'mToCity', 'mToBeach', 'imgUrl', 'description', 'rating', 'city',);\r",
+									"    }\r",
+									"});\r",
+									"\r",
+									"pm.test(\"The name of the hotel matches the search\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Svegs Stadshotell\", \"BnBodega\", \"Grand Hôtel\", \"Strandhotellet\", \"Den norske hotell\");\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8090/rest/hotelview",
+							"host": [
+								"localhost"
+							],
+							"port": "8090",
+							"path": [
+								"rest",
+								"hotelview"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}

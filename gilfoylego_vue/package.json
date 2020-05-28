@@ -11,13 +11,14 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "test:unit": "vue-cli-service test:unit",
+    "test:unit": "vue-cli-service test:unit --json --outputFile=./reports/unit-report.json",
     "test:selenium": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/ & exit 0",
     "test:search": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/search.feature",
     "test:loggin": "node node_modules/selenium-cucumber-js/index.js -f ./tests/Selenium/features/loggin.feature",
-    "report:selenium": "node ./ares/ares-selenium-reports.js",
-    "report:unit": "node ./ares/ares-unit-reports.js",
-    "report:postman": "node ./ares/ares-postman-reports.js",
+    "test:postman": "newman run ./postman/gilfoylegosearch-test.postman_collection.json --reporters cli,json --reporter-json-export ./reports/postman-report.json",
+    "report:selenium": "node ./ares/ares-selenium-reporter.js",
+    "report:unit": "node ./ares/ares-unit-reporter.js",
+    "report:postman": "node ./ares/ares-postman-reporter.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {

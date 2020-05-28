@@ -1,90 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-    <testsuite name="search-function;search-norge" tests="3" failures="1" skipped="2">
+    <testsuite name="loggin-feature;login-1,-login-3,-login-5-och-login-6" tests="7" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\loggin.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the search page" classname="search-function;search-norge" time="15.2743384">
-            <failure message="NoSuchElementError: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__BVID__11&quot;}">NoSuchElementError: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__BVID__11&quot;}
-  (Session info: chrome=81.0.4044.138)
-  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-From: Task: WebDriver.findElement(By(css selector, #__BVID__11))
-    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at thenableWebDriverProxy.findElement (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1014:17)
-    at createWorld.&lt;anonymous&gt; (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\selenium\step-definitions\search.js:7:22)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
+        <testcase name="Given that I am on the homepage" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="9.834864601">
         </testcase>
-        <testcase name="When I search for hotels in &quot;Norge&quot;" classname="search-function;search-norge">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I click the account button" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.144886301">
         </testcase>
-        <testcase name="Then my frist search result should be a hotel in Norge" classname="search-function;search-norge">
-            <skipped message="">
-            </skipped>
+        <testcase name="And I click on loggin in the dropdown menu" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.7881991">
+        </testcase>
+        <testcase name="And I enter the username &quot;admin&quot;" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.1798764">
+        </testcase>
+        <testcase name="And I enter the password &quot;admin&quot;" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.129016901">
+        </testcase>
+        <testcase name="And I click the login button" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="0.0168512">
+        </testcase>
+        <testcase name="Then I should be logged in" classname="loggin-feature;login-1,-login-3,-login-5-och-login-6" time="3.1107571">
         </testcase>
     </testsuite>
-    <testsuite name="search-function;search-sverige" tests="3" failures="1" skipped="2">
+    <testsuite name="loggin-feature;fail-to-log-in" tests="7" failures="0" skipped="0">
         <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
+            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\loggin.feature">
             </property>
         </properties>
-        <testcase name="Given that im on the search page" classname="search-function;search-sverige" time="13.480834299">
-            <failure message="NoSuchElementError: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__BVID__11&quot;}">NoSuchElementError: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#__BVID__11&quot;}
-  (Session info: chrome=81.0.4044.138)
-  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-From: Task: WebDriver.findElement(By(css selector, #__BVID__11))
-    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at thenableWebDriverProxy.findElement (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1014:17)
-    at createWorld.&lt;anonymous&gt; (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\selenium\step-definitions\search.js:7:22)
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
+        <testcase name="Given that I am on the homepage" classname="loggin-feature;fail-to-log-in" time="11.0930203">
         </testcase>
-        <testcase name="When I search for hotels in &quot;Sverige&quot;" classname="search-function;search-sverige">
-            <skipped message="">
-            </skipped>
+        <testcase name="When I click the account button" classname="loggin-feature;fail-to-log-in" time="0.170986">
         </testcase>
-        <testcase name="Then my frist search result should be a hotel in Sverige" classname="search-function;search-sverige">
-            <skipped message="">
-            </skipped>
+        <testcase name="And I click on loggin in the dropdown menu" classname="loggin-feature;fail-to-log-in" time="1.0341036">
         </testcase>
-    </testsuite>
-    <testsuite name="search-function;search-danmark" tests="3" failures="1" skipped="2">
-        <properties>
-            <property name="URI" value="C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\Selenium\features\search.feature">
-            </property>
-        </properties>
-        <testcase name="Given that im on the search page" classname="search-function;search-danmark" time="9.740866101">
-            <failure message="WebDriverError: unknown error: cannot determine loading status">WebDriverError: unknown error: cannot determine loading status
-from unknown error: cannot determine loading status
-from disconnected: received Inspector.detached event
-  (Session info: chrome=81.0.4044.138)
-  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)
-    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
-    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
-    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
-    at processTicksAndRejections (internal/process/task_queues.js:93:5)
-From: Task: WebDriver.navigate().to(http://localhost:8080/search)
-    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
-    at Navigation.to (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1131:25)
-    at thenableWebDriverProxy.get (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:988:28)
-    at Object.loadPage (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\helpers.js:17:23)
-    at createWorld.&lt;anonymous&gt; (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\tests\selenium\step-definitions\search.js:6:23)</failure>
+        <testcase name="And I enter the username &quot;fel&quot;" classname="loggin-feature;fail-to-log-in" time="0.2167622">
         </testcase>
-        <testcase name="When I search for hotels in &quot;Danmark&quot;" classname="search-function;search-danmark">
-            <skipped message="">
-            </skipped>
+        <testcase name="And I enter the password &quot;fel&quot;" classname="loggin-feature;fail-to-log-in" time="0.144069099">
         </testcase>
-        <testcase name="Then my frist search result should be a hotel in Danmark" classname="search-function;search-danmark">
-            <skipped message="">
-            </skipped>
+        <testcase name="And I click the login button" classname="loggin-feature;fail-to-log-in" time="0.0176392">
+        </testcase>
+        <testcase name="Then I should still be logged out" classname="loggin-feature;fail-to-log-in" time="1.123741901">
         </testcase>
     </testsuite>
 </testsuites>
