@@ -1,3 +1,4 @@
+
 import { enableFetchMocks } from 'jest-fetch-mock'
 enableFetchMocks()
 
@@ -31,3 +32,4 @@ describe ('Login.vue', () => {
         expect(store.state.user).toEqual(expectedResult2)
     })
 })
+

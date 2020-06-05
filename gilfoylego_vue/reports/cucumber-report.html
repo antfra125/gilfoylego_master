@@ -270,8 +270,8 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">gilfoylego_master_test</div>
           <div class="label-container">
-            <span class="label label-success" title=scenarios>Passed: 2</span>
-            <span class="label label-danger" title=scenarios>Failed: 0</span>
+            <span class="label label-success" title=scenarios>Passed: 0</span>
+            <span class="label label-danger" title=scenarios>Failed: 2</span>
           </div>
         </div>
       </div>
@@ -279,7 +279,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Tue May 26 2020 14:10:23 GMT+0200 (GMT+02:00)</div>
+      <div class="generated-on">Fri Jun 05 2020 08:44:26 GMT+0200 (GMT+02:00)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -305,9 +305,9 @@ pre {
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Loggin-feature
                         <span class="label-container">
-              <span class="label label-success"
-                                                         title="2 Scenarios Passed">2</span>
               
+              <span class="label label-danger"
+                                                         title="2 Scenarios Failed">2</span>
               
               
               
@@ -334,19 +334,20 @@ pre {
                                    href="#collapseScenariogilfoylego_master_test0_0">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>login-1, login-3, login-5 och login-6
                                         </div>
                                         <div>
                             <span class="label-container">
-                              <span class="label label-success"
-                                                               title="7 Steps Passed">7</span>
                               
                               
                               
-                              
+                              <span class="label label-warning"
+                                                                title="6 Steps Skipped">6</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -364,8 +365,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -374,7 +375,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               9s 834ms
+                               2s 791ms
                               </span>
                             
                          
@@ -383,6 +384,72 @@ pre {
                       </span>
                                 
                                 
+
+                                    
+                                    <a href="#error0_00"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_00"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_00">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80
+  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_00" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80
+  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -400,8 +467,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -410,7 +477,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               144ms
+                               0s
                               </span>
                             
                          
@@ -436,8 +503,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -446,7 +513,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               788ms
+                               0s
                               </span>
                             
                          
@@ -472,8 +539,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -482,7 +549,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               179ms
+                               0s
                               </span>
                             
                          
@@ -508,8 +575,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -518,7 +585,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               129ms
+                               0s
                               </span>
                             
                          
@@ -544,8 +611,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -554,7 +621,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               16ms
+                               0s
                               </span>
                             
                          
@@ -580,8 +647,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -590,7 +657,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               3s 110ms
+                               0s
                               </span>
                             
                          
@@ -611,6 +678,116 @@ pre {
                                 </p>
                                 
                                 
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">After </span>
+                          <span> </span>
+                            
+                          
+                              <span class="step-duration">
+                               2ms
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_07"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_07"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_07">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80
+  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_07" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80
+  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
                                 
                                 
                             </div>
@@ -629,19 +806,20 @@ pre {
                                    href="#collapseScenariogilfoylego_master_test0_1">
                                     <div>
 
-                                        <div style="padding-right: 30px">
+                                        <div style="padding-right: 50px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>fail to log in
                                         </div>
                                         <div>
                             <span class="label-container">
-                              <span class="label label-success"
-                                                               title="7 Steps Passed">7</span>
                               
                               
                               
-                              
+                              <span class="label label-warning"
+                                                                title="6 Steps Skipped">6</span>
+                              <span class="label label-danger"
+                                                               title="1 Steps Failed">1</span>
                               
                             </span>
                                         </div>
@@ -659,8 +837,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
                                     
                                     
                                     <span class="text">
@@ -669,7 +847,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               11s 93ms
+                               1s 517ms
                               </span>
                             
                          
@@ -678,6 +856,72 @@ pre {
                       </span>
                                 
                                 
+
+                                    
+                                    <a href="#error0_10"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_10"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_10">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80
+  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_10" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80
+  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
 
                                     
 
@@ -695,8 +939,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -705,7 +949,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               170ms
+                               0s
                               </span>
                             
                          
@@ -731,8 +975,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -741,7 +985,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1s 34ms
+                               0s
                               </span>
                             
                          
@@ -767,8 +1011,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -777,7 +1021,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               216ms
+                               0s
                               </span>
                             
                          
@@ -803,8 +1047,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -813,7 +1057,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               144ms
+                               0s
                               </span>
                             
                          
@@ -839,8 +1083,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -849,7 +1093,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               17ms
+                               0s
                               </span>
                             
                          
@@ -875,8 +1119,8 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-success" title="Success"><i
-                                            class="glyphicon glyphicon-ok"></i></span>
+                                    <span class="label label-warning" title="Skipped"><i
+                                            class="glyphicon glyphicon-minus"></i></span>
                                     
                                     
                                     <span class="text">
@@ -885,7 +1129,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               1s 123ms
+                               0s
                               </span>
                             
                          
@@ -906,6 +1150,116 @@ pre {
                                 </p>
                                 
                                 
+                                
+                                <p class="scenario-container">
+                                <div class="row steps">
+                                    
+                                    
+                                    <span class="label label-danger" title="Failed"><i
+                                            class="glyphicon glyphicon-remove"></i></span>
+                                    
+                                    
+                                    <span class="text">
+                        <span class="keyword highlight">After </span>
+                          <span> </span>
+                            
+                          
+                              <span class="step-duration">
+                               1ms
+                              </span>
+                            
+                         
+                            
+                          
+                      </span>
+                                
+                                
+
+                                    
+                                    <a href="#error0_17"
+                                       data-toggle="collapse" class="toggle">Show Error +</a>
+                                    <div id="error0_17"
+                                         class="collapse">
+                                        <pre class="info show-modal"
+                                             data-toggle="modal"
+                                             style="cursor: pointer"
+                                             data-target="#error-modal-0_17">
+                                            <br> SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80
+  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)</pre>
+                                    </div>
+
+                                <div class="modal fade" id="error-modal-0_17" tabindex="-1" role="dialog"
+                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                                </button>
+                                                <h4 class="modal-title" id="error-modal-title">
+                                                    Error
+                                                </h4>
+                                            </div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    <pre><br>SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80
+  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)
+    at Object.checkLegacyResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\error.js:529:15)
+    at parseHttpResponse (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:509:13)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\http.js:441:30
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)
+From: Task: WebDriver.createSession()
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:769:24)
+    at Function.createSession (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\chrome.js:761:15)
+    at createDriver (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:170:33)
+    at Builder.build (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\index.js:642:16)
+    at new module.exports (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\chromeDriver.js:20:8)
+    at getDriverInstance (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:54:22)
+    at C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:207:29
+From: Task: WebDriver.takeScreenshot()
+    at thenableWebDriverProxy.schedule (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+    at thenableWebDriverProxy.takeScreenshot (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-webdriver\lib\webdriver.js:1083:17)
+    at createWorld.(anonymous) (C:\Users\admin.LANTBOFF4275\Documents\GitHub\gilfoylego_master\gilfoylego_vue\node_modules\selenium-cucumber-js\runtime\world.js:253:27)
+    at processTicksAndRejections (internal/process/task_queues.js:75:11)</pre>
+                                                </h5>
+                                            </div>
+
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                                    Close
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                    
+
+                                    
+
+                                    
+
+                                    
+                                </div>
+                                </p>
                                 
                                 
                             </div>
@@ -944,8 +1298,8 @@ pre {
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 0,
-                                                            "passed" : 1,
+                                                            "failed" : 1,
+                                                            "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
@@ -954,8 +1308,8 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 0,
-                                                            "passed" : 2,
+                                                            "failed" : 2,
+                                                            "passed" : 0,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,

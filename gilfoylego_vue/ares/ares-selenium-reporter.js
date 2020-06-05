@@ -10,6 +10,12 @@ async function reportToAres() {
   await ares.startTests();
   // a feature = a cucumber feature ≈ an ares module
   for (let feature of features) {
+
+    // fix, we do not execute if there is no test
+    if(!feature.elements||!feature.elements.length > 0){
+      break;
+    }
+
     await ares.startModule({
       moduleName: feature.name,
       totalTests: feature.elements.length

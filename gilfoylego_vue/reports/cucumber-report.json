@@ -13,8 +13,9 @@
             "keyword": "Given ",
             "name": "that I am on the homepage",
             "result": {
-              "status": "passed",
-              "duration": 9834864601
+              "status": "failed",
+              "duration": 2791537899,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80\n  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
             },
             "line": 9,
             "match": {
@@ -26,8 +27,7 @@
             "keyword": "When ",
             "name": "I click the account button",
             "result": {
-              "status": "passed",
-              "duration": 144886301
+              "status": "skipped"
             },
             "line": 14,
             "match": {
@@ -39,8 +39,7 @@
             "keyword": "And ",
             "name": "I click on loggin in the dropdown menu",
             "result": {
-              "status": "passed",
-              "duration": 788199100
+              "status": "skipped"
             },
             "line": 15,
             "match": {
@@ -52,8 +51,7 @@
             "keyword": "And ",
             "name": "I enter the username \"admin\"",
             "result": {
-              "status": "passed",
-              "duration": 179876400
+              "status": "skipped"
             },
             "line": 16,
             "match": {
@@ -65,8 +63,7 @@
             "keyword": "And ",
             "name": "I enter the password \"admin\"",
             "result": {
-              "status": "passed",
-              "duration": 129016901
+              "status": "skipped"
             },
             "line": 17,
             "match": {
@@ -78,8 +75,7 @@
             "keyword": "And ",
             "name": "I click the login button",
             "result": {
-              "status": "passed",
-              "duration": 16851200
+              "status": "skipped"
             },
             "line": 18,
             "match": {
@@ -91,8 +87,7 @@
             "keyword": "Then ",
             "name": "I should be logged in",
             "result": {
-              "status": "passed",
-              "duration": 3110757100
+              "status": "skipped"
             },
             "line": 19,
             "match": {
@@ -103,8 +98,9 @@
             "arguments": [],
             "keyword": "After ",
             "result": {
-              "status": "passed",
-              "duration": 1662248600
+              "status": "failed",
+              "duration": 2326600,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80\n  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29\nFrom: Task: WebDriver.takeScreenshot()\n    at thenableWebDriverProxy.schedule (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at thenableWebDriverProxy.takeScreenshot (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1083:17)\n    at createWorld.<anonymous> (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:253:27)\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)"
             },
             "hidden": true,
             "match": {
@@ -126,8 +122,9 @@
             "keyword": "Given ",
             "name": "that I am on the homepage",
             "result": {
-              "status": "passed",
-              "duration": 11093020300
+              "status": "failed",
+              "duration": 1517634499,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80\n  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29"
             },
             "line": 9,
             "match": {
@@ -139,8 +136,7 @@
             "keyword": "When ",
             "name": "I click the account button",
             "result": {
-              "status": "passed",
-              "duration": 170986000
+              "status": "skipped"
             },
             "line": 28,
             "match": {
@@ -152,8 +148,7 @@
             "keyword": "And ",
             "name": "I click on loggin in the dropdown menu",
             "result": {
-              "status": "passed",
-              "duration": 1034103600
+              "status": "skipped"
             },
             "line": 29,
             "match": {
@@ -165,8 +160,7 @@
             "keyword": "And ",
             "name": "I enter the username \"fel\"",
             "result": {
-              "status": "passed",
-              "duration": 216762200
+              "status": "skipped"
             },
             "line": 30,
             "match": {
@@ -178,8 +172,7 @@
             "keyword": "And ",
             "name": "I enter the password \"fel\"",
             "result": {
-              "status": "passed",
-              "duration": 144069099
+              "status": "skipped"
             },
             "line": 31,
             "match": {
@@ -191,8 +184,7 @@
             "keyword": "And ",
             "name": "I click the login button",
             "result": {
-              "status": "passed",
-              "duration": 17639200
+              "status": "skipped"
             },
             "line": 32,
             "match": {
@@ -204,8 +196,7 @@
             "keyword": "Then ",
             "name": "I should still be logged out",
             "result": {
-              "status": "passed",
-              "duration": 1123741901
+              "status": "skipped"
             },
             "line": 33,
             "match": {
@@ -216,8 +207,9 @@
             "arguments": [],
             "keyword": "After ",
             "result": {
-              "status": "passed",
-              "duration": 1590119700
+              "status": "failed",
+              "duration": 1954900,
+              "error_message": "SessionNotCreatedError: session not created: This version of ChromeDriver only supports Chrome version 80\n  (Driver info: chromedriver=80.0.3987.16 (320f6526c1632ad4f205ebce69b99a062ed78647-refs/branch-heads/3987@{#185}),platform=Windows NT 10.0.18362 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\error.js:529:15)\n    at parseHttpResponse (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:93:5)\nFrom: Task: WebDriver.createSession()\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\webdriver.js:769:24)\n    at Function.createSession (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\chrome.js:761:15)\n    at createDriver (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\index.js:170:33)\n    at Builder.build (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\index.js:642:16)\n    at new module.exports (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\chromeDriver.js:20:8)\n    at getDriverInstance (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:54:22)\n    at C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:207:29\nFrom: Task: WebDriver.takeScreenshot()\n    at thenableWebDriverProxy.schedule (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at thenableWebDriverProxy.takeScreenshot (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-webdriver\\lib\\webdriver.js:1083:17)\n    at createWorld.<anonymous> (C:\\Users\\admin.LANTBOFF4275\\Documents\\GitHub\\gilfoylego_master\\gilfoylego_vue\\node_modules\\selenium-cucumber-js\\runtime\\world.js:253:27)\n    at processTicksAndRejections (internal/process/task_queues.js:75:11)"
             },
             "hidden": true,
             "match": {

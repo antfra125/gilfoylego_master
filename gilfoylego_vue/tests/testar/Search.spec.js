@@ -1,3 +1,4 @@
+/*
 import { enableFetchMocks } from 'jest-fetch-mock'
 enableFetchMocks()
 
@@ -42,5 +43,6 @@ describe('Search-function', () => {
     
     expect(store.state.form).toEqual(expectedResult)
   })
-})*/
 })
+})
+*/

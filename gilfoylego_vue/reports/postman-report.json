@@ -5,11 +5,11 @@
     },
     "item": [
       {
-        "id": "8ec07c5f-1274-4b33-94b7-5a95c22841ef",
+        "id": "d8645a03-dc81-4e54-a85d-407c55bce418",
         "name": "Search",
         "item": [
           {
-            "id": "2ad8e569-178c-4a54-85b9-80ed6385dd38",
+            "id": "fdf1d8e8-6e01-47ec-aaa9-c7d8ef9e4099",
             "name": "Search-1",
             "request": {
               "url": {
@@ -61,13 +61,13 @@
                     "});",
                     ""
                   ],
-                  "_lastExecutionId": "3bc3bd9c-4a34-47af-a563-5522acaee048"
+                  "_lastExecutionId": "b11ce1ff-78a7-49b8-b396-cf82ab75f1f8"
                 }
               }
             ]
           },
           {
-            "id": "df40c21c-1d52-4828-ac0d-96774dea7afa",
+            "id": "162b267f-564e-49f7-8d6c-141cb5e36bf2",
             "name": "Search-2",
             "request": {
               "url": {
@@ -91,7 +91,7 @@
                 "_": {
                   "postman_previewlanguage": "json"
                 },
-                "id": "6ece5d08-cd96-4f04-993a-766d9b700570",
+                "id": "41076d55-b8c2-48f1-ab0d-f5f5f9d8faac",
                 "name": "Search-2",
                 "originalRequest": {
                   "url": {
@@ -202,13 +202,13 @@
                     "    pm.expect(pm.response.text()).to.include(\"Oslo\");",
                     "});"
                   ],
-                  "_lastExecutionId": "090e521a-c956-4f6b-b97f-d5f4090841c1"
+                  "_lastExecutionId": "12ed078f-7f1c-42b3-9b6a-f07203599a23"
                 }
               }
             ]
           },
           {
-            "id": "7493964f-7442-4a92-a241-ef7894eaa313",
+            "id": "0a8e68d3-f565-4f35-84c6-c319c4704c65",
             "name": "Search-4",
             "request": {
               "url": {
@@ -232,7 +232,7 @@
                 "_": {
                   "postman_previewlanguage": "json"
                 },
-                "id": "7539a370-7580-4189-83c7-965ca967e28c",
+                "id": "08a7d827-b71b-41ed-9630-bf7104e8ff13",
                 "name": "Search",
                 "originalRequest": {
                   "url": {
@@ -276,13 +276,13 @@
                     "    pm.expect(pm.response.text()).to.include(\"Elegant hotell vid till badet\");",
                     "});"
                   ],
-                  "_lastExecutionId": "30504d24-1d24-4fd2-8c34-bf4b7809a53e"
+                  "_lastExecutionId": "a9fa9f98-0134-45ad-884d-5bff6e56e072"
                 }
               }
             ]
           },
           {
-            "id": "046bbbde-c251-42ca-adb5-cd80c9b4ef61",
+            "id": "db64e026-55f3-4b48-a7fe-e50774dc6527",
             "name": "search-8",
             "request": {
               "url": {
@@ -336,13 +336,13 @@
                     "    }",
                     "});"
                   ],
-                  "_lastExecutionId": "82dbec21-d1ad-4e13-b329-38289faf720e"
+                  "_lastExecutionId": "e979207e-9568-4fef-8278-ba06d3656b69"
                 }
               }
             ]
           },
           {
-            "id": "a9532e29-eac5-4280-b71a-4fbf47de8416",
+            "id": "3a459707-2ea5-4ed5-8452-6c73ddfa3f77",
             "name": "search-9",
             "request": {
               "url": {
@@ -396,13 +396,13 @@
                     "    }",
                     "});"
                   ],
-                  "_lastExecutionId": "a58bd1b8-0d54-4223-91da-0ba2caadad74"
+                  "_lastExecutionId": "91f4ff92-233e-4ac7-b4e0-0d54ed21ec78"
                 }
               }
             ]
           },
           {
-            "id": "9825cea8-fa4b-4194-84d5-101d8eb02abb",
+            "id": "96444b9c-2ef4-41eb-92d4-8b3dd177256b",
             "name": "search-10",
             "request": {
               "url": {
@@ -456,13 +456,13 @@
                     "    }",
                     "});"
                   ],
-                  "_lastExecutionId": "d3dfb05a-7d71-4202-8141-83136bb10b6b"
+                  "_lastExecutionId": "6c995a5e-641f-43d3-80f7-7e9ccdf4e1bd"
                 }
               }
             ]
           },
           {
-            "id": "f3c692c4-cdba-4aac-95f2-728f70fbc6f3",
+            "id": "d5cb703e-36b7-45bc-bb94-bbe7dd266a20",
             "name": "search-11",
             "request": {
               "url": {
@@ -516,13 +516,13 @@
                     "    }",
                     "});"
                   ],
-                  "_lastExecutionId": "6f22f967-89a1-427f-80c5-2d43914a19e0"
+                  "_lastExecutionId": "47555228-f246-4720-8d9c-b372862718fd"
                 }
               }
             ]
           },
           {
-            "id": "d03d8d4e-5878-4e9b-a531-9063eda17b34",
+            "id": "fe62897b-3673-497b-bc0f-f17a6d78e838",
             "name": "search-12",
             "request": {
               "url": {
@@ -576,13 +576,13 @@
                     "    }",
                     "});"
                   ],
-                  "_lastExecutionId": "9ddb73c6-1eee-4ff9-a9c6-304433f20104"
+                  "_lastExecutionId": "c6bc5853-4073-48aa-ac88-dc3b0db4e4e9"
                 }
               }
             ]
           },
           {
-            "id": "d5ccef6b-edbd-42d3-b106-11d70c1671e2",
+            "id": "b448f26b-a0e3-4652-9d8f-bf810ec7ba02",
             "name": "Search-hotelview",
             "request": {
               "url": {
@@ -631,7 +631,7 @@
                     "    pm.expect(pm.response.text()).to.include(\"Svegs Stadshotell\", \"BnBodega\", \"Grand Hôtel\", \"Strandhotellet\", \"Den norske hotell\");\r",
                     "});"
                   ],
-                  "_lastExecutionId": "1f307933-697c-4521-9192-90b731375398"
+                  "_lastExecutionId": "bd90bc3f-bc59-4b37-8946-fdd9e5507187"
                 }
               }
             ]
@@ -651,11 +651,11 @@
     }
   },
   "environment": {
-    "id": "5f667f12-65fd-4852-83a6-0ffe8363deb3",
+    "id": "8a691b0f-69bb-40ef-8af8-d67cae24f7ac",
     "values": []
   },
   "globals": {
-    "id": "f309e47c-a025-447c-bc08-520c9dfb2269",
+    "id": "0d693e30-9b5b-4348-8b76-efc12952b354",
     "values": []
   },
   "run": {
@@ -693,7 +693,7 @@
       "assertions": {
         "total": 45,
         "pending": 0,
-        "failed": 0
+        "failed": 1
       },
       "testScripts": {
         "total": 9,
@@ -707,10 +707,10 @@
       }
     },
     "timings": {
-      "responseAverage": 400.77777777777777,
-      "responseMin": 74,
-      "responseMax": 970,
-      "responseSd": 245.5573152274809,
+      "responseAverage": 520.4444444444445,
+      "responseMin": 46,
+      "responseMax": 2294,
+      "responseSd": 642.3680341969272,
       "dnsAverage": 0,
       "dnsMin": 0,
       "dnsMax": 0,
@@ -719,8 +719,8 @@
       "firstByteMin": 0,
       "firstByteMax": 0,
       "firstByteSd": 0,
-      "started": 1590568671118,
-      "completed": 1590568675924
+      "started": 1591268956436,
+      "completed": 1591268961869
     },
     "executions": [
       {
@@ -733,11 +733,11 @@
           "eof": false,
           "bof": true,
           "cr": false,
-          "ref": "1e97f180-c918-45ff-9635-bf1fc843c4f9",
-          "httpRequestId": "75f28cf7-fd68-4fc2-b746-376324c0dffa"
+          "ref": "825758e9-7bc7-477f-bfe4-0b005faeff02",
+          "httpRequestId": "09576657-97aa-4fb1-8f07-839067a979f8"
         },
         "item": {
-          "id": "2ad8e569-178c-4a54-85b9-80ed6385dd38",
+          "id": "fdf1d8e8-6e01-47ec-aaa9-c7d8ef9e4099",
           "name": "Search-1",
           "request": {
             "url": {
@@ -789,7 +789,7 @@
                   "});",
                   ""
                 ],
-                "_lastExecutionId": "3bc3bd9c-4a34-47af-a563-5522acaee048"
+                "_lastExecutionId": "b11ce1ff-78a7-49b8-b396-cf82ab75f1f8"
               }
             }
           ]
@@ -827,7 +827,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "b893c3de-bc0b-4a7d-b546-4f4b026a3374",
+              "value": "efe40a99-bb28-408b-a759-32d2b990915e",
               "system": true
             },
             {
@@ -849,7 +849,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "ca20f858-65c8-4ec7-b961-a14666b9ef0e",
+          "id": "ee871fea-e2bb-4772-8631-f809427501f2",
           "status": "OK",
           "code": 200,
           "header": [
@@ -867,7 +867,7 @@
             },
             {
               "key": "Date",
-              "value": "Wed, 27 May 2020 08:37:53 GMT"
+              "value": "Thu, 04 Jun 2020 11:09:19 GMT"
             },
             {
               "key": "ETag",
@@ -891,15 +891,15 @@
             },
             {
               "key": "X-RateLimit-Reset",
-              "value": "1590568733"
+              "value": "1591269019"
             },
             {
               "key": "x-srv-span",
-              "value": "v=1;s=0ede3f0a7995d0ab"
+              "value": "v=1;s=33159f6b33b7fabc"
             },
             {
               "key": "x-srv-trace",
-              "value": "v=1;t=3d875bec3079912a"
+              "value": "v=1;t=1489f5b816b48d36"
             },
             {
               "key": "Content-Length",
@@ -1382,10 +1382,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 970,
+          "responseTime": 2294,
           "responseSize": 466
         },
-        "id": "2ad8e569-178c-4a54-85b9-80ed6385dd38",
+        "id": "fdf1d8e8-6e01-47ec-aaa9-c7d8ef9e4099",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -1393,7 +1393,14 @@
           },
           {
             "assertion": "Response time is less than 1001ms",
-            "skipped": false
+            "skipped": false,
+            "error": {
+              "name": "AssertionError",
+              "index": 1,
+              "test": "Response time is less than 1001ms",
+              "message": "expected 2294 to be below 1001",
+              "stack": "AssertionError: expected 2294 to be below 1001\n   at Object.eval sandbox-script.js:2:1)"
+            }
           },
           {
             "assertion": "Response data is an array",
@@ -1411,15 +1418,15 @@
       },
       {
         "cursor": {
-          "ref": "b35b9c45-bcfc-4d8d-b558-025f8ec4bb30",
+          "ref": "2192d1b0-c030-4b54-ad2e-69d972880a98",
           "length": 9,
           "cycles": 1,
           "position": 1,
           "iteration": 0,
-          "httpRequestId": "a7fdce21-18c5-406f-8aa9-5a21b0dd7fbc"
+          "httpRequestId": "c8d435fa-9f53-4a60-af1a-681da0711dde"
         },
         "item": {
-          "id": "df40c21c-1d52-4828-ac0d-96774dea7afa",
+          "id": "162b267f-564e-49f7-8d6c-141cb5e36bf2",
           "name": "Search-2",
           "request": {
             "url": {
@@ -1443,7 +1450,7 @@
               "_": {
                 "postman_previewlanguage": "json"
               },
-              "id": "6ece5d08-cd96-4f04-993a-766d9b700570",
+              "id": "41076d55-b8c2-48f1-ab0d-f5f5f9d8faac",
               "name": "Search-2",
               "originalRequest": {
                 "url": {
@@ -1554,7 +1561,7 @@
                   "    pm.expect(pm.response.text()).to.include(\"Oslo\");",
                   "});"
                 ],
-                "_lastExecutionId": "090e521a-c956-4f6b-b97f-d5f4090841c1"
+                "_lastExecutionId": "12ed078f-7f1c-42b3-9b6a-f07203599a23"
               }
             }
           ]
@@ -1593,7 +1600,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "c2062e84-75af-4d56-a67e-1e7027536cdc",
+              "value": "70e9a86a-9cb2-455e-8fd4-0eb95a8933c4",
               "system": true
             },
             {
@@ -1615,7 +1622,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "1dd054a2-7fba-4534-b64c-c3d3fb33f587",
+          "id": "3ec4b227-0bbc-4243-98db-bc721248007c",
           "status": "OK",
           "code": 200,
           "header": [
@@ -1677,7 +1684,7 @@
             },
             {
               "key": "Date",
-              "value": "Wed, 27 May 2020 08:37:52 GMT"
+              "value": "Thu, 04 Jun 2020 11:09:19 GMT"
             },
             {
               "key": "Keep-Alive",
@@ -1730,10 +1737,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 74,
+          "responseTime": 131,
           "responseSize": 36
         },
-        "id": "df40c21c-1d52-4828-ac0d-96774dea7afa",
+        "id": "162b267f-564e-49f7-8d6c-141cb5e36bf2",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -1759,15 +1766,15 @@
       },
       {
         "cursor": {
-          "ref": "5d0441f8-31ce-49ad-81b5-d1764fadc872",
+          "ref": "661bc37b-82df-4c3c-9daf-798a42fa21da",
           "length": 9,
           "cycles": 1,
           "position": 2,
           "iteration": 0,
-          "httpRequestId": "0633f507-f241-4631-bf23-f539b2880d38"
+          "httpRequestId": "885ada40-2cb6-46be-9589-2c32677f2398"
         },
         "item": {
-          "id": "7493964f-7442-4a92-a241-ef7894eaa313",
+          "id": "0a8e68d3-f565-4f35-84c6-c319c4704c65",
           "name": "Search-4",
           "request": {
             "url": {
@@ -1791,7 +1798,7 @@
               "_": {
                 "postman_previewlanguage": "json"
               },
-              "id": "7539a370-7580-4189-83c7-965ca967e28c",
+              "id": "08a7d827-b71b-41ed-9630-bf7104e8ff13",
               "name": "Search",
               "originalRequest": {
                 "url": {
@@ -1835,7 +1842,7 @@
                   "    pm.expect(pm.response.text()).to.include(\"Elegant hotell vid till badet\");",
                   "});"
                 ],
-                "_lastExecutionId": "30504d24-1d24-4fd2-8c34-bf4b7809a53e"
+                "_lastExecutionId": "a9fa9f98-0134-45ad-884d-5bff6e56e072"
               }
             }
           ]
@@ -1873,7 +1880,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "70ca165b-75ea-4900-a8d2-142d712e70b7",
+              "value": "4680a7a1-c464-47e3-821e-f39a89b4ce68",
               "system": true
             },
             {
@@ -1895,7 +1902,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "62ea23a4-44a1-48c3-abba-6db01aa2d5c7",
+          "id": "65413f0f-3e42-4f44-a9f9-daa77bd1b227",
           "status": "OK",
           "code": 200,
           "header": [
@@ -1913,7 +1920,7 @@
             },
             {
               "key": "Date",
-              "value": "Wed, 27 May 2020 08:37:53 GMT"
+              "value": "Thu, 04 Jun 2020 11:09:20 GMT"
             },
             {
               "key": "ETag",
@@ -1937,15 +1944,15 @@
             },
             {
               "key": "X-RateLimit-Reset",
-              "value": "1590568733"
+              "value": "1591269019"
             },
             {
               "key": "x-srv-span",
-              "value": "v=1;s=6d9de3fcb94a32ed"
+              "value": "v=1;s=a3d75279fc0614e1"
             },
             {
               "key": "x-srv-trace",
-              "value": "v=1;t=f130d09730cf1d97"
+              "value": "v=1;t=a50a6508b466322f"
             },
             {
               "key": "Content-Length",
@@ -3846,10 +3853,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 294,
+          "responseTime": 558,
           "responseSize": 1884
         },
-        "id": "7493964f-7442-4a92-a241-ef7894eaa313",
+        "id": "0a8e68d3-f565-4f35-84c6-c319c4704c65",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -3875,15 +3882,15 @@
       },
       {
         "cursor": {
-          "ref": "afb7ada2-9a6a-48a1-a77e-292e49b752a2",
+          "ref": "a1141267-caa9-4dd3-b7ac-c4e0c2b4513e",
           "length": 9,
           "cycles": 1,
           "position": 3,
           "iteration": 0,
-          "httpRequestId": "1201ee26-6d2b-4d90-9f2e-ddb30524d5c5"
+          "httpRequestId": "8db5b498-6d2d-4d8a-aa32-9b44b470e6a0"
         },
         "item": {
-          "id": "046bbbde-c251-42ca-adb5-cd80c9b4ef61",
+          "id": "db64e026-55f3-4b48-a7fe-e50774dc6527",
           "name": "search-8",
           "request": {
             "url": {
@@ -3937,7 +3944,7 @@
                   "    }",
                   "});"
                 ],
-                "_lastExecutionId": "82dbec21-d1ad-4e13-b329-38289faf720e"
+                "_lastExecutionId": "e979207e-9568-4fef-8278-ba06d3656b69"
               }
             }
           ]
@@ -3975,7 +3982,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "4904456f-4ae1-453c-bf2b-bd87532a0c60",
+              "value": "47b73792-0634-498d-b232-32c4ad3901c7",
               "system": true
             },
             {
@@ -3997,7 +4004,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "bc591686-f238-4c86-bc5c-1c0a260c4b84",
+          "id": "bf20a615-6eb5-4295-86d8-0843bd64983a",
           "status": "OK",
           "code": 200,
           "header": [
@@ -4015,7 +4022,7 @@
             },
             {
               "key": "Date",
-              "value": "Wed, 27 May 2020 08:37:54 GMT"
+              "value": "Thu, 04 Jun 2020 11:09:20 GMT"
             },
             {
               "key": "ETag",
@@ -4039,15 +4046,15 @@
             },
             {
               "key": "X-RateLimit-Reset",
-              "value": "1590568733"
+              "value": "1591269019"
             },
             {
               "key": "x-srv-span",
-              "value": "v=1;s=5c2e7add705cbcf2"
+              "value": "v=1;s=76cc295553a4ece6"
             },
             {
               "key": "x-srv-trace",
-              "value": "v=1;t=3c5c4129e97bc8fd"
+              "value": "v=1;t=9e5c78688868abcd"
             },
             {
               "key": "Content-Length",
@@ -5019,10 +5026,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 402,
+          "responseTime": 276,
           "responseSize": 955
         },
-        "id": "046bbbde-c251-42ca-adb5-cd80c9b4ef61",
+        "id": "db64e026-55f3-4b48-a7fe-e50774dc6527",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -5048,15 +5055,15 @@
       },
       {
         "cursor": {
-          "ref": "a583246c-0fb4-4abc-8fb6-46d97bf08c9a",
+          "ref": "f2d4cd55-d73c-4853-9315-068cd83c1c20",
           "length": 9,
           "cycles": 1,
           "position": 4,
           "iteration": 0,
-          "httpRequestId": "dac66e78-c5e2-46c7-9f1e-e6af329b16dd"
+          "httpRequestId": "cc4f585d-0c30-4d83-849d-633ced73eac7"
         },
         "item": {
-          "id": "a9532e29-eac5-4280-b71a-4fbf47de8416",
+          "id": "3a459707-2ea5-4ed5-8452-6c73ddfa3f77",
           "name": "search-9",
           "request": {
             "url": {
@@ -5110,7 +5117,7 @@
                   "    }",
                   "});"
                 ],
-                "_lastExecutionId": "a58bd1b8-0d54-4223-91da-0ba2caadad74"
+                "_lastExecutionId": "91f4ff92-233e-4ac7-b4e0-0d54ed21ec78"
               }
             }
           ]
@@ -5148,7 +5155,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "1e212456-ef31-4f36-848e-fb7c45c83b31",
+              "value": "e5b5cd30-1967-4fec-b4d9-56e13443538f",
               "system": true
             },
             {
@@ -5170,7 +5177,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "e2281f3a-305e-415f-9f39-bd047b50a1b7",
+          "id": "9bea1047-f468-4411-a0fc-246d16aabb7f",
           "status": "OK",
           "code": 200,
           "header": [
@@ -5188,7 +5195,7 @@
             },
             {
               "key": "Date",
-              "value": "Wed, 27 May 2020 08:37:55 GMT"
+              "value": "Thu, 04 Jun 2020 11:09:21 GMT"
             },
             {
               "key": "ETag",
@@ -5212,15 +5219,15 @@
             },
             {
               "key": "X-RateLimit-Reset",
-              "value": "1590568733"
+              "value": "1591269019"
             },
             {
               "key": "x-srv-span",
-              "value": "v=1;s=10adeba837e730b6"
+              "value": "v=1;s=8395dae7d9ab55f9"
             },
             {
               "key": "x-srv-trace",
-              "value": "v=1;t=da8bbb9f3d20644f"
+              "value": "v=1;t=4d90912d6d20db3b"
             },
             {
               "key": "Content-Length",
@@ -6171,10 +6178,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 403,
+          "responseTime": 310,
           "responseSize": 934
         },
-        "id": "a9532e29-eac5-4280-b71a-4fbf47de8416",
+        "id": "3a459707-2ea5-4ed5-8452-6c73ddfa3f77",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -6200,15 +6207,15 @@
       },
       {
         "cursor": {
-          "ref": "127e628b-d7fe-4495-8dbc-78541b23e456",
+          "ref": "9cdca9d7-28f5-4f6e-bb43-86c3ff8647a5",
           "length": 9,
           "cycles": 1,
           "position": 5,
           "iteration": 0,
-          "httpRequestId": "8eebadad-6913-4242-83e3-318ae31645b6"
+          "httpRequestId": "a7317ec2-0649-4fd9-b2fa-7eceb018aeab"
         },
         "item": {
-          "id": "9825cea8-fa4b-4194-84d5-101d8eb02abb",
+          "id": "96444b9c-2ef4-41eb-92d4-8b3dd177256b",
           "name": "search-10",
           "request": {
             "url": {
@@ -6262,7 +6269,7 @@
                   "    }",
                   "});"
                 ],
-                "_lastExecutionId": "d3dfb05a-7d71-4202-8141-83136bb10b6b"
+                "_lastExecutionId": "6c995a5e-641f-43d3-80f7-7e9ccdf4e1bd"
               }
             }
           ]
@@ -6300,7 +6307,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "ad6515a2-098d-453a-907b-da6bcef674c5",
+              "value": "1c926f22-e4ea-49e0-a6fa-3ab2d7fd2059",
               "system": true
             },
             {
@@ -6322,7 +6329,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "0cbc2773-4aa2-4442-be09-bb4c6b3fdb08",
+          "id": "a34c2f8f-db2b-48b6-b158-ea80bac70e95",
           "status": "OK",
           "code": 200,
           "header": [
@@ -6340,7 +6347,7 @@
             },
             {
               "key": "Date",
-              "value": "Wed, 27 May 2020 08:37:55 GMT"
+              "value": "Thu, 04 Jun 2020 11:09:21 GMT"
             },
             {
               "key": "ETag",
@@ -6364,15 +6371,15 @@
             },
             {
               "key": "X-RateLimit-Reset",
-              "value": "1590568733"
+              "value": "1591269019"
             },
             {
               "key": "x-srv-span",
-              "value": "v=1;s=095f43e667a4e9bc"
+              "value": "v=1;s=88217f45c18b7949"
             },
             {
               "key": "x-srv-trace",
-              "value": "v=1;t=4b79a1f5da89cfc7"
+              "value": "v=1;t=6aaf9af93a39e427"
             },
             {
               "key": "Content-Length",
@@ -7799,10 +7806,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 375,
+          "responseTime": 307,
           "responseSize": 1410
         },
-        "id": "9825cea8-fa4b-4194-84d5-101d8eb02abb",
+        "id": "96444b9c-2ef4-41eb-92d4-8b3dd177256b",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -7828,15 +7835,15 @@
       },
       {
         "cursor": {
-          "ref": "f13604b4-b3a7-450e-9baf-67eb42878f6b",
+          "ref": "18f580c3-05e0-4302-820f-e04fe9aff87f",
           "length": 9,
           "cycles": 1,
           "position": 6,
           "iteration": 0,
-          "httpRequestId": "440f89e5-ba68-4784-a90e-be6dd5653955"
+          "httpRequestId": "2ca53c08-a357-4405-90b1-35a11c85c9a7"
         },
         "item": {
-          "id": "f3c692c4-cdba-4aac-95f2-728f70fbc6f3",
+          "id": "d5cb703e-36b7-45bc-bb94-bbe7dd266a20",
           "name": "search-11",
           "request": {
             "url": {
@@ -7890,7 +7897,7 @@
                   "    }",
                   "});"
                 ],
-                "_lastExecutionId": "6f22f967-89a1-427f-80c5-2d43914a19e0"
+                "_lastExecutionId": "47555228-f246-4720-8d9c-b372862718fd"
               }
             }
           ]
@@ -7928,7 +7935,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "031d8444-279e-41cf-ac8c-b38b75e274bf",
+              "value": "11601cd3-883f-413c-926b-66c030e41a0a",
               "system": true
             },
             {
@@ -7950,7 +7957,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "b704ed8a-da0b-445c-8847-35c26c60d3db",
+          "id": "8da2f7f7-2ee5-4548-93f1-4a15c4688a5f",
           "status": "OK",
           "code": 200,
           "header": [
@@ -7968,7 +7975,7 @@
             },
             {
               "key": "Date",
-              "value": "Wed, 27 May 2020 08:37:55 GMT"
+              "value": "Thu, 04 Jun 2020 11:09:22 GMT"
             },
             {
               "key": "ETag",
@@ -7992,15 +7999,15 @@
             },
             {
               "key": "X-RateLimit-Reset",
-              "value": "1590568733"
+              "value": "1591269019"
             },
             {
               "key": "x-srv-span",
-              "value": "v=1;s=7515ed418fdd4a95"
+              "value": "v=1;s=de1088ca39ed3f76"
             },
             {
               "key": "x-srv-trace",
-              "value": "v=1;t=56b02f70fefdeccb"
+              "value": "v=1;t=8ed31d790e10a809"
             },
             {
               "key": "Content-Length",
@@ -8962,10 +8969,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 345,
+          "responseTime": 409,
           "responseSize": 945
         },
-        "id": "f3c692c4-cdba-4aac-95f2-728f70fbc6f3",
+        "id": "d5cb703e-36b7-45bc-bb94-bbe7dd266a20",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -8991,15 +8998,15 @@
       },
       {
         "cursor": {
-          "ref": "2010712e-8453-4d8c-8170-968f1ef5e474",
+          "ref": "a6fdc5c6-3db6-4771-b4dc-8892ac2d1598",
           "length": 9,
           "cycles": 1,
           "position": 7,
           "iteration": 0,
-          "httpRequestId": "e512e9c8-0375-41b2-8c01-c3b8ac74ed65"
+          "httpRequestId": "0fdb8097-b51a-4797-add4-64d7cd356679"
         },
         "item": {
-          "id": "d03d8d4e-5878-4e9b-a531-9063eda17b34",
+          "id": "fe62897b-3673-497b-bc0f-f17a6d78e838",
           "name": "search-12",
           "request": {
             "url": {
@@ -9053,7 +9060,7 @@
                   "    }",
                   "});"
                 ],
-                "_lastExecutionId": "9ddb73c6-1eee-4ff9-a9c6-304433f20104"
+                "_lastExecutionId": "c6bc5853-4073-48aa-ac88-dc3b0db4e4e9"
               }
             }
           ]
@@ -9091,7 +9098,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "5691039a-c87c-43b6-9633-d416a5eca1de",
+              "value": "794a5a94-fcee-406c-bf9c-2176722091b9",
               "system": true
             },
             {
@@ -9113,7 +9120,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "0f8a4a07-62f9-4eb5-85a4-7d3183cc002a",
+          "id": "f4fee41c-93a8-4372-8968-32df519f2ad5",
           "status": "OK",
           "code": 200,
           "header": [
@@ -9131,7 +9138,7 @@
             },
             {
               "key": "Date",
-              "value": "Wed, 27 May 2020 08:37:56 GMT"
+              "value": "Thu, 04 Jun 2020 11:09:22 GMT"
             },
             {
               "key": "ETag",
@@ -9155,15 +9162,15 @@
             },
             {
               "key": "X-RateLimit-Reset",
-              "value": "1590568733"
+              "value": "1591269019"
             },
             {
               "key": "x-srv-span",
-              "value": "v=1;s=940ce38c4b690cee"
+              "value": "v=1;s=3202650506b13625"
             },
             {
               "key": "x-srv-trace",
-              "value": "v=1;t=a09a48d2e4d18bfc"
+              "value": "v=1;t=9db5fe548cdb09e8"
             },
             {
               "key": "Content-Length",
@@ -10592,10 +10599,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 590,
+          "responseTime": 353,
           "responseSize": 1412
         },
-        "id": "d03d8d4e-5878-4e9b-a531-9063eda17b34",
+        "id": "fe62897b-3673-497b-bc0f-f17a6d78e838",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -10621,15 +10628,15 @@
       },
       {
         "cursor": {
-          "ref": "6d1c047b-5a2e-42cd-b7ee-0adceb1738a8",
+          "ref": "0a25c27e-0ddf-426a-9c3c-dee311795ca5",
           "length": 9,
           "cycles": 1,
           "position": 8,
           "iteration": 0,
-          "httpRequestId": "dea7f7b7-a1e0-4bed-9ad8-7d38269342dd"
+          "httpRequestId": "8c25851e-db99-4c26-8b9f-c2b08d22623a"
         },
         "item": {
-          "id": "d5ccef6b-edbd-42d3-b106-11d70c1671e2",
+          "id": "b448f26b-a0e3-4652-9d8f-bf810ec7ba02",
           "name": "Search-hotelview",
           "request": {
             "url": {
@@ -10678,7 +10685,7 @@
                   "    pm.expect(pm.response.text()).to.include(\"Svegs Stadshotell\", \"BnBodega\", \"Grand Hôtel\", \"Strandhotellet\", \"Den norske hotell\");\r",
                   "});"
                 ],
-                "_lastExecutionId": "1f307933-697c-4521-9192-90b731375398"
+                "_lastExecutionId": "bd90bc3f-bc59-4b37-8946-fdd9e5507187"
               }
             }
           ]
@@ -10715,7 +10722,7 @@
             },
             {
               "key": "Postman-Token",
-              "value": "8b7dfa88-4f0c-4cd9-bb42-29671d8f0b94",
+              "value": "17e3dcd4-8168-40e3-9178-243cc1914f7b",
               "system": true
             },
             {
@@ -10737,7 +10744,7 @@
           "method": "GET"
         },
         "response": {
-          "id": "dafe1c1d-921d-41b1-8d85-32a7201d0f61",
+          "id": "29f1a504-3752-41ae-acbd-2b4fc0807531",
           "status": "OK",
           "code": 200,
           "header": [
@@ -10799,7 +10806,7 @@
             },
             {
               "key": "Date",
-              "value": "Wed, 27 May 2020 08:37:55 GMT"
+              "value": "Thu, 04 Jun 2020 11:09:21 GMT"
             },
             {
               "key": "Keep-Alive",
@@ -14635,10 +14642,10 @@
             ]
           },
           "cookie": [],
-          "responseTime": 154,
+          "responseTime": 46,
           "responseSize": 3819
         },
-        "id": "d5ccef6b-edbd-42d3-b106-11d70c1671e2",
+        "id": "b448f26b-a0e3-4652-9d8f-bf810ec7ba02",
         "assertions": [
           {
             "assertion": "Status code is 200",
@@ -14666,7 +14673,740 @@
     "transfers": {
       "responseTotal": 6412
     },
-    "failures": [],
+    "failures": [
+      {
+        "error": {
+          "name": "AssertionError",
+          "index": 1,
+          "test": "Response time is less than 1001ms",
+          "message": "expected 2294 to be below 1001",
+          "stack": "AssertionError: expected 2294 to be below 1001\n   at Object.eval sandbox-script.js:2:1)",
+          "checksum": "a9c971b3e11af9d60270cf9a53889e28",
+          "id": "5dc85ac5-fb34-4cf9-8668-030ea961c916",
+          "timestamp": 1591268958831,
+          "stacktrace": [
+            {
+              "fileName": "sandbox-script.js",
+              "lineNumber": 2,
+              "functionName": "Object.eval",
+              "typeName": "Object",
+              "methodName": "eval",
+              "columnNumber": 1,
+              "native": false
+            }
+          ]
+        },
+        "at": "assertion:1 in test-script",
+        "source": {
+          "id": "fdf1d8e8-6e01-47ec-aaa9-c7d8ef9e4099",
+          "name": "Search-1",
+          "request": {
+            "url": {
+              "protocol": "https",
+              "path": [
+                "search-1"
+              ],
+              "host": [
+                "a45db120-079f-467e-b119-8194ff7bcb94",
+                "mock",
+                "pstmn",
+                "io"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "method": "GET"
+          },
+          "response": [],
+          "event": [
+            {
+              "listen": "test",
+              "script": {
+                "id": "fc23c8df-3520-43b7-bc52-a6dbdb05ce5b",
+                "type": "text/javascript",
+                "exec": [
+                  "pm.test(\"Status code is 200\", function () {",
+                  "    pm.response.to.have.status(200);",
+                  "});",
+                  "",
+                  "pm.test(\"Response time is less than 1001ms\", function () {",
+                  "    pm.expect(pm.response.responseTime).to.be.below(1001);",
+                  "});",
+                  "",
+                  "pm.test(\"Response data is an array\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    pm.expect(jsonData).to.be.an('array');",
+                  "});",
+                  "",
+                  "pm.test(\"Every response item has the required properties\", function () {",
+                  "    var jsonData = pm.response.json();",
+                  "    for (let item of jsonData) {",
+                  "        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'imgUrl', 'description', 'rating');",
+                  "    }",
+                  "});",
+                  "",
+                  "pm.test(\"The name of the hotel matches the search\", function () {",
+                  "    pm.expect(pm.response.text()).to.include(\"Svegs stadshotell\");",
+                  "});",
+                  ""
+                ],
+                "_lastExecutionId": "b11ce1ff-78a7-49b8-b396-cf82ab75f1f8"
+              }
+            }
+          ]
+        },
+        "parent": {
+          "id": "d8645a03-dc81-4e54-a85d-407c55bce418",
+          "name": "Search",
+          "item": [
+            {
+              "id": "fdf1d8e8-6e01-47ec-aaa9-c7d8ef9e4099",
+              "name": "Search-1",
+              "request": {
+                "url": {
+                  "protocol": "https",
+                  "path": [
+                    "search-1"
+                  ],
+                  "host": [
+                    "a45db120-079f-467e-b119-8194ff7bcb94",
+                    "mock",
+                    "pstmn",
+                    "io"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET"
+              },
+              "response": [],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "fc23c8df-3520-43b7-bc52-a6dbdb05ce5b",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response time is less than 1001ms\", function () {",
+                      "    pm.expect(pm.response.responseTime).to.be.below(1001);",
+                      "});",
+                      "",
+                      "pm.test(\"Response data is an array\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an('array');",
+                      "});",
+                      "",
+                      "pm.test(\"Every response item has the required properties\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'imgUrl', 'description', 'rating');",
+                      "    }",
+                      "});",
+                      "",
+                      "pm.test(\"The name of the hotel matches the search\", function () {",
+                      "    pm.expect(pm.response.text()).to.include(\"Svegs stadshotell\");",
+                      "});",
+                      ""
+                    ],
+                    "_lastExecutionId": "b11ce1ff-78a7-49b8-b396-cf82ab75f1f8"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "162b267f-564e-49f7-8d6c-141cb5e36bf2",
+              "name": "Search-2",
+              "request": {
+                "url": {
+                  "port": "8090",
+                  "path": [
+                    "rest",
+                    "city",
+                    "name",
+                    "Oslo"
+                  ],
+                  "host": [
+                    "localhost"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET"
+              },
+              "response": [
+                {
+                  "_": {
+                    "postman_previewlanguage": "json"
+                  },
+                  "id": "41076d55-b8c2-48f1-ab0d-f5f5f9d8faac",
+                  "name": "Search-2",
+                  "originalRequest": {
+                    "url": {
+                      "protocol": "https",
+                      "host": [
+                        "8208c097-dadc-4ae4-87bd-603366186c93",
+                        "mock",
+                        "pstmn",
+                        "io"
+                      ],
+                      "query": [],
+                      "variable": []
+                    },
+                    "method": "GET"
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "header": [
+                    {
+                      "key": "Access-Control-Allow-Origin",
+                      "value": "*"
+                    },
+                    {
+                      "key": "Content-Encoding",
+                      "value": "gzip"
+                    },
+                    {
+                      "key": "Content-Type",
+                      "value": "text/html; charset=utf-8"
+                    },
+                    {
+                      "key": "Date",
+                      "value": "Tue, 21 Apr 2020 12:14:22 GMT"
+                    },
+                    {
+                      "key": "ETag",
+                      "value": "W/\"103-4goqZDuGu6ADOzvFWMQblEPO3QM\""
+                    },
+                    {
+                      "key": "Server",
+                      "value": "nginx"
+                    },
+                    {
+                      "key": "Vary",
+                      "value": "Accept-Encoding"
+                    },
+                    {
+                      "key": "X-RateLimit-Limit",
+                      "value": "120"
+                    },
+                    {
+                      "key": "X-RateLimit-Remaining",
+                      "value": "119"
+                    },
+                    {
+                      "key": "X-RateLimit-Reset",
+                      "value": "1587471322"
+                    },
+                    {
+                      "key": "x-srv-span",
+                      "value": "v=1;s=a2aa55de96909f39"
+                    },
+                    {
+                      "key": "x-srv-trace",
+                      "value": "v=1;t=c131c4672c98b617"
+                    },
+                    {
+                      "key": "Content-Length",
+                      "value": "197"
+                    },
+                    {
+                      "key": "Connection",
+                      "value": "keep-alive"
+                    }
+                  ],
+                  "body": "[\n    {\n        \"id\": 1,\n        \"cityId\": 1,\n        \"name\": \"Svegs stadshotell\",\n        \"city\": \"Sveg\",\n        \"country\": \"Sverige\",\n        \"rating\": 2,\n        \"restaurant\": 1,\n        \"pool\": 0,\n        \"kidsclub\": 0,\n        \"EveningEntertainment\": 1,\n        \"mToCityCentre\": 1,\n        \"mToBeach\": 40,\n        \"description\": \"Ett helt okej hotell\",\n        \"ledigt från\": \"2020-06-10\"\n    }\n]",
+                  "cookie": []
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "2053eeb0-d2f1-492a-925c-06d867f7b9c5",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response time is less than 1001ms\", function () {",
+                      "    pm.expect(pm.response.responseTime).to.be.below(1001);",
+                      "});",
+                      "",
+                      "pm.test(\"Response data is an array\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an('array');",
+                      "});",
+                      "",
+                      "pm.test(\"Every response item has the properties id, country and name\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for(let item of jsonData){",
+                      "        pm.expect(item).to.have.any.keys('id', 'country', 'name');",
+                      "    }",
+                      "});",
+                      "",
+                      "pm.test(\"The name of the city matches the search\", function () {",
+                      "    pm.expect(pm.response.text()).to.include(\"Oslo\");",
+                      "});"
+                    ],
+                    "_lastExecutionId": "12ed078f-7f1c-42b3-9b6a-f07203599a23"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "0a8e68d3-f565-4f35-84c6-c319c4704c65",
+              "name": "Search-4",
+              "request": {
+                "url": {
+                  "protocol": "https",
+                  "path": [
+                    "search-4"
+                  ],
+                  "host": [
+                    "a45db120-079f-467e-b119-8194ff7bcb94",
+                    "mock",
+                    "pstmn",
+                    "io"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET"
+              },
+              "response": [
+                {
+                  "_": {
+                    "postman_previewlanguage": "json"
+                  },
+                  "id": "08a7d827-b71b-41ed-9630-bf7104e8ff13",
+                  "name": "Search",
+                  "originalRequest": {
+                    "url": {
+                      "query": [],
+                      "variable": []
+                    },
+                    "method": "GET"
+                  },
+                  "header": [],
+                  "body": "[\n    {\n        \"id\": 1,\n        \"cityId\": 1,\n        \"name\": \"Svegs stadshotell\",\n        \"city\": \"Sveg\",\n        \"country\": \"Sverige\",\n        \"rating\": 2,\n        \"restaurant\": 1,\n        \"pool\": 0,\n        \"kidsclub\": 0,\n        \"EveningEntertainment\": 1,\n        \"mToCityCentre\": 1,\n        \"mToBeach\": 40,\n        \"description\": \"Ett helt okej hotell\",\n        \"ledigt från\": \"2020-06-10\"\n    }\n]",
+                  "cookie": []
+                }
+              ],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "dccab562-f4a2-4bf7-9acc-75d0128aa066",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response time is less than 1001ms\", function () {",
+                      "    pm.expect(pm.response.responseTime).to.be.below(1001);",
+                      "});",
+                      "",
+                      "pm.test(\"Response data is an array\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an('array');",
+                      "});",
+                      "",
+                      "pm.test(\"Every response item has the required properties\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'hasRestaurant', 'hasPool', 'hasKidsClub', 'hasEveningEntertainment', 'metersToCityCenter', 'metersToBeach', 'imgUrl', 'description', 'rating');",
+                      "    }",
+                      "});",
+                      "pm.test(\"The search matches the description of the hotel\", function () {",
+                      "    pm.expect(pm.response.text()).to.include(\"Elegant hotell vid till badet\");",
+                      "});"
+                    ],
+                    "_lastExecutionId": "a9fa9f98-0134-45ad-884d-5bff6e56e072"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "db64e026-55f3-4b48-a7fe-e50774dc6527",
+              "name": "search-8",
+              "request": {
+                "url": {
+                  "protocol": "https",
+                  "path": [
+                    "search-8"
+                  ],
+                  "host": [
+                    "a45db120-079f-467e-b119-8194ff7bcb94",
+                    "mock",
+                    "pstmn",
+                    "io"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET"
+              },
+              "response": [],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "059ff24e-6fad-4791-a8cf-d3e74e52897f",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response time is less than 1001ms\", function () {",
+                      "    pm.expect(pm.response.responseTime).to.be.below(1001);",
+                      "});",
+                      "",
+                      "pm.test(\"Response data is an array\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an('array');",
+                      "});",
+                      "",
+                      "pm.test(\"Every response item has the required properties\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'hasPool' );",
+                      "    }",
+                      "});",
+                      "",
+                      "pm.test(\"All results should have a pool\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item.hasPool).to.eql(1);",
+                      "    }",
+                      "});"
+                    ],
+                    "_lastExecutionId": "e979207e-9568-4fef-8278-ba06d3656b69"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "3a459707-2ea5-4ed5-8452-6c73ddfa3f77",
+              "name": "search-9",
+              "request": {
+                "url": {
+                  "protocol": "https",
+                  "path": [
+                    "search-9"
+                  ],
+                  "host": [
+                    "a45db120-079f-467e-b119-8194ff7bcb94",
+                    "mock",
+                    "pstmn",
+                    "io"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET"
+              },
+              "response": [],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "332369e2-85bb-47e8-b60e-164a59038f8d",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response time is less than 1001ms\", function () {",
+                      "    pm.expect(pm.response.responseTime).to.be.below(1001);",
+                      "});",
+                      "",
+                      "pm.test(\"Response data is an array\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an('array');",
+                      "});",
+                      "",
+                      "pm.test(\"Every response item has the required properties\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'metersToBeach');",
+                      "    }",
+                      "});",
+                      "",
+                      "pm.test(\"All results should be closer than 1000 metres to the beach\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item.metersToBeach).to.be.below(1000);",
+                      "    }",
+                      "});"
+                    ],
+                    "_lastExecutionId": "91f4ff92-233e-4ac7-b4e0-0d54ed21ec78"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "96444b9c-2ef4-41eb-92d4-8b3dd177256b",
+              "name": "search-10",
+              "request": {
+                "url": {
+                  "protocol": "https",
+                  "path": [
+                    "search-10"
+                  ],
+                  "host": [
+                    "a45db120-079f-467e-b119-8194ff7bcb94",
+                    "mock",
+                    "pstmn",
+                    "io"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET"
+              },
+              "response": [],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "466e6824-b6c5-43b4-93d6-688192f5fe4b",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response time is less than 1001ms\", function () {",
+                      "    pm.expect(pm.response.responseTime).to.be.below(1001);",
+                      "});",
+                      "",
+                      "pm.test(\"Response data is an array\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an('array');",
+                      "});",
+                      "",
+                      "pm.test(\"Every response item has the required properties\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'metersToCityCenter');",
+                      "    }",
+                      "});",
+                      "",
+                      "pm.test(\"All results should be closer than 1000 metres to the beach\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item.metersToCityCenter).to.be.below(500);",
+                      "    }",
+                      "});"
+                    ],
+                    "_lastExecutionId": "6c995a5e-641f-43d3-80f7-7e9ccdf4e1bd"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "d5cb703e-36b7-45bc-bb94-bbe7dd266a20",
+              "name": "search-11",
+              "request": {
+                "url": {
+                  "protocol": "https",
+                  "path": [
+                    "search-11"
+                  ],
+                  "host": [
+                    "a45db120-079f-467e-b119-8194ff7bcb94",
+                    "mock",
+                    "pstmn",
+                    "io"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET"
+              },
+              "response": [],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "b1312352-06b0-442e-8dd9-0fa899998712",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response time is less than 1001ms\", function () {",
+                      "    pm.expect(pm.response.responseTime).to.be.below(1001);",
+                      "});",
+                      "",
+                      "pm.test(\"Response data is an array\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an('array');",
+                      "});",
+                      "",
+                      "pm.test(\"Every response item has the required properties\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'rating');",
+                      "    }",
+                      "});",
+                      "",
+                      "pm.test(\"All results should have a rating higher than or equal to 6\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item.rating).to.be.at.least(6.9);",
+                      "    }",
+                      "});"
+                    ],
+                    "_lastExecutionId": "47555228-f246-4720-8d9c-b372862718fd"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "fe62897b-3673-497b-bc0f-f17a6d78e838",
+              "name": "search-12",
+              "request": {
+                "url": {
+                  "protocol": "https",
+                  "path": [
+                    "search-12"
+                  ],
+                  "host": [
+                    "a45db120-079f-467e-b119-8194ff7bcb94",
+                    "mock",
+                    "pstmn",
+                    "io"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET"
+              },
+              "response": [],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "ace4f6f0-f6ef-419a-be90-865c109fd9c2",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {",
+                      "    pm.response.to.have.status(200);",
+                      "});",
+                      "",
+                      "pm.test(\"Response time is less than 1001ms\", function () {",
+                      "    pm.expect(pm.response.responseTime).to.be.below(1001);",
+                      "});",
+                      "",
+                      "pm.test(\"Response data is an array\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    pm.expect(jsonData).to.be.an('array');",
+                      "});",
+                      "",
+                      "pm.test(\"Every response item has the required properties\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item).to.have.any.keys('id', 'cityId', 'name', 'hasEveningEntertainment');",
+                      "    }",
+                      "});",
+                      "",
+                      "pm.test(\"All results should have access to evening entertainment\", function () {",
+                      "    var jsonData = pm.response.json();",
+                      "    for (let item of jsonData) {",
+                      "        pm.expect(item.hasEveningEntertainment).to.eql(1);",
+                      "    }",
+                      "});"
+                    ],
+                    "_lastExecutionId": "c6bc5853-4073-48aa-ac88-dc3b0db4e4e9"
+                  }
+                }
+              ]
+            },
+            {
+              "id": "b448f26b-a0e3-4652-9d8f-bf810ec7ba02",
+              "name": "Search-hotelview",
+              "request": {
+                "url": {
+                  "port": "8090",
+                  "path": [
+                    "rest",
+                    "hotelview"
+                  ],
+                  "host": [
+                    "localhost"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "method": "GET"
+              },
+              "response": [],
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "id": "beef292b-c0a6-41e0-a441-792660255973",
+                    "type": "text/javascript",
+                    "exec": [
+                      "pm.test(\"Status code is 200\", function () {\r",
+                      "    pm.response.to.have.status(200);\r",
+                      "});\r",
+                      "\r",
+                      "pm.test(\"Response time is less than 1001ms\", function () {\r",
+                      "    pm.expect(pm.response.responseTime).to.be.below(1001);\r",
+                      "});\r",
+                      "\r",
+                      "pm.test(\"Response data is an array\", function () {\r",
+                      "    var jsonData = pm.response.json();\r",
+                      "    pm.expect(jsonData).to.be.an('array');\r",
+                      "});\r",
+                      "\r",
+                      "pm.test(\"Every response item has the required properties\", function () {\r",
+                      "    var jsonData = pm.response.json();\r",
+                      "    for (let item of jsonData) {\r",
+                      "        pm.expect(item).to.have.all.keys('id', 'name', 'cityId', 'countryId', 'country', 'restaurant', 'pool', 'kidsclub', 'eveningEntertainment', 'mToCity', 'mToBeach', 'imgUrl', 'description', 'rating', 'city',);\r",
+                      "    }\r",
+                      "});\r",
+                      "\r",
+                      "pm.test(\"The name of the hotel matches the search\", function () {\r",
+                      "    pm.expect(pm.response.text()).to.include(\"Svegs Stadshotell\", \"BnBodega\", \"Grand Hôtel\", \"Strandhotellet\", \"Den norske hotell\");\r",
+                      "});"
+                    ],
+                    "_lastExecutionId": "bd90bc3f-bc59-4b37-8946-fdd9e5507187"
+                  }
+                }
+              ]
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {}
+        },
+        "cursor": {
+          "position": 0,
+          "iteration": 0,
+          "length": 9,
+          "cycles": 1,
+          "empty": false,
+          "eof": false,
+          "bof": true,
+          "cr": false,
+          "ref": "825758e9-7bc7-477f-bfe4-0b005faeff02",
+          "httpRequestId": "09576657-97aa-4fb1-8f07-839067a979f8",
+          "scriptId": "fc23c8df-3520-43b7-bc52-a6dbdb05ce5b",
+          "execution": "b11ce1ff-78a7-49b8-b396-cf82ab75f1f8"
+        }
+      }
+    ],
     "error": null
   }
 }
