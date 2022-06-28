@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5fd64895-4e78-4840-9f0e-0790d13b0be7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../current_build/ggdb.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gilfoylego_vue/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../gilfoylego_vue/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -97,6 +92,7 @@
       <workItem from="1589789040665" duration="7000" />
       <workItem from="1597841360875" duration="3094000" />
       <workItem from="1656338225233" duration="2062000" />
+      <workItem from="1656420033262" duration="2216000" />
     </task>
     <servers />
   </component>
