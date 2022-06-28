@@ -1,52 +1,25 @@
 Feature: Search function
 
-    Background: 
-    Given that im on the home page
+    As i user
+    I want to be able to sort
+    hotels after 
+    countrys, hotelnames and citys
 
-    Scenario Outline: Search 1, Searching for hotels by hotels namns
-        When and click on the serch bar and type in <hotelname>
-        And enter a start date 
-        And enter a end date
-        And hit search
-        Then my frist search result should be <hotelname>
+    Background:
+        Given that im on the search page
 
-        Examples:
-            | hotelname |
-            | Value 1   |
-            | Value 1   |
-            | Value 1   |
 
-    Scenario Outline: Search 2, Searching for hotels location with citys
-        When and clcik on the search bar and type in <city>
-        And enter a start date
-        And enter a end date
-        And hit search
-        Then my hotels should be located in that <city>
+    Scenario: Search Norge
+        When I search for hotels in "Norge"
+        Then my frist search result should be a hotel in Norge
 
-        Examples:
-            | city    |
-            | Malmö   |
-            | Value 1 |
-            | Value 1 |
+    Scenario: Search Sverige
+        When I search for hotels in "Sverige"
+        Then my frist search result should be a hotel in Sverige
 
-    Scenario Outline: Search 3, Searching for hotels location with countries
-        When and clcik on the search bar and type in <countrie>
-        And enter a start date
-        And enter a end date
-        And hit search
-        Then my hotels should be located in that <countrie>
+    Scenario: Search Danmark
+        When I search for hotels in "Danmark"
+        Then my frist search result should be a hotel in Danmark
 
-        Examples:
-            | countrie |
-            | москва   |
-            | Value 1  |
-            | Value 1  |
 
-Scenario: Search 4, Searching for hotels between to dates
-        When and clcik on the search bar and type in "Spain"
-        And enter a start-date
-        And enter a end-date
-        And hit search
-        Then my hotels results should be between start-date and end-date
-        
-       
+

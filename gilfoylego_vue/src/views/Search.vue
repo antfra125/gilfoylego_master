@@ -4,11 +4,7 @@
       <div class="row form-group d-flex justify-content-center mt-auto">
         <b-form>
           <div class="row d-flex justify-content-center form-group">
-            <b-form-input
-              type="text"
-              v-model="form.search"
-              placeholder="Hotell, stad eller land"
-              ></b-form-input>
+            <b-form-input type="text" v-model="form.search" placeholder="Hotell, stad eller land"></b-form-input>
           </div>
           <div class="row form-group d-flex justify-content-between">
             <div class="col-6">
@@ -40,19 +36,35 @@
             <span class="column custom-link" v-on:click="sortByPrice()">
               <span>
                 <img v-show="!this.$store.state.sortByPrice" src="../images/sortasc.png" />
-                <img v-show="this.$store.state.sortASC && this.$store.state.sortByPrice" src="../images/sortasc.png" />
-                <img v-show="!this.$store.state.sortASC && this.$store.state.sortByPrice" src="../images/sortdesc.png" />
-                <span v-show="this.$store.state.sortByPrice"><strong> Pris</strong></span>
-                <span v-show="!this.$store.state.sortByPrice"> Pris</span>
+                <img
+                  v-show="this.$store.state.sortASC && this.$store.state.sortByPrice"
+                  src="../images/sortasc.png"
+                />
+                <img
+                  v-show="!this.$store.state.sortASC && this.$store.state.sortByPrice"
+                  src="../images/sortdesc.png"
+                />
+                <span v-show="this.$store.state.sortByPrice">
+                  <strong>Pris</strong>
+                </span>
+                <span v-show="!this.$store.state.sortByPrice">Pris</span>
               </span>
             </span>
             <span class="column custom-link" v-on:click="sortByRating()">
               <span>
                 <img v-show="!this.$store.state.sortByRatings" src="../images/sortasc.png" />
-                <img v-show="this.$store.state.sortASC && this.$store.state.sortByRatings" src="../images/sortasc.png" />
-                <img v-show="!this.$store.state.sortASC && this.$store.state.sortByRatings" src="../images/sortdesc.png" />
-                <span v-show="this.$store.state.sortByRatings"><strong> Omdömde</strong></span>
-                <span v-show="!this.$store.state.sortByRatings"> Omdömde</span>
+                <img
+                  v-show="this.$store.state.sortASC && this.$store.state.sortByRatings"
+                  src="../images/sortasc.png"
+                />
+                <img
+                  v-show="!this.$store.state.sortASC && this.$store.state.sortByRatings"
+                  src="../images/sortdesc.png"
+                />
+                <span v-show="this.$store.state.sortByRatings">
+                  <strong>Omdömde</strong>
+                </span>
+                <span v-show="!this.$store.state.sortByRatings">Omdömde</span>
               </span>
             </span>
           </div>
@@ -92,7 +104,7 @@
             ></b-form-input>
           </div>
           <div>
-            <HotelResult :search="form.search" :m2Center="form.m2Center"/>
+            <HotelResult :search="form.search" :m2Center="form.m2Center" />
           </div>
         </b-form>
       </div>
@@ -122,14 +134,14 @@ export default {
   },
   methods: {
     sortByPrice() {
-      this.$store.state.sortByRatings = false
-      this.$store.state.sortByPrice = true
-      this.invertSort()
+      this.$store.state.sortByRatings = false;
+      this.$store.state.sortByPrice = true;
+      this.invertSort();
     },
     sortByRating() {
-      this.$store.state.sortByRatings = true
-      this.$store.state.sortByPrice = false
-      this.invertSort()
+      this.$store.state.sortByRatings = true;
+      this.$store.state.sortByPrice = false;
+      this.invertSort();
     },
     onSubmit(evt) {
       evt.preventDefault();
@@ -140,7 +152,7 @@ export default {
       this.hotels = await result.json();
     },
     invertSort() {
-      this.$store.state.sortASC = !this.$store.state.sortASC
+      this.$store.state.sortASC = !this.$store.state.sortASC;
     }
   },
   computed: {
